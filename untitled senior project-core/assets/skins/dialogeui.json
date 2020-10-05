@@ -1,0 +1,43 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"pixel-large": {
+		"file": "fonts/pixmix-20pt.fnt"
+	},
+	"pixel-med": {
+		"file": "fonts/pixmix-16pt.fnt"
+	},
+	"pixel-small": {
+		"file": "fonts/pixmix-12pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"name-label": {
+		"font": "pixel-med",
+		"background": "name-label-bg"
+	},
+	"dialogue-label": {
+		"font": "pixel-small",
+		"fontColor": "black"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	"default": {
+		"background": "text-scrollpane-bg",
+		"vScrollKnob": "scrollbar"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"dialogue-window": {
+		"background": "dialogue-bg",
+		"titleFont": "pixel-med"
+	}
+}
+}

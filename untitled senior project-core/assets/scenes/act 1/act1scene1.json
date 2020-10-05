@@ -1,0 +1,66 @@
+{
+"cast": ["First Witch", "Second Witch", "Third Witch"],
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "First Witch", "text": "-When shall we three meet again"}]
+		},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "-In thunder, lightning, or in rain?"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "-When the hurly-burly's done,"}]
+	 	},
+	 	{
+	 		"lineID": 4,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "-When the battle's lost and won."}]
+	 	},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "-That will be ere the set of sun."}]
+	 	},
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "-Where the place?"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "Upon the heath."}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "-There to meet with Macbeth."}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "-I come, Graymalkin."}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "-Paddock calls. --Anon!"}]
+	 	},
+	 	{
+	 		"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "-Fair is foul, and foul is fair."}]
+	 	},
+	 	{
+	 		"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "-Hover through the fog and filthy air."}]
+	 	}]
+}

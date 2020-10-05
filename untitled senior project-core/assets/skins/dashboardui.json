@@ -1,0 +1,58 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"pixmix-12pt": {
+		"file": "fonts/pixmix-12pt.fnt"
+	},
+	"pixmix-16pt": {
+		"file": "fonts/pixmix-16pt.fnt"
+	},
+	"pixmix-20pt": {
+		"file": "fonts/pixmix-20pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+	"tab-button": {
+		"imageUp": "tab-up",
+		"imageDown": "tab-down",
+		"imageChecked": "tab-down"
+	},
+	"show-dash-button": {
+		"imageUp": "show-dash-up",
+		"imageDown": "show-dash-down"
+	},
+	"hide-dash-button": {
+		"imageUp": "hide-dash-up",
+		"imageDown": "hide-dash-down"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"textbox": {
+		"font": "pixmix-12pt",
+		"fontColor": "black",
+		"background": "textbox"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	"default": {
+		"background": "dashboard-bg",
+		"vScrollKnob": "scrollbar"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"titleFont": "pixmix-12pt"
+	},
+	"dashboard": {
+		"background": "dashboard-bg",
+		"titleFont": "pixmix-12pt"
+	}
+}
+}

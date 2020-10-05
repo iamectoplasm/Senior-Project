@@ -1,0 +1,170 @@
+{
+"cast": ["Duncan", "Banquo", "Lady Macbeth",
+		 "Malcolm", "Donalbain", "Lennox",
+		 "Macduff", "Ross", "Angus"],
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "Duncan", "text": "-This castle hath a pleasant seat, the air"}]
+		},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-Nimbly and sweetly recommends itself"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Duncan", "text": "-Unto our gentle senses."},
+	 				 {"actor": "Banquo", "text": "This guest of summer,"}]
+	 	},
+	 	{
+	 		"lineID": 4,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-The temple-haunting martlet, does approve"}]
+	 	},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-By his loved mansionry that the heaven's breath"}]
+	 	},
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-Smells wooingly here. No jutty, frieze,"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-Buttress, nor coign of vantage but this bird"}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-Hath made his pendent bed and procreant cradle."}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "-Where they most breed and haunt, I have observed"}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Banquo", "text": "-The air is delicate."},
+	 				 {"actor": "Duncan", "text": "See, see, our honored hostess!"}]
+	 	},
+	 	{
+	 		"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-The love that follows us sometime is our trouble,"}]
+	 	},
+	 	{
+	 		"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-Which still we thank as love. Herein I teach you"}]
+	 	},
+	 	{
+	 		"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-How you shall bid God 'ild us for your pains,"}]
+	 	},
+	 	{
+	 		"lineID": 14,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Duncan", "text": "-And thank us for your trouble"},
+	 				 {"actor": "Lady Macbeth", "text": "All our service"}]
+	 	},
+	 	{
+	 		"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-In every point twice done, and then done double,"}]
+	 	},
+	 	{
+	 		"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Were poor and single business to contend"}]
+	 	},
+	 	{
+	 		"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Against those honors deep and broad wherewith"}]
+	 	},
+	 	{
+	 		"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Your Majesty loads our house. For those of old,"}]
+	 	},
+	 	{
+	 		"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-And the late dignities heaped heaped up to them,"}]
+	 	},
+	 	{
+	 		"lineID": 20,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-We rest your hermits."},
+	 				 {"actor": "Duncan", "text": "Where's the Thane of Cawdor?"}]
+	 	},
+	 	{
+	 		"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-We coursed him at the heels, and had a purpose"}]
+	 	},
+	 	{
+	 		"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-To be his purveyor. But he rides well,"}]
+	 	},
+	 	{
+	 		"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-And his great love, sharp as his spur, hath holp him"}]
+	 	},
+	 	{
+	 		"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-To his home before us. Fair and noble hostess,"}]
+	 	},
+	 	{
+	 		"lineID": 25,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Duncan", "text": "-We are your guest tonight."},
+	 				 {"actor": "Lady Macbeth", "text": "Your servants ever"}]
+	 	},
+	 	{
+	 		"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Have theirs, themselves, and what is theirs, in compt,"}]
+	 	},
+	 	{
+	 		"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-To make their audit at your Highness' pleasure,"}]
+	 	},
+	 	{
+	 		"lineID": 28,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Still to return your own."},
+	 				 {"actor": "Duncan", "text": "Give me your hand,"}]
+	 	},
+	 	{
+	 		"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-Conduct me to mine host. We love him highly,"}]
+	 	},
+	 	{
+	 		"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-And shall continue our graces toward him."}]
+	 	},
+	 	{
+	 		"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Duncan", "text": "-By your leave, hostess."}]
+	 	}
+	 ]
+}

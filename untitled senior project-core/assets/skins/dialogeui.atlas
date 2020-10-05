@@ -1,0 +1,139 @@
+
+dialogeui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pixmix-12pt
+  rotate: false
+  xy: 1, 777
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-16pt
+  rotate: false
+  xy: 1, 263
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-20pt
+  rotate: false
+  xy: 515, 777
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+ANGUS
+  rotate: false
+  xy: 1029, 1193
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+BANQUO
+  rotate: false
+  xy: 1, 99
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+DONALBAIN
+  rotate: false
+  xy: 515, 581
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+DUNCAN
+  rotate: false
+  xy: 711, 679
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+LADY_MACBETH
+  rotate: false
+  xy: 613, 679
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+LENNOX
+  rotate: false
+  xy: 1029, 1095
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+MACBETH
+  rotate: false
+  xy: 1127, 1193
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+MACDUFF
+  rotate: false
+  xy: 1, 1
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+MALCOLM
+  rotate: false
+  xy: 515, 483
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+ROSS
+  rotate: false
+  xy: 613, 581
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+dialogue-bg
+  rotate: false
+  xy: 163, 213
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+name-label-bg
+  rotate: false
+  xy: 99, 179
+  size: 48, 16
+  split: 6, 6, 6, 6
+  pad: 6, 4, 4, 6
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+portrait-bg
+  rotate: false
+  xy: 515, 679
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+scrollbar
+  rotate: false
+  xy: 1029, 1085
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 0, 0, 0, 0
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+text-scrollpane-bg
+  rotate: false
+  xy: 1, 197
+  size: 160, 64
+  split: 8, 8, 8, 8
+  orig: 160, 64
+  offset: 0, 0
+  index: -1
