@@ -1,0 +1,167 @@
+
+dialogeui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pixmix-12pt
+  rotate: false
+  xy: 1, 827
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-16pt
+  rotate: false
+  xy: 1, 313
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+pixmix-20pt
+  rotate: false
+  xy: 515, 827
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+ANGUS
+  rotate: false
+  xy: 515, 565
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BANQUO
+  rotate: false
+  xy: 695, 745
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+DONALBAIN
+  rotate: false
+  xy: 1029, 1095
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+DUNCAN
+  rotate: false
+  xy: 1, 83
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+FIRST_WITCH
+  rotate: false
+  xy: 1111, 1177
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+LADY_MACBETH
+  rotate: false
+  xy: 1029, 1259
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+LENNOX
+  rotate: false
+  xy: 1, 165
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+MACBETH
+  rotate: false
+  xy: 515, 647
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+MACDUFF
+  rotate: false
+  xy: 613, 745
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+MALCOLM
+  rotate: false
+  xy: 1029, 1177
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+ROSS
+  rotate: false
+  xy: 1111, 1259
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+SECOND_WITCH
+  rotate: false
+  xy: 1193, 1259
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+SERGEANT
+  rotate: false
+  xy: 1, 1
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+THIRD_WITCH
+  rotate: false
+  xy: 515, 483
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+dialogue-bg
+  rotate: false
+  xy: 163, 263
+  size: 48, 48
+  split: 16, 16, 16, 16
+  pad: 12, 12, 12, 12
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+name-label-bg
+  rotate: false
+  xy: 83, 229
+  size: 48, 16
+  split: 6, 6, 6, 6
+  pad: 6, 4, 4, 6
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+portrait-bg
+  rotate: false
+  xy: 515, 729
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+scrollbar
+  rotate: false
+  xy: 597, 719
+  size: 8, 8
+  split: 2, 2, 2, 2
+  pad: 0, 0, 0, 0
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+text-scrollpane-bg
+  rotate: false
+  xy: 1, 247
+  size: 160, 64
+  split: 8, 8, 8, 8
+  orig: 160, 64
+  offset: 0, 0
+  index: -1

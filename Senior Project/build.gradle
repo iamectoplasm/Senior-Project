@@ -39,12 +39,12 @@ allprojects {
     }
 }
 
-project(":desktop") {
+project(":untitled senior project-desktop") {
     apply plugin: "java-library"
 
 
     dependencies {
-        implementation project(":core")
+        implementation project(":untitled senior project-core")
         api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
@@ -52,14 +52,14 @@ project(":desktop") {
     }
 }
 
-project(":html") {
+project(":untitled senior project-html") {
     apply plugin: "java-library"
     apply plugin: "gwt"
     apply plugin: "war"
 
 
     dependencies {
-        implementation project(":core")
+        implementation project(":untitled senior project-core")
         api "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion"
         api "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
         api "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
@@ -67,7 +67,7 @@ project(":html") {
     }
 }
 
-project(":core") {
+project(":untitled senior project-core") {
     apply plugin: "java-library"
 
 

@@ -1,0 +1,56 @@
+{
+"cast": ["", "", ""],
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 4,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	}]
+}
