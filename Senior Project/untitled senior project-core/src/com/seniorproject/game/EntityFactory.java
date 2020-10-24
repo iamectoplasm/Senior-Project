@@ -84,6 +84,7 @@ public class EntityFactory
 	public static String MALCOLM_SPRITESHEET = "characters/sprites/malcolm.png";
 	public static String ROSS_SPRITESHEET = "characters/sprites/ross.png";
 	public static String SERGEANT_SPRITESHEET = "characters/sprites/sergeant.png";
+	public static String MESSENGER_SPRITESHEET = "characters/sprites/messenger.png";
 	
 	public static String FIRST_WITCH_SPRITESHEET = "characters/sprites/first-witch.png";
 	public static String SECOND_WITCH_SPRITESHEET = "characters/sprites/second-witch.png";
@@ -104,6 +105,7 @@ public class EntityFactory
 		entities.put(CharacterName.MALCOLM.name(), MALCOLM_SPRITESHEET);
 		entities.put(CharacterName.ROSS.name(), ROSS_SPRITESHEET);
 		entities.put(CharacterName.SERGEANT.name(), SERGEANT_SPRITESHEET);
+		entities.put(CharacterName.MESSENGER.name(), MESSENGER_SPRITESHEET);
 		entities.put(CharacterName.FIRST_WITCH.name(), FIRST_WITCH_SPRITESHEET);
 		entities.put(CharacterName.SECOND_WITCH.name(), SECOND_WITCH_SPRITESHEET);
 		entities.put(CharacterName.THIRD_WITCH.name(), THIRD_WITCH_SPRITESHEET);

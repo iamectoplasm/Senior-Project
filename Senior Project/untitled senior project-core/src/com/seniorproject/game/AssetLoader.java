@@ -30,6 +30,11 @@ public class AssetLoader
 	public static TextureAtlas INTRO_TEXTUREATLAS = new TextureAtlas(INTRO_TEXTURE_ATLAS_PATH);
 	public static Skin INTRO_SKIN = new Skin(Gdx.files.internal(INTRO_SKIN_PATH), INTRO_TEXTUREATLAS);
 	
+	public final static String SELECT_TEXTURE_ATLAS_PATH = "skins/sceneselectui.atlas";
+	public final static String SELECT_SKIN_PATH = "skins/sceneselectui.json";
+	public static TextureAtlas SELECT_TEXTUREATLAS = new TextureAtlas(SELECT_TEXTURE_ATLAS_PATH);
+	public static Skin SELECT_SKIN = new Skin(Gdx.files.internal(SELECT_SKIN_PATH), SELECT_TEXTUREATLAS);
+	
 	public final static String DIALOGUE_TEXTURE_ATLAS_PATH = "skins/dialogeui.atlas";
 	public final static String DIALOGUE_SKIN_PATH = "skins/dialogeui.json";
 	public static TextureAtlas DIALOGUE_TEXTUREATLAS = new TextureAtlas(DIALOGUE_TEXTURE_ATLAS_PATH);

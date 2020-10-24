@@ -2,14 +2,14 @@ package com.seniorproject.game;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Screen;
-import com.seniorproject.screens.IntroScreen;
+import com.seniorproject.screens.MainMenuScreen;
 import com.seniorproject.screens.PerformanceScreen;
 import com.seniorproject.screens.SceneSelectScreen;
 
 public class SeniorProject extends Game
 {
 	public static PerformanceScreen performanceScreen;
-	public static IntroScreen introScreen;
+	public static MainMenuScreen introScreen;
 	public static SceneSelectScreen sceneSelectScreen;
 	
 	public static enum ScreenType
@@ -47,7 +47,7 @@ public class SeniorProject extends Game
 	public void create()
 	{
 		performanceScreen = new PerformanceScreen(this);
-		introScreen = new IntroScreen(this);
+		introScreen = new MainMenuScreen(this);
 		sceneSelectScreen = new SceneSelectScreen(this);
 		
 		//setScreen(performanceScreen);

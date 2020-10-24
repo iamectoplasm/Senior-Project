@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.seniorproject.components.Position;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.PerformerSprite;
 
@@ -29,8 +30,9 @@ public class RenderSystem extends EntitySystem
 	
 	public RenderSystem(Camera camera, Batch batch)
 	{
-		super(Aspect.all(PerformerSprite.class,
-				 		 Position.class));
+		super(Aspect.all(Active.class,
+				PerformerSprite.class,
+				Position.class));
 
 		this.camera = camera;
 		this.batch = batch;

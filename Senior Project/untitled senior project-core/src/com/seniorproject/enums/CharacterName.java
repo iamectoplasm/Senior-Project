@@ -13,6 +13,7 @@ public enum CharacterName
 	MALCOLM,
 	ROSS,
 	SERGEANT,
+	MESSENGER,
 	FIRST_WITCH,
 	SECOND_WITCH,
 	THIRD_WITCH;

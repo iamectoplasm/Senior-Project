@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.Name;
@@ -28,9 +29,10 @@ public class CollisionSystem extends IntervalIteratingSystem
 
 	public CollisionSystem(StageMap map)
 	{
-		super(Aspect.all(Position.class,
-						 MovementDirection.class,
-						 BoundingBox.class), (1/60f));
+		super(Aspect.all(Active.class,
+				Position.class,
+				MovementDirection.class,
+				BoundingBox.class), (1/60f));
 		
 		this.map = map;
 	}

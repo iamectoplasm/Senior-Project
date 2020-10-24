@@ -20,6 +20,9 @@ public class SceneManager
 	
 	private int currentLineID;
 	
+	private Array<SceneFiles> scenes;
+	private int currentSceneIndex = 0;
+	
 	private Scene currentScene;
 	private Line currentLine;
 	private LineText currentLineText;
@@ -41,9 +44,22 @@ public class SceneManager
 	public SceneManager(World world)
 	{
 		this.world = world;
+		this.scenes = new Array<SceneFiles>();
+		scenes.addAll(SceneFiles.ACT1SCENE1,
+				SceneFiles.ACT1SCENE2,
+				SceneFiles.ACT1SCENE3,
+				SceneFiles.ACT1SCENE4,
+				SceneFiles.ACT1SCENE5,
+				SceneFiles.ACT1SCENE6,
+				SceneFiles.ACT1SCENE7);
 		
-		//currentScene = new Scene(SceneFiles.ACT1SCENE6);
-		currentScene = new Scene(SceneFiles.ACT1SCENE1);
+		this.currentSceneIndex = 5;
+		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
+	}
+	
+	public void setupNewScene(Scene scene)
+	{
+		currentScene = scene;
 		currentLineID = 1;
 		sharedLineIndex = 0;
 		actorHasChanged = true;
@@ -77,6 +93,7 @@ public class SceneManager
 		}
 		
 		currentLine = currentScene.getLineByID(currentLineID);
+		//Gdx.app.debug(TAG, "currentLine: " + currentLine.getLineText().get(sharedLineIndex).getText());
 		String newActor = currentLine.getLineText().get(sharedLineIndex).getActor();
 		
 		lineIsShared = currentLine.isSharedLine();
@@ -87,6 +104,13 @@ public class SceneManager
 		{
 			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
 			updateActions(currentLineID);
+		}
+		
+		if(currentLineID >= currentScene.getLines().size)
+		{
+			currentScene.deactivateEntities();
+			currentSceneIndex += 1;
+			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 		}
 	}
 	

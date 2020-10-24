@@ -4,11 +4,18 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
+import com.seniorproject.game.SeniorProject.ScreenType;
+import com.seniorproject.scenemeta.StudyConfig;
+import com.seniorproject.ui.SceneSelectUI;
 
 public class SceneSelectScreen implements Screen
 {
@@ -19,33 +26,51 @@ public class SceneSelectScreen implements Screen
 	{
 		this.game = game;
 		this.stage = new Stage();
+		Image bgImage = new Image(AssetLoader.SELECT_SKIN, "glamis-palette-cropped");
+		bgImage.setScale(0.5f);
+		stage.addActor(bgImage);
 		
-		Table table = new Table(AssetLoader.INTRO_SKIN);
-		table.setFillParent(true);
-		table.setBackground(AssetLoader.INTRO_SKIN.getDrawable("wood-bg"));
+		ImageButton backButton = new ImageButton(AssetLoader.SELECT_SKIN, "exit");
+		backButton.setScale(4f);
+		backButton.setX(16);
+		backButton.setY(stage.getHeight() - backButton.getHeight() - 16);
+		addBackButtonListener(backButton);
 		
-		TextButton act1Scene1Btn = new TextButton("Act 1 Scene 1", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene2Btn = new TextButton("Act 1 Scene 2", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene3Btn = new TextButton("Act 1 Scene 3", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene4Btn = new TextButton("Act 1 Scene 4", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene5Btn = new TextButton("Act 1 Scene 5", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene6Btn = new TextButton("Act 1 Scene 6", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton act1Scene7Btn = new TextButton("Act 1 Scene 7", AssetLoader.INTRO_SKIN, "scene-selection-button");
+		stage.addActor(backButton);
 		
-		table.add(act1Scene1Btn).padRight(20);
-		table.add(act1Scene2Btn);
-		table.row();
-		table.add(act1Scene3Btn).padRight(20);
-		table.add(act1Scene4Btn);
-		table.row();
-		table.add(act1Scene5Btn).padRight(20);
-		table.add(act1Scene6Btn);
-		table.row();
+		SceneSelectUI sceneSelect = new SceneSelectUI();
+		sceneSelect.setX((stage.getWidth() / 2) - (sceneSelect.getWidth() / 2));
+		sceneSelect.setY(32);
+		stage.addActor(sceneSelect);
 		
-		table.add(act1Scene7Btn).padRight(20);
-		table.row();
 		
-		stage.addActor(table);
+		//stage.addActor(table);
+	}
+	
+	private void addBackButtonListener(ImageButton button)
+	{
+		button.addListener(new ClickListener()
+		{
+			@Override
+			public boolean touchDown(InputEvent event,
+                    float x,
+                    float y,
+                    int pointer,
+                    int button)
+			{
+				return true;
+			}
+			
+			@Override
+			public void touchUp(InputEvent event,
+                    float x,
+                    float y,
+                    int pointer,
+                    int button)
+			{
+				game.setScreen(game.getScreenType(ScreenType.IntroScreen));
+			}
+		});
 	}
 
 	@Override

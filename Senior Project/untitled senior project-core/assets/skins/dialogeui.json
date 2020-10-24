@@ -1,13 +1,22 @@
 {
 "com.badlogic.gdx.graphics.g2d.BitmapFont": {
-	"pixel-large": {
-		"file": "fonts/pixmix-20pt.fnt"
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
 	},
-	"pixel-med": {
-		"file": "fonts/pixmix-16pt.fnt"
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
 	},
-	"pixel-small": {
-		"file": "fonts/pixmix-12pt.fnt"
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
 	}
 },
 "com.badlogic.gdx.graphics.Color": {
@@ -19,25 +28,30 @@
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "arial-16pt",
+		"fontColor": "black"
+	},
 	"name-label": {
-		"font": "pixel-med",
-		"background": "name-label-bg"
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "blue-name-label"
 	},
 	"dialogue-label": {
-		"font": "pixel-small",
+		"font": "arial-14pt",
 		"fontColor": "black"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
 	"default": {
-		"background": "text-scrollpane-bg",
-		"vScrollKnob": "scrollbar"
+		"background": "text-scrollpane-white",
+		"vScroll": "scroll-line",
+		"vScrollKnob": "green-scrollbar"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
-	"dialogue-window": {
-		"background": "dialogue-bg",
-		"titleFont": "pixel-med"
+	"default": {
+		"titleFont": "arial-16pt"
 	}
 }
 }

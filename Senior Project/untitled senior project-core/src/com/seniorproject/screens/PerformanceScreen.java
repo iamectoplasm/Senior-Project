@@ -13,11 +13,11 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.seniorproject.game.EntityFactory;
+import com.seniorproject.game.PerformerManager;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.maps.PerformanceRenderer;
 import com.seniorproject.maps.StageMap;
-import com.seniorproject.scenemeta.SceneStudy;
 import com.seniorproject.systems.*;
 
 import com.seniorproject.ui.PerformanceHUD;
@@ -87,6 +87,7 @@ public class PerformanceScreen implements Screen
 
 		this.world = new World(config);
 		EntityFactory.setWorld(world);
+		PerformerManager.setWorld(world);
 		
 		ShapeRenderer sr = new ShapeRenderer();
 		sr.setProjectionMatrix(camera.combined);
@@ -127,13 +128,6 @@ public class PerformanceScreen implements Screen
 		camera.update();
 		
 		performanceRenderer.renderPerformance(delta);
-		
-		//mapRenderer.getBatch().setProjectionMatrix(camera.combined);
-		
-		//mapRenderer.render();
-		
-		//world.setDelta(delta);
-		//world.process();
 		
 		performanceHUD.render(delta);
 	}

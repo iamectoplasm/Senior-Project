@@ -45,4 +45,14 @@ public class MovementState extends Component
 			return refaceTime;
 		}
 	}
+	
+	public void resetAll()
+	{
+		currentState = State.IDLE;
+		moveRequested = false;
+		moveInProgress = false;
+		refaceRequested = false;
+		refaceInProgress = false;
+		stateTime = 0.0f;
+	}
 }

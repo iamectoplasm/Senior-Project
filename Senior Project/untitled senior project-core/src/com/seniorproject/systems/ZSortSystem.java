@@ -4,6 +4,7 @@ import com.artemis.Aspect;
 import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.Bag;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.Position;
 
 public class ZSortSystem extends EntitySystem
@@ -11,7 +12,8 @@ public class ZSortSystem extends EntitySystem
 	
 	public ZSortSystem()
 	{
-		super(Aspect.all(Position.class));
+		super(Aspect.all(Active.class,
+				Position.class));
 	}
 
 	@Override

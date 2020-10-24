@@ -4,14 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.Scene;
-import com.seniorproject.scenemeta.SceneStudy;
 import com.seniorproject.scenemeta.StudyConfig;
 
 public class StudyUI extends Window
@@ -20,28 +21,39 @@ public class StudyUI extends Window
 	
 	private Scene currentScene;
 	
-	private ImageButton breakdownButton;
-	private ImageButton translationButton;
-	private ImageButton analysisButton;
-	private ImageButton fullTextButton;
-	private ButtonGroup<ImageButton> tabButtons;
+	//private ImageButton breakdownButton;
+	//private ImageButton translationButton;
+	//private ImageButton analysisButton;
+	//private ImageButton fullTextButton;
+	//private ButtonGroup<ImageButton> tabButtons;
+	
+	private ImageTextButton breakdownButton;
+	private ImageTextButton translationButton;
+	private ImageTextButton analysisButton;
+	private ImageTextButton fullTextButton;
+	private ButtonGroup<ImageTextButton> tabButtons;
 	
 	private Window studyWindow;
-	private Label infoLabel;
+	private Label titleLabel;
+	private Label studyInfoLabel;
 
 	public StudyUI(Scene scene)
 	{
 		super("", AssetLoader.DASHBOARD_SKIN);
-		this.debugAll();
+		//this.debugAll();
 		
 		this.currentScene = scene;
 		
-		breakdownButton = new ImageButton(AssetLoader.DASHBOARD_SKIN, "tab-button");
-		translationButton = new ImageButton(AssetLoader.DASHBOARD_SKIN, "tab-button");
-		analysisButton = new ImageButton(AssetLoader.DASHBOARD_SKIN, "tab-button");
-		fullTextButton = new ImageButton(AssetLoader.DASHBOARD_SKIN, "tab-button");
+		breakdownButton = new ImageTextButton("Scene\nBreakdown", AssetLoader.DASHBOARD_SKIN, "tab-button");
+		translationButton = new ImageTextButton("Translation", AssetLoader.DASHBOARD_SKIN, "tab-button");
+		analysisButton = new ImageTextButton("Analysis", AssetLoader.DASHBOARD_SKIN, "tab-button");
+		fullTextButton = new ImageTextButton("Text", AssetLoader.DASHBOARD_SKIN, "tab-button");
 		
-		tabButtons = new ButtonGroup<ImageButton>();
+		translationButton.setWidth(breakdownButton.getWidth());
+		analysisButton.setWidth(breakdownButton.getWidth());
+		fullTextButton.setWidth(breakdownButton.getWidth());
+		
+		tabButtons = new ButtonGroup<ImageTextButton>();
 		tabButtons.add(breakdownButton);
 		tabButtons.add(translationButton);
 		tabButtons.add(analysisButton);
@@ -54,6 +66,13 @@ public class StudyUI extends Window
 		this.add().padRight(20);
 		
 		this.add(breakdownButton, translationButton, analysisButton, fullTextButton);
+		this.getCell(breakdownButton).expand().fill();
+		this.getCell(translationButton).setActorWidth(breakdownButton.getWidth());
+		this.getCell(translationButton).expand().fill();
+		this.getCell(analysisButton).expand().fill();
+		this.getCell(analysisButton).setActorWidth(breakdownButton.getWidth());
+		this.getCell(fullTextButton).expand().fill();
+		this.getCell(fullTextButton).setActorWidth(breakdownButton.getWidth());
 		
 		//this.add().padRight(10);
 		this.add().padRight(20);
@@ -64,15 +83,33 @@ public class StudyUI extends Window
 		
 		this.row();
 		
-		studyWindow = new Window("", AssetLoader.DASHBOARD_SKIN, "dashboard");
+		//studyWindow = new Window("", AssetLoader.DASHBOARD_SKIN, "dashboard");
+		studyWindow = new Window("", AssetLoader.DASHBOARD_SKIN, "wood-dashboard");
 		
-		infoLabel = new Label("", AssetLoader.DASHBOARD_SKIN, "textbox");
-		infoLabel.setWrap(true);
-		infoLabel.setText(currentScene.getStudyConfigs().get("breakdown").getStudyText().first());
-		ScrollPane textScroll = new ScrollPane(infoLabel);
+		titleLabel = new Label("", AssetLoader.DASHBOARD_SKIN, "title-label");
+		titleLabel.setText("Scene Breakdown");
+		
+		studyWindow.add(titleLabel).pad(16, 16, 8, 8).align(Align.left);
+		studyWindow.row();
+		
+		//infoLabel = new Label("", AssetLoader.DASHBOARD_SKIN, "textbox");
+		//infoLabel.setWrap(true);
+		//infoLabel.setText(currentScene.getStudyConfigs().get("breakdown").getStudyText().first());
+		studyInfoLabel = new Label("", AssetLoader.DASHBOARD_SKIN);
+		studyInfoLabel.setWrap(true);
+		studyInfoLabel.setFontScale(1f);
+		
+		// Set up the scene breakdown
+		StudyConfig breakdown = currentScene.getStudyConfigs().get("breakdown");
+		for(int i = 0; i < breakdown.getStudyText().size; i++)
+		{
+			studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + breakdown.getStudyText().get(i));
+		}
+		
+		ScrollPane textScroll = new ScrollPane(studyInfoLabel, AssetLoader.DASHBOARD_SKIN, "text-display");
 		textScroll.setScrollbarsVisible(true);
 		
-		studyWindow.add(textScroll).height(250);
+		studyWindow.add(textScroll).height(250).pad(16, 16, 16, 16);
 		studyWindow.getCell(textScroll).expand().fill();
 		
 		this.add(studyWindow);
@@ -93,7 +130,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				infoLabel.setText("");
+				studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -108,7 +145,7 @@ public class StudyUI extends Window
 				
 				for(int i = 0; i < breakdown.getStudyText().size; i++)
 				{
-					infoLabel.setText(infoLabel.getText() + breakdown.getStudyText().get(i));
+					studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + breakdown.getStudyText().get(i));
 				}
 			}
 		});
@@ -122,7 +159,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				infoLabel.setText("");
+				studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -137,7 +174,7 @@ public class StudyUI extends Window
 				
 				for(int i = 0; i < translation.getStudyText().size; i++)
 				{
-					infoLabel.setText(infoLabel.getText() + translation.getStudyText().get(i));
+					studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + translation.getStudyText().get(i));
 				}
 			}
 		});
@@ -151,7 +188,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				infoLabel.setText("");
+				studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -166,7 +203,7 @@ public class StudyUI extends Window
 				
 				for(int i = 0; i < analysis.getStudyText().size; i++)
 				{
-					infoLabel.setText(infoLabel.getText() + analysis.getStudyText().get(i));
+					studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + analysis.getStudyText().get(i));
 				}
 			}
 		});
@@ -180,7 +217,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				infoLabel.setText("");
+				studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -195,7 +232,7 @@ public class StudyUI extends Window
 				
 				for(int i = 0; i < fullText.getStudyText().size; i++)
 				{
-					infoLabel.setText(infoLabel.getText() + "\n" + fullText.getStudyText().get(i));
+					studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + fullText.getStudyText().get(i));
 				}
 			}
 		});

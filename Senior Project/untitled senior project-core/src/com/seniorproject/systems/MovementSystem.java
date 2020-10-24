@@ -8,6 +8,7 @@ import com.artemis.systems.IntervalIteratingSystem;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementDirection.Direction;
 import com.seniorproject.components.MovementState;
@@ -29,10 +30,11 @@ public class MovementSystem extends IntervalIteratingSystem
 
 	public MovementSystem(StageMap map)
 	{
-		super(Aspect.all(MovementDirection.class,
-						 Position.class,
-						 Velocity.class,
-						 MovementState.class),
+		super(Aspect.all(Active.class,
+				MovementDirection.class,
+				Position.class,
+				Velocity.class,
+				MovementState.class),
 				(1/60f));
 		
 		this.map = map;

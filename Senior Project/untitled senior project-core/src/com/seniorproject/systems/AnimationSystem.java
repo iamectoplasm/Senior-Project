@@ -17,7 +17,8 @@ public class AnimationSystem extends IntervalIteratingSystem
 
 	public AnimationSystem()
 	{
-		super(Aspect.all(MovementDirection.class,
+		super(Aspect.all(Active.class,
+				MovementDirection.class,
 				Velocity.class,
 				MovementState.class,
 				MovementAnimation.class,

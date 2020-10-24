@@ -4,164 +4,186 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-pixmix-12pt
-  rotate: false
-  xy: 1, 827
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-pixmix-16pt
-  rotate: false
-  xy: 1, 313
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-pixmix-20pt
-  rotate: false
-  xy: 515, 827
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
 ANGUS
-  rotate: false
-  xy: 515, 565
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-BANQUO
-  rotate: false
-  xy: 695, 745
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-DONALBAIN
-  rotate: false
-  xy: 1029, 1095
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-DUNCAN
-  rotate: false
-  xy: 1, 83
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-FIRST_WITCH
   rotate: false
   xy: 1111, 1177
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-LADY_MACBETH
+BANQUO
   rotate: false
-  xy: 1029, 1259
+  xy: 1543, 1609
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-LENNOX
+DONALBAIN
   rotate: false
-  xy: 1, 165
+  xy: 1625, 1691
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-MACBETH
+DUNCAN
   rotate: false
-  xy: 515, 647
+  xy: 1029, 1095
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-MACDUFF
-  rotate: false
-  xy: 613, 745
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-MALCOLM
-  rotate: false
-  xy: 1029, 1177
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-ROSS
-  rotate: false
-  xy: 1111, 1259
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-SECOND_WITCH
-  rotate: false
-  xy: 1193, 1259
-  size: 80, 80
-  orig: 80, 80
-  offset: 0, 0
-  index: -1
-SERGEANT
+FIRST_WITCH
   rotate: false
   xy: 1, 1
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-THIRD_WITCH
+LADY_MACBETH
   rotate: false
-  xy: 515, 483
+  xy: 515, 663
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
-dialogue-bg
+LENNOX
   rotate: false
-  xy: 163, 263
-  size: 48, 48
-  split: 16, 16, 16, 16
-  pad: 12, 12, 12, 12
-  orig: 48, 48
+  xy: 1029, 1177
+  size: 80, 80
+  orig: 80, 80
   offset: 0, 0
   index: -1
-name-label-bg
+MACBETH
   rotate: false
-  xy: 83, 229
+  xy: 1543, 1691
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+MACDUFF
+  rotate: false
+  xy: 1, 83
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+MALCOLM
+  rotate: false
+  xy: 515, 581
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+ROSS
+  rotate: false
+  xy: 597, 663
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+SECOND_WITCH
+  rotate: false
+  xy: 83, 83
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+SERGEANT
+  rotate: false
+  xy: 515, 499
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+THIRD_WITCH
+  rotate: false
+  xy: 597, 581
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+blue-name-label
+  rotate: false
+  xy: 259, 213
   size: 48, 16
-  split: 6, 6, 6, 6
-  pad: 6, 4, 4, 6
+  split: 5, 5, 5, 5
+  pad: 4, 4, 4, 4
   orig: 48, 16
   offset: 0, 0
   index: -1
-portrait-bg
+green-scrollbar
   rotate: false
-  xy: 515, 729
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-scrollbar
-  rotate: false
-  xy: 597, 719
-  size: 8, 8
-  split: 2, 2, 2, 2
+  xy: 1029, 1071
+  size: 9, 22
+  split: 0, 0, 4, 4
   pad: 0, 0, 0, 0
-  orig: 8, 8
+  orig: 9, 22
   offset: 0, 0
   index: -1
-text-scrollpane-bg
+portrait-bg-gray
   rotate: false
-  xy: 1, 247
-  size: 160, 64
-  split: 8, 8, 8, 8
-  orig: 160, 64
+  xy: 679, 663
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+scroll-line
+  rotate: false
+  xy: 1111, 1129
+  size: 4, 46
+  split: 0, 0, 8, 8
+  pad: 0, 0, 0, 0
+  orig: 4, 46
+  offset: 0, 0
+  index: -1
+text-scrollpane-white
+  rotate: false
+  xy: 1, 165
+  size: 256, 64
+  split: 16, 16, 16, 16
+  pad: 12, 20, 12, 16
+  orig: 256, 64
+  offset: 0, 0
+  index: -1
+arial-12pt
+  rotate: false
+  xy: 1, 1259
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 1, 745
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-16pt
+  rotate: false
+  xy: 515, 1259
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-18pt
+  rotate: false
+  xy: 1, 231
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-20pt
+  rotate: false
+  xy: 515, 745
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-24pt
+  rotate: false
+  xy: 1029, 1259
+  size: 512, 512
+  orig: 512, 512
   offset: 0, 0
   index: -1

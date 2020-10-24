@@ -11,12 +11,12 @@ import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
 
-public class IntroScreen implements Screen
+public class MainMenuScreen implements Screen
 {
 	private SeniorProject game;
 	private Stage stage;
 	
-	public IntroScreen(final SeniorProject game)
+	public MainMenuScreen(final SeniorProject game)
 	{
 		this.game = game;
 		this.stage = new Stage();

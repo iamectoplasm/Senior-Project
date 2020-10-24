@@ -32,7 +32,8 @@ public class DialogueUI extends Window
 	
 	public DialogueUI()
 	{
-		super("", AssetLoader.DIALOGUE_SKIN, "dialogue-window");
+		//super("", AssetLoader.DIALOGUE_SKIN, "dialogue-window");
+		super("", AssetLoader.DIALOGUE_SKIN);
 		
 		//this.currentText = "";
 		//this.currentTextArray = new Array<String>();
@@ -49,7 +50,7 @@ public class DialogueUI extends Window
 		nameLabel.setAlignment(Align.center);
 		
 		Stack portraitStack = new Stack();
-		Image portraitBG = new Image(AssetLoader.DIALOGUE_SKIN, "portrait-bg");
+		Image portraitBG = new Image(AssetLoader.DIALOGUE_SKIN, "portrait-bg-gray");
 		this.portrait = new Image(AssetLoader.DIALOGUE_SKIN, "DUNCAN");
 		portraitStack.add(portraitBG);
 		portraitStack.add(portrait);
@@ -65,11 +66,12 @@ public class DialogueUI extends Window
 		
 		//ScrollPane textDisplay = new ScrollPane(dialogueStack, AssetLoader.DIALOGUE_SKIN, "");
 		
-		this.add(nameLabel);
+		this.add().colspan(1);
+		this.add(nameLabel).align(Align.bottomLeft).padBottom(-4).padLeft(8);
 		this.row();
 		//this.add(portraitStack).expandY();
-		this.add(portraitStack);
-		this.add(textDisplay).expand().fill().pad(4, 4, 4, 4);
+		this.add(portraitStack).padRight(0);
+		this.add(textDisplay).expand().fill().pad(4, 4, 4, 16);
 		
 		this.defaults().expand().fill();
 	}

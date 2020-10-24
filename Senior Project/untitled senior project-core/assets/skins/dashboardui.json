@@ -1,5 +1,23 @@
 {
 "com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
+	},
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
+	},
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
+	},
 	"pixmix-12pt": {
 		"file": "fonts/pixmix-12pt.fnt"
 	},
@@ -31,28 +49,72 @@
 	"hide-dash-button": {
 		"imageUp": "hide-dash-up",
 		"imageDown": "hide-dash-down"
+	},
+	"pull-down-button": {
+		"imageUp": "pull-down-btn",
+		"imageDown": "pull-down-btn",
+		"imageOver": "pull-down-btn-highlighted"
+	},
+	"exit-dash-button": {
+		"imageUp": "exit-dash-button",
+		"imageDown": "exit-dash-button"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
+	"tab-button": {
+		"font": "arial-12pt",
+		"fontColor": "black",
+		"up": "tab-inactive",
+		"down": "tab-active",
+		"checked": "tab-active"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "arial-14pt",
+		"fontColor": "black"
+	},
 	"textbox": {
 		"font": "pixmix-12pt",
 		"fontColor": "black",
 		"background": "textbox"
+	},
+	"title-label": {
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "title-label"
+	},
+	"study-dashboard-overlay-label": {
+		"font": "arial-18pt",
+		"background": "study-overlay-label"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
 	"default": {
 		"background": "dashboard-bg",
 		"vScrollKnob": "scrollbar"
+	},
+	"text-display": {
+		"background": "textbox-no-lines",
+		"vScrollKnob": "green-scrollbar"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
 	"default": {
-		"titleFont": "pixmix-12pt"
+		"titleFont": "arial-14pt"
 	},
 	"dashboard": {
 		"background": "dashboard-bg",
 		"titleFont": "pixmix-12pt"
+	},
+	"wood-dashboard": {
+		"background": "dashboard-bg-brown",
+		"titleFont": "arial-16pt"
 	}
 }
 }

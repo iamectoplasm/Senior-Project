@@ -1,9 +1,9 @@
 {
 "sceneSetup":
 [
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "zIndex": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "zIndex": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "zIndex": "MAIN_STAGE"}
+	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
+	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
+	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"}
 ],
 
 "lineActions":

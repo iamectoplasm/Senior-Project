@@ -8,6 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.Actions;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
 import com.seniorproject.components.Position;
@@ -32,12 +33,13 @@ public class PerformanceSystem extends IntervalIteratingSystem
 
 	public PerformanceSystem(StageMap map)
 	{
-		super(Aspect.all(MovementDirection.class,
-				 Position.class,
-				 Velocity.class,
-				 MovementState.class,
-				 Actions.class),
-		(1/60f));
+		super(Aspect.all(Active.class,
+				MovementDirection.class,
+				Position.class,
+				Velocity.class,
+				MovementState.class,
+				Actions.class),
+				(1/60f));
 		
 		this.map = map;
 	}

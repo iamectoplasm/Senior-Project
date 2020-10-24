@@ -9,6 +9,7 @@ import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
@@ -28,11 +29,15 @@ public class PerformanceHUD implements Screen
 	private DialogueUI dialogueUI;
 	private StudyUI dashboardUI;
 	
+	//private ImageButton showDashBtn;
+	//private ImageButton hideDashBtn;
+	private Label currentSceneLabel;
+	private Label dashboardLabel;
 	private ImageButton showDashBtn;
 	private ImageButton hideDashBtn;
 	
-	private MoveToAction moveOnstage;
-	private MoveToAction moveOffstage;
+	//private MoveToAction moveOnstage;
+	//private MoveToAction moveOffstage;
 	
 	private DialogueUI sharedLineDialogue;
 	
@@ -44,10 +49,14 @@ public class PerformanceHUD implements Screen
 		this.stage = new Stage(viewport);
 		this.sceneManager = sceneManager;
 		
+		this.currentSceneLabel = new Label(sceneManager.getCurrentScene().getSceneTitle(), AssetLoader.DASHBOARD_SKIN, "title-label");
+		currentSceneLabel.setPosition(16, this.getStage().getHeight() - currentSceneLabel.getHeight() - 16);
+		stage.addActor(currentSceneLabel);
+		
 		this.dialogueUI = new DialogueUI();
 		this.dialogueUI.setVisible(false);
-		this.dialogueUI.setMovable(true);
-		this.dialogueUI.setResizable(true);
+		//this.dialogueUI.setMovable(true);
+		//this.dialogueUI.setResizable(true);
 		this.dialogueUI.setX(stage.getWidth() - dialogueUI.getWidth());
 		
 		dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
@@ -82,31 +91,13 @@ public class PerformanceHUD implements Screen
 							//sceneManager.stepForward();
 							sceneManager.stepForward();
 							
-							//if(sceneManager.lineIsShared())
-							//{
-							//	sharedLineDialogue.setNewSpeaker(dialogueUI.getCurrentActor());
-							//	sharedLineDialogue.setCurrentLines(dialogueUI.getCurrentLines());
-							//	
-							//	dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
-							//	dialogueUI.setTextDrawInProgress(true);
-							//	sharedLineDialogue.setVisible(true);
-							//}
-							//else
-							//{
-							//	sharedLineDialogue.setVisible(false);
-								if(sceneManager.actorHasChanged())
-								{
-									dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
-								}
-								
-								dialogueUI.setTextDrawInProgress(true);
-							//}
+							if(sceneManager.actorHasChanged())
+							{
+								dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
+							}
+							
+							dialogueUI.setTextDrawInProgress(true);
 						}
-						
-						//sceneManager.stepForward();
-					
-						//dialogueUI.setDialogue(sceneManager.getCurrentLineText());
-						//dialogueUI.updateTextDisplay();
 					}
 				}
 			return true;
@@ -115,24 +106,32 @@ public class PerformanceHUD implements Screen
 		
 		dashboardUI = new StudyUI(sceneManager.getCurrentScene());
 		stage.addActor(dashboardUI);
-		dashboardUI.setPosition(-dashboardUI.getWidth(), stage.getHeight() / 2, Align.center);
-		//dashboardUI.setPosition(-300f, stage.getHeight() / 2, Align.center);
+		//dashboardUI.setPosition(-dashboardUI.getWidth(), stage.getHeight() / 2, Align.center);
+		dashboardUI.setX((this.getStage().getWidth() / 2) - (dashboardUI.getWidth() / 2));
+		dashboardUI.setY((this.getStage().getHeight() / 2) - (dashboardUI.getHeight() / 2));
 		dashboardUI.setVisible(false);
 		
-		moveOnstage = new MoveToAction();
-	    moveOnstage.setPosition(0f, stage.getHeight() / 2, Align.center);
-	    moveOnstage.setDuration(5f);
-	    dashboardUI.addAction(moveOnstage);
+		dashboardLabel = new Label("Study Dashboard", AssetLoader.DASHBOARD_SKIN, "study-dashboard-overlay-label");
+		dashboardLabel.setAlignment(Align.center);
+		dashboardLabel.setAlignment(Align.top);
+		dashboardLabel.setX((this.getStage().getWidth() / 2) - (dashboardLabel.getWidth() / 2));
+		dashboardLabel.setY(this.getStage().getHeight() - dashboardLabel.getHeight());
+		//dashboardLabel.setY(Align.top);
 		
-		showDashBtn = new ImageButton(AssetLoader.DASHBOARD_SKIN, "show-dash-button");
-		stage.addActor(showDashBtn);
-		showDashBtn.setY(stage.getHeight() / 2, Align.center);
+		showDashBtn = new ImageButton(AssetLoader.DASHBOARD_SKIN, "pull-down-button");
+		showDashBtn.setX((this.stage.getWidth() / 2) - (showDashBtn.getWidth() / 2));
+		showDashBtn.setY(this.getStage().getHeight() - showDashBtn.getHeight() - dashboardLabel.getHeight());
 		
-		hideDashBtn = new ImageButton(AssetLoader.DASHBOARD_SKIN, "hide-dash-button");
-		stage.addActor(hideDashBtn);
-		hideDashBtn.setX(dashboardUI.getWidth());
-		hideDashBtn.setY(stage.getHeight() / 2, Align.center);
+		hideDashBtn = new ImageButton(AssetLoader.DASHBOARD_SKIN, "exit-dash-button");
+		hideDashBtn.setX((this.getStage().getWidth() - hideDashBtn.getWidth()) - 16);
+		hideDashBtn.setY(this.getStage().getHeight() - hideDashBtn.getHeight() - 16);
 		hideDashBtn.setVisible(false);
+		
+		//showDashBtn = new ImageButton(AssetLoader.DASHBOARD_SKIN, "show-dash-button");
+		stage.addActor(dashboardLabel);
+		stage.addActor(showDashBtn);
+		stage.addActor(hideDashBtn);
+		//showDashBtn.setY(stage.getHeight() / 2, Align.center);
 		
 		this.addDashboardArrowListeners();
 	}

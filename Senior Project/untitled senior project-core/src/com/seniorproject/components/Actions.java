@@ -20,8 +20,12 @@ public class Actions extends Component
 		actionQueue = new Queue<Action>();
 	}
 	
-	//public void resetActionsArray()
-	//{
-	//	actionQueue.clear();
-	//}
+	public void resetActionsArray()
+	{
+		actionQueue.clear();
+		currentAction = null;
+		actionBegan = false;
+		actionInProgress = false;
+		actionEnded = false;
+	}
 }
