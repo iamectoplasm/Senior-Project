@@ -18,9 +18,9 @@ import com.badlogic.gdx.utils.Json;
 import com.seniorproject.components.*;
 import com.seniorproject.components.MovementAnimation.Animation;
 import com.seniorproject.components.MovementAnimation.AnimationType;
+import com.seniorproject.configs.AnimationConfig;
+import com.seniorproject.configs.AnimationConfig.AnimationData;
 import com.seniorproject.enums.CharacterName;
-import com.seniorproject.scripting.AnimationConfig;
-import com.seniorproject.scripting.AnimationConfig.AnimationData;
 
 /**
  * The EntityFactory class that instantiates and returns the Entity objects
@@ -61,7 +61,7 @@ public class EntityFactory
 				.add(Position.class)
 				.add(PerformerSprite.class)
 				.add(Velocity.class)
-				.add(Actions.class)
+				.add(StageDirections.class)
 				.add(BoundingBox.class)
 				.build(world));
 
@@ -119,7 +119,7 @@ public class EntityFactory
 			
 		entity.getComponent(Name.class).name = character.toString();
 		
-		Gdx.app.debug(TAG, "Name of entity being created: " + character.toString());
+		//Gdx.app.debug(TAG, "Name of entity being created: " + character.toString());
 		
 		String spriteSheetPath = EntityFactory.getInstance().getEntitiesTable().get(character.toString());
 		AssetLoader.loadTextureAsset(spriteSheetPath);
@@ -134,7 +134,7 @@ public class EntityFactory
 		entity.getComponent(PerformerSprite.class).currentFrame = entity.getComponent(MovementAnimation.class).animations.get(AnimationType.WALK_DOWN).getNextStandingFrame();
 		entity.getComponent(Velocity.class).velocity = .25f;
 		
-		Gdx.app.debug(TAG, "Now calling initBoundingBox on entity " + character.toString());
+		//Gdx.app.debug(TAG, "Now calling initBoundingBox on entity " + character.toString());
 		initBoundingBox(entity.getId());
 		
 		return entity;

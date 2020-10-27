@@ -11,9 +11,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Json;
+import com.seniorproject.configs.StudyConfig;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.Scene;
-import com.seniorproject.scenemeta.StudyConfig;
 
 public class StudyUI extends Window
 {
@@ -42,7 +42,7 @@ public class StudyUI extends Window
 		super("", AssetLoader.DASHBOARD_SKIN);
 		//this.debugAll();
 		
-		this.currentScene = scene;
+		//this.currentScene = scene;
 		
 		breakdownButton = new ImageTextButton("Scene\nBreakdown", AssetLoader.DASHBOARD_SKIN, "tab-button");
 		translationButton = new ImageTextButton("Translation", AssetLoader.DASHBOARD_SKIN, "tab-button");
@@ -77,7 +77,7 @@ public class StudyUI extends Window
 		//this.add().padRight(10);
 		this.add().padRight(20);
 		
-		this.setupTabButtonListeners();
+		//this.setupTabButtonListeners();
 		
 		Gdx.app.debug(TAG, "dashboardUI width: " + this.getWidth());
 		
@@ -99,15 +99,16 @@ public class StudyUI extends Window
 		studyInfoLabel.setWrap(true);
 		studyInfoLabel.setFontScale(1f);
 		
+		ScrollPane textScroll = new ScrollPane(studyInfoLabel, AssetLoader.DASHBOARD_SKIN, "text-display");
+		textScroll.setScrollbarsVisible(true);
+		
+		this.setupTabButtonListeners(scene);
 		// Set up the scene breakdown
-		StudyConfig breakdown = currentScene.getStudyConfigs().get("breakdown");
+		StudyConfig breakdown = scene.getStudyConfigs().get("breakdown");
 		for(int i = 0; i < breakdown.getStudyText().size; i++)
 		{
 			studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + breakdown.getStudyText().get(i));
 		}
-		
-		ScrollPane textScroll = new ScrollPane(studyInfoLabel, AssetLoader.DASHBOARD_SKIN, "text-display");
-		textScroll.setScrollbarsVisible(true);
 		
 		studyWindow.add(textScroll).height(250).pad(16, 16, 16, 16);
 		studyWindow.getCell(textScroll).expand().fill();
@@ -119,7 +120,7 @@ public class StudyUI extends Window
 		this.pack();
 	}
 	
-	private void setupTabButtonListeners()
+	private void setupTabButtonListeners(final Scene scene)
 	{
 		breakdownButton.addListener(new ClickListener()
 		{
@@ -130,7 +131,8 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				studyInfoLabel.setText("");
+				//studyInfoLabel.setText("");
+				
 				return true;
 			}
 			
@@ -141,7 +143,9 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				StudyConfig breakdown = currentScene.getStudyConfigs().get("breakdown");
+				studyInfoLabel.setText("");
+				
+				StudyConfig breakdown = scene.getStudyConfigs().get("breakdown");
 				
 				for(int i = 0; i < breakdown.getStudyText().size; i++)
 				{
@@ -159,7 +163,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				studyInfoLabel.setText("");
+				//studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -170,7 +174,9 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				StudyConfig translation = currentScene.getStudyConfigs().get("translation");
+				studyInfoLabel.setText("");
+				
+				StudyConfig translation = scene.getStudyConfigs().get("translation");
 				
 				for(int i = 0; i < translation.getStudyText().size; i++)
 				{
@@ -188,7 +194,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				studyInfoLabel.setText("");
+				//studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -199,7 +205,9 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				StudyConfig analysis = currentScene.getStudyConfigs().get("analysis");
+				studyInfoLabel.setText("");
+				
+				StudyConfig analysis = scene.getStudyConfigs().get("analysis");
 				
 				for(int i = 0; i < analysis.getStudyText().size; i++)
 				{
@@ -217,7 +225,7 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				studyInfoLabel.setText("");
+				//studyInfoLabel.setText("");
 				return true;
 			}
 			
@@ -228,7 +236,9 @@ public class StudyUI extends Window
                     int pointer,
                     int button)
 			{
-				StudyConfig fullText = currentScene.getStudyConfigs().get("fulltext");
+				studyInfoLabel.setText("");
+				
+				StudyConfig fullText = scene.getStudyConfigs().get("fulltext");
 				
 				for(int i = 0; i < fullText.getStudyText().size; i++)
 				{
@@ -236,6 +246,27 @@ public class StudyUI extends Window
 				}
 			}
 		});
+	}
+	
+	public void updateToNewScene(Scene newScene)
+	{
+		//breakdownButton.removeListener(breakdownButton.getClickListener());
+		//translationButton.removeListener(translationButton.getClickListener());
+		//analysisButton.removeListener(analysisButton.getClickListener());
+		//fullTextButton.removeListener(fullTextButton.getClickListener());
+		
+		setupTabButtonListeners(newScene);
+		
+		studyInfoLabel.setText("");
+		//tabButtons.setChecked(breakdownButton.getName());
+		StudyConfig breakdown = newScene.getStudyConfigs().get("breakdown");
+		
+		for(int i = 0; i < breakdown.getStudyText().size; i++)
+		{
+			studyInfoLabel.setText(studyInfoLabel.getText() + "\n" + breakdown.getStudyText().get(i));
+		}
+		
+		
 	}
 
 }

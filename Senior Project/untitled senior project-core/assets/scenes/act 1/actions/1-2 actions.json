@@ -1,11 +1,15 @@
 {
 "sceneSetup":
 [
-	{"actor": "DUNCAN", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
+	{"actor": "DUNCAN", "startPosition": {"x": 11, "y": 5}, "stageLayer": "BACKSTAGE"},
+	//{"actor": "DUNCAN", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
+	//{"actor": "MALCOLM", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "MALCOLM", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "DONALBAIN", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
+	//{"actor": "LENNOX", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "ROSS", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
+	//{"actor": "SERGEANT", "startPosition": {"x": 12, "y": 25}, "stageLayer": "MAIN_STAGE"}
 	{"actor": "SERGEANT", "startPosition": {"x": 17, "y": 15}, "stageLayer": "MAIN_STAGE"}
 ],
 
@@ -19,7 +23,8 @@
 		"actor": "DUNCAN",
 		"actions":
 		[
-			{"action": "REFACE", "direction": "DOWN"}
+			// starts at (11, 5)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 11, "y": 7} }
 		]
 	},
 	{
@@ -41,6 +46,8 @@
 		"actions":
 		[
 			{"action": "REFACE", "direction": "DOWN"}
+			// starts at (25, 12)
+			//{"action": "WALK", "direction": "LEFT", "destination": {"x": 17, "y": 11}}
 		]
 	},
 	{
@@ -60,17 +67,17 @@
 },
 //------------------------------------------------------------
 {
-	"lineID": 2//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 2,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",
+		"actions":
+		[
+			// starts at (11, 7)
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7} },
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11} }
+		]
+	}]
 },
 //------------------------------------------------------------
 {

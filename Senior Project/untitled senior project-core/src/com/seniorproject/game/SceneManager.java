@@ -1,15 +1,19 @@
 package com.seniorproject.game;
 
 import com.artemis.World;
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.enums.SceneFiles;
-import com.seniorproject.scripting.ActionsConfig.Action;
-import com.seniorproject.scripting.ActionsConfig.ActorAction;
-import com.seniorproject.scripting.ActionsConfig.LineAction;
-import com.seniorproject.scripting.ScriptConfig.Line;
-import com.seniorproject.scripting.ScriptConfig.LineText;
+import com.seniorproject.game.SeniorProject.ScreenType;
+import com.seniorproject.screens.PerformanceScreen;
+import com.seniorproject.screens.SceneIntroScreen;
 import com.seniorproject.systems.PerformanceSystem;
+import com.seniorproject.configs.BlockingConfig.PerformerActions;
+import com.seniorproject.configs.BlockingConfig.Actions;
+import com.seniorproject.configs.BlockingConfig.ActionsForLine;
+import com.seniorproject.configs.ScriptConfig.Line;
+import com.seniorproject.configs.ScriptConfig.LineText;
 import com.seniorproject.enums.CharacterName;
 
 public class SceneManager
@@ -17,6 +21,8 @@ public class SceneManager
 	private static final String TAG = SceneManager.class.getSimpleName();
 	
 	//private static SceneManager instance;
+	
+	private SeniorProject currentGame;
 	
 	private int currentLineID;
 	
@@ -38,12 +44,14 @@ public class SceneManager
 	
 	//
 	
-	private LineAction currentLineAction;
+	private ActionsForLine currentLineAction;
 	private World world;
 	
 	public SceneManager(World world)
 	{
 		this.world = world;
+		this.currentGame = (SeniorProject) Gdx.app.getApplicationListener();
+		
 		this.scenes = new Array<SceneFiles>();
 		scenes.addAll(SceneFiles.ACT1SCENE1,
 				SceneFiles.ACT1SCENE2,
@@ -53,7 +61,8 @@ public class SceneManager
 				SceneFiles.ACT1SCENE6,
 				SceneFiles.ACT1SCENE7);
 		
-		this.currentSceneIndex = 5;
+		this.currentSceneIndex = 0;
+		//this.currentSceneIndex = 1;
 		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
@@ -81,9 +90,28 @@ public class SceneManager
 	
 	public void stepForward()
 	{
+		if(currentLineID == currentScene.getLines().size)
+		{	
+			currentScene.deactivateEntities();
+			currentSceneIndex += 1;
+			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
+			
+			SceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
+			PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
+			
+			currentGame.getScreen().hide();
+			currentGame.setScreen(SeniorProject.sceneIntroScreen);
+		}
+		else
+		{
+			incrementCurrentLine();
+		}
+	}
+	
+	public void incrementCurrentLine()
+	{
 		if(lineIsShared && sharedLineIndex < currentLine.getLineText().size - 1)
 		{
-			
 			sharedLineIndex += 1;
 		}
 		else
@@ -93,6 +121,7 @@ public class SceneManager
 		}
 		
 		currentLine = currentScene.getLineByID(currentLineID);
+		
 		//Gdx.app.debug(TAG, "currentLine: " + currentLine.getLineText().get(sharedLineIndex).getText());
 		String newActor = currentLine.getLineText().get(sharedLineIndex).getActor();
 		
@@ -104,13 +133,6 @@ public class SceneManager
 		{
 			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
 			updateActions(currentLineID);
-		}
-		
-		if(currentLineID >= currentScene.getLines().size)
-		{
-			currentScene.deactivateEntities();
-			currentSceneIndex += 1;
-			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 		}
 	}
 	
@@ -212,13 +234,13 @@ public class SceneManager
 	
 	private void updateCharacterActions()
 	{
-		Array<ActorAction> lineActions = currentLineAction.getActorActions();
+		Array<PerformerActions> blockingList = currentLineAction.getPerformerBlocking();
 		
-		for(int i = 0; i < lineActions.size; i++)
+		for(int i = 0; i < blockingList.size; i++)
 		{
-			ActorAction list = lineActions.get(i);
+			PerformerActions list = blockingList.get(i);
 			
-			Array<Action> actions = list.getActions();
+			Array<Actions> actions = list.getStageDirections();
 			
 			CharacterName name = list.getActor();
 			int entityId = currentScene.getEntityIdByName(name);

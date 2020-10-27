@@ -15,6 +15,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.seniorproject.game.AssetLoader;
+import com.seniorproject.game.Scene;
 import com.seniorproject.game.SceneManager;
 
 public class PerformanceHUD implements Screen
@@ -29,15 +30,10 @@ public class PerformanceHUD implements Screen
 	private DialogueUI dialogueUI;
 	private StudyUI dashboardUI;
 	
-	//private ImageButton showDashBtn;
-	//private ImageButton hideDashBtn;
 	private Label currentSceneLabel;
 	private Label dashboardLabel;
 	private ImageButton showDashBtn;
 	private ImageButton hideDashBtn;
-	
-	//private MoveToAction moveOnstage;
-	//private MoveToAction moveOffstage;
 	
 	private DialogueUI sharedLineDialogue;
 	
@@ -54,20 +50,13 @@ public class PerformanceHUD implements Screen
 		stage.addActor(currentSceneLabel);
 		
 		this.dialogueUI = new DialogueUI();
-		this.dialogueUI.setVisible(false);
+		//this.dialogueUI.setVisible(false);
 		//this.dialogueUI.setMovable(true);
 		//this.dialogueUI.setResizable(true);
 		this.dialogueUI.setX(stage.getWidth() - dialogueUI.getWidth());
+		this.dialogueUI.setTextDrawInProgress(true);
 		
 		dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
-		//dialogueUI.setDialogue(sceneManager.getCurrentLineText());
-		
-		//this.sharedLineDialogue = new DialogueUI();
-		//this.sharedLineDialogue.setVisible(false);
-		//this.sharedLineDialogue.setMovable(true);
-		//this.sharedLineDialogue.setResizable(true);
-		//this.sharedLineDialogue.setX(stage.getWidth() - dialogueUI.getWidth());
-		//this.sharedLineDialogue.setY(dialogueUI.getHeight());
 		
 		stage.addActor(dialogueUI);
 		//stage.addActor(sharedLineDialogue);
@@ -79,25 +68,16 @@ public class PerformanceHUD implements Screen
 			{
 				if(keycode == Keys.SPACE)
 				{
-					if(!dialogueUI.isVisible())
+					if(!dialogueUI.isTextDrawInProgress())
 					{
-						dialogueUI.setVisible(true);
-						dialogueUI.setTextDrawInProgress(true);
-					}
-					else
-					{
-						if(!dialogueUI.isTextDrawInProgress())
+						sceneManager.stepForward();
+							
+						if(sceneManager.actorHasChanged())
 						{
-							//sceneManager.stepForward();
-							sceneManager.stepForward();
-							
-							if(sceneManager.actorHasChanged())
-							{
-								dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
-							}
-							
-							dialogueUI.setTextDrawInProgress(true);
+							dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
 						}
+							
+						dialogueUI.setTextDrawInProgress(true);
 					}
 				}
 			return true;
@@ -105,11 +85,10 @@ public class PerformanceHUD implements Screen
 		});
 		
 		dashboardUI = new StudyUI(sceneManager.getCurrentScene());
-		stage.addActor(dashboardUI);
-		//dashboardUI.setPosition(-dashboardUI.getWidth(), stage.getHeight() / 2, Align.center);
 		dashboardUI.setX((this.getStage().getWidth() / 2) - (dashboardUI.getWidth() / 2));
 		dashboardUI.setY((this.getStage().getHeight() / 2) - (dashboardUI.getHeight() / 2));
 		dashboardUI.setVisible(false);
+		stage.addActor(dashboardUI);
 		
 		dashboardLabel = new Label("Study Dashboard", AssetLoader.DASHBOARD_SKIN, "study-dashboard-overlay-label");
 		dashboardLabel.setAlignment(Align.center);
@@ -189,6 +168,16 @@ public class PerformanceHUD implements Screen
 		});
 	}
 	
+	public StudyUI getStudyUI()
+	{
+		return dashboardUI;
+	}
+	
+	public void updateStudyUIToNewScene(Scene scene)
+	{
+		dashboardUI.updateToNewScene(scene);
+	}
+	
 	public Stage getStage()
 	{
 		return this.stage;
@@ -197,7 +186,6 @@ public class PerformanceHUD implements Screen
 	@Override
 	public void show()
 	{
-		
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package com.seniorproject.scripting;
+package com.seniorproject.configs;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
@@ -7,17 +7,17 @@ import com.seniorproject.components.MovementState;
 import com.seniorproject.enums.CharacterName;
 import com.seniorproject.enums.StageLayer;;
 
-public class ActionsConfig
+public class BlockingConfig
 {
 	//private static final String TAG = ActionsConfig.class.getSimpleName();
 	
 	private Array<Setup> sceneSetup;
-	private Array<LineAction> lineActions;
+	private Array<ActionsForLine> lineActions;
 	
-	public ActionsConfig()
+	public BlockingConfig()
 	{
 		this.sceneSetup = new Array<Setup>();
-		this.lineActions = new Array<LineAction>();
+		this.lineActions = new Array<ActionsForLine>();
 	}
 	
 	public Array<Setup> getSceneSetup()
@@ -26,11 +26,11 @@ public class ActionsConfig
 	public void setSceneSetup(Array<Setup> sceneSetup)
 	{ this.sceneSetup = sceneSetup; }
 
-	public Array<LineAction> getLineActions()
+	public Array<ActionsForLine> getBlockingForLine()
 	{ return lineActions; }
 
-	public void setLineActions(Array<LineAction> actionsList)
-	{ this.lineActions = actionsList; }
+	public void setBlockingForLine(Array<ActionsForLine> blockingList)
+	{ this.lineActions = blockingList; }
 	
 	public static class Setup
 	{
@@ -68,14 +68,14 @@ public class ActionsConfig
 		}
 	}
 	
-	public static class LineAction
+	public static class ActionsForLine
 	{
 		private int lineID;
-		private Array<ActorAction> actorActions;
+		private Array<PerformerActions> actorActions;
 		
-		public LineAction()
+		public ActionsForLine()
 		{
-			this.actorActions = new Array<ActorAction>();
+			this.actorActions = new Array<PerformerActions>();
 		}
 		
 		public int getLineID()
@@ -84,23 +84,23 @@ public class ActionsConfig
 		public void setLineID(int lineID)
 		{ this.lineID = lineID; }
 		
-		public Array<ActorAction> getActorActions()
+		public Array<PerformerActions> getPerformerBlocking()
 		{ return actorActions; }
 		
-		public void setActorActions(Array<ActorAction> actions)
-		{ this.actorActions = actions; }
+		public void setPerformerBlocking(Array<PerformerActions> blocking)
+		{ this.actorActions = blocking; }
 		
 	}
 	
-	public static class ActorAction
+	public static class PerformerActions
 	{
 		private CharacterName actor;
-		private Array<Action> actions;
+		private Array<Actions> actions;
 		
-		public ActorAction()
+		public PerformerActions()
 		{
 			this.actor = CharacterName.SERGEANT;
-			this.actions = new Array<Action>();
+			this.actions = new Array<Actions>();
 		}
 		
 		public CharacterName getActor()
@@ -109,21 +109,21 @@ public class ActionsConfig
 		public void setActor(CharacterName actor)
 		{ this.actor = actor; }
 		
-		public Array<Action> getActions()
+		public Array<Actions> getStageDirections()
 		{ return actions; }
 		
-		public void setActions(Array<Action> actions)
-		{ this.actions = actions; }
+		public void setStageDirections(Array<Actions> directions)
+		{ this.actions = directions; }
 	}
 	
-	public static class Action
+	public static class Actions
 	{
 		private MovementState.State action;
 		private int tiles;
 		private MovementDirection.Direction direction;
 		private Vector2 destination;
 		
-		public Action()
+		public Actions()
 		{
 			this.action = MovementState.State.IDLE;
 			this.direction = MovementDirection.Direction.DOWN;

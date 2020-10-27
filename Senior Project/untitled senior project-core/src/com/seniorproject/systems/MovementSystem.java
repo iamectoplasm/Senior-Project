@@ -46,16 +46,36 @@ public class MovementSystem extends IntervalIteratingSystem
 		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
+		/*
+		Gdx.app.debug(TAG, "Now in calulateNextPosition() method for entity " + entityId);
+		*/
+		
 		position.setStartPosition();
+		
+		/*
+		Gdx.app.debug(TAG, "\t\tstartPosition for entity " + entityId + " set to: (" +
+				position.startingPosition.x + ", " +
+				position.startingPosition.y + ")");
+		*/
 
 		float destX = position.cellX + direction.currentDirection.getDX();
 		float destY = position.cellY + direction.currentDirection.getDY();
 
 		position.setDestPosition(new Vector2(destX, destY));
+		
+		/*
+		Gdx.app.debug(TAG, "\t\tdestPosition for entity " + entityId + " set to: (" +
+				position.destinationPosition.x + ", " +
+				position.destinationPosition.y + ")");
+		*/
 
 		movementState.moveInProgress = true;
-		// position.get(entityId).destinationPosition.set(destX, destY);
-		// updateBoundingBoxPosition();
+		
+		/*
+		Gdx.app.debug(TAG, "\t\tmoveInProgress for entity " + entityId + " now set to TRUE");
+		
+		Gdx.app.debug(TAG, "Exiting calulateNextPosition() method for entity " + entityId);
+		*/
 	}
 
 	protected void move(int entityId)
@@ -69,12 +89,23 @@ public class MovementSystem extends IntervalIteratingSystem
 		Vector2 nextPosition = position.destinationPosition;
 		Vector2 startPosition = position.startingPosition;
 		
+		/*
+		Gdx.app.debug(TAG, "Now in move() method for entity " + entityId);
+		*/
+		
 		movementState.stateTime += world.getDelta();
 
 		float alpha = calculateLerpAlpha(movementState.stateTime, entityId);
-		// Gdx.app.debug(TAG, "Current lerp alpha: " + alpha);
-
+		/*
+		Gdx.app.debug(TAG, "\t\tCurrent lerp alpha: " + alpha);
+		*/
+		
 		currentPositionLocal.set(position.startingPosition.cpy().lerp(position.destinationPosition, alpha));
+		/*
+		Gdx.app.debug(TAG, "\t\tcurrentPositionLocal is now: (" +
+				currentPositionLocal.x + ", " +
+				currentPositionLocal.y + ")");
+		*/
 
 		switch (currentDirection)
 		{
@@ -89,13 +120,13 @@ public class MovementSystem extends IntervalIteratingSystem
 			break;
 
 		case LEFT:
-			if (currentPositionLocal.x >= nextPosition.x)
-			{
-				//MathUtils.clamp(currentPositionLocal.x, nextPosition.x, startPosition.x);
+			//if (currentPositionLocal.x >= nextPosition.x)
+			//{
+				MathUtils.clamp(currentPositionLocal.x, nextPosition.x, startPosition.x);
 				position.setCurrentPosition(currentPositionLocal);
-			}
-			// if(currentPositionLocal.x <= nextPosition.x)
-			else
+			//}
+			if(currentPositionLocal.x <= nextPosition.x)
+			//else
 			{
 				completeMove(entityId);
 			}
@@ -112,13 +143,13 @@ public class MovementSystem extends IntervalIteratingSystem
 			break;
 
 		case DOWN:
-			if (currentPositionLocal.y >= nextPosition.y)
-			{
+			//if (currentPositionLocal.y >= nextPosition.y)
+			//{
 				MathUtils.clamp(currentPositionLocal.y, nextPosition.y, startPosition.y);
 				position.setCurrentPosition(currentPositionLocal);
-			}
-			// if(currentPositionLocal.y <= nextPosition.y)
-			else
+			//}
+			if(currentPositionLocal.y <= nextPosition.y)
+			//else
 			{
 				completeMove(entityId);
 			}
@@ -126,19 +157,41 @@ public class MovementSystem extends IntervalIteratingSystem
 		default:
 			break;
 		}
+		
+		/*
+		Gdx.app.debug(TAG, "Exiting move() method for entity " + entityId);
+		*/
 	}
 
 	private void completeMove(int entityId)
 	{
 		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
-
+		
+		/*
+		Gdx.app.debug(TAG, "Now in completeMove() method for entity " + entityId);
+		*/
+		
+		position.cellX = (int) position.destinationPosition.x;
+		position.cellY = (int) position.destinationPosition.y;
+		
 		position.snapToCurrentToCell();
-
+		
+		/*
+		Gdx.app.debug(TAG, "\t\tposition has been snapped to current cell, is now: (" +
+				position.cellX + ", " +
+				position.cellY + ")");
+		*/
+		
 		movementState.resetStateTime();
-		//movementState.tilesCount -= 1;
-		//Gdx.app.debug(TAG, "TilesCount decreased, should now be " + movementState.tilesCount);
+		
 		movementState.moveInProgress = false;
+		
+		/*
+		Gdx.app.debug(TAG, "\t\tmoveInProgress for entity " + entityId + " now set to FALSE");
+		
+		Gdx.app.debug(TAG, "Exiting completeMove() method for entity " + entityId);
+		*/
 	}
 	
 	private void reface(int entityId)

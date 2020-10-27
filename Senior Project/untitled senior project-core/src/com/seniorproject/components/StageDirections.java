@@ -2,28 +2,28 @@ package com.seniorproject.components;
 
 import com.artemis.Component;
 import com.badlogic.gdx.utils.Queue;
-import com.seniorproject.scripting.ActionsConfig.Action;
+import com.seniorproject.configs.BlockingConfig.Actions;
 
-public class Actions extends Component
+public class StageDirections extends Component
 {
-	public Queue<Action> actionQueue;
+	public Queue<Actions> stageDirectionQueue;
 	
 	//public int indexOfActionInProgress = 0;
-	public Action currentAction = null;
+	public Actions currentStageDirection = null;
 	
 	public boolean actionBegan = false;
 	public boolean actionInProgress = false;
 	public boolean actionEnded = false;
 	
-	public Actions()
+	public StageDirections()
 	{
-		actionQueue = new Queue<Action>();
+		stageDirectionQueue = new Queue<Actions>();
 	}
 	
 	public void resetActionsArray()
 	{
-		actionQueue.clear();
-		currentAction = null;
+		stageDirectionQueue.clear();
+		currentStageDirection = null;
 		actionBegan = false;
 		actionInProgress = false;
 		actionEnded = false;

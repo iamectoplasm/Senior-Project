@@ -451,13 +451,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,28,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -541,12 +541,12 @@
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
-  <object id="3" name="yIndexShift" x="320" y="192" width="16" height="16">
+  <object id="3" name="yIndexShift" x="332" y="196" width="2" height="8">
    <properties>
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
-  <object id="4" name="yIndexShift" x="304" y="176" width="16" height="16">
+  <object id="4" name="yIndexShift" x="306" y="180" width="2" height="8">
    <properties>
     <property name="yShift" type="int" value="-1"/>
    </properties>
@@ -583,7 +583,7 @@
     <property name="toLayer" value="BACKSTAGE"/>
    </properties>
   </object>
-  <object id="11" name="zIndexChange 6" x="159" y="192.016" width="1" height="16">
+  <object id="11" name="zIndexChange 6" x="157" y="196" width="1" height="8">
    <properties>
     <property name="fromLayer" value="BALCONY"/>
     <property name="toLayer" value="MAIN_STAGE"/>
@@ -595,7 +595,7 @@
     <property name="toLayer" value="BACKSTAGE"/>
    </properties>
   </object>
-  <object id="13" name="zIndexChange 8" x="176" y="110" width="32" height="1">
+  <object id="13" name="zIndexChange 8" x="176" y="112" width="32" height="1">
    <properties>
     <property name="fromLayer" value="BACKSTAGE"/>
     <property name="toLayer" value="BALCONY"/>

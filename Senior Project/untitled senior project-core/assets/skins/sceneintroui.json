@@ -1,0 +1,42 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
+	},
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
+	},
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"scene-title": {
+		"font": "arial-20pt",
+		"fontColor": "black",
+		"background": "blue-label"
+	},
+	"scene-description": {
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "light-beige-panel"
+	}
+}
+}

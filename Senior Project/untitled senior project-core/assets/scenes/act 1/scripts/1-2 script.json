@@ -1,6 +1,14 @@
 {
-"cast": ["Duncan", "Malcolm", "Donalbain",
-		 "Lennox", "Ross", "Sergeant"],
+//"cast": ["Duncan", "Malcolm", "Donalbain",
+//		 "Lennox", "Ross", "Sergeant"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 2",
+		"backgroundImage": "camp-exterior",
+		"setting": "A camp near Forres",
+		"description": ["Duncan, King of Scotland, is leading his army against combined Irish and Norwegian invaders,",
+		"and it seems that one of his most trusted lords is almost single-handedly winning against them..."]
+	},
 
 "script":
 	[

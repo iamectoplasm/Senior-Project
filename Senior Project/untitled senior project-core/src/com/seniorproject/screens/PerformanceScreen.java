@@ -5,13 +5,19 @@ import com.artemis.WorldConfiguration;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.EntityFactory;
 import com.seniorproject.game.PerformerManager;
 import com.seniorproject.game.SceneManager;
@@ -37,7 +43,10 @@ public class PerformanceScreen implements Screen
 		static float aspectRatio;
 	}
 	
+	private SeniorProject game;
 	private FitViewport viewport;
+	
+	private Stage stage;
 	
 	//private OrthographicCamera camera = null;
 	public static OrthographicCamera camera = null;
@@ -56,11 +65,33 @@ public class PerformanceScreen implements Screen
 	
 	private SceneManager sceneManager;
 	
+	/*
+	 * 10/25/20 hacking in fade overlay to get screen fades up & running
+	 */
+	private Image fadeOverlay;
+	/*
+	 * end of bad code
+	 */
+	
 	public PerformanceScreen(SeniorProject currentGame)
 	{
 		//setupViewport(4, 3);
 		
 		PerformanceScreen.camera = new OrthographicCamera();
+		
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		this.stage = new Stage();
+		stage.getRoot().setTouchable(Touchable.disabled);
+		AssetLoader.loadTextureAsset("backgrounds/transition fade.png");
+		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
+		fadeOverlay.setSize(800, 600);
+		fadeOverlay.setTouchable(Touchable.disabled);
+		stage.addActor(fadeOverlay);
+		/*
+		 * end of bad code
+		 */
 		
 		viewport = new FitViewport(4, 3, camera);
 		
@@ -110,6 +141,14 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void show()
 	{
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		fadeOverlay.addAction(Actions.fadeOut(0.5f));
+		/*
+		 * end of bad code
+		 */
+		
 		Gdx.input.setInputProcessor(multiplexer);
 		
 		camera.position.x = StageMap.getWidth() / 2;
@@ -122,14 +161,17 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void render(float delta)
 	{
-		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		//Gdx.gl.glClearColor(0, 0, 0, 1);
+		//Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		camera.update();
 		
 		performanceRenderer.renderPerformance(delta);
 		
 		performanceHUD.render(delta);
+		
+		stage.act(delta);
+		stage.draw();
 	}
 
 	@Override
@@ -139,6 +181,11 @@ public class PerformanceScreen implements Screen
 		//camera.update();
 		performanceHUD.resize(width, height);
 		//hudCamera.update();
+	}
+	
+	public static PerformanceHUD getPerformanceHUD()
+	{
+		return performanceHUD;
 	}
 
 	@Override
@@ -158,8 +205,7 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void hide()
 	{
-		// TODO Auto-generated method stub
-		
+		//sceneManager.getCurrentScene().deactivateEntities();
 	}
 
 	@Override
@@ -167,6 +213,11 @@ public class PerformanceScreen implements Screen
 	{
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public void fadeOutOfScreen()
+	{
+		fadeOverlay.addAction(Actions.fadeIn(0.5f));
 	}
 	
 	private void setupViewport(int width, int height)

@@ -7,15 +7,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
-import com.seniorproject.components.Actions;
+import com.seniorproject.components.StageDirections;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
 import com.seniorproject.components.Position;
 import com.seniorproject.components.Velocity;
 import com.seniorproject.components.MovementState.State;
+import com.seniorproject.configs.BlockingConfig.Actions;
 import com.seniorproject.maps.StageMap;
-import com.seniorproject.scripting.ActionsConfig.Action;
 
 public class PerformanceSystem extends IntervalIteratingSystem
 {
@@ -27,7 +27,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	ComponentMapper<Position> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
-	ComponentMapper<Actions> mLineActions;
+	ComponentMapper<StageDirections> mStageDirections;
 	
 	ComponentMapper<Name> mName;
 
@@ -38,23 +38,23 @@ public class PerformanceSystem extends IntervalIteratingSystem
 				Position.class,
 				Velocity.class,
 				MovementState.class,
-				Actions.class),
+				StageDirections.class),
 				(1/60f));
 		
 		this.map = map;
 	}
 	
-	public void updateCharacterActions(int entityId, Array<Action> actions)
+	public void updateCharacterActions(int entityId, Array<Actions> stageDirections)
 	{
-		Actions lineActions = mLineActions.get(entityId);
+		StageDirections directions = mStageDirections.get(entityId);
 		
 		//lineActions.actionInProgress = false;
 		
 		//lineActions.resetActionsArray();
 		
-		for(int i = 0; i < actions.size; i++)
+		for(int i = 0; i < stageDirections.size; i++)
 		{
-			lineActions.actionQueue.addLast(actions.get(i));
+			directions.stageDirectionQueue.addLast(stageDirections.get(i));
 		}
 	}
 
@@ -64,59 +64,59 @@ public class PerformanceSystem extends IntervalIteratingSystem
 		MovementDirection direction = mDirection.get(entityId);
 		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
-		Actions actions = mLineActions.get(entityId);
+		StageDirections stageDirections = mStageDirections.get(entityId);
 		
 		Name name = mName.get(entityId);
 		
-		if(!actions.actionQueue.isEmpty())
+		if(!stageDirections.stageDirectionQueue.isEmpty())
 		{
-			if(!actions.actionInProgress)
+			if(!stageDirections.actionInProgress)
 			{
-				actions.actionInProgress = true;
-				
-				actions.currentAction = actions.actionQueue.removeFirst();
-				
+				stageDirections.actionInProgress = true;
+				stageDirections.currentStageDirection = stageDirections.stageDirectionQueue.removeFirst();
 				//Gdx.app.debug(TAG, "Now executing action " + actions.currentAction.getAction() + " " + actions.currentAction.getDirection() + " for actor " + name.name);
 				
-				if(actions.currentAction.getAction() == MovementState.State.WALK)
+				switch(stageDirections.currentStageDirection.getAction())
 				{
-					direction.currentDirection = actions.currentAction.getDirection();
+				case WALK:
+					direction.currentDirection = stageDirections.currentStageDirection.getDirection();
 					
-					Vector2 normalizedDest = StageMap.normalizePosition(actions.currentAction.getDestination());
+					Vector2 normalizedDest = StageMap.normalizePosition(stageDirections.currentStageDirection.getDestination());
 					position.actionDestination = new Vector2(normalizedDest);
 					movementState.moveRequested = true;
 					
-					//Gdx.app.debug(TAG, "\t\tTo position (" + actions.currentAction.getDestination().x + ", " + actions.currentAction.getDestination().y + ")");
-				}
-				else if(actions.currentAction.getAction() == MovementState.State.REFACE)
-				{
-					direction.refaceDirection = actions.currentAction.getDirection();
+					Gdx.app.debug(TAG, "\t\tTo position (" +
+							stageDirections.currentStageDirection.getDestination().x + ", " +
+							stageDirections.currentStageDirection.getDestination().y + ")");
+					break;
+					
+				case REFACE:
+					direction.refaceDirection = stageDirections.currentStageDirection.getDirection();
 					movementState.refaceRequested = true;
-				}
-				else
-				{
-					//Gdx.app.debug(TAG, "Okay weird thing happened here, neither a reface nor a walk, setting state to IDLE...");
+					break;
+					
+				default:
 					movementState.currentState = State.IDLE;
+					break;
 				}
 			}
 			else
 			{
 				if(position.hasReachedDestTile() && !movementState.refaceInProgress)
 				{
-					actions.actionEnded = true;
+					stageDirections.actionEnded = true;
 					
 					//
 					position.zHasChanged = false;
 					//
 					//Gdx.app.debug(TAG, "Have now ended action " + actions.currentAction.getAction() + " " + actions.currentAction.getDirection() + " for actor " + name.name);
 					
-					if(actions.actionQueue.notEmpty())
+					if(stageDirections.stageDirectionQueue.notEmpty())
 					{
-						actions.actionInProgress = false;
+						stageDirections.actionInProgress = false;
 					}
 				}
 			}
 		}
 	}
-
 }

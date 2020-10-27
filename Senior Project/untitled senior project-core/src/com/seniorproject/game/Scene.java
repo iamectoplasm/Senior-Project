@@ -3,22 +3,19 @@ package com.seniorproject.game;
 import java.util.Hashtable;
 
 import com.artemis.Entity;
-import com.artemis.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
-import com.seniorproject.components.Active;
-import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Position;
+import com.seniorproject.configs.BlockingConfig;
+import com.seniorproject.configs.ScriptConfig;
+import com.seniorproject.configs.StudyConfig;
+import com.seniorproject.configs.BlockingConfig.ActionsForLine;
+import com.seniorproject.configs.BlockingConfig.Setup;
+import com.seniorproject.configs.ScriptConfig.Line;
 import com.seniorproject.enums.*;
 import com.seniorproject.maps.StageMap;
-import com.seniorproject.scenemeta.StudyConfig;
-import com.seniorproject.scripting.ActionsConfig;
-import com.seniorproject.scripting.ScriptConfig;
-import com.seniorproject.scripting.ActionsConfig.LineAction;
-import com.seniorproject.scripting.ActionsConfig.Setup;
-import com.seniorproject.scripting.ScriptConfig.Line;
 
 public class Scene
 {
@@ -27,22 +24,12 @@ public class Scene
 	private String actSceneTitle;
 	
 	private ScriptConfig scriptConfig;
-	private ActionsConfig actionsConfig;
-	//private Json json;
+	private BlockingConfig actionsConfig;
 	
 	private Hashtable<String, StudyConfig> studyConfigs;
-	
-	//private Array<String> castList;
-	
 	private Array<Line> lines;
-	
 	private Array<Setup> sceneSetup;
-	
-	private Array<LineAction> lineActions;
-	//private Array<ActorAction> actorActions;
-	
-	//
-	
+	private Array<ActionsForLine> lineActions;
 	private Hashtable<CharacterName, Integer> entityTable;
 	
 	public Scene(SceneFiles scene)
@@ -50,7 +37,7 @@ public class Scene
 		Json tempJson = new Json();
 		actSceneTitle = scene.toString();
 		scriptConfig = tempJson.fromJson(ScriptConfig.class, Gdx.files.internal(scene.getScriptFilePath()).read());
-		actionsConfig = tempJson.fromJson(ActionsConfig.class, Gdx.files.internal(scene.getActionsFilePath()).read());
+		actionsConfig = tempJson.fromJson(BlockingConfig.class, Gdx.files.internal(scene.getActionsFilePath()).read());
 		
 		StudyConfig analysisConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getAnalysisFilePath()).read());
 		StudyConfig breakdownConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getBreakdownFilePath()).read());
@@ -63,27 +50,24 @@ public class Scene
 		studyConfigs.put("fulltext", fullTextConfig);
 		studyConfigs.put("translation", translationConfig);
 		
-		//castList = scriptConfig.getCast();
 		lines = scriptConfig.getScript();
 		
 		sceneSetup = actionsConfig.getSceneSetup();
-		lineActions = actionsConfig.getLineActions();
+		lineActions = actionsConfig.getBlockingForLine();
 		
 		entityTable = new Hashtable<CharacterName, Integer>();
 		
 		for(int i = 0; i < sceneSetup.size; i++)
 		{
 			Setup setup = sceneSetup.get(i);
-			//Entity newPerformer = EntityFactory.getPerformerEntity(setup.getActor());
 			
 			PerformerManager.getInstance();
 			Entity newPerformer = PerformerManager.activatePerformer(setup.getActor());
-			Gdx.app.debug(TAG, "Performer " + setup.getActor().name() + " has been activated.");
+			//Gdx.app.debug(TAG, "Performer " + setup.getActor().name() + " has been activated.");
 			
-			//int flippedY = StageMap.normalizePosition((int) setup.getStartPosition().y);
 			Vector2 normalizedStart = StageMap.normalizePosition(setup.getStartPosition());
 			
-			Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
+			//Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
 			
 			newPerformer.getComponent(Position.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
 			newPerformer.getComponent(Position.class).resetAllToStarting();
@@ -98,7 +82,7 @@ public class Scene
 		for(int i = 0; i < sceneSetup.size; i++)
 		{
 			PerformerManager.deactivatePerformer(sceneSetup.get(i).getActor());
-			Gdx.app.debug(TAG, "Performer " + sceneSetup.get(i).getActor().name() + " has been deactivated.");
+			//Gdx.app.debug(TAG, "Performer " + sceneSetup.get(i).getActor().name() + " has been deactivated.");
 		}
 	}
 	
@@ -113,7 +97,7 @@ public class Scene
 		return lines;
 	}
 	
-	public Array<LineAction> getLineActions()
+	public Array<ActionsForLine> getLineActions()
 	{
 		return lineActions;
 	}
@@ -131,7 +115,7 @@ public class Scene
 		return null;
 	}
 	
-	public LineAction getLineActionsByID(int id)
+	public ActionsForLine getLineActionsByID(int id)
 	{
 		for(int i = 0; i < lineActions.size; i++)
 		{
@@ -152,5 +136,10 @@ public class Scene
 	public Hashtable<String, StudyConfig> getStudyConfigs()
 	{
 		return studyConfigs;
+	}
+	
+	public ScriptConfig getScriptConfigFile()
+	{
+		return scriptConfig;
 	}
 }

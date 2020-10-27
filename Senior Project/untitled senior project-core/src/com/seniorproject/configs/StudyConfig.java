@@ -1,4 +1,4 @@
-package com.seniorproject.scenemeta;
+package com.seniorproject.configs;
 
 import com.badlogic.gdx.utils.Array;
 
