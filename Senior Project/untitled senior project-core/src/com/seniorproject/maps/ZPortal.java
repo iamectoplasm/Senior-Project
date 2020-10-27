@@ -39,8 +39,8 @@ public class ZPortal
 		this.debugName = object.getName();
 
 		this.bounds = new Rectangle(x, y, width, height);
-		//Gdx.app.debug(TAG, "New ZPortal object " + object.getName() + " created with values: " + bounds.toString());
-		//Gdx.app.debug(TAG, "\tThis portal takes you from " + fromLayer + " to " + toLayer);
+		Gdx.app.debug(TAG, "New ZPortal object " + object.getName() + " created with values: " + bounds.toString());
+		Gdx.app.debug(TAG, "\tThis portal takes you from " + fromLayer + " to " + toLayer);
 	}
 	
 	public Rectangle getPortalBounds()

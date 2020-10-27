@@ -29,10 +29,6 @@ public class StageMap
 	private MapLayer mainStageLayer;
 	private MapLayer balconyLayer;
 	
-	//private MapGroupLayer baseLayers;
-	//private MapGroupLayer landingLayers;
-	//private MapGroupLayer balconyLayers;
-	//private MapGroupLayer overlayLayers;
 	MapGroupLayer baseLayers;
 	MapGroupLayer landingLayers;
 	MapGroupLayer balconyLayers;
@@ -42,7 +38,9 @@ public class StageMap
 	private MapLayer stageChangeLayer;
 
 	protected Array<Entity> mapEntities;
+	
 	protected Array<ZPortal> stageChangeTriggers;
+	protected Array<StairsTrigger> stairsTriggers;
 	
 	private static int mapWidth;
 	private static int mapHeight;
@@ -121,15 +119,27 @@ public class StageMap
 		}
 		
 		stairsLayer = tiledMap.getLayers().get(StageLayers.STAIRS_OBJECT_LAYER);
+		
+		stairsTriggers = new Array<StairsTrigger>();
+		Gdx.app.debug(TAG, "Now creating stairsTrigger array:");
+		for(MapObject object: stairsLayer.getObjects())
+		{
+			if(object instanceof RectangleMapObject)
+			{
+				Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
+				stairsTriggers.add(new StairsTrigger(object));
+			}
+		}
+		
 		stageChangeLayer = tiledMap.getLayers().get(StageLayers.Z_CHANGE_LAYER);
 		
 		stageChangeTriggers = new Array<ZPortal>();
-		//Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
+		Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
 		for(MapObject object: stageChangeLayer.getObjects())
 		{
 			if(object instanceof RectangleMapObject)
 			{
-				//Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
+				Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
 				stageChangeTriggers.add(new ZPortal(object));
 			}
 		}
@@ -157,7 +167,7 @@ public class StageMap
 		return mapHeight;
 	}
 	
-	public static Vector2 normalizePosition(Vector2 original)
+	public static Vector2 getPositionNormalized(Vector2 original)
 	{
 		Vector2 posWithFlippedY = new Vector2(original.x, StageMap.mapHeight - 1 - original.y);
 		return posWithFlippedY;
@@ -171,5 +181,15 @@ public class StageMap
 	public Array<ZPortal> getStageChangeObjects()
 	{
 		return stageChangeTriggers;
+	}
+	
+	public MapLayer getStairsLayer()
+	{
+		return stairsLayer;
+	}
+	
+	public Array<StairsTrigger> getStairsTriggers()
+	{
+		return stairsTriggers;
 	}
 }

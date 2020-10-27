@@ -15,6 +15,7 @@ import com.seniorproject.components.Name;
 import com.seniorproject.components.Position;
 import com.seniorproject.enums.StageLayer;
 import com.seniorproject.maps.StageMap;
+import com.seniorproject.maps.StairsTrigger;
 import com.seniorproject.maps.ZPortal;
 
 public class CollisionSystem extends IntervalIteratingSystem
@@ -64,7 +65,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	{
 		BoundingBox box = mBox.get(entityId);
 		Position position = mPosition.get(entityId);
-		MovementDirection direction = mDirection.get(entityId);
+		//MovementDirection direction = mDirection.get(entityId);
 		
 		box.xPos = position.currentPosition.x;
 		box.yPos = position.currentPosition.y;
@@ -75,6 +76,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	{
 		BoundingBox box = mBox.get(entityId);
 		Position position = mPosition.get(entityId);
+		MovementDirection direction = mDirection.get(entityId);
 		
 		Array<ZPortal> portals = map.getStageChangeObjects();
 		
@@ -82,7 +84,9 @@ public class CollisionSystem extends IntervalIteratingSystem
 		{
 			ZPortal portal = portals.get(i);
 			
-			if(portal.fromLayer().getZIndex() == position.mapZIndex && !position.zHasChanged)
+			boolean entityEligibleToChangeZIndex = portal.fromLayer().getZIndex() == position.mapZIndex && !position.zHasChanged;
+			
+			if(entityEligibleToChangeZIndex)
 			{
 				if(portal.getPortalBounds().overlaps(box.boundingBox))
 				{
@@ -93,6 +97,27 @@ public class CollisionSystem extends IntervalIteratingSystem
 					Gdx.app.debug(TAG, "\t\ttoLayer: " + toLayer);
 					position.mapZIndex = toLayer.getZIndex();
 					position.zHasChanged = true;
+					return true;
+				}
+			}
+		}
+		
+		Array<StairsTrigger> stairsTriggers = map.getStairsTriggers();
+		
+		for(int i = 0; i < stairsTriggers.size; i++)
+		{
+			StairsTrigger trigger = stairsTriggers.get(i);
+			
+			if(box.boundingBox.contains(trigger.getStairTriggerBounds()))
+			{
+				boolean matchesActivationDirection = direction.currentDirection == trigger.getActivationDirection();
+				
+				if(matchesActivationDirection)
+				{
+					Gdx.app.debug(TAG, "Collision occurring at " + trigger.getName() + " for entity " + world.getEntity(entityId).getComponent(Name.class).name);
+					Gdx.app.debug(TAG, "\t\tFrom direction: " + trigger.getActivationDirection());
+					Gdx.app.debug(TAG, "\t\tYShift: " + trigger.getYShift());
+					position.destinationPosition.y = position.destinationPosition.y + trigger.getYShift();
 					return true;
 				}
 			}

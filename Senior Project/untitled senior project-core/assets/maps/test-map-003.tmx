@@ -451,13 +451,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,28,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -531,23 +531,27 @@
   </layer>
  </group>
  <objectgroup id="20" name="stairs">
-  <object id="1" name="yIndexShift" x="64" y="176" width="16" height="16">
+  <object id="1" name="yIndexShift" x="75" y="180" width="2" height="8">
    <properties>
+    <property name="activateOnDirection" value="LEFT"/>
     <property name="yShift" type="int" value="-1"/>
    </properties>
   </object>
-  <object id="2" name="yIndexShift" x="48" y="192" width="16" height="16">
+  <object id="2" name="left stairs up" x="50" y="196" width="2" height="8">
    <properties>
+    <property name="activateOnDirection" value="RIGHT"/>
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
-  <object id="3" name="yIndexShift" x="332" y="196" width="2" height="8">
+  <object id="3" name="right stairs up" x="332" y="196" width="2" height="8">
    <properties>
+    <property name="activateOnDirection" value="LEFT"/>
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
-  <object id="4" name="yIndexShift" x="306" y="180" width="2" height="8">
+  <object id="4" name="right stairs down" x="306" y="180" width="2" height="8">
    <properties>
+    <property name="activateOnDirection" value="RIGHT"/>
     <property name="yShift" type="int" value="-1"/>
    </properties>
   </object>

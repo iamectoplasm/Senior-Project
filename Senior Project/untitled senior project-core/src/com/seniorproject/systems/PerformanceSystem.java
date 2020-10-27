@@ -81,13 +81,15 @@ public class PerformanceSystem extends IntervalIteratingSystem
 				case WALK:
 					direction.currentDirection = stageDirections.currentStageDirection.getDirection();
 					
-					Vector2 normalizedDest = StageMap.normalizePosition(stageDirections.currentStageDirection.getDestination());
+					Vector2 normalizedDest = StageMap.getPositionNormalized(stageDirections.currentStageDirection.getDestination());
 					position.actionDestination = new Vector2(normalizedDest);
 					movementState.moveRequested = true;
 					
+					/*
 					Gdx.app.debug(TAG, "\t\tTo position (" +
 							stageDirections.currentStageDirection.getDestination().x + ", " +
 							stageDirections.currentStageDirection.getDestination().y + ")");
+					*/
 					break;
 					
 				case REFACE:

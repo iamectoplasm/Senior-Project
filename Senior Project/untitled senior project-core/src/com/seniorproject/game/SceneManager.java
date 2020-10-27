@@ -61,8 +61,8 @@ public class SceneManager
 				SceneFiles.ACT1SCENE6,
 				SceneFiles.ACT1SCENE7);
 		
-		this.currentSceneIndex = 0;
-		//this.currentSceneIndex = 1;
+		//this.currentSceneIndex = 0;
+		this.currentSceneIndex = 1;
 		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	

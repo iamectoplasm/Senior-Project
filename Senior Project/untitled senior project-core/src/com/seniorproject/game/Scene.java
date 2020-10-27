@@ -65,7 +65,7 @@ public class Scene
 			Entity newPerformer = PerformerManager.activatePerformer(setup.getActor());
 			//Gdx.app.debug(TAG, "Performer " + setup.getActor().name() + " has been activated.");
 			
-			Vector2 normalizedStart = StageMap.normalizePosition(setup.getStartPosition());
+			Vector2 normalizedStart = StageMap.getPositionNormalized(setup.getStartPosition());
 			
 			//Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
 			

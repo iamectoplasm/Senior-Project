@@ -6,8 +6,8 @@
 	//{"actor": "MALCOLM", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "MALCOLM", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "DONALBAIN", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	//{"actor": "LENNOX", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
+	//{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
+	{"actor": "LENNOX", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
 	{"actor": "ROSS", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	//{"actor": "SERGEANT", "startPosition": {"x": 12, "y": 25}, "stageLayer": "MAIN_STAGE"}
 	{"actor": "SERGEANT", "startPosition": {"x": 17, "y": 15}, "stageLayer": "MAIN_STAGE"}
@@ -45,9 +45,9 @@
 		"actor": "LENNOX",
 		"actions":
 		[
-			{"action": "REFACE", "direction": "DOWN"}
+			//{"action": "REFACE", "direction": "DOWN"}
 			// starts at (25, 12)
-			//{"action": "WALK", "direction": "LEFT", "destination": {"x": 17, "y": 11}}
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 17, "y": 11}}
 		]
 	},
 	{
@@ -76,6 +76,14 @@
 			// starts at (11, 7)
 			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7} },
 			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11} }
+		]
+	},
+	{
+		"actor": "LENNOX",
+		"actions":
+		[
+			// starts at (17, 11)
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 22, "y": 12}}
 		]
 	}]
 },
