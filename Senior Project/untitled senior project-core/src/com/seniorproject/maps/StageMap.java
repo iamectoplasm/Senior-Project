@@ -123,15 +123,13 @@ public class StageMap
 		stairsLayer = tiledMap.getLayers().get(StageLayers.STAIRS_OBJECT_LAYER);
 		stageChangeLayer = tiledMap.getLayers().get(StageLayers.Z_CHANGE_LAYER);
 		
-		getStageChangeLayer().getObjects().get("zIndexChange 3").setColor(Color.CHARTREUSE);
-		
 		stageChangeTriggers = new Array<ZPortal>();
-		Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
+		//Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
 		for(MapObject object: stageChangeLayer.getObjects())
 		{
 			if(object instanceof RectangleMapObject)
 			{
-				Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
+				//Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
 				stageChangeTriggers.add(new ZPortal(object));
 			}
 		}

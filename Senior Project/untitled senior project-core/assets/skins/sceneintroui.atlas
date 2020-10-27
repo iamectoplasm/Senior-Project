@@ -1,0 +1,87 @@
+
+sceneintroui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arial-12pt
+  rotate: false
+  xy: 803, 1315
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 803, 801
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-16pt
+  rotate: false
+  xy: 803, 287
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-18pt
+  rotate: false
+  xy: 1317, 1315
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-20pt
+  rotate: false
+  xy: 1317, 801
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-24pt
+  rotate: false
+  xy: 1317, 287
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+blue-label
+  rotate: false
+  xy: 803, 237
+  size: 120, 48
+  split: 37, 50, 17, 20
+  pad: 12, 12, 12, 16
+  orig: 120, 48
+  offset: 0, 0
+  index: -1
+camp-exterior
+  rotate: false
+  xy: 1, 23
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+dark-heath-exterior
+  rotate: false
+  xy: 1, 1227
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+heath-exterior
+  rotate: false
+  xy: 1, 625
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+light-beige-panel
+  rotate: false
+  xy: 925, 185
+  size: 100, 100
+  split: 12, 12, 12, 12
+  pad: 0, 0, 0, 0
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

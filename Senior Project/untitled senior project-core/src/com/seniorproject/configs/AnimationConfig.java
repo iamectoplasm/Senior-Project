@@ -1,4 +1,4 @@
-package com.seniorproject.scripting;
+package com.seniorproject.configs;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.GridPoint2;

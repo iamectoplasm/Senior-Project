@@ -1,0 +1,767 @@
+{
+"cast": ["", "", ""],
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 4,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "", "text": "-"}]
+	 	},
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 26,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 33,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 34,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 35,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 36,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 37,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 38,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 39,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 40,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 41,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 42,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 43,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 44,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 45,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 46,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 47,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 48,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 49,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 50,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 51,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 52,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 53,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 54,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 55,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 56,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 57,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 58,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 59,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 60,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 61,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 62,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 63,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 64,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 65,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 66,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 67,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 68,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 69,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 70,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 71,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 72,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 73,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 74,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 75,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 76,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 77,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 78,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 79,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 80,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 81,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 82,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 83,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 84,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 85,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 86,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 87,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 88,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 89,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 90,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 91,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 92,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 93,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 94,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 95,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 96,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 97,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 98,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 99,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 100,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 101,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 102,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 103,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 104,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 105,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 106,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 107,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 108,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 109,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 110,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 111,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 112,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 113,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 114,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 115,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 116,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 117,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 118,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 119,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 120,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 121,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 122,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 123,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 124,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 125,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 126,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 127,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 128,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 129,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 130,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 131,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 132,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 133,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 134,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 135,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 136,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 137,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 138,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 139,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 140,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 141,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 142,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 143,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 144,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 145,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 146,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 147,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 148,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 149,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 150,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 151,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		},
+		{
+			"lineID": 152,
+			"sharedLine": false,
+			"line": [{"actor": "", "text": "-"}]
+		}
+		]
+}

@@ -1,4 +1,4 @@
-package com.seniorproject.scripting;
+package com.seniorproject.configs;
 
 import com.badlogic.gdx.utils.Array;
 
@@ -6,7 +6,8 @@ public class ScriptConfig
 {
 	private static final String TAG = ScriptConfig.class.getSimpleName();
 	
-	private Array<String> cast;
+	//private Array<String> cast;
+	private SceneIntro sceneIntro;
 	private Array<Line> script;
 	
 	public static class Line
@@ -53,6 +54,42 @@ public class ScriptConfig
 		}
 	}
 	
+	public static class SceneIntro
+	{
+		private String title;
+		private String backgroundImage;
+		private String setting;
+		private Array<String> description;
+		
+		public SceneIntro()
+		{
+			this.title = "";
+			this.backgroundImage = "";
+			this.setting = "";
+			this.description = new Array<String>();
+		}
+		
+		public String getTitle()
+		{
+			return title;
+		}
+		
+		public String getBackground()
+		{
+			return backgroundImage;
+		}
+		
+		public String getSetting()
+		{
+			return setting;
+		}
+		
+		public Array<String> getDescriptionArray()
+		{
+			return description;
+		}
+	}
+	
 	public static class LineText
 	{
 		private String actor;
@@ -87,13 +124,19 @@ public class ScriptConfig
 	
 	public ScriptConfig()
 	{
-		cast = new Array<String>();
+		//cast = new Array<String>();
+		sceneIntro = new SceneIntro();
 		script = new Array<Line>();
 	}
 	
-	public Array<String> getCast()
+	//public Array<String> getCast()
+	//{
+	//	return cast;
+	//}
+	
+	public SceneIntro getSceneIntro()
 	{
-		return cast;
+		return sceneIntro;
 	}
 	
 	public Array<Line> getScript()
@@ -101,9 +144,14 @@ public class ScriptConfig
 		return script;
 	}
 	
-	public void setCast(Array<String> cast)
+	//public void setCast(Array<String> cast)
+	//{
+	//	this.cast = cast;
+	//}
+	
+	public void setSceneIntro(SceneIntro sceneIntro)
 	{
-		this.cast = cast;
+		this.sceneIntro = sceneIntro;
 	}
 	
 	public void setScript(Array<Line> script)

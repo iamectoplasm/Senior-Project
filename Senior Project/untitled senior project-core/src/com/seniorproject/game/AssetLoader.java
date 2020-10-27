@@ -45,6 +45,11 @@ public class AssetLoader
 	public static TextureAtlas DASHBOARD_TEXTUREATLAS = new TextureAtlas(DASHBOARD_TEXTURE_ATLAS_PATH);
 	public static Skin DASHBOARD_SKIN = new Skin(Gdx.files.internal(DASHBOARD_SKIN_PATH), DASHBOARD_TEXTUREATLAS);
 	
+	public final static String SCENE_INTRO_TEXTURE_ATLAS_PATH = "skins/sceneintroui.atlas";
+	public final static String SCENE_INTRO_SKIN_PATH = "skins/sceneintroui.json";
+	public static TextureAtlas SCENE_INTRO_TEXTUREATLAS = new TextureAtlas(SCENE_INTRO_TEXTURE_ATLAS_PATH);
+	public static Skin SCENE_INTRO_SKIN = new Skin(Gdx.files.internal(SCENE_INTRO_SKIN_PATH), SCENE_INTRO_TEXTUREATLAS);
+	
 	/*
 	 * = = = = = = = = = = = = = = = = = = = =
 	 * 

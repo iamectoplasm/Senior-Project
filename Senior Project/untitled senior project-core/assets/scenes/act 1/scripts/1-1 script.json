@@ -1,5 +1,12 @@
 {
-"cast": ["First Witch", "Second Witch", "Third Witch"],
+//"cast": ["First Witch", "Second Witch", "Third Witch"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 1",
+		"backgroundImage": "dark-heath-exterior",
+		"setting": "A desert place, with thunder and lightning crashing.",
+		"description": ["A prophecy gets foretold."]
+	},
 
 "script":
 	[

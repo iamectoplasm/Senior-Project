@@ -139,12 +139,26 @@
 			// starts at (14, 14)
 			{"action": "WALK", "direction": "LEFT", "destination": {"x": 11, "y": 14} }
 		]
-	}]
+	},
+	{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN" }
+		]
+	 }]
 },
 {
 	"lineID": 8,
 	"actorActions":
 	[{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT" }
+		]
+	},
+	{
 		"actor": "THIRD_WITCH",
 		"actions":
 		[

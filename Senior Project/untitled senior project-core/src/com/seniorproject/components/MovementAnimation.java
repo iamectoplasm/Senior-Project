@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.scripting.AnimationConfig;
+import com.seniorproject.configs.AnimationConfig;
 
 public class MovementAnimation extends Component
 {

@@ -4,7 +4,7 @@ import com.artemis.Entity;
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.components.Actions;
+import com.seniorproject.components.StageDirections;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
@@ -37,7 +37,7 @@ public class PerformerManager
 		for(int i = 0; i < CharacterName.values().length; i++)
 		{
 			performers.add(EntityFactory.getPerformerEntity(CharacterName.values()[i]));
-			Gdx.app.debug(TAG, "Creating performer " + performers.get(performers.size - 1).getComponent(Name.class).name);
+			//Gdx.app.debug(TAG, "Creating performer " + performers.get(performers.size - 1).getComponent(Name.class).name);
 		}
 	}
 	
@@ -53,7 +53,7 @@ public class PerformerManager
 			if(performers.get(i).getComponent(Name.class).name.equals(name.name()))
 			{
 				performers.get(i).edit().add(new Active());
-				performers.get(i).getComponent(Actions.class).resetActionsArray();
+				performers.get(i).getComponent(StageDirections.class).resetActionsArray();
 				performers.get(i).getComponent(MovementState.class).resetAll();
 				return performers.get(i);
 			}

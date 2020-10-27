@@ -2,19 +2,33 @@ package com.seniorproject.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
+import com.seniorproject.game.TransitionManager;
 
 public class MainMenuScreen implements Screen
 {
 	private SeniorProject game;
 	private Stage stage;
+	
+	/*
+	 * 10/25/20 hacking in fade overlay to get screen fades up & running
+	 */
+	private Image fadeOverlay;
+	/*
+	 * end of bad code
+	 */
 	
 	public MainMenuScreen(final SeniorProject game)
 	{
@@ -33,6 +47,18 @@ public class MainMenuScreen implements Screen
 		
 		stage.addActor(table);
 		
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		AssetLoader.loadTextureAsset("backgrounds/transition fade.png");
+		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
+		fadeOverlay.setSize(800, 600);
+		fadeOverlay.setTouchable(Touchable.disabled);
+		stage.addActor(fadeOverlay);
+		/*
+		 * end of bad code
+		 */
+		
 		//Listeners
 		storyModeButton.addListener(new ClickListener()
 		{
@@ -45,7 +71,31 @@ public class MainMenuScreen implements Screen
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
-				game.setScreen(game.getScreenType(ScreenType.Performance));
+				//Screen newScreen = game.getScreenType(ScreenType.PERFORMANCE_SCREEN);
+				//game.setScreen(newScreen);
+				
+				/*
+				 * 10/25/20 hacking in fade overlay to get screen fades up & running
+				 */
+				SequenceAction changeScreen = new SequenceAction();
+				Action fadeIn = Actions.fadeIn(0.5f);
+				fadeIn.setActor(fadeOverlay);
+				
+				changeScreen.addAction(fadeIn);
+				changeScreen.addAction(Actions.run(new Runnable()
+				{
+					@Override
+					public void run()
+					{
+						//game.setScreen(game.getScreenType(ScreenType.PERFORMANCE_SCREEN));
+						game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+					}
+				}));
+				
+				stage.getRoot().addAction(changeScreen);
+				/*
+				 * end of bad code
+				 */
 			}
 		});
 		
@@ -61,7 +111,7 @@ public class MainMenuScreen implements Screen
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
-				game.setScreen(game.getScreenType(ScreenType.SceneSelectScreen));
+				game.setScreen(game.getScreenType(ScreenType.SCENE_SELECT_SCREEN));
 			}
 		});
 	}
@@ -69,6 +119,13 @@ public class MainMenuScreen implements Screen
 	@Override
 	public void show()
 	{
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		fadeOverlay.addAction(Actions.fadeOut(0.5f));
+		/*
+		 * end of bad code
+		 */
 		Gdx.input.setInputProcessor(stage);
 	}
 
@@ -103,6 +160,13 @@ public class MainMenuScreen implements Screen
 	@Override
 	public void hide()
 	{
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		fadeOverlay.addAction(Actions.fadeIn(.5f));
+		/*
+		 * end of bad code
+		 */
 		Gdx.input.setInputProcessor(null);
 	}
 

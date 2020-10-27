@@ -11,10 +11,10 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.seniorproject.configs.StudyConfig;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
-import com.seniorproject.scenemeta.StudyConfig;
 import com.seniorproject.ui.SceneSelectUI;
 
 public class SceneSelectScreen implements Screen
@@ -26,8 +26,7 @@ public class SceneSelectScreen implements Screen
 	{
 		this.game = game;
 		this.stage = new Stage();
-		Image bgImage = new Image(AssetLoader.SELECT_SKIN, "glamis-palette-cropped");
-		bgImage.setScale(0.5f);
+		Image bgImage = new Image(AssetLoader.SELECT_SKIN, "glamis-exterior");
 		stage.addActor(bgImage);
 		
 		ImageButton backButton = new ImageButton(AssetLoader.SELECT_SKIN, "exit");
@@ -68,7 +67,7 @@ public class SceneSelectScreen implements Screen
                     int pointer,
                     int button)
 			{
-				game.setScreen(game.getScreenType(ScreenType.IntroScreen));
+				game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
 			}
 		});
 	}
