@@ -13,7 +13,7 @@ public class DesktopLauncher
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		 
 		config.title = "Senior Project";
-		config.useGL30 = false;	// This lets us use OpenGL 2.0
+		config.useGL30 = false;	// This lets us use OpenGL 2.0 
 		config.width = 800;
 		config.height = 600;
 		config.x = 20;

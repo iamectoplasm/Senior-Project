@@ -1,7 +1,13 @@
 {
-"cast": ["First Witch", "Second Witch", "Third Witch",
-		 "Macbeth", "Banquo",
-		 "Ross", "Angus"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 3",
+		"backgroundImage": "dark-heath-exterior",
+		"setting": "A wasteland. Thunder rumbles in the distance.",
+		"description": ["Having won in their battle against Irish and Norwegian raiders- and Scottish rebels-",
+		"Macbeth and Banquo make their ways home... but not before stumbling into a very strange encounter,",
+		"with some very strange people."]
+	},
 
 "script":
 	[

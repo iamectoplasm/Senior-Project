@@ -13,9 +13,10 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.seniorproject.game.AssetLoader;
+import com.seniorproject.game.FadeOverlay;
+import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
-import com.seniorproject.game.TransitionManager;
 
 public class MainMenuScreen implements Screen
 {
@@ -54,6 +55,8 @@ public class MainMenuScreen implements Screen
 		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
 		fadeOverlay.setSize(800, 600);
 		fadeOverlay.setTouchable(Touchable.disabled);
+		//this.fadeOverlay = FadeOverlay.getInstance().getOverlay();
+		//fadeOverlay.setVisible(true);
 		stage.addActor(fadeOverlay);
 		/*
 		 * end of bad code
@@ -89,10 +92,13 @@ public class MainMenuScreen implements Screen
 					{
 						//game.setScreen(game.getScreenType(ScreenType.PERFORMANCE_SCREEN));
 						game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+						SceneManager sm = SeniorProject.performanceScreen.getSceneManager();
+						SeniorProject.sceneIntroScreen.updateToNextScene(sm.getCurrentScene().getScriptConfigFile());
 					}
 				}));
 				
 				stage.getRoot().addAction(changeScreen);
+				fadeOverlay.clear();
 				/*
 				 * end of bad code
 				 */
@@ -119,6 +125,7 @@ public class MainMenuScreen implements Screen
 	@Override
 	public void show()
 	{
+		fadeOverlay.clear();
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
@@ -160,6 +167,7 @@ public class MainMenuScreen implements Screen
 	@Override
 	public void hide()
 	{
+		fadeOverlay.clear();
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */

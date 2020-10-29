@@ -26,6 +26,7 @@ public class EmoticonAtlas
 		CONFUSION,
 		DRUNK,
 		NONE,
+		POISON,
 		SINGING,
 		SMILE,
 		SPEECH,
@@ -59,13 +60,13 @@ public class EmoticonAtlas
 		}
 		
 		this.confusion = atlas.findRegion("confusion");
-		this.drunk1 = atlas.findRegion("drunk_1");
-		this.drunk2 = atlas.findRegion("drunk_2");
+		this.drunk1 = atlas.findRegion("drunk", 1);
+		this.drunk2 = atlas.findRegion("drunk", 2);
 		this.none = atlas.findRegion("none");
-		this.poison1 = atlas.findRegion("poison_1");
-		this.poison2 = atlas.findRegion("poison_2");
-		this.singing1 = atlas.findRegion("singing_1");
-		this.singing2 = atlas.findRegion("singing_2");
+		this.poison1 = atlas.findRegion("poison", 1);
+		this.poison2 = atlas.findRegion("poison", 2);
+		this.singing1 = atlas.findRegion("singing", 1);
+		this.singing2 = atlas.findRegion("singing", 2);
 		this.smile = atlas.findRegion("smile");
 		this.speech = atlas.findRegion("speech");
 		this.surprise = atlas.findRegion("surprise");
@@ -80,6 +81,8 @@ public class EmoticonAtlas
 			return this.confusion;
 		case DRUNK:
 			return this.drunk1;
+		case POISON:
+			return this.poison1;
 		case SINGING:
 			return this.singing1;
 		case SMILE:

@@ -28,10 +28,6 @@
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
-	"default": {
-		"font": "arial-16pt",
-		"fontColor": "black"
-	},
 	"name-label": {
 		"font": "arial-16pt",
 		"fontColor": "black",

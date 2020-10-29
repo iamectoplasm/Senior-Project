@@ -4,6 +4,13 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+ALL
+  rotate: false
+  xy: 1029, 1013
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
 ANGUS
   rotate: false
   xy: 1111, 1177
@@ -113,7 +120,7 @@ blue-name-label
   index: -1
 green-scrollbar
   rotate: false
-  xy: 1029, 1071
+  xy: 1111, 1153
   size: 9, 22
   split: 0, 0, 4, 4
   pad: 0, 0, 0, 0
@@ -129,7 +136,7 @@ portrait-bg-gray
   index: -1
 scroll-line
   rotate: false
-  xy: 1111, 1129
+  xy: 1193, 1211
   size: 4, 46
   split: 0, 0, 8, 8
   pad: 0, 0, 0, 0

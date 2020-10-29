@@ -4,6 +4,7 @@ import com.artemis.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.enums.SceneFiles;
+import com.seniorproject.game.SeniorProject.ScreenType;
 import com.seniorproject.screens.PerformanceScreen;
 import com.seniorproject.screens.SceneIntroScreen;
 import com.seniorproject.systems.PerformanceSystem;
@@ -59,8 +60,8 @@ public class SceneManager
 				SceneFiles.ACT1SCENE6,
 				SceneFiles.ACT1SCENE7);
 		
-		this.currentSceneIndex = 0;
-		//this.currentSceneIndex = 1;
+		//this.currentSceneIndex = 0;
+		this.currentSceneIndex = 1;
 		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
@@ -94,7 +95,7 @@ public class SceneManager
 			currentSceneIndex += 1;
 			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 			
-			SceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
+			SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
 			PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
 			
 			currentGame.getScreen().hide();

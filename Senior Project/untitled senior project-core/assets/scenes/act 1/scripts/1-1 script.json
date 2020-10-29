@@ -57,9 +57,8 @@
 	 	},
 	 	{
 	 		"lineID": 10,
-	 		"sharedLine": true,
-	 		"line": [{"actor": "Second Witch", "text": "-Paddock calls. --Anon!"},
-	 				 {"actor": "Third Witch", "text": "--Anon!"}]
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "-Paddock calls. --Anon!"}]
 	 	},
 	 	{
 	 		"lineID": 11,
@@ -69,6 +68,6 @@
 	 	{
 	 		"lineID": 12,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Hover through the fog and filthy air."}]
+	 		"line": [{"actor": "All", "text": "-Hover through the fog and filthy air."}]
 	 	}]
 }

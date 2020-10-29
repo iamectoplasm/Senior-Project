@@ -11,19 +11,23 @@ import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.utils.Json;
 import com.seniorproject.configs.ScriptConfig;
 import com.seniorproject.game.AssetLoader;
+import com.seniorproject.game.FadeOverlay;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
 
 public class SceneIntroScreen implements Screen
 {
+	private static final String TAG = SceneIntroScreen.class.getSimpleName();
+	
 	private Stage stage;
 	
-	private static Image backgroundImage;
-	private static Label sceneTitleLabel;
-	private static Label sceneDescriptionLabel;
+	private Image backgroundImage;
+	private Label sceneTitleLabel;
+	private Label sceneDescriptionLabel;
 	
 	
 	/*
@@ -36,16 +40,18 @@ public class SceneIntroScreen implements Screen
 	
 	public SceneIntroScreen(final SeniorProject game)
 	{
+		Gdx.app.debug(TAG, "SceneIntroScreen being created");
+		
 		this.stage = new Stage();
 		
 		backgroundImage = new Image(AssetLoader.SCENE_INTRO_SKIN.getDrawable("dark-heath-exterior"));
 		stage.addActor(backgroundImage);
 		
-		sceneTitleLabel = new Label("Act 1 Scene 1", AssetLoader.SCENE_INTRO_SKIN, "scene-title");
+		sceneTitleLabel = new Label("", AssetLoader.SCENE_INTRO_SKIN, "scene-title");
 		sceneTitleLabel.setPosition(16, stage.getHeight() - sceneTitleLabel.getHeight() - 16);
 		stage.addActor(sceneTitleLabel);
 		
-		sceneDescriptionLabel = new Label("A desert place.", AssetLoader.SCENE_INTRO_SKIN, "scene-description");
+		sceneDescriptionLabel = new Label("", AssetLoader.SCENE_INTRO_SKIN, "scene-description");
 		sceneDescriptionLabel.setWidth(450);
 		sceneDescriptionLabel.setHeight(200);
 		sceneDescriptionLabel.setWrap(true);
@@ -55,9 +61,7 @@ public class SceneIntroScreen implements Screen
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
-		AssetLoader.loadTextureAsset("backgrounds/transition fade.png");
-		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
-		fadeOverlay.setSize(800, 600);
+		this.fadeOverlay = FadeOverlay.getInstance().getOverlay();
 		stage.addActor(fadeOverlay);
 		/*
 		 * end of bad code
@@ -85,6 +89,8 @@ public class SceneIntroScreen implements Screen
 						{
 							//game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
 							game.setScreen(game.getScreenType(ScreenType.PERFORMANCE_SCREEN));
+							
+							fadeOverlay.clear();
 						}
 					}));
 					
@@ -97,14 +103,18 @@ public class SceneIntroScreen implements Screen
 			}
 		});
 		
-		Json tempJson = new Json();
-		ScriptConfig first = tempJson.fromJson(ScriptConfig.class, Gdx.files.internal("scenes/act 1/scripts/1-1 script.json").read());
-		updateToNextScene(first);
+		//Json tempJson = new Json();
+		//ScriptConfig first = tempJson.fromJson(ScriptConfig.class, Gdx.files.internal("scenes/act 1/scripts/1-1 script.json").read());
+		//updateToNextScene(first);
 	}
 	
-	public static void updateToNextScene(ScriptConfig config)
+	public void updateToNextScene(ScriptConfig config)
 	{
-		backgroundImage.setDrawable(AssetLoader.SCENE_INTRO_SKIN, config.getSceneIntro().getBackground());
+		Gdx.app.debug(TAG, "config being sent is " + config.getSceneIntro().getTitle());
+		Gdx.app.debug(TAG, "config.getSceneIntro().getBackground() returns " + config.getSceneIntro().getBackground());
+		
+		backgroundImage.setDrawable(AssetLoader.SCENE_INTRO_SKIN.getDrawable(config.getSceneIntro().getBackground()));
+
 		sceneTitleLabel.setText(config.getSceneIntro().getTitle());
 		
 		String description = "Where: " + config.getSceneIntro().getSetting() + "\n\nWhat: ";
@@ -168,6 +178,7 @@ public class SceneIntroScreen implements Screen
 		/*
 		 * end of bad code
 		 */
+		Gdx.input.setInputProcessor(null);
 	}
 
 	@Override

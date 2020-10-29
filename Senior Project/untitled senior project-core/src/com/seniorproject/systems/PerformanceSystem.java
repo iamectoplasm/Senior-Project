@@ -127,7 +127,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 			}
 			else
 			{
-				if(position.hasReachedDestTile() && !movementState.refaceInProgress)
+				if(position.hasReachedDestTile() && !movementState.refaceInProgress && !movementState.moveInProgress)
 				//if(position.hasReachedDestTile())
 				{
 					stageDirections.actionEnded = true;

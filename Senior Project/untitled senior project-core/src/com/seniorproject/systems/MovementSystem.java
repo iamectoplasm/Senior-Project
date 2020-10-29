@@ -96,11 +96,9 @@ public class MovementSystem extends IntervalIteratingSystem
 		movementState.stateTime += world.getDelta();
 
 		float alpha = calculateLerpAlpha(movementState.stateTime, entityId);
-		/*
-		Gdx.app.debug(TAG, "\t\tCurrent lerp alpha: " + alpha);
-		*/
 		
 		currentPositionLocal.set(position.startingPosition.cpy().lerp(position.destinationPosition, alpha));
+		
 		/*
 		Gdx.app.debug(TAG, "\t\tcurrentPositionLocal is now: (" +
 				currentPositionLocal.x + ", " +
@@ -110,7 +108,7 @@ public class MovementSystem extends IntervalIteratingSystem
 		switch (currentDirection)
 		{
 		case RIGHT:
-			// MathUtils.clamp(currentPositionLocal.x, startPosition.x, nextPosition.x);
+			MathUtils.clamp(currentPositionLocal.x, startPosition.x, nextPosition.x);
 			position.setCurrentPosition(currentPositionLocal);
 
 			if (currentPositionLocal.x >= nextPosition.x)
@@ -122,7 +120,7 @@ public class MovementSystem extends IntervalIteratingSystem
 		case LEFT:
 			//if (currentPositionLocal.x >= nextPosition.x)
 			//{
-				MathUtils.clamp(currentPositionLocal.x, nextPosition.x, startPosition.x);
+			//MathUtils.clamp(currentPositionLocal.x, nextPosition.x, startPosition.x);
 				position.setCurrentPosition(currentPositionLocal);
 			//}
 			if(currentPositionLocal.x <= nextPosition.x)
@@ -133,7 +131,7 @@ public class MovementSystem extends IntervalIteratingSystem
 			break;
 
 		case UP:
-			// MathUtils.clamp(currentPositionLocal.y, startPosition.y, nextPosition.y);
+			MathUtils.clamp(currentPositionLocal.y, startPosition.y, nextPosition.y);
 			position.setCurrentPosition(currentPositionLocal);
 			
 			if (currentPositionLocal.y >= nextPosition.y)
@@ -145,7 +143,7 @@ public class MovementSystem extends IntervalIteratingSystem
 		case DOWN:
 			//if (currentPositionLocal.y >= nextPosition.y)
 			//{
-				MathUtils.clamp(currentPositionLocal.y, nextPosition.y, startPosition.y);
+			//MathUtils.clamp(currentPositionLocal.y, nextPosition.y, startPosition.y);
 				position.setCurrentPosition(currentPositionLocal);
 			//}
 			if(currentPositionLocal.y <= nextPosition.y)
@@ -157,9 +155,9 @@ public class MovementSystem extends IntervalIteratingSystem
 		default:
 			break;
 		}
-		
 		/*
 		Gdx.app.debug(TAG, "Exiting move() method for entity " + entityId);
+		System.out.println("");
 		*/
 	}
 
@@ -259,6 +257,8 @@ public class MovementSystem extends IntervalIteratingSystem
 	private float calculateLerpAlpha(float currentTime, int entityId)
 	{
 		Velocity velocity = mVelocity.get(entityId);
+		
+		//Gdx.app.debug(TAG, "In calculateLerpAlpha, current time is " + currentTime);
 		
 		float alpha = (currentTime/ velocity.velocity);
 		Float roundedAlpha = new BigDecimal(alpha).setScale(3, BigDecimal.ROUND_HALF_UP).floatValue();

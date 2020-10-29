@@ -19,6 +19,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.EntityFactory;
+import com.seniorproject.game.FadeOverlay;
 import com.seniorproject.game.PerformerManager;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
@@ -88,6 +89,7 @@ public class PerformanceScreen implements Screen
 		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
 		fadeOverlay.setSize(800, 600);
 		fadeOverlay.setTouchable(Touchable.disabled);
+		//this.fadeOverlay = FadeOverlay.getInstance().getOverlay();
 		stage.addActor(fadeOverlay);
 		/*
 		 * end of bad code
@@ -138,10 +140,17 @@ public class PerformanceScreen implements Screen
 		multiplexer = new InputMultiplexer();
 		multiplexer.addProcessor(performanceHUD.getStage());
 	}
+	
+	public SceneManager getSceneManager()
+	{
+		return sceneManager;
+	}
 
 	@Override
 	public void show()
 	{
+		fadeOverlay.clear();
+		
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
@@ -206,6 +215,14 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void hide()
 	{
+		fadeOverlay.clear();
+		/*
+		 * 10/25/20 hacking in fade overlay to get screen fades up & running
+		 */
+		fadeOverlay.addAction(Actions.fadeIn(.5f));
+		/*
+		 * end of bad code
+		 */
 		//sceneManager.getCurrentScene().deactivateEntities();
 	}
 
