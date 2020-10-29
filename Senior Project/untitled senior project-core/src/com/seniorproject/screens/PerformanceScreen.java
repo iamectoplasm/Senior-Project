@@ -111,6 +111,7 @@ public class PerformanceScreen implements Screen
 		config.setSystem(new PerformanceSystem(map));
 		config.setSystem(new AnimationSystem());
 		config.setSystem(new EntitySortSystem());
+		config.setSystem(new EmoticonSystem());
 		config.setSystem(new MovementSystem(map));
 		config.setSystem(new CollisionSystem(map));
 		config.setSystem(new ZSortSystem());
@@ -161,8 +162,8 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void render(float delta)
 	{
-		//Gdx.gl.glClearColor(0, 0, 0, 1);
-		//Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
+		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		camera.update();
 		

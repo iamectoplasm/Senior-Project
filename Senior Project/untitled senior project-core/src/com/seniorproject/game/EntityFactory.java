@@ -7,7 +7,10 @@ import com.artemis.ArchetypeBuilder;
 import com.artemis.Entity;
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.GridPoint2;
@@ -36,6 +39,8 @@ public class EntityFactory
 	private static EntityFactory instance = null;
 	private Hashtable<String, String> entities;
 	
+	//private Hashtable<String, TextureRegion> entityTextures;
+	
 	public static EntityFactory getInstance()
 	{
 		if (instance == null)
@@ -54,6 +59,8 @@ public class EntityFactory
 	public static enum EntityType
 	{
 		PERFORMER(new ArchetypeBuilder()
+				.add(BoundingBox.class)
+				.add(PerformerEmote.class)
 				.add(MovementDirection.class)
 				.add(MovementAnimation.class)
 				.add(MovementState.class)
@@ -62,7 +69,6 @@ public class EntityFactory
 				.add(PerformerSprite.class)
 				.add(Velocity.class)
 				.add(StageDirections.class)
-				.add(BoundingBox.class)
 				.build(world));
 
 		private Archetype archetype;
@@ -72,44 +78,9 @@ public class EntityFactory
 			this.archetype = setArchetype;
 		}
 	}
-	
-	public static String ANGUS_SPRITESHEET = "characters/sprites/angus.png";
-	public static String BANQUO_SPRITESHEET = "characters/sprites/banquo.png";
-	public static String DONALBAIN_SPRITESHEET = "characters/sprites/donalbain.png";
-	public static String DUNCAN_SPRITESHEET = "characters/sprites/duncan.png";
-	public static String LADY_MACBETH_SPRITESHEET = "characters/sprites/lady-macbeth.png";
-	public static String LENNOX_SPRITESHEET = "characters/sprites/lennox.png";
-	public static String MACBETH_SPRITESHEET = "characters/sprites/macbeth.png";
-	public static String MACDUFF_SPRITESHEET = "characters/sprites/macduff.png";
-	public static String MALCOLM_SPRITESHEET = "characters/sprites/malcolm.png";
-	public static String ROSS_SPRITESHEET = "characters/sprites/ross.png";
-	public static String SERGEANT_SPRITESHEET = "characters/sprites/sergeant.png";
-	public static String MESSENGER_SPRITESHEET = "characters/sprites/messenger.png";
-	
-	public static String FIRST_WITCH_SPRITESHEET = "characters/sprites/first-witch.png";
-	public static String SECOND_WITCH_SPRITESHEET = "characters/sprites/second-witch.png";
-	public static String THIRD_WITCH_SPRITESHEET = "characters/sprites/third-witch.png";
 
 	private EntityFactory()
-	{
-		entities = new Hashtable<String, String>();
-
-		entities.put(CharacterName.ANGUS.name(), ANGUS_SPRITESHEET);
-		entities.put(CharacterName.BANQUO.name(), BANQUO_SPRITESHEET);
-		entities.put(CharacterName.DONALBAIN.name(), DONALBAIN_SPRITESHEET);
-		entities.put(CharacterName.DUNCAN.name(), DUNCAN_SPRITESHEET);
-		entities.put(CharacterName.LADY_MACBETH.name(), LADY_MACBETH_SPRITESHEET);
-		entities.put(CharacterName.LENNOX.name(), LENNOX_SPRITESHEET);
-		entities.put(CharacterName.MACBETH.name(), MACBETH_SPRITESHEET);
-		entities.put(CharacterName.MACDUFF.name(), MACDUFF_SPRITESHEET);
-		entities.put(CharacterName.MALCOLM.name(), MALCOLM_SPRITESHEET);
-		entities.put(CharacterName.ROSS.name(), ROSS_SPRITESHEET);
-		entities.put(CharacterName.SERGEANT.name(), SERGEANT_SPRITESHEET);
-		entities.put(CharacterName.MESSENGER.name(), MESSENGER_SPRITESHEET);
-		entities.put(CharacterName.FIRST_WITCH.name(), FIRST_WITCH_SPRITESHEET);
-		entities.put(CharacterName.SECOND_WITCH.name(), SECOND_WITCH_SPRITESHEET);
-		entities.put(CharacterName.THIRD_WITCH.name(), THIRD_WITCH_SPRITESHEET);
-	}
+	{ }
 	
 	public static Entity getPerformerEntity(CharacterName character)
 	{
@@ -119,11 +90,9 @@ public class EntityFactory
 			
 		entity.getComponent(Name.class).name = character.toString();
 		
-		//Gdx.app.debug(TAG, "Name of entity being created: " + character.toString());
+		Gdx.app.debug(TAG, "Name of entity being created: " + character.toString());
 		
-		String spriteSheetPath = EntityFactory.getInstance().getEntitiesTable().get(character.toString());
-		AssetLoader.loadTextureAsset(spriteSheetPath);
-		Texture spriteSheet = AssetLoader.getTextureAsset(spriteSheetPath);
+		TextureRegion spriteSheet = PerformerAtlas.getInstance().getPerformerTexture(character);
 		
 		if(spriteSheet == null)
 		{
@@ -145,23 +114,13 @@ public class EntityFactory
 		world = setWorld;
 	}
 	
-	private static Hashtable<AnimationType, Animation> loadAnimations(Texture spriteSheet)
+	private static Hashtable<AnimationType, Animation> loadAnimations(TextureRegion spriteSheet)
 	{
 		Hashtable<AnimationType, Animation> animations = new Hashtable<AnimationType, Animation>();
 		
 		Json tempJson = new Json();
 		AnimationConfig config = tempJson.fromJson(AnimationConfig.class, Gdx.files.internal("characters/animationconfig.json"));
 		Array<AnimationData> animationDataArray = config.getAnimationData();
-		
-		//for(int i = 0; i < animationDataArray.size; i++)
-		//{
-		//	Gdx.app.debug(TAG, "animationDataArray at index " + i);
-		//	Gdx.app.debug(TAG, "\tAnimationType: " + animationDataArray.get(i).getAnimationType());
-		//	for(int j = 0; j < animationDataArray.get(i).getGridPoints().size; j++)
-		//	{
-		//		Gdx.app.debug(TAG, "\tGridpoints: " + animationDataArray.get(i).getGridPoints().get(j));
-		//	}
-		//}
 
 		for (AnimationData animationData : animationDataArray)
 		{
@@ -177,10 +136,10 @@ public class EntityFactory
 		
 		return animations;
 	}
-
-	protected static Animation loadSingleAnimation(Texture spriteSheet, Array<GridPoint2> points)
+	
+	protected static Animation loadSingleAnimation(TextureRegion spriteSheet, Array<GridPoint2> points)
 	{
-		TextureRegion[][] textureFrames = TextureRegion.split(spriteSheet, 32, 32);
+		TextureRegion[][] textureFrames = spriteSheet.split(32, 32);
 	
 		Array<TextureRegion> animationKeyFrames = new Array<TextureRegion>(points.size);
 

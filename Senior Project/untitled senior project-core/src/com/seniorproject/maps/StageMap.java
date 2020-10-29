@@ -121,12 +121,12 @@ public class StageMap
 		stairsLayer = tiledMap.getLayers().get(StageLayers.STAIRS_OBJECT_LAYER);
 		
 		stairsTriggers = new Array<StairsTrigger>();
-		Gdx.app.debug(TAG, "Now creating stairsTrigger array:");
+		//Gdx.app.debug(TAG, "Now creating stairsTrigger array:");
 		for(MapObject object: stairsLayer.getObjects())
 		{
 			if(object instanceof RectangleMapObject)
 			{
-				Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
+				//Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
 				stairsTriggers.add(new StairsTrigger(object));
 			}
 		}
@@ -134,12 +134,12 @@ public class StageMap
 		stageChangeLayer = tiledMap.getLayers().get(StageLayers.Z_CHANGE_LAYER);
 		
 		stageChangeTriggers = new Array<ZPortal>();
-		Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
+		//Gdx.app.debug(TAG, "Now creating stageChangeTrigger array:");
 		for(MapObject object: stageChangeLayer.getObjects())
 		{
 			if(object instanceof RectangleMapObject)
 			{
-				Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
+				//Gdx.app.debug(TAG, "\t\tAdding new object, object is " + object.getName());
 				stageChangeTriggers.add(new ZPortal(object));
 			}
 		}

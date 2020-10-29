@@ -14,20 +14,12 @@
 	"actorActions":
 	[{
 		"actor": "FIRST_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
-			// starts at (11, 5)
-			//{"action": "WALK", "direction": "DOWN", "destination": {"x": 11, "y": 7} },
-			//{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7} },
-			//{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11} },
-			//{"action": "REFACE", "direction": "RIGHT"}
-		
 			// starts at (8, 11)
 			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 8, "y": 11} },
-			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12} }//,
-		 	//{"action": "WALK", "direction": "LEFT", "destination": {"x": 7, "y": 12} },
-		 	//{"action": "WALK", "direction": "UP", "destination": {"x": 7, "y": 11} },
-		 	//{"action": "WALK", "direction": "RIGHT", "destination": {"x": 8, "y": 12} }
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12} }
 		]
 	 },
 	 {
@@ -53,6 +45,7 @@
 	"actorActions":
 	[{
 		"actor": "FIRST_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "RIGHT"}
@@ -80,6 +73,7 @@
 	"actorActions":
 	[{
 		"actor": "SECOND_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "LEFT" }
@@ -87,6 +81,7 @@
 	 },
 	 {
 		"actor": "THIRD_WITCH",
+		"emote": "THINKING",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "DOWN" }
@@ -97,7 +92,12 @@
 	"lineID": 4,
 	"actorActions":
 	[{
+		"actor": "SECOND_WITCH",
+		"emote": "SPEECH"
+	 },
+	 {
 		"actor": "THIRD_WITCH",
+		"emote": "THINKING",
 		"actions":
 		[
 			// starts at (12, 12)
@@ -108,8 +108,10 @@
 {
 	"lineID": 5,
 	"actorActions":
-	[{
+	[
+	 {
 		"actor": "THIRD_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "LEFT"}
@@ -117,23 +119,19 @@
 	 }]
 },
 {
-	"lineID": 6//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 6,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",
+		"emote": "CONFUSION"
+	}]
 },
 {
 	"lineID": 7,
 	"actorActions":
 	[{
 		"actor": "SECOND_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (14, 14)
@@ -153,17 +151,10 @@
 	"actorActions":
 	[{
 		"actor": "FIRST_WITCH",
+		"emote": "SURPRISE",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "RIGHT" }
-		]
-	},
-	{
-		"actor": "THIRD_WITCH",
-		"actions":
-		[
-			// starts at (17, 12)
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 12} }
 		]
 	},
 	{
@@ -171,6 +162,15 @@
 		"actions":
 		[
 			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (17, 12)
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 12} }
 		]
 	}]
 },
@@ -184,6 +184,14 @@
 			{"action": "REFACE", "direction": "LEFT"},
 			{"action": "REFACE", "direction": "UP"}
 		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"emote": "SURPRISE"
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"emote": "SURPRISE"
 	}]
 },
 {
@@ -191,11 +199,16 @@
 	"actorActions":
 	[{
 		"actor": "SECOND_WITCH",
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "LEFT"},
 			{"action": "REFACE", "direction": "DOWN"}
 		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"emote": "SPEECH"
 	}]
 },
 {

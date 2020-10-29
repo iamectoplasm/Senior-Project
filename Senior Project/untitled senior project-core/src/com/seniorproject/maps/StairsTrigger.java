@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.math.Rectangle;
 import com.seniorproject.components.MovementDirection;
+import com.seniorproject.enums.StageLayer;
 
 public class StairsTrigger
 {
@@ -16,13 +17,18 @@ public class StairsTrigger
 	private Rectangle bounds;
 	
 	private int yShift;
+	private StageLayer stageLayer;
 	private MovementDirection.Direction activateFromDirection;
+	
+	private boolean yShiftOccurred;
 	
 	private String debugName;
 	
 	public StairsTrigger(MapObject object)
 	{
 		this.yShift = Integer.valueOf(object.getProperties().get("yShift", Integer.class));
+		this.stageLayer = StageLayer.valueOf(object.getProperties().get("stageLayer", String.class));
+		
 		String direction = String.valueOf(object.getProperties().get("activateOnDirection", String.class));
 		this.activateFromDirection = MovementDirection.Direction.valueOf(direction);
 		
@@ -39,8 +45,15 @@ public class StairsTrigger
 
 		this.bounds = new Rectangle(x, y, width, height);
 		
-		Gdx.app.debug(TAG, "New StairsTrigger object " + object.getName() + " created with values: " + bounds.toString());
-		Gdx.app.debug(TAG, "\tThis trigger activates when direction is " + direction);
+		this.yShiftOccurred = false;
+		
+		//Gdx.app.debug(TAG, "New StairsTrigger object " + object.getName() + " created with values: " + bounds.toString());
+		//Gdx.app.debug(TAG, "\tThis trigger activates when direction is " + direction);
+	}
+	
+	public StageLayer getStageLayerActive()
+	{
+		return stageLayer;
 	}
 	
 	public Rectangle getStairTriggerBounds()
@@ -60,7 +73,7 @@ public class StairsTrigger
 	
 	public boolean checkTriggerActivation(Rectangle playerBoundingBox)
 	{
-		if(bounds.overlaps(playerBoundingBox))
+		if(bounds.overlaps(playerBoundingBox) && !yShiftOccurred)
 		{
 			return true;
 		}
@@ -71,5 +84,15 @@ public class StairsTrigger
 	public String getName()
 	{
 		return debugName;
+	}
+	
+	public boolean getYShiftOccurred()
+	{
+		return yShiftOccurred;
+	}
+	
+	public void setYShiftOccurred(boolean yShiftOccurred)
+	{
+		this.yShiftOccurred = yShiftOccurred;
 	}
 }

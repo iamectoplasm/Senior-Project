@@ -14,9 +14,12 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.seniorproject.enums.SceneFiles;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.Scene;
 import com.seniorproject.game.SceneManager;
+import com.seniorproject.game.SeniorProject;
+import com.seniorproject.game.SeniorProject.ScreenType;
 
 public class PerformanceHUD implements Screen
 {
@@ -35,6 +38,8 @@ public class PerformanceHUD implements Screen
 	private ImageButton showDashBtn;
 	private ImageButton hideDashBtn;
 	
+	private ImageButton returnToMainMenu;
+	
 	private DialogueUI sharedLineDialogue;
 	
 	public PerformanceHUD(Camera camera, final SceneManager sceneManager)
@@ -44,6 +49,38 @@ public class PerformanceHUD implements Screen
 		this.viewport = new FitViewport(800, 600, this.camera);
 		this.stage = new Stage(viewport);
 		this.sceneManager = sceneManager;
+		
+		this.returnToMainMenu = new ImageButton(AssetLoader.SELECT_SKIN, "exit");
+		returnToMainMenu.setPosition(0, stage.getHeight() - returnToMainMenu.getHeight() - 64);
+		stage.addActor(returnToMainMenu);
+		/*
+		returnToMainMenu.addListener(new ClickListener()
+		{
+			@Override
+			public boolean touchDown(InputEvent event,
+                    float x,
+                    float y,
+                    int pointer,
+                    int button)
+			{
+				return true;
+			}
+			
+			@Override
+			public void touchUp(InputEvent event,
+                    float x,
+                    float y,
+                    int pointer,
+                    int button)
+			{
+				SeniorProject game = (SeniorProject) Gdx.app.getApplicationListener();
+				game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				
+				Scene newScene = new Scene(SceneFiles.ACT1SCENE2);
+				sceneManager.setupNewScene(newScene);
+			}
+		});
+		*/
 		
 		this.currentSceneLabel = new Label(sceneManager.getCurrentScene().getSceneTitle(), AssetLoader.DASHBOARD_SKIN, "title-label");
 		currentSceneLabel.setPosition(16, this.getStage().getHeight() - currentSceneLabel.getHeight() - 16);
@@ -175,6 +212,7 @@ public class PerformanceHUD implements Screen
 	
 	public void updateStudyUIToNewScene(Scene scene)
 	{
+		currentSceneLabel.setText(scene.getSceneTitle());
 		dashboardUI.updateToNewScene(scene);
 	}
 	

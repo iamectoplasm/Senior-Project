@@ -108,17 +108,22 @@ public class CollisionSystem extends IntervalIteratingSystem
 		{
 			StairsTrigger trigger = stairsTriggers.get(i);
 			
-			if(box.boundingBox.contains(trigger.getStairTriggerBounds()))
+			boolean entityEligibleToActivate = trigger.getStageLayerActive().getZIndex() == position.mapZIndex;
+			
+			if(entityEligibleToActivate)
 			{
-				boolean matchesActivationDirection = direction.currentDirection == trigger.getActivationDirection();
-				
-				if(matchesActivationDirection)
+				if(box.boundingBox.contains(trigger.getStairTriggerBounds()))
 				{
-					Gdx.app.debug(TAG, "Collision occurring at " + trigger.getName() + " for entity " + world.getEntity(entityId).getComponent(Name.class).name);
-					Gdx.app.debug(TAG, "\t\tFrom direction: " + trigger.getActivationDirection());
-					Gdx.app.debug(TAG, "\t\tYShift: " + trigger.getYShift());
-					position.destinationPosition.y = position.destinationPosition.y + trigger.getYShift();
-					return true;
+					boolean matchesActivationDirection = direction.currentDirection == trigger.getActivationDirection();
+				
+					if(matchesActivationDirection)
+					{
+						Gdx.app.debug(TAG, "Collision occurring at " + trigger.getName() + " for entity " + world.getEntity(entityId).getComponent(Name.class).name);
+						Gdx.app.debug(TAG, "\t\tFrom direction: " + trigger.getActivationDirection());
+						Gdx.app.debug(TAG, "\t\tYShift: " + trigger.getYShift());
+						position.destinationPosition.y = position.destinationPosition.y + trigger.getYShift();
+						return true;
+					}
 				}
 			}
 		}
