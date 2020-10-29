@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="left-down" width="24" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="29" nextobjectid="14">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="left-down" width="24" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="29" nextobjectid="21">
  <tileset firstgid="1" name="tileset 003" tilewidth="16" tileheight="16" tilecount="2560" columns="16">
   <image source="tileset 003.png" width="256" height="2560"/>
  </tileset>
@@ -531,78 +531,106 @@
   </layer>
  </group>
  <objectgroup id="20" name="stairs">
-  <object id="1" name="yIndexShift" x="75" y="180" width="2" height="8">
+  <object id="1" name="left stairs down" x="75" y="180" width="2" height="8">
    <properties>
     <property name="activateOnDirection" value="LEFT"/>
+    <property name="stageLayer" value="MAIN_STAGE"/>
     <property name="yShift" type="int" value="-1"/>
    </properties>
   </object>
   <object id="2" name="left stairs up" x="50" y="196" width="2" height="8">
    <properties>
     <property name="activateOnDirection" value="RIGHT"/>
+    <property name="stageLayer" value="MAIN_STAGE"/>
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
   <object id="3" name="right stairs up" x="332" y="196" width="2" height="8">
    <properties>
     <property name="activateOnDirection" value="LEFT"/>
+    <property name="stageLayer" value="MAIN_STAGE"/>
     <property name="yShift" type="int" value="1"/>
    </properties>
   </object>
   <object id="4" name="right stairs down" x="306" y="180" width="2" height="8">
    <properties>
     <property name="activateOnDirection" value="RIGHT"/>
+    <property name="stageLayer" value="MAIN_STAGE"/>
     <property name="yShift" type="int" value="-1"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="24" name="stage change triggers">
-  <object id="6" name="zIndexChange 3" x="116" y="160" width="24" height="1">
+ <objectgroup id="24" name="stage change triggers" visible="0">
+  <object id="6" name="enter balcony" x="116" y="160" width="24" height="1">
    <properties>
     <property name="fromLayer" value="MAIN_STAGE"/>
     <property name="toLayer" value="BALCONY"/>
    </properties>
   </object>
-  <object id="7" name="zIndexChange 1" x="180" y="160" width="24" height="16">
+  <object id="7" name="center door" x="180" y="160" width="24" height="2">
    <properties>
     <property name="fromLayer" value="BACKSTAGE"/>
     <property name="toLayer" value="MAIN_STAGE"/>
    </properties>
   </object>
-  <object id="8" name="zIndexChange 2" x="160" y="176" width="1" height="9">
+  <object id="8" name="up stage left enter" x="160" y="176" width="1" height="9">
    <properties>
     <property name="fromLayer" value="MAIN_STAGE"/>
     <property name="toLayer" value="UP_STAGE_LEFT"/>
    </properties>
   </object>
-  <object id="9" name="zIndexChange 4" x="96" y="160" width="1" height="32">
+  <object id="9" name="up stage left enter" x="102" y="180" width="1" height="8">
    <properties>
     <property name="fromLayer" value="MAIN_STAGE"/>
     <property name="toLayer" value="UP_STAGE_LEFT"/>
    </properties>
   </object>
-  <object id="10" name="zIndexChange 5" x="336" y="48" width="32" height="1">
-   <properties>
-    <property name="fromLayer" value="BALCONY"/>
-    <property name="toLayer" value="BACKSTAGE"/>
-   </properties>
-  </object>
-  <object id="11" name="zIndexChange 6" x="157" y="196" width="1" height="8">
+  <object id="11" name="exit balcony" x="157" y="196" width="1" height="8">
    <properties>
     <property name="fromLayer" value="BALCONY"/>
     <property name="toLayer" value="MAIN_STAGE"/>
    </properties>
   </object>
-  <object id="12" name="zIndexChange 7" x="336" y="32" width="24" height="1">
-   <properties>
-    <property name="fromLayer" value="MAIN_STAGE"/>
-    <property name="toLayer" value="BACKSTAGE"/>
-   </properties>
-  </object>
-  <object id="13" name="zIndexChange 8" x="176" y="112" width="32" height="1">
+  <object id="13" name="balcony center door" x="177" y="112" width="30" height="1">
    <properties>
     <property name="fromLayer" value="BACKSTAGE"/>
     <property name="toLayer" value="BALCONY"/>
+   </properties>
+  </object>
+  <object id="15" name="up stage left enter" x="100" y="204" width="8" height="1">
+   <properties>
+    <property name="fromLayer" value="MAIN_STAGE"/>
+    <property name="toLayer" value="UP_STAGE_LEFT"/>
+   </properties>
+  </object>
+  <object id="16" name="up stage left exit" x="84" y="204" width="8" height="1">
+   <properties>
+    <property name="fromLayer" value="UP_STAGE_LEFT"/>
+    <property name="toLayer" value="MAIN_STAGE"/>
+   </properties>
+  </object>
+  <object id="17" name="up stage left exit" x="88" y="180" width="1" height="8">
+   <properties>
+    <property name="fromLayer" value="UP_STAGE_LEFT"/>
+    <property name="toLayer" value="MAIN_STAGE"/>
+   </properties>
+  </object>
+  <object id="18" name="stage left door" x="104" y="160" width="8" height="1">
+   <properties>
+    <property name="fromLayer" value="BACKSTAGE"/>
+    <property name="toLayer" value="UP_STAGE_LEFT"/>
+   </properties>
+  </object>
+  <object id="19" name="stage right door" x="264" y="160" width="8" height="1">
+   <properties>
+    <property name="fromLayer" value="BACKSTAGE"/>
+    <property name="toLayer" value="MAIN_STAGE"/>
+   </properties>
+  </object>
+  <object id="20" name="stage right door" x="272" y="160" width="8" height="1">
+   <properties>
+    <property name="fromLayer" value="BACKSTAGE"/>
+    <property name="toLayer" value="MAIN_STAGE"/>
    </properties>
   </object>
  </objectgroup>

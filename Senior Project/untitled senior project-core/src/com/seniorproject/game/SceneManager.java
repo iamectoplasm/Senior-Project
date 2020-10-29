@@ -1,17 +1,15 @@
 package com.seniorproject.game;
 
 import com.artemis.World;
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.enums.SceneFiles;
-import com.seniorproject.game.SeniorProject.ScreenType;
 import com.seniorproject.screens.PerformanceScreen;
 import com.seniorproject.screens.SceneIntroScreen;
 import com.seniorproject.systems.PerformanceSystem;
-import com.seniorproject.configs.BlockingConfig.PerformerActions;
-import com.seniorproject.configs.BlockingConfig.Actions;
-import com.seniorproject.configs.BlockingConfig.ActionsForLine;
+import com.seniorproject.configs.PerformConfig.ActionsForPerformer;
+import com.seniorproject.configs.PerformConfig.ActionToPerform;
+import com.seniorproject.configs.PerformConfig.ActionsForLine;
 import com.seniorproject.configs.ScriptConfig.Line;
 import com.seniorproject.configs.ScriptConfig.LineText;
 import com.seniorproject.enums.CharacterName;
@@ -61,8 +59,8 @@ public class SceneManager
 				SceneFiles.ACT1SCENE6,
 				SceneFiles.ACT1SCENE7);
 		
-		//this.currentSceneIndex = 0;
-		this.currentSceneIndex = 1;
+		this.currentSceneIndex = 0;
+		//this.currentSceneIndex = 1;
 		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
@@ -132,7 +130,8 @@ public class SceneManager
 		if(sharedLineIndex == 0)
 		{
 			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
-			updateActions(currentLineID);
+			resetCharacterEmoticons();
+			updatePerformance(currentLineID);
 		}
 	}
 	
@@ -188,7 +187,7 @@ public class SceneManager
 		return actorHasChanged;
 	}
 	
-	public void updateActions(int lineID)
+	public void updatePerformance(int lineID)
 	{
 		currentLineAction = currentScene.getLineActionsByID(lineID);
 		
@@ -232,26 +231,55 @@ public class SceneManager
 		//Gdx.app.debug(TAG, "text displayed array now size " + currentTextDisplay.size);
 	}
 	
+	private void resetCharacterEmoticons()
+	{
+		for(int i = 0; i < currentScene.getPerformersInScene().size; i++)
+		{
+			world.getSystem(PerformanceSystem.class).resetCharacterEmotes(currentScene.getPerformersInScene().get(i).getId());
+		}
+	}
+	
 	private void updateCharacterActions()
 	{
-		Array<PerformerActions> blockingList = currentLineAction.getPerformerBlocking();
+		Array<ActionsForPerformer> actionsList = currentLineAction.getActionsForPerformer();
 		
-		for(int i = 0; i < blockingList.size; i++)
+		for(int i = 0; i < actionsList.size; i++)
 		{
-			PerformerActions list = blockingList.get(i);
+			ActionsForPerformer list = actionsList.get(i);
 			
-			Array<Actions> actions = list.getStageDirections();
+			Array<ActionToPerform> actions = list.getActions();
 			
 			CharacterName name = list.getActor();
+			//Gdx.app.debug(TAG, "\t\tNow updating actions for performer with name: " + name);
 			int entityId = currentScene.getEntityIdByName(name);
+			//Gdx.app.debug(TAG, "\t\tAnd entitId: " + entityId);
+			
+			/*
+			 * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+			 * (figuring out emoticon stuff-- code ahead will be messy)
+			 */
+			
+			if(list.getEmoticon() != null)
+			{
+				//Gdx.app.debug(TAG, "Emoticon " + list.getEmoticon().name() + " added to performer " + name + " with entityId" + entityId);
+				world.getSystem(PerformanceSystem.class).updateCharacterEmotes(entityId, list.getEmoticon());
+			}
+			
+			/*
+			 * = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+			 * 
+			 */
 			
 			world.getSystem(PerformanceSystem.class).updateCharacterActions(entityId, actions);
 			
 			//Gdx.app.debug(TAG, "Actions added to actor " + name);
 			//for(int j = 0; j < actions.size; j++)
 			//{
-			//	Action tempAction = actions.get(j);
-			//	Gdx.app.debug(TAG, "\t\tAction at index " + j + ": " + tempAction.getAction() + " " + tempAction.getDirection());
+			//	ActionToPerform tempAction = actions.get(j);
+			//	Gdx.app.debug(TAG, "\t\tAction at index " +
+			//			j + ": " +
+			//			tempAction.getAction() + " " +
+			//			tempAction.getDirection());
 			//}
 		}
 	}

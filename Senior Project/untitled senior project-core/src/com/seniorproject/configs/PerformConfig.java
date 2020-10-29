@@ -5,16 +5,17 @@ import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.enums.CharacterName;
-import com.seniorproject.enums.StageLayer;;
+import com.seniorproject.enums.StageLayer;
+import com.seniorproject.game.EmoticonAtlas;;
 
-public class BlockingConfig
+public class PerformConfig
 {
 	//private static final String TAG = ActionsConfig.class.getSimpleName();
 	
 	private Array<Setup> sceneSetup;
 	private Array<ActionsForLine> lineActions;
 	
-	public BlockingConfig()
+	public PerformConfig()
 	{
 		this.sceneSetup = new Array<Setup>();
 		this.lineActions = new Array<ActionsForLine>();
@@ -26,10 +27,10 @@ public class BlockingConfig
 	public void setSceneSetup(Array<Setup> sceneSetup)
 	{ this.sceneSetup = sceneSetup; }
 
-	public Array<ActionsForLine> getBlockingForLine()
+	public Array<ActionsForLine> getActionsForLine()
 	{ return lineActions; }
 
-	public void setBlockingForLine(Array<ActionsForLine> blockingList)
+	public void setActionsForLine(Array<ActionsForLine> blockingList)
 	{ this.lineActions = blockingList; }
 	
 	public static class Setup
@@ -71,11 +72,11 @@ public class BlockingConfig
 	public static class ActionsForLine
 	{
 		private int lineID;
-		private Array<PerformerActions> actorActions;
+		private Array<ActionsForPerformer> actorActions;
 		
 		public ActionsForLine()
 		{
-			this.actorActions = new Array<PerformerActions>();
+			this.actorActions = new Array<ActionsForPerformer>();
 		}
 		
 		public int getLineID()
@@ -84,23 +85,25 @@ public class BlockingConfig
 		public void setLineID(int lineID)
 		{ this.lineID = lineID; }
 		
-		public Array<PerformerActions> getPerformerBlocking()
+		public Array<ActionsForPerformer> getActionsForPerformer()
 		{ return actorActions; }
 		
-		public void setPerformerBlocking(Array<PerformerActions> blocking)
+		public void setActiondForPerformer(Array<ActionsForPerformer> blocking)
 		{ this.actorActions = blocking; }
 		
 	}
 	
-	public static class PerformerActions
+	public static class ActionsForPerformer
 	{
 		private CharacterName actor;
-		private Array<Actions> actions;
+		private EmoticonAtlas.Emoticon emote;
+		private Array<ActionToPerform> actions;
 		
-		public PerformerActions()
+		public ActionsForPerformer()
 		{
 			this.actor = CharacterName.SERGEANT;
-			this.actions = new Array<Actions>();
+			this.emote = null;
+			this.actions = new Array<ActionToPerform>();
 		}
 		
 		public CharacterName getActor()
@@ -109,21 +112,36 @@ public class BlockingConfig
 		public void setActor(CharacterName actor)
 		{ this.actor = actor; }
 		
-		public Array<Actions> getStageDirections()
+		public Array<ActionToPerform> getActions()
 		{ return actions; }
 		
-		public void setStageDirections(Array<Actions> directions)
+		public void setActions(Array<ActionToPerform> directions)
 		{ this.actions = directions; }
+		
+		public EmoticonAtlas.Emoticon getEmoticon()
+		{
+			return emote;
+		}
+		
+		public void setEmoticon(EmoticonAtlas.Emoticon emoticon)
+		{
+			this.emote = emoticon;
+		}
+		
+		//public TextureRegion getEmoticonTexture()
+		//{
+		//	return emote.getIcon();
+		//}
 	}
 	
-	public static class Actions
+	public static class ActionToPerform
 	{
 		private MovementState.State action;
 		private int tiles;
 		private MovementDirection.Direction direction;
 		private Vector2 destination;
 		
-		public Actions()
+		public ActionToPerform()
 		{
 			this.action = MovementState.State.IDLE;
 			this.direction = MovementDirection.Direction.DOWN;

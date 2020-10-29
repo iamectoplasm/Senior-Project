@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.seniorproject.components.Position;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
+import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.components.PerformerSprite;
 
 public class RenderSystem extends EntitySystem
@@ -21,6 +22,7 @@ public class RenderSystem extends EntitySystem
 	ComponentMapper<PerformerSprite> mSprite;
 	ComponentMapper<Position> mPosition;
 	ComponentMapper<BoundingBox> mBoundingBox;
+	ComponentMapper<PerformerEmote> mEmotion;
 	
 	//Array<Entity> sortedEntities = new Array<Entity>();
 	
@@ -32,7 +34,8 @@ public class RenderSystem extends EntitySystem
 	{
 		super(Aspect.all(Active.class,
 				PerformerSprite.class,
-				Position.class));
+				Position.class,
+				PerformerEmote.class));
 
 		this.camera = camera;
 		this.batch = batch;
@@ -81,6 +84,7 @@ public class RenderSystem extends EntitySystem
 		{
 			PerformerSprite sprite = mSprite.get(e);
 			Position position = mPosition.get(e);
+			PerformerEmote emote = mEmotion.get(e);
 		
 			//Gdx.app.debug(TAG, "Current entity being rendered: " + e.getComponent(Name.class).entityName);
 			//Gdx.app.debug(TAG, "\tLocated at: (" + position.currentPosition.x + ", " + position.currentPosition.y + ")");
@@ -97,6 +101,13 @@ public class RenderSystem extends EntitySystem
 					position.currentPosition.y + position.yOffset,
 					sprite.drawWidth,
 					sprite.drawHeight);
+			
+			//batch.draw(emote.emoticon, position.currentPosition.x, position.currentPosition.y + 2);
+			batch.draw(emote.emoticon,
+					position.currentPosition.x + position.xOffset,
+					position.currentPosition.y + position.yOffset + 2,
+					2,
+					2);
 			batch.end();
 		}
 	}

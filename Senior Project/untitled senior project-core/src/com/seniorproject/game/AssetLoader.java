@@ -25,6 +25,9 @@ public class AssetLoader
 	private final static AssetManager assetManager = new AssetManager();
 	private static InternalFileHandleResolver filePathResolver = new InternalFileHandleResolver();
 	
+	//public final static String EMOTICON_ATLAS_PATH = "characters/emoticons/emotions-sheet.atlas";
+	//public static TextureAtlas EMOTICON_TEXTUREATLAS = new TextureAtlas(EMOTICON_ATLAS_PATH);
+	
 	public final static String INTRO_TEXTURE_ATLAS_PATH = "skins/introui.atlas";
 	public final static String INTRO_SKIN_PATH = "skins/introui.json";
 	public static TextureAtlas INTRO_TEXTUREATLAS = new TextureAtlas(INTRO_TEXTURE_ATLAS_PATH);

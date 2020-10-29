@@ -206,7 +206,7 @@ public class MovementSystem extends IntervalIteratingSystem
 		{
 			direction.currentDirection = direction.refaceDirection;
 			
-			movementState.stateTime = 0;
+			movementState.resetStateTime();
 			movementState.refaceRequested = false;
 			movementState.refaceInProgress = false;
 			//movementState.currentState = State.IDLE;
@@ -226,7 +226,7 @@ public class MovementSystem extends IntervalIteratingSystem
 			reface(entityId);
 		}
 		
-		if(movementState.moveRequested && !movementState.moveInProgress && !position.hasReachedDestTile())
+		else if(movementState.moveRequested && !movementState.moveInProgress && !position.hasReachedDestTile())
 		{
 			calculateNextPosition(entityId);
 			//if(world.getSystem(CollisionSystem.class).checkForMapCollision(entityId) ||
@@ -242,6 +242,7 @@ public class MovementSystem extends IntervalIteratingSystem
 		}
 	}
 	
+	/*
 	public void cancelMove(int entityId)
 	{
 		Position position = mPosition.get(entityId);
@@ -253,6 +254,7 @@ public class MovementSystem extends IntervalIteratingSystem
 
 		position.resetAllToStarting();
 	}
+	*/
 
 	private float calculateLerpAlpha(float currentTime, int entityId)
 	{

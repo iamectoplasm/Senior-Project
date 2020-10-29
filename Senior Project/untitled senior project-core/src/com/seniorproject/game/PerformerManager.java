@@ -55,6 +55,9 @@ public class PerformerManager
 				performers.get(i).edit().add(new Active());
 				performers.get(i).getComponent(StageDirections.class).resetActionsArray();
 				performers.get(i).getComponent(MovementState.class).resetAll();
+				
+				Gdx.app.debug(TAG, "Performer " + name + " has been activated.");
+				
 				return performers.get(i);
 			}
 		}

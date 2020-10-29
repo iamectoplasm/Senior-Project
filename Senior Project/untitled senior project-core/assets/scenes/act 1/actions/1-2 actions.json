@@ -1,16 +1,19 @@
 {
 "sceneSetup":
 [
+	// Enter from balcony
 	{"actor": "DUNCAN", "startPosition": {"x": 11, "y": 5}, "stageLayer": "BACKSTAGE"},
-	//{"actor": "DUNCAN", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	//{"actor": "MALCOLM", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "MALCOLM", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "DONALBAIN", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	//{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "LENNOX", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "ROSS", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	//{"actor": "SERGEANT", "startPosition": {"x": 12, "y": 25}, "stageLayer": "MAIN_STAGE"}
-	{"actor": "SERGEANT", "startPosition": {"x": 17, "y": 15}, "stageLayer": "MAIN_STAGE"}
+	
+	// Down stage left
+	{"actor": "MALCOLM", "startPosition": {"x": 6, "y": 13}, "stageLayer": "MAIN_STAGE"},
+	{"actor": "ROSS", "startPosition": {"x": 8, "y": 11}, "stageLayer": "UP_STAGE_LEFT"},
+	
+	// Center right/down stage right
+	{"actor": "LENNOX", "startPosition": {"x": 16, "y": 8}, "stageLayer": "BACKSTAGE"},
+	{"actor": "DONALBAIN", "startPosition": {"x": 17, "y": 14}, "stageLayer": "MAIN_STAGE"},
+	
+	// Enter from front ground
+	{"actor": "SERGEANT", "startPosition": {"x": 11, "y": 24}, "stageLayer": "MAIN_STAGE"}
 ],
 
 "lineActions":
@@ -21,6 +24,7 @@
 	"actorActions":
 	[{
 		"actor": "DUNCAN",
+		"emote": "SURPRISE",
 		"actions":
 		[
 			// starts at (11, 5)
@@ -31,37 +35,41 @@
 		"actor": "MALCOLM",
 		"actions":
 		[
-			{"action": "REFACE", "direction": "DOWN"}
-		]
-	},
-	{
-		"actor": "DONALBAIN",
-		"actions":
-		[
-			{"action": "REFACE", "direction": "DOWN"}
-		]
-	},
-	{
-		"actor": "LENNOX",
-		"actions":
-		[
-			//{"action": "REFACE", "direction": "DOWN"}
-			// starts at (25, 12)
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 17, "y": 11}}
+			// starts at (6, 13)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 6, "y": 15}}
 		]
 	},
 	{
 		"actor": "ROSS",
 		"actions":
 		[
-			{"action": "REFACE", "direction": "DOWN"}
+			// starts at (8, 11)
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 11}}
+		]
+	},
+	{
+		"actor": "LENNOX",
+		"actions":
+		[
+			// starts at (16, 8)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 16, "y": 12}}
+		]
+	},
+	{
+		"actor": "DONALBAIN",
+		"actions":
+		[
+			// starts at (17, 14), pacing
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 13, "y": 14}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 17, "y": 14} }
 		]
 	},
 	{
 		"actor": "SERGEANT",
 		"actions":
 		[
-			{"action": "REFACE", "direction": "DOWN"}
+			// starts at (11, 24)
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 16} }
 		]
 	}]
 },
@@ -71,149 +79,273 @@
 	"actorActions":
 	[{
 		"actor": "DUNCAN",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (11, 7)
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7} },
-			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11} }
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11}}
+		]
+	},
+	{
+		"actor": "MALCOLM",
+		"actions":
+		[
+			// starts at (6, 14)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 6, "y": 16} },
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 10, "y": 16} }
+		]
+	},
+	{
+		"actor": "ROSS",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN", "destination": null}
 		]
 	},
 	{
 		"actor": "LENNOX",
 		"actions":
 		[
-			// starts at (17, 11)
-			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 22, "y": 12}}
+			// starts at (16, 12)
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "DONALBAIN",
+		"actions":
+		[
+			// starts at (17, 14)
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 14} }
 		]
 	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 3//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 3,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",
+		"actions":
+		[
+			// starts at (8, 11)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN", "destination": null}
+		]
+	},
+	{
+		"actor": "SERGEANT",
+		"actions":
+		[
+			// starts at (11, 16)
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 15}}
+		]
+	},
+	{
+		"actor": "MALCOLM",
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (10, 15)
+			{"action": "WALK", "direction": "UP", "destination": {"x": 10, "y": 14}}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 4//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (10, 14)
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 14}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 13}}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 5//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 5,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (11, 13)
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 13}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 15}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "SERGEANT",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT", "destination": null}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 6//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 6,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 7//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 8//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 9//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 9,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 10//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
-{"lineID": 11},
-{"lineID": 12},
-{"lineID": 13},
-{"lineID": 14},
-{"lineID": 15},
-{"lineID": 16},
-{"lineID": 17},
-{"lineID": 18},
-{"lineID": 19},
-{"lineID": 20},
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
 
-{"lineID": 21},
-{"lineID": 22},
-{"lineID": 23},
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",
+		"emote": "SPEECH"
+	}]
+},
 {"lineID": 24},
 {"lineID": 25},
 {"lineID": 26},
