@@ -52,12 +52,12 @@ public class EmoticonAtlas
 		TextureAtlas atlas;
 		atlas = new TextureAtlas(Gdx.files.internal("characters/emoticons/emoticons-atlas.atlas"));
 		
-		Gdx.app.debug(TAG, "Texture Atlas created, contains regions:");
-		for(int i = 0; i < atlas.getRegions().size; i++)
-		{
-			AtlasRegion temp = atlas.getRegions().get(i);
-			Gdx.app.debug(TAG, "\t\t" + temp.name + " at coordinates: (" + temp.getRegionX() + ", " + temp.getRegionY() + ")");
-		}
+		//Gdx.app.debug(TAG, "Texture Atlas created, contains regions:");
+		//for(int i = 0; i < atlas.getRegions().size; i++)
+		//{
+		//	AtlasRegion temp = atlas.getRegions().get(i);
+		//	Gdx.app.debug(TAG, "\t\t" + temp.name + " at coordinates: (" + temp.getRegionX() + ", " + temp.getRegionY() + ")");
+		//}
 		
 		this.confusion = atlas.findRegion("confusion");
 		this.drunk1 = atlas.findRegion("drunk", 1);

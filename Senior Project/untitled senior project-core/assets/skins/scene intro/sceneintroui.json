@@ -31,12 +31,17 @@
 	"scene-title": {
 		"font": "arial-20pt",
 		"fontColor": "black",
-		"background": "blue-label"
+		"background": "title-label"
 	},
 	"scene-description": {
 		"font": "arial-16pt",
 		"fontColor": "black",
-		"background": "light-beige-panel"
+		"background": "scene-label"
+	},
+	"tab-label": {
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "label-tab"
 	}
 }
 }

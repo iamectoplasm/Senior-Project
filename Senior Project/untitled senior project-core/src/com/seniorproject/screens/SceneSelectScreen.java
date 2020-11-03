@@ -15,7 +15,6 @@ import com.seniorproject.configs.StudyConfig;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
-import com.seniorproject.ui.SceneSelectUI;
 
 public class SceneSelectScreen implements Screen
 {

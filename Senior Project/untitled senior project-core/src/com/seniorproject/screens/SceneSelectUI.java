@@ -1,4 +1,4 @@
-package com.seniorproject.ui;
+package com.seniorproject.screens;
 
 import com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;

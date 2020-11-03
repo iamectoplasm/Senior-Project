@@ -16,6 +16,8 @@
 	{"actor": "SERGEANT", "startPosition": {"x": 11, "y": 24}, "stageLayer": "MAIN_STAGE"}
 ],
 
+//"beginScene": [],
+
 "lineActions":
 [
 //------------------------------------------------------------

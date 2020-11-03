@@ -1,0 +1,102 @@
+
+optionsui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arial-12pt
+  rotate: false
+  xy: 1, 1161
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 1, 647
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-16pt
+  rotate: false
+  xy: 515, 1161
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-18pt
+  rotate: false
+  xy: 1, 133
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-20pt
+  rotate: false
+  xy: 515, 647
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-24pt
+  rotate: false
+  xy: 1029, 1161
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+home-button-down
+  rotate: false
+  xy: 1, 1
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+home-button-up
+  rotate: false
+  xy: 99, 99
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+label-bg
+  rotate: false
+  xy: 515, 613
+  size: 96, 32
+  split: 10, 10, 10, 10
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+options-bg
+  rotate: false
+  xy: 1, 35
+  size: 96, 96
+  split: 32, 32, 32, 32
+  pad: 16, 16, 16, 16
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+stage-overlay
+  rotate: false
+  xy: 515, 595
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+text-button-down
+  rotate: false
+  xy: 1543, 1641
+  size: 96, 32
+  split: 8, 8, 10, 10
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+text-button-up
+  rotate: false
+  xy: 1029, 1127
+  size: 96, 32
+  split: 8, 8, 8, 12
+  orig: 96, 32
+  offset: 0, 0
+  index: -1

@@ -1,7 +1,22 @@
 {
 "com.badlogic.gdx.graphics.g2d.BitmapFont": {
-	"pixmix-16pt": {
-		"file": "fonts/pixmix-16pt.fnt"
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
+	},
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
+	},
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
 	}
 },
 "com.badlogic.gdx.graphics.Color": {
@@ -32,15 +47,10 @@
 },
 "com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
 	"scene-selection-button": {
-		"font": "pixmix-16pt",
+		"font": "arial-18pt",
+		"fontColor": "black",
 		"up": "scene-selection-button-up",
 		"down": "scene-selection-button-down"
-	}
-},
-"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
-	"default": {
-		"background": "intro-bg-temp-2",
-		"titleFont": "pixmix-16pt"
 	}
 }
 }

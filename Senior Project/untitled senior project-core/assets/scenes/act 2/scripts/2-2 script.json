@@ -6,371 +6,382 @@
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-That which hath made them drunk hath made me bold,"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-What hath quenched them hath given me fire. Hark! Peace!"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-It was the owl that shrieked, the fatal bellman,"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Which gives the stern'st good night. He is about it."}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-The doors are open, and the surfeited grooms"}]
 	 	},
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Do mock their charge with snores. I have drugged their possets,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-That death and nature do contend about them,"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Whether they live or die."}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "Who's there? What ho!"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Alack, I am afraid they have awaked"}]
 	 	},
 	 	{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-And 'tis not done. The attempt and not the deed"}]
 		},
 		{
 			"lineID": 12,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "-Confounds us. Hark! I laid their daggers ready,"}]
 		},
 		{
 			"lineID": 13,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-He could not miss 'em. Had he not resembled"}]
 		},
 		{
 			"lineID": 14,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-My father as he slept, I had done 't. My husband!"}]
 		},
 		{
 			"lineID": 15,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-I have done the deed. Didst thou not hear a noise?"}]
 		},
 		{
 			"lineID": 16,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-I heard the owl scream and the crickets cry."}]
 		},
 		{
 			"lineID": 17,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "-Did you not speak?"},
+					 {"actor": "Macbeth", "text": "When?"},
+					 {"actor": "Lady Macbeth", "text": "Now."},
+					 {"actor": "Macbeth", "text": "As I descended?"}]
 		},
 		{
 			"lineID": 18,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Aye."}]
 		},
 		{
 			"lineID": 19,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Hark!"}]
 		},
 		{
 			"lineID": 20,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-Who lies i' the second chamber?"},
+					 {"actor": "Lady Macbeth", "text": "Donalbain."}]
 		},
 		{
 			"lineID": 21,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-This is a sorry sight."}]
 		},
 		{
 			"lineID": 22,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-A foolish thought, to say a sorry sight."}]
 		},
 		{
 			"lineID": 23,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-There's one that did laugh in 's sleep, and one cried \"Murder!\""}]
 		},
 		{
 			"lineID": 24,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-That they did wake each other. I stood and heard them."}]
 		},
 		{
 			"lineID": 25,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-But they did say their prayers, and addressed them"}]
 		},
 		{
 			"lineID": 26,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-Again to sleep."},
+					 {"actor": "Lady Macbeth", "text": "There are two lodged together."}]
 		},
 		{
 			"lineID": 27,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-One cried \"God bless us!\" and \"Amen\" the other,"}]
 		},
 		{
 			"lineID": 28,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-As they had seen me with these hangman's hands."}]
 		},
 		{
 			"lineID": 29,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Listening their fear, I could not say \"Amen\""}]
 		},
 		{
 			"lineID": 30,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-When they did say \"God bless us!\""},
+					 {"actor": "Lady Macbeth", "text": "Consider it not so deeply."}]
 		},
 		{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-But wherefore could not I pronounce \"Amen\"?"}]
 		},
 		{
 			"lineID": 32,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-I had most need of blessing, and \"Amen\""}]
 		},
 		{
 			"lineID": 33,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-Stuck in my throat."},
+					 {"actor": "Lady Macbeth", "text": "These deeds must not be thought"}]
 		},
 		{
 			"lineID": 34,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-After these ways. So, it will make us mad."}]
 		},
 		{
 			"lineID": 35,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Methought I heard a voice cry \"Sleep no more!"}]
 		},
 		{
 			"lineID": 36,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Macbeth does murder sleep\" - the innocent sleep,"}]
 		},
 		{
 			"lineID": 37,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Sleep that knits up the raveled sleave of care,"}]
 		},
 		{
 			"lineID": 38,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-The death of each day's life, sore labor's bath,"}]
 		},
 		{
 			"lineID": 39,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Balm of hurt minds, great nature's second course,"}]
 		},
 		{
 			"lineID": 40,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-Chief nourisher in life's feast--"},
+					 {"actor": "Lady Macbeth", "text": "What do you mean?"}]
 		},
 		{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Still it cried \"Sleep no more!\" to all the house."}]
 		},
 		{
 			"lineID": 42,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-\"Glamis hath murdered sleep, and therefore Cawdor"}]
 		},
 		{
 			"lineID": 43,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Shall sleep no more. Macbeth shall sleep no more.\""}]
 		},
 		{
 			"lineID": 44,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Who was it that thus cried? Why, worthy Thane,"}]
 		},
 		{
 			"lineID": 45,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-You do unbend your noble strength to think"}]
 		},
 		{
 			"lineID": 46,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-So brainsickly of things. Go get some water"}]
 		},
 		{
 			"lineID": 47,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-And wash this filthy witness from your hand."}]
 		},
 		{
 			"lineID": 48,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Why did you bring these daggers from the place?"}]
 		},
 		{
 			"lineID": 49,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-They must lie there. Go carry them, and smear"}]
 		},
 		{
 			"lineID": 50,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "-The sleepy grooms with blood."},
+					 {"actor": "Macbeth", "text": "I'll go no more."}]
 		},
 		{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-I am afraid to think what I have done,"}]
 		},
 		{
 			"lineID": 52,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "-Look on 't again I dare not."},
+					 {"actor": "Lady Macbeth", "text": "Infirm of purpose!"}]
 		},
 		{
 			"lineID": 53,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Give me the daggers. The sleeping and the dead"}]
 		},
 		{
 			"lineID": 54,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Are but as pictures. 'Tis the eye of childhood"}]
 		},
 		{
 			"lineID": 55,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-That fears a painted devil. If he do bleed,"}]
 		},
 		{
 			"lineID": 56,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-I'll gild the faces of the grooms withal,"}]
 		},
 		{
 			"lineID": 57,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "-For it must seem their guilt."},
+					 {"actor": "Macbeth", "text": "Whence is that knocking?"}]
 		},
 		{
 			"lineID": 58,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-How is 't with me when every noise appals me?"}]
 		},
 		{
 			"lineID": 59,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-What hands are here? Ha! They pluck out mine eyes!"}]
 		},
 		{
 			"lineID": 60,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Will all great Neptune's ocean wash this blood"}]
 		},
 		{
 			"lineID": 61,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Clean from my hand? No, this my hand will rather"}]
 		},
 		{
 			"lineID": 62,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-The multitudinous seas incarnadine,"}]
 		},
 		{
 			"lineID": 63,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Making the green one red."}]
 		},
 		{
 			"lineID": 64,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-My hands are of your color, but I shame"}]
 		},
 		{
 			"lineID": 65,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-To wear a heart so white. I hear a knocking"}]
 		},
 		{
 			"lineID": 66,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-At the south entry. Retire we to our chamber."}]
 		},
 		{
 			"lineID": 67,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-A little water clears us of this deed."}]
 		},
 		{
 			"lineID": 68,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-How easy it is then! Your constancy"}]
 		},
 		{
 			"lineID": 69,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Hath left you unattended. Hark! More knocking."}]
 		},
 		{
 			"lineID": 70,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-Get on your nightgown, lest occasion call us"}]
 		},
 		{
 			"lineID": 71,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-And show us to be watchers. Be not lost"}]
 		},
 		{
 			"lineID": 72,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "-So poorly in your thoughts."}]
 		},
 		{
 			"lineID": 73,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-To know my deed, 'twere best not know myself."}]
 		},
 		{
 			"lineID": 74,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "-Wake Duncan with thy knocking! I would thou couldst!"}]
 		}]
 }

@@ -200,7 +200,8 @@ public class MovementSystem extends IntervalIteratingSystem
 		movementState.stateTime += world.getDelta();
 		
 		//if(movementState.stateTime >= State.refaceTime)
-		if(movementState.stateTime >= .15f)
+		//if(movementState.stateTime >= .15f)
+		if(movementState.stateTime >= .2f)
 		{
 			direction.currentDirection = direction.refaceDirection;
 			

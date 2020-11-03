@@ -25,6 +25,15 @@ public class SeniorProject extends Game
 		//Credits
 	}
 	
+	public static GameMode currentGameMode;
+	
+	public static enum GameMode
+	{
+		STORY_MODE,
+		STUDY_MODE,
+		DEMO_MODE
+	}
+	
 	public Screen getScreenType(ScreenType screenType)
 	{
 		switch(screenType)
@@ -51,6 +60,8 @@ public class SeniorProject extends Game
 	@Override
 	public void create()
 	{
+		currentGameMode = GameMode.DEMO_MODE;
+		
 		performanceScreen = new PerformanceScreen(this);
 		mainMenuScreen = new MainMenuScreen(this);
 		sceneSelectScreen = new SceneSelectScreen(this);

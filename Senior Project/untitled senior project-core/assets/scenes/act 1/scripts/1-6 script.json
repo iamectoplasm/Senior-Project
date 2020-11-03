@@ -1,7 +1,14 @@
 {
-"cast": ["Duncan", "Banquo", "Lady Macbeth",
-		 "Malcolm", "Donalbain", "Lennox",
-		 "Macduff", "Ross", "Angus"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 6",
+		"backgroundImage": "main-menu-bg-1",
+		"setting": "Before Macbeth's castle",
+		"description": [
+		"King Duncan and his retinue arrive at Macbeth's castle of Inverness, and are greeted",
+		"by Macbeth's wife, Lady Macbeth, who appears to be a gracious hostess...",
+		"... even as she plots the king's death."]
+	},
 
 "script":
 	[

@@ -17,15 +17,6 @@
 	},
 	"arial-24pt": {
 		"file": "fonts/arial-24pt.fnt"
-	},
-	"pixmix-12pt": {
-		"file": "fonts/pixmix-12pt.fnt"
-	},
-	"pixmix-16pt": {
-		"file": "fonts/pixmix-16pt.fnt"
-	},
-	"pixmix-20pt": {
-		"file": "fonts/pixmix-20pt.fnt"
 	}
 },
 "com.badlogic.gdx.graphics.Color": {
@@ -36,48 +27,28 @@
 		"a": 1
 	}
 },
+"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+	"exit-button": {
+		"up": "exit-button-up",
+		"down": "exit-button-down"
+	}
+},
 "com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
-	"tab-button": {
-		"imageUp": "tab-up",
-		"imageDown": "tab-down",
-		"imageChecked": "tab-down"
-	},
-	"show-dash-button": {
-		"imageUp": "show-dash-up",
-		"imageDown": "show-dash-down"
-	},
-	"hide-dash-button": {
-		"imageUp": "hide-dash-up",
-		"imageDown": "hide-dash-down"
-	},
 	"pull-down-button": {
 		"imageUp": "pull-down-btn",
 		"imageDown": "pull-down-btn",
 		"imageOver": "pull-down-btn-highlighted"
 	},
-	"exit-dash-button": {
-		"imageUp": "exit-dash-button",
-		"imageDown": "exit-dash-button"
-	}
-},
-"com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
-	"tab-button": {
-		"font": "arial-12pt",
-		"fontColor": "black",
-		"up": "tab-inactive",
-		"down": "tab-active",
-		"checked": "tab-active"
+	"tab-side-button": {
+		"up": "study-tab-deselected",
+		"down": "study-tab-selected",
+		"checked": "study-tab-selected"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
 	"default": {
 		"font": "arial-14pt",
 		"fontColor": "black"
-	},
-	"textbox": {
-		"font": "pixmix-12pt",
-		"fontColor": "black",
-		"background": "textbox"
 	},
 	"title-label": {
 		"font": "arial-16pt",
@@ -86,17 +57,51 @@
 	},
 	"study-dashboard-overlay-label": {
 		"font": "arial-18pt",
+		"fontColor": "black",
 		"background": "study-overlay-label"
+	},
+	"tab-title-label": {
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "tab-title-bg"
+	},
+	"cream-label": {
+		"font": "arial-14pt",
+		"fontColor": "black",
+		"background": "cream-label-bg"
+	},
+	"blue-label": {
+		"font": "arial-14pt",
+		"fontColor": "black",
+		"background": "blue-label-bg"
+	},
+	"tab-title-label-2": {
+		"font": "arial-16pt",
+		"fontColor": "black",
+		"background": "stone-label-bg"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
-	"default": {
-		"background": "dashboard-bg",
-		"vScrollKnob": "scrollbar"
-	},
 	"text-display": {
-		"background": "textbox-no-lines",
 		"vScrollKnob": "green-scrollbar"
+	},
+	"scrollable-tab-inset": {
+		"vScrollKnob": "green-scrollbar"
+	},
+	"blue-scrollpane": {
+		"background": "blue-label-scroll-bg",
+		"vScroll": "scroll-track",
+		"vScrollKnob": "scroll-bar"
+	},
+	"cream-scrollpane": {
+		"background": "cream-label-scroll-bg",
+		"vScroll": "scroll-track",
+		"vScrollKnob": "scroll-bar"
+	},
+	"white-scrollpane": {
+		"background": "white-label-scroll-bg",
+		"vScroll": "scroll-track",
+		"vScrollKnob": "scroll-bar"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
@@ -109,13 +114,10 @@
 		"titleFont": "arial-14pt",
 		"titleFontColor": "black"
 	},
-	"dashboard": {
-		"background": "dashboard-bg",
-		"titleFont": "pixmix-12pt"
-	},
-	"wood-dashboard": {
-		"background": "dashboard-bg-brown",
-		"titleFont": "arial-16pt"
+	"frame-background": {
+		"background": "background",
+		"titleFont": "arial-12pt",
+		"titleFontColor": "black"
 	}
 }
 }

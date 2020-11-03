@@ -16,6 +16,7 @@ import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.FadeOverlay;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
+import com.seniorproject.game.SeniorProject.GameMode;
 import com.seniorproject.game.SeniorProject.ScreenType;
 
 public class MainMenuScreen implements Screen
@@ -36,15 +37,17 @@ public class MainMenuScreen implements Screen
 		this.game = game;
 		this.stage = new Stage();
 		
-		Table table = new Table(AssetLoader.INTRO_SKIN);
+		Table table = new Table(AssetLoader.MAIN_MENU_SKIN);
 		table.setFillParent(true);
-		table.setBackground("intro-bg-temp");
+		table.setBackground("main-menu-bg-1");
 		
-		TextButton storyModeButton = new TextButton("Story Mode", AssetLoader.INTRO_SKIN, "scene-selection-button");
-		TextButton studyModeButton = new TextButton("Study Mode", AssetLoader.INTRO_SKIN, "scene-selection-button");
+		TextButton storyModeButton = new TextButton("Story Mode", AssetLoader.MAIN_MENU_SKIN, "scene-selection-button");
+		TextButton studyModeButton = new TextButton("Study Mode", AssetLoader.MAIN_MENU_SKIN, "scene-selection-button");
+		TextButton demoModeButton = new TextButton("Demo Mode", AssetLoader.MAIN_MENU_SKIN, "scene-selection-button");
 		
 		table.add(storyModeButton).spaceBottom(10).row();
 		table.add(studyModeButton).spaceBottom(10).row();
+		table.add(demoModeButton).spaceBottom(10).row();
 		
 		stage.addActor(table);
 		
@@ -74,6 +77,8 @@ public class MainMenuScreen implements Screen
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
+				SeniorProject.currentGameMode = GameMode.STORY_MODE;
+				
 				//Screen newScreen = game.getScreenType(ScreenType.PERFORMANCE_SCREEN);
 				//game.setScreen(newScreen);
 				
@@ -93,6 +98,7 @@ public class MainMenuScreen implements Screen
 						//game.setScreen(game.getScreenType(ScreenType.PERFORMANCE_SCREEN));
 						game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
 						SceneManager sm = SeniorProject.performanceScreen.getSceneManager();
+						sm.setMode(SeniorProject.currentGameMode);
 						SeniorProject.sceneIntroScreen.updateToNextScene(sm.getCurrentScene().getScriptConfigFile());
 					}
 				}));
@@ -117,7 +123,29 @@ public class MainMenuScreen implements Screen
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
+				SeniorProject.currentGameMode = GameMode.STUDY_MODE;
 				game.setScreen(game.getScreenType(ScreenType.SCENE_SELECT_SCREEN));
+			}
+		});
+		
+		//Listeners
+		demoModeButton.addListener(new ClickListener()
+		{
+			@Override
+			public boolean touchDown(InputEvent event, float x, float y, int pointer, int button)
+			{
+				return true;
+			}
+					
+			@Override
+			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
+			{
+				SeniorProject.currentGameMode = GameMode.DEMO_MODE;
+				game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+				
+				SceneManager sm = SeniorProject.performanceScreen.getSceneManager();
+				sm.setMode(SeniorProject.currentGameMode);
+				SeniorProject.sceneIntroScreen.updateToNextScene(sm.getCurrentScene().getScriptConfigFile());
 			}
 		});
 	}

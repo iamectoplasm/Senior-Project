@@ -1,0 +1,204 @@
+
+studyui.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arial-12pt
+  rotate: false
+  xy: 1, 1307
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 1, 793
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-16pt
+  rotate: false
+  xy: 515, 1307
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-18pt
+  rotate: false
+  xy: 1, 279
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-20pt
+  rotate: false
+  xy: 515, 793
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-24pt
+  rotate: false
+  xy: 1029, 1307
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+green-scrollbar
+  rotate: false
+  xy: 741, 769
+  size: 9, 22
+  split: 3, 3, 3, 3
+  pad: 0, 0, 0, 0
+  orig: 9, 22
+  offset: 0, 0
+  index: -1
+lined-textbox
+  rotate: false
+  xy: 1, 85
+  size: 288, 192
+  orig: 288, 192
+  offset: 0, 0
+  index: -1
+pull-down-btn
+  rotate: false
+  xy: 361, 247
+  size: 22, 30
+  orig: 22, 30
+  offset: 0, 0
+  index: -1
+pull-down-btn-highlighted
+  rotate: false
+  xy: 291, 179
+  size: 26, 32
+  orig: 26, 32
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 1543, 1755
+  size: 96, 64
+  split: 16, 16, 16, 16
+  orig: 96, 64
+  offset: 0, 0
+  index: -1
+blue-label-bg
+  rotate: false
+  xy: 1543, 1689
+  size: 64, 64
+  split: 16, 16, 16, 16
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+blue-label-scroll-bg
+  rotate: false
+  xy: 1543, 1689
+  size: 64, 64
+  split: 7, 7, 7, 7
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+cream-label-bg
+  rotate: false
+  xy: 1029, 1207
+  size: 64, 64
+  split: 16, 16, 16, 16
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+cream-label-scroll-bg
+  rotate: false
+  xy: 1029, 1207
+  size: 64, 64
+  split: 7, 7, 7, 7
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+exit-button-down
+  rotate: false
+  xy: 1127, 1273
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+exit-button-up
+  rotate: false
+  xy: 99, 51
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+stone-label-bg
+  rotate: false
+  xy: 1641, 1755
+  size: 64, 64
+  split: 14, 14, 14, 14
+  pad: 12, 12, 12, 12
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+study-tab-deselected
+  rotate: false
+  xy: 291, 213
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+study-tab-selected
+  rotate: false
+  xy: 515, 701
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-title-bg
+  rotate: false
+  xy: 1, 51
+  size: 96, 32
+  split: 10, 10, 10, 10
+  orig: 96, 32
+  offset: 0, 0
+  index: -1
+white-label-scroll-bg
+  rotate: false
+  xy: 1, 1
+  size: 48, 48
+  split: 10, 10, 10, 10
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+scroll-bar
+  rotate: false
+  xy: 585, 757
+  size: 4, 8
+  split: 0, 2, 2, 3
+  pad: 0, 0, 0, 0
+  orig: 4, 8
+  offset: 0, 0
+  index: -1
+scroll-track
+  rotate: false
+  xy: 515, 667
+  size: 6, 32
+  split: 2, 2, 8, 8
+  pad: 0, 0, 0, 0
+  orig: 6, 32
+  offset: 0, 0
+  index: -1
+study-overlay-label
+  rotate: false
+  xy: 515, 767
+  size: 224, 24
+  orig: 224, 24
+  offset: 0, 0
+  index: -1
+title-label
+  rotate: false
+  xy: 1029, 1273
+  size: 96, 32
+  split: 8, 8, 8, 8
+  orig: 96, 32
+  offset: 0, 0
+  index: -1

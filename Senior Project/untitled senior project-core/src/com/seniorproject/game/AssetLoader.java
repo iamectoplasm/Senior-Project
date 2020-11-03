@@ -28,14 +28,19 @@ public class AssetLoader
 	//public final static String EMOTICON_ATLAS_PATH = "characters/emoticons/emotions-sheet.atlas";
 	//public static TextureAtlas EMOTICON_TEXTUREATLAS = new TextureAtlas(EMOTICON_ATLAS_PATH);
 	
-	public final static String INTRO_TEXTURE_ATLAS_PATH = "skins/main menu/introui.atlas";
-	public final static String INTRO_SKIN_PATH = "skins/main menu/introui.json";
-	public static TextureAtlas INTRO_TEXTUREATLAS = new TextureAtlas(INTRO_TEXTURE_ATLAS_PATH);
-	public static Skin INTRO_SKIN = new Skin(Gdx.files.internal(INTRO_SKIN_PATH), INTRO_TEXTUREATLAS);
+	public final static String MAIN_MENU_TEXTURE_ATLAS_PATH = "skins/main menu/mainmenuui.atlas";
+	public final static String MAIN_MENU_SKIN_PATH = "skins/main menu/mainmenuui.json";
+	public static TextureAtlas MAIN_MENU_TEXTUREATLAS = new TextureAtlas(MAIN_MENU_TEXTURE_ATLAS_PATH);
+	public static Skin MAIN_MENU_SKIN = new Skin(Gdx.files.internal(MAIN_MENU_SKIN_PATH), MAIN_MENU_TEXTUREATLAS);
 	
 	public final static String SELECT_TEXTURE_ATLAS_PATH = "skins/scene select/sceneselectui.atlas";
 	public final static String SELECT_SKIN_PATH = "skins/scene select/sceneselectui.json";
 	public static TextureAtlas SELECT_TEXTUREATLAS = new TextureAtlas(SELECT_TEXTURE_ATLAS_PATH);
+	
+	public final static String SCENE_INTRO_TEXTURE_ATLAS_PATH = "skins/scene intro/sceneintroui.atlas";
+	public final static String SCENE_INTRO_SKIN_PATH = "skins/scene intro/sceneintroui.json";
+	public static TextureAtlas SCENE_INTRO_TEXTUREATLAS = new TextureAtlas(SCENE_INTRO_TEXTURE_ATLAS_PATH);
+	public static Skin SCENE_INTRO_SKIN = new Skin(Gdx.files.internal(SCENE_INTRO_SKIN_PATH), SCENE_INTRO_TEXTUREATLAS);
 	public static Skin SELECT_SKIN = new Skin(Gdx.files.internal(SELECT_SKIN_PATH), SELECT_TEXTUREATLAS);
 	
 	public final static String DIALOGUE_TEXTURE_ATLAS_PATH = "skins/dialogue/dialogeui.atlas";
@@ -43,15 +48,15 @@ public class AssetLoader
 	public static TextureAtlas DIALOGUE_TEXTUREATLAS = new TextureAtlas(DIALOGUE_TEXTURE_ATLAS_PATH);
 	public static Skin DIALOGUE_SKIN = new Skin(Gdx.files.internal(DIALOGUE_SKIN_PATH), DIALOGUE_TEXTUREATLAS);
 	
-	public final static String DASHBOARD_TEXTURE_ATLAS_PATH = "skins/study/dashboardui.atlas";
-	public final static String DASHBOARD_SKIN_PATH = "skins/study/dashboardui.json";
-	public static TextureAtlas DASHBOARD_TEXTUREATLAS = new TextureAtlas(DASHBOARD_TEXTURE_ATLAS_PATH);
-	public static Skin DASHBOARD_SKIN = new Skin(Gdx.files.internal(DASHBOARD_SKIN_PATH), DASHBOARD_TEXTUREATLAS);
+	public final static String STUDY_TEXTURE_ATLAS_PATH = "skins/study/studyui.atlas";
+	public final static String STUDY_SKIN_PATH = "skins/study/studyui.json";
+	public static TextureAtlas STUDY_TEXTUREATLAS = new TextureAtlas(STUDY_TEXTURE_ATLAS_PATH);
+	public static Skin STUDY_SKIN = new Skin(Gdx.files.internal(STUDY_SKIN_PATH), STUDY_TEXTUREATLAS);
 	
-	public final static String SCENE_INTRO_TEXTURE_ATLAS_PATH = "skins/scene intro/sceneintroui.atlas";
-	public final static String SCENE_INTRO_SKIN_PATH = "skins/scene intro/sceneintroui.json";
-	public static TextureAtlas SCENE_INTRO_TEXTUREATLAS = new TextureAtlas(SCENE_INTRO_TEXTURE_ATLAS_PATH);
-	public static Skin SCENE_INTRO_SKIN = new Skin(Gdx.files.internal(SCENE_INTRO_SKIN_PATH), SCENE_INTRO_TEXTUREATLAS);
+	public final static String OPTIONS_TEXTURE_ATLAS_PATH = "skins/options/optionsui.atlas";
+	public final static String OPTIONS_SKIN_PATH = "skins/options/optionsui.json";
+	public static TextureAtlas OPTIONS_TEXTUREATLAS = new TextureAtlas(OPTIONS_TEXTURE_ATLAS_PATH);
+	public static Skin OPTIONS_SKIN = new Skin(Gdx.files.internal(OPTIONS_SKIN_PATH), OPTIONS_TEXTUREATLAS);
 	
 	/*
 	 * = = = = = = = = = = = = = = = = = = = =

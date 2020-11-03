@@ -6,6 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ScrollPane;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
@@ -60,7 +61,11 @@ public class DialogueUI extends Window
 		dialogue.setWrap(true);
 		dialogue.setAlignment(Align.topLeft);
 		
-		textDisplay = new ScrollPane(dialogue, AssetLoader.DIALOGUE_SKIN);
+		Table dialogueTextTable = new Table();
+		dialogueTextTable.add(dialogue).padRight(16);
+		dialogueTextTable.getCell(dialogue).expand().fill();
+		
+		textDisplay = new ScrollPane(dialogueTextTable, AssetLoader.DIALOGUE_SKIN);
 		textDisplay.setTouchable(Touchable.enabled);
 		textDisplay.setHeight(portraitBG.getHeight());
 		

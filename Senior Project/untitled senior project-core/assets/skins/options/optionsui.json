@@ -1,0 +1,64 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
+	},
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
+	},
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+	"show-options-panel": {
+		"up": "home-button-up",
+		"down": "home-button-down"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
+	"options-button": {
+		"font": "arial-16pt",
+		"fontColor": "white",
+		"up": "text-button-up",
+		"down": "text-button-down"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"options-label": {
+		"font": "arial-18pt",
+		"fontColor": "black",
+		"background": "label-bg"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
+	"default": {
+		"background": "options-bg",
+		"titleFont": "arial-18pt",
+		"stageBackground": "stage-overlay"
+	}
+}
+}
