@@ -53,20 +53,6 @@ public class SceneManager
 		this.currentGame = (SeniorProject) Gdx.app.getApplicationListener();
 		
 		this.scenes = new Array<SceneFiles>();
-		
-		/*
-		scenes.addAll(SceneFiles.ACT1SCENE1,
-				SceneFiles.ACT1SCENE2,
-				SceneFiles.ACT1SCENE3,
-				SceneFiles.ACT1SCENE4,
-				SceneFiles.ACT1SCENE5,
-				SceneFiles.ACT1SCENE6,
-				SceneFiles.ACT1SCENE7);
-		
-		this.currentSceneIndex = 0;
-		//this.currentSceneIndex = 1;
-		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
-		*/
 	}
 	
 	public void setMode(GameMode mode)
@@ -88,9 +74,14 @@ public class SceneManager
 			scenes.add(SceneFiles.ACT1SCENE6);
 			break;
 		case DEMO_MODE:
-			scenes.addAll(SceneFiles.ACT1SCENE1_DEMO,
+			//scenes.addAll(SceneFiles.ACT1SCENE1_DEMO,
 					//SceneFiles.ACT1SCENE3_DEMO,
+			//		SceneFiles.ACT1SCENE6);
+			
+			scenes.addAll(SceneFiles.ACT1SCENE3_DEMO,
 					SceneFiles.ACT1SCENE6);
+					//SceneFiles.ACT2SCENE1_DEMO);
+			break;
 		}
 		this.currentSceneIndex = 0;
 		//this.currentSceneIndex = 1;
@@ -117,7 +108,7 @@ public class SceneManager
 		currentTextDisplay.add(currentLineText.getText());
 		
 		currentLineAction = currentScene.getLineActions().get(0);
-		updateCharacterActions();
+		updatePerformerActions();
 	}
 	
 	public void stepForward()
@@ -200,7 +191,7 @@ public class SceneManager
 		if(sharedLineIndex == 0)
 		{
 			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
-			resetCharacterEmoticons();
+			resetPerformerEmotes();
 			updatePerformance(currentLineID);
 		}
 	}
@@ -261,7 +252,7 @@ public class SceneManager
 	{
 		currentLineAction = currentScene.getLineActionsByID(lineID);
 		
-		updateCharacterActions();
+		updatePerformerActions();
 	}
 	
 	public Scene getCurrentScene()
@@ -301,7 +292,7 @@ public class SceneManager
 		//Gdx.app.debug(TAG, "text displayed array now size " + currentTextDisplay.size);
 	}
 	
-	private void resetCharacterEmoticons()
+	private void resetPerformerEmotes()
 	{
 		for(int i = 0; i < currentScene.getPerformersInScene().size; i++)
 		{
@@ -309,7 +300,7 @@ public class SceneManager
 		}
 	}
 	
-	private void updateCharacterActions()
+	private void updatePerformerActions()
 	{
 		Array<ActionsForPerformer> actionsList = currentLineAction.getActionsForPerformer();
 		

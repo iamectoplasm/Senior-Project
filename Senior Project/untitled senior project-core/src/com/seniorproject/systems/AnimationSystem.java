@@ -5,14 +5,15 @@ import com.artemis.ComponentMapper;
 import com.artemis.systems.IntervalIteratingSystem;
 import com.seniorproject.components.*;
 import com.seniorproject.components.MovementDirection.Direction;
-import com.seniorproject.components.MovementAnimation.AnimationType;
+import com.seniorproject.enums.AnimationType;
+import com.seniorproject.enums.State;
 
 public class AnimationSystem extends IntervalIteratingSystem
 {
 	ComponentMapper<MovementDirection> mDirection;
 	ComponentMapper<MovementState> mMovementState;
 	ComponentMapper<MovementAnimation> mAnimation;
-	ComponentMapper<PerformerSprite> mSprite;
+	ComponentMapper<DrawableSprite> mSprite;
 	ComponentMapper<Velocity> mVelocity;
 
 	public AnimationSystem()
@@ -22,7 +23,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 				Velocity.class,
 				MovementState.class,
 				MovementAnimation.class,
-				PerformerSprite.class),
+				DrawableSprite.class),
 				(1/60f));
 	}
 
@@ -31,18 +32,28 @@ public class AnimationSystem extends IntervalIteratingSystem
 	{
 		updateAnimations(entityId);
 	}
+	
+	float delta = 0;
 
 	protected void updateAnimations(int entityId)
 	{
 		MovementAnimation movementAnim = mAnimation.get(entityId);
-		PerformerSprite sprite = mSprite.create(entityId);
+		DrawableSprite sprite = mSprite.create(entityId);
+		
+		if(mMovementState.get(entityId).currentState == State.DISAPPEAR)
+		{
+			delta += world.getDelta();
+			sprite.currentFrame = movementAnim.otherAnimations.get(AnimationType.DISAPPEAR).getKeyFrame(delta);
+		}
+		else
+		{
 		
 		Direction currentDir = mDirection.get(entityId).currentDirection;
 
 		switch (currentDir)
 		{
 		case DOWN:
-			MovementAnimation.Animation downAnimation = movementAnim.animations.get(AnimationType.WALK_DOWN);
+			MovementAnimation.WalkAnimation downAnimation = movementAnim.animations.get(AnimationType.WALK_DOWN);
 			
 			if(mMovementState.get(entityId).moveInProgress)
 			{
@@ -60,7 +71,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 			break;
 
 		case UP:
-			MovementAnimation.Animation upAnimation = movementAnim.animations.get(AnimationType.WALK_UP);
+			MovementAnimation.WalkAnimation upAnimation = movementAnim.animations.get(AnimationType.WALK_UP);
 			
 			if(mMovementState.get(entityId).moveInProgress)
 			{
@@ -78,7 +89,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 			break;
 
 		case LEFT:
-			MovementAnimation.Animation leftAnimation = movementAnim.animations.get(AnimationType.WALK_LEFT);
+			MovementAnimation.WalkAnimation leftAnimation = movementAnim.animations.get(AnimationType.WALK_LEFT);
 			
 			if(mMovementState.get(entityId).moveInProgress)
 			{
@@ -96,7 +107,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 			break;
 
 		case RIGHT:
-			MovementAnimation.Animation rightAnimation = movementAnim.animations.get(AnimationType.WALK_RIGHT);
+			MovementAnimation.WalkAnimation rightAnimation = movementAnim.animations.get(AnimationType.WALK_RIGHT);
 			
 			if(mMovementState.get(entityId).moveInProgress)
 			{
@@ -117,6 +128,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 			mSprite.get(entityId).currentFrame = movementAnim.animations.get(AnimationType.WALK_DOWN)
 					.getNextStandingFrame();
 			break;
+		}
 		}
 	}
 }

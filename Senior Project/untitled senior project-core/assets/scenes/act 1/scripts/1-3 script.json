@@ -14,793 +14,793 @@
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "First Witch", "text": "-Where hast thou been, Sister?"}]
+			"line": [{"actor": "First Witch", "text": "\u2022 Where hast thou been, Sister?"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Second Witch", "text": "-Killing swine."}]
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Killing swine."}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-Sister, where thou?"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Sister, where thou?"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-A sailor's wife had chestnuts in her lap,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 A sailor's wife had chestnuts in her lap,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-And mounched, and mounched, and mounched. 'Give me,' quoth I."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 And mounched, and mounched, and mounched. 'Give me,' quoth I."}]
 	 	},
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-'Aroint thee, witch!' the rump-fed ronyon cries."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 'Aroint thee, witch!' the rump-fed ronyon cries."}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Her husband's to Aleppo gone, master o' the Tiger."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Her husband's to Aleppo gone, master o' the Tiger."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-But in a sieve I'll thither sail"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 But in a sieve I'll thither sail"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-And, like a rat without a tail,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 And, like a rat without a tail,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-I'll do, I'll do, and I'll do."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 I'll do, I'll do, and I'll do."}]
 	 	},
 	 	{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "Second Witch", "text": "-I'll give thee a wind"}]
+			"line": [{"actor": "Second Witch", "text": "\u2022 I'll give thee a wind"}]
 		},
 	 	{
 	 		"lineID": 12,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Thou'rt kind."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Thou'rt kind."}]
 	 	},
 	 	{
 	 		"lineID": 13,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-And I another."}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 And I another."}]
 	 	},
 	 	{
 	 		"lineID": 14,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-I myself have all the other,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 I myself have all the other,"}]
 	 	},
 	 	{
 	 		"lineID": 15,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-And the very ports they blow,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 And the very ports they blow,"}]
 	 	},
 	 	{
 	 		"lineID": 16,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-All the quarters that they know"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 All the quarters that they know"}]
 	 	},
 	 	{
 	 		"lineID": 17,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-I' the shipman's card."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 I' the shipman's card."}]
 	 	},
 	 	{
 	 		"lineID": 18,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-I will drain him dry as hay."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 I will drain him dry as hay."}]
 	 	},
 	 	{
 	 		"lineID": 19,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Sleep shall neither night nor day"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Sleep shall neither night nor day"}]
 	 	},
 	 	{
 	 		"lineID": 20,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Hang upon his penthouse lid."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Hang upon his penthouse lid."}]
 	 	},
 	 	{
 			"lineID": 21,
 			"sharedLine": false,
-			"line": [{"actor": "First Witch", "text": "-He shall live a man forbid."}]
+			"line": [{"actor": "First Witch", "text": "\u2022 He shall live a man forbid."}]
 		},
 	 	{
 	 		"lineID": 22,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Weary sennights nine times nine"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Weary sennights nine times nine"}]
 	 	},
 	 	{
 	 		"lineID": 23,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Shall he dwindle, peak, and pine."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Shall he dwindle, peak, and pine."}]
 	 	},
 	 	{
 	 		"lineID": 24,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Though his bark cannot be lost,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Though his bark cannot be lost,"}]
 	 	},
 	 	{
 	 		"lineID": 25,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Yet it shall be tempest-tost."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Yet it shall be tempest-tost."}]
 	 	},
 	 	{
 	 		"lineID": 26,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Look what I have."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Look what I have."}]
 	 	},
 	 	{
 	 		"lineID": 27,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Second Witch", "text": "-Show me, show me."}]
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Show me, show me."}]
 	 	},
 	 	{
 	 		"lineID": 28,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Here I have a pilot's thumb,"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Here I have a pilot's thumb,"}]
 	 	},
 	 	{
 	 		"lineID": 29,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Wrecked as homeward he did come."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Wrecked as homeward he did come."}]
 	 	},
 	 	{
 	 		"lineID": 30,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-A drum, a drum!"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 A drum, a drum!"}]
 	 	},
 	 	{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "Third Witch", "text": "-Macbeth doth come."}]
+			"line": [{"actor": "Third Witch", "text": "\u2022 Macbeth doth come."}]
 		},
 	 	{
 	 		"lineID": 32,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-The weird sisters, hand in hand,"}]
+	 		"line": [{"actor": "All", "text": "\u2022 The weird sisters, hand in hand,"}]
 	 	},
 	 	{
 	 		"lineID": 33,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-Posters of the sea and land,"}]
+	 		"line": [{"actor": "All", "text": "\u2022 Posters of the sea and land,"}]
 	 	},
 	 	{
 	 		"lineID": 34,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-Thus do go about, about."}]
+	 		"line": [{"actor": "All", "text": "\u2022 Thus do go about, about."}]
 	 	},
 	 	{
 	 		"lineID": 35,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-Thrice to thine,and thrice to mine,"}]
+	 		"line": [{"actor": "All", "text": "\u2022 Thrice to thine,and thrice to mine,"}]
 	 	},
 	 	{
 	 		"lineID": 36,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-And thrice again, to make up nine,"}]
+	 		"line": [{"actor": "All", "text": "\u2022 And thrice again, to make up nine,"}]
 	 	},
 	 	{
 	 		"lineID": 37,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "All", "text": "-Peace! The charm's wound up."}]
+	 		"line": [{"actor": "All", "text": "\u2022 Peace! The charm's wound up."}]
 	 	},
 	 	{
 	 		"lineID": 38,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-So foul and fair a day I have not seen."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 So foul and fair a day I have not seen."}]
 	 	},
 	 	{
 	 		"lineID": 39,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-How far is 't called to Forres? What are these"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 How far is 't called to Forres? What are these"}]
 	 	},
 	 	{
 	 		"lineID": 40,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-So withered, and so wild in their attire,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 So withered, and so wild in their attire,"}]
 	 	},
 	 	{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-That look not like the inhabitants o' the earth"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 That look not like the inhabitants o' the earth"}]
 		},
 	 	{
 	 		"lineID": 42,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And yet are on 't? Live you? Or are you aught"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And yet are on 't? Live you? Or are you aught"}]
 	 	},
 	 	{
 	 		"lineID": 43,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-That man may question? You seem to understand me,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That man may question? You seem to understand me,"}]
 	 	},
 	 	{
 	 		"lineID": 44,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-By each at once her choppy finger laying"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 By each at once her choppy finger laying"}]
 	 	},
 	 	{
 	 		"lineID": 45,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Upon her skinny lips. You should be women,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Upon her skinny lips. You should be women,"}]
 	 	},
 	 	{
 	 		"lineID": 46,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And yet your beards forbid me to interpret"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And yet your beards forbid me to interpret"}]
 	 	},
 	 	{
 	 		"lineID": 47,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Banquo", "text": "-That you are so."},
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That you are so."},
 	 				 {"actor": "Macbeth", "text": "Speak, if you can. What are you?"}]
 	 	},
 	 	{
 	 		"lineID": 48,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-All hail, Macbeth! Hail to thee, Thane of Glamis!"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 All hail, Macbeth! Hail to thee, Thane of Glamis!"}]
 	 	},
 	 	{
 	 		"lineID": 49,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Second Witch", "text": "-All hail, Macbeth! Hail to thee, Thane of Cawdor!"}]
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 All hail, Macbeth! Hail to thee, Thane of Cawdor!"}]
 	 	},
 	 	{
 	 		"lineID": 50,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-All hail, Macbeth, that shalt be King hereafter!"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 All hail, Macbeth, that shalt be King hereafter!"}]
 	 	},
 	 	{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-Good sir, why do you start, and seem to fear"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Good sir, why do you start, and seem to fear"}]
 		},
 	 	{
 	 		"lineID": 52,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Things that do sound so fair? I' the name of truth,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Things that do sound so fair? I' the name of truth,"}]
 	 	},
 	 	{
 	 		"lineID": 53,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Are ye fantastical, or that indeed"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Are ye fantastical, or that indeed"}]
 	 	},
 	 	{
 	 		"lineID": 54,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Which outwardly ye show? My noble partner"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Which outwardly ye show? My noble partner"}]
 	 	},
 	 	{
 	 		"lineID": 55,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-You greet with present grace and great prediction"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 You greet with present grace and great prediction"}]
 	 	},
 	 	{
 	 		"lineID": 56,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Of noble having and of royal hope,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Of noble having and of royal hope,"}]
 	 	},
 	 	{
 	 		"lineID": 57,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-That he seems rapt withal. To me you speak not."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That he seems rapt withal. To me you speak not."}]
 	 	},
 	 	{
 	 		"lineID": 58,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-If you can look into the seeds of time"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 If you can look into the seeds of time"}]
 	 	},
 	 	{
 	 		"lineID": 59,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And say which grain will grow and which will not,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And say which grain will grow and which will not,"}]
 	 	},
 	 	{
 	 		"lineID": 60,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Speak then to me, who neither beg nor fear"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Speak then to me, who neither beg nor fear"}]
 	 	},
 	 	{
 			"lineID": 61,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-Your favors nor your hate."}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Your favors nor your hate."}]
 		},
 	 	{
 	 		"lineID": 62,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Hail!"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Hail!"}]
 	 	},
 	 	{
 	 		"lineID": 63,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Second Witch", "text": "-Hail!"}]
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Hail!"}]
 	 	},
 	 	{
 	 		"lineID": 64,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-Hail!"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Hail!"}]
 	 	},
 	 	{
 	 		"lineID": 65,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Lesser than Macbeth, and greater."}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Lesser than Macbeth, and greater."}]
 	 	},
 	 	{
 	 		"lineID": 66,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Second witch", "text": "-Not so happy, yet much happier."}]
+	 		"line": [{"actor": "Second witch", "text": "\u2022 Not so happy, yet much happier."}]
 	 	},
 	 	{
 	 		"lineID": 67,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-Thou shalt get kings, though thou be none."}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Thou shalt get kings, though thou be none."}]
 	 	},
 	 	{
 	 		"lineID": 68,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Third Witch", "text": "-So all hail, Macbeth and Banquo!"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 So all hail, Macbeth and Banquo!"}]
 	 	},
 	 	{
 	 		"lineID": 69,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "First Witch", "text": "-Banquo and Macbeth, all hail!"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Banquo and Macbeth, all hail!"}]
 	 	},
 	 	{
 	 		"lineID": 70,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Stay, you imperfect speakers, tell me more."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stay, you imperfect speakers, tell me more."}]
 	 	},
 	 	{
 			"lineID": 71,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-By Sinel's death I know I am Thane of Glamis,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 By Sinel's death I know I am Thane of Glamis,"}]
 		},
 	 	{
 	 		"lineID": 72,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-But how of Cawdor? The Thane of Cawdor lives,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But how of Cawdor? The Thane of Cawdor lives,"}]
 	 	},
 	 	{
 	 		"lineID": 73,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-A prosperous gentleman, and to be King"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 A prosperous gentleman, and to be King"}]
 	 	},
 	 	{
 	 		"lineID": 74,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Stands not within the prospect of belief,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stands not within the prospect of belief,"}]
 	 	},
 	 	{
 	 		"lineID": 75,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-No more than to be Cawdor. Say from whence"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 No more than to be Cawdor. Say from whence"}]
 	 	},
 	 	{
 	 		"lineID": 76,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-You owe this strange intelligence? or why"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 You owe this strange intelligence? or why"}]
 	 	},
 	 	{
 	 		"lineID": 77,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Upon this blasted heath you stop our way"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Upon this blasted heath you stop our way"}]
 	 	},
 	 	{
 	 		"lineID": 78,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-With such prophetic greeting? Speak, I charge you."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 With such prophetic greeting? Speak, I charge you."}]
 	 	},
 	 	{
 	 		"lineID": 79,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-The earth hath bubbles as the water has,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 The earth hath bubbles as the water has,"}]
 	 	},
 	 	{
 	 		"lineID": 80,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And these are of them. Whither are they vanished?"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And these are of them. Whither are they vanished?"}]
 	 	},
 	 	{
 			"lineID": 81,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Into the air; and what seemed corporal melted"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Into the air; and what seemed corporal melted"}]
 		},
 	 	{
 	 		"lineID": 82,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-As breath into the wind. Would they had stay'd!"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As breath into the wind. Would they had stay'd!"}]
 	 	},
 	 	{
 	 		"lineID": 83,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Were such things here as we do speak about?"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Were such things here as we do speak about?"}]
 	 	},
 	 	{
 	 		"lineID": 84,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Or have we eaten on the insane root"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Or have we eaten on the insane root"}]
 	 	},
 	 	{
 	 		"lineID": 85,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-That takes the reason prisoner?"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That takes the reason prisoner?"}]
 	 	},
 	 	{
 	 		"lineID": 86,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-Your children shall be kings."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Your children shall be kings."},
 	 				 {"actor": "Banquo", "text": "You shall be King."}]
 	 	},
 	 	{
 	 		"lineID": 87,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-And Thane of Cawdor too. Went it not so?"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And Thane of Cawdor too. Went it not so?"}]
 	 	},
 	 	{
 	 		"lineID": 88,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-To the selfsame tune and words. Who's here?"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 To the selfsame tune and words. Who's here?"}]
 	 	},
 	 	{
 	 		"lineID": 89,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-The King hath happily received, Macbeth,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 The King hath happily received, Macbeth,"}]
 	 	},
 	 	{
 	 		"lineID": 90,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-The news of thy success. And when he reads"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 The news of thy success. And when he reads"}]
 	 	},
 	 	{
 			"lineID": 91,
 			"sharedLine": false,
-			"line": [{"actor": "Ross", "text": "-Thy personal venture in the rebels' fight,"}]
+			"line": [{"actor": "Ross", "text": "\u2022 Thy personal venture in the rebels' fight,"}]
 		},
 	 	{
 	 		"lineID": 92,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-His wonders and his praises do contend"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 His wonders and his praises do contend"}]
 	 	},
 	 	{
 	 		"lineID": 93,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-Which should be thine or his. Silenced with that,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Which should be thine or his. Silenced with that,"}]
 	 	},
 	 	{
 	 		"lineID": 94,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-In viewing o'er the rest o' the selfsame day,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 In viewing o'er the rest o' the selfsame day,"}]
 	 	},
 	 	{
 	 		"lineID": 95,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-He finds thee in stout Norweyan ranks,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 He finds thee in stout Norweyan ranks,"}]
 	 	},
 	 	{
 	 		"lineID": 96,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-Nothing afeared of what thyself didst make,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Nothing afeared of what thyself didst make,"}]
 	 	},
 	 	{
 	 		"lineID": 97,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-Strange images of death. As thick as hail"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Strange images of death. As thick as hail"}]
 	 	},
 	 	{
 	 		"lineID": 98,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-Came post with post, and every one did bear"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Came post with post, and every one did bear"}]
 	 	},
 	 	{
 	 		"lineID": 99,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-Thy praises in his kingdom's great defense,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Thy praises in his kingdom's great defense,"}]
 	 	},
 	 	{
 	 		"lineID": 100,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Ross", "text": "-And poured them down before them."},
+	 		"line": [{"actor": "Ross", "text": "\u2022 And poured them down before them."},
 	 				 {"actor": "Angus", "text": "We are sent"}]
 	 	},
 	 	{
 			"lineID": 101,
 			"sharedLine": false,
-			"line": [{"actor": "Angus", "text": "-To give thee, from our royal master, thanks,"}]
+			"line": [{"actor": "Angus", "text": "\u2022 To give thee, from our royal master, thanks,"}]
 		},
 	 	{
 	 		"lineID": 102,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-Only to herald thee into his sight,"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 Only to herald thee into his sight,"}]
 	 	},
 	 	{
 	 		"lineID": 103,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-Not pay thee."}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 Not pay thee."}]
 	 	},
 	 	{
 	 		"lineID": 104,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-And for an earnest of a greater honor,"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 And for an earnest of a greater honor,"}]
 	 	},
 	 	{
 	 		"lineID": 105,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-He bade me, from him, call thee Thane of Cawdor."}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 He bade me, from him, call thee Thane of Cawdor."}]
 	 	},
 	 	{
 	 		"lineID": 106,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Ross", "text": "-In which addition, hail, most worthy Thane!"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 In which addition, hail, most worthy Thane!"}]
 	 	},
 	 	{
 	 		"lineID": 107,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Ross", "text": "-For it is thine."},
+	 		"line": [{"actor": "Ross", "text": "\u2022 For it is thine."},
 	 				 {"actor": "Banquo", "text": "What, can the Devil speak true?"}]
 	 	},
 	 	{
 	 		"lineID": 108,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The Thane of Cawdor lives. Why do you dress me"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The Thane of Cawdor lives. Why do you dress me"}]
 	 	},
 	 	{
 	 		"lineID": 109,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-In borrowed robes?"},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 In borrowed robes?"},
 	 				 {"actor": "Angus", "text": "Who was the Thane lives yet,"}]
 	 	},
 	 	{
 	 		"lineID": 110,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-But under heavy judgement bears that life"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 But under heavy judgement bears that life"}]
 	 	},
 	 	{
 			"lineID": 111,
 			"sharedLine": false,
-			"line": [{"actor": "Angus", "text": "-Which he deserves to lose. Whether he was combined"}]
+			"line": [{"actor": "Angus", "text": "\u2022 Which he deserves to lose. Whether he was combined"}]
 		},
 	 	{
 	 		"lineID": 112,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-With those of Norway, or did line the rebel"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 With those of Norway, or did line the rebel"}]
 	 	},
 	 	{
 	 		"lineID": 113,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-With hidden help and vantage, or that with both"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 With hidden help and vantage, or that with both"}]
 	 	},
 	 	{
 	 		"lineID": 114,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-He labored in his country's wreck, I know not."}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 He labored in his country's wreck, I know not."}]
 	 	},
 	 	{
 	 		"lineID": 115,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Angus", "text": "-But treasons capital, confessed and proved,"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 But treasons capital, confessed and proved,"}]
 	 	},
 	 	{
 	 		"lineID": 116,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Angus", "text": "-Have overthrown him."},
+	 		"line": [{"actor": "Angus", "text": "\u2022 Have overthrown him."},
 	 				 {"actor": "Macbeth", "text": "Glamis, and Thane of Cawdor."}]
 	 	},
 	 	{
 	 		"lineID": 117,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The greatest is behind. --Thanks for your pains.--"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The greatest is behind. \u2014Thanks for your pains.\u2014"}]
 	 	},
 	 	{
 	 		"lineID": 118,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Do you not hope your children shall be kings,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Do you not hope your children shall be kings,"}]
 	 	},
 	 	{
 	 		"lineID": 119,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-When those that gave the Thane of Cawdor to me"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 When those that gave the Thane of Cawdor to me"}]
 	 	},
 	 	{
 	 		"lineID": 120,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-Promised no less to them?"},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Promised no less to them?"},
 	 				 {"actor": "Banquo", "text": "That, trusted home,"}]
 	 	},
 	 	{
 			"lineID": 121,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-Might yet enkindle you unto the crown,"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Might yet enkindle you unto the crown,"}]
 		},
 	 	{
 	 		"lineID": 122,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Besides the Thane of Cawdor. But 'tis strange."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Besides the Thane of Cawdor. But 'tis strange."}]
 	 	},
 	 	{
 	 		"lineID": 123,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And oftentimes, to win us to our harm,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And oftentimes, to win us to our harm,"}]
 	 	},
 	 	{
 	 		"lineID": 124,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-The instruments of darkness tell us truths,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 The instruments of darkness tell us truths,"}]
 	 	},
 	 	{
 	 		"lineID": 125,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Win us with honest trifles, to betray 's"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Win us with honest trifles, to betray 's"}]
 	 	},
 	 	{
 	 		"lineID": 126,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-In deepest consequence."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 In deepest consequence."}]
 	 	},
 	 	{
 	 		"lineID": 127,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Banquo", "text": "-Cousins, a word, I pray you"},
-	 				 {"actor": "Macbeth", "text": "-Two truths are told"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Cousins, a word, I pray you"},
+	 				 {"actor": "Macbeth", "text": "Two truths are told"}]
 	 	},
 	 	{
 	 		"lineID": 128,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-As happy prologues to the swelling act"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As happy prologues to the swelling act"}]
 	 	},
 	 	{
 	 		"lineID": 129,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Of the imperial theme. --I thank you, gentlemen.--"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Of the imperial theme. \u2014I thank you, gentlemen.\u2014"}]
 	 	},
 	 	{
 	 		"lineID": 130,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-This supernatural soliciting"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 This supernatural soliciting"}]
 	 	},
 	 	{
 			"lineID": 131,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Cannot be ill, cannot be good. If ill,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Cannot be ill, cannot be good. If ill,"}]
 		},
 	 	{
 	 		"lineID": 132,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Why hath it given me earnest of success,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Why hath it given me earnest of success,"}]
 	 	},
 	 	{
 	 		"lineID": 133,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Commencing in a truth? I am Thane of Cawdor."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Commencing in a truth? I am Thane of Cawdor."}]
 	 	},
 	 	{
 	 		"lineID": 134,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-If good, why do I yield to that suggestion"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 If good, why do I yield to that suggestion"}]
 	 	},
 	 	{
 	 		"lineID": 135,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Whose horrid image doth unfix my hair"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Whose horrid image doth unfix my hair"}]
 	 	},
 	 	{
 	 		"lineID": 136,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-And make my seated heart knock at my ribs,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And make my seated heart knock at my ribs,"}]
 	 	},
 	 	{
 	 		"lineID": 137,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Against the use of nature? Present fears"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Against the use of nature? Present fears"}]
 	 	},
 	 	{
 	 		"lineID": 138,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Are less than horrible imaginings."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Are less than horrible imaginings."}]
 	 	},
 	 	{
 	 		"lineID": 139,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-My thought, whose murder yet is but fantastical,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 My thought, whose murder yet is but fantastical,"}]
 	 	},
 	 	{
 	 		"lineID": 140,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Shakes so my single state of man that function"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Shakes so my single state of man that function"}]
 	 	},
 	 	{
 			"lineID": 141,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Is smothered in surmise, and nothing is"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is smothered in surmise, and nothing is"}]
 		},
 	 	{
 	 		"lineID": 142,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-But what is not."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But what is not."},
 	 				 {"actor": "Banquo", "text": "Look how our partner's rapt."}]
 	 	},
 	 	{
 	 		"lineID": 143,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-If chance will have me King, why, chance may crown me,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 If chance will have me King, why, chance may crown me,"}]
 	 	},
 	 	{
 	 		"lineID": 144,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-Without my stir."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Without my stir."},
 	 				 {"actor": "Banquo", "text": "New honors come upon him,"}]
 	 	},
 	 	{
 	 		"lineID": 145,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Like our strange garments, cleave not to their mold"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Like our strange garments, cleave not to their mold"}]
 	 	},
 	 	{
 	 		"lineID": 146,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Banquo", "text": "-But with the aid of use."},
-	 				 {"actor": "Macbeth", "text": "-Come what may,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 But with the aid of use."},
+	 				 {"actor": "Macbeth", "text": "Come what may,"}]
 	 	},
 	 	{
 	 		"lineID": 147,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Time and the hour runs through the roughest day."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Time and the hour runs through the roughest day."}]
 	 	},
 	 	{
 	 		"lineID": 148,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Worthy Macbeth, we stay upon your leisure."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Worthy Macbeth, we stay upon your leisure."}]
 	 	},
 	 	{
 	 		"lineID": 149,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Give me your favor. My dull brain was wrought"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Give me your favor. My dull brain was wrought"}]
 	 	},
 	 	{
 	 		"lineID": 150,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-With things forgotten. Kind gentlemen, your pains"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 With things forgotten. Kind gentlemen, your pains"}]
 	 	},
 	 	{
 			"lineID": 151,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Are registered where every day I turn"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Are registered where every day I turn"}]
 		},
 	 	{
 	 		"lineID": 152,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The leaf to read them. Let us toward the King."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The leaf to read them. Let us toward the King."}]
 	 	},
 	 	{
 	 		"lineID": 153,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Think upon what hath chanced, and at more time,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Think upon what hath chanced, and at more time,"}]
 	 	},
 	 	{
 	 		"lineID": 154,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The interim having weighed it, let us speak"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The interim having weighed it, let us speak"}]
 	 	},
 	 	{
 	 		"lineID": 155,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-Our free hearts each to other."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Our free hearts each to other."},
 	 				 {"actor": "Banquo", "text": "Very gladly."}]
 	 	},
 	 	{
 	 		"lineID": 156,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Till then, enough. Come, friends."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Till then, enough. Come, friends."}]
 	 	}]
 }

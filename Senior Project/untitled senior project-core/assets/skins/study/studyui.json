@@ -43,6 +43,22 @@
 		"up": "study-tab-deselected",
 		"down": "study-tab-selected",
 		"checked": "study-tab-selected"
+	},
+	"tab-button-1": {
+		"up": "tab-1-deselected",
+		"checked": "tab-1-selected"
+	},
+	"tab-button-2": {
+		"up": "tab-2-deselected",
+		"checked": "tab-2-selected"
+	},
+	"tab-button-3": {
+		"up": "tab-3-deselected",
+		"checked": "tab-3-selected"
+	},
+	"tab-button-4": {
+		"up": "tab-4-deselected",
+		"checked": "tab-4-selected"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {

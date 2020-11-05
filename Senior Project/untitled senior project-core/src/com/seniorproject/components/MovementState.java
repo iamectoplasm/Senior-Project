@@ -3,6 +3,7 @@ package com.seniorproject.components;
 import com.artemis.Component;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
+import com.seniorproject.enums.State;
 
 public class MovementState extends Component
 {
@@ -22,28 +23,6 @@ public class MovementState extends Component
 	public void resetStateTime()
 	{
 		stateTime = 0;
-	}
-	
-	public static enum State
-	{
-		IDLE,
-		WALK,
-		REFACE,
-		IMMOBILE; // IMMOBILE should always be last
-		
-		//public float walkTime = 0.25f;
-		public static float refaceTime = 0.15f;
-		
-		static public State getRandomNext()
-		{
-			// Ignore IMMOBILE which should be last state
-			return State.values()[MathUtils.random(State.values().length - 3)];
-		}
-		
-		public float getRefaceTime()
-		{
-			return refaceTime;
-		}
 	}
 	
 	public void resetAll()

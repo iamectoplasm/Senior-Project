@@ -5,22 +5,23 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.Bag;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
-import com.seniorproject.components.Position;
+import com.seniorproject.components.MapPosition;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.PerformerEmote;
-import com.seniorproject.components.PerformerSprite;
+import com.seniorproject.components.DrawableSprite;
 
 public class RenderSystem extends EntitySystem
 {
 	private static final String TAG = RenderSystem.class.getSimpleName();
 	
-	ComponentMapper<PerformerSprite> mSprite;
-	ComponentMapper<Position> mPosition;
+	ComponentMapper<DrawableSprite> mSprite;
+	ComponentMapper<MapPosition> mPosition;
 	ComponentMapper<BoundingBox> mBoundingBox;
 	ComponentMapper<PerformerEmote> mEmotion;
 	
@@ -33,9 +34,10 @@ public class RenderSystem extends EntitySystem
 	public RenderSystem(Camera camera, Batch batch)
 	{
 		super(Aspect.all(Active.class,
-				PerformerSprite.class,
-				Position.class,
-				PerformerEmote.class));
+				DrawableSprite.class,
+				MapPosition.class,
+				PerformerEmote.class
+				));
 
 		this.camera = camera;
 		this.batch = batch;
@@ -76,14 +78,14 @@ public class RenderSystem extends EntitySystem
 //		}
 	}
 	
-	public void subsetRender(Bag<Entity> bag)
+	public void entitySubsetRender(Bag<Entity> bag)
 	{
 		Bag<Entity> sortedEntities = world.getSystem(EntitySortSystem.class).getSortedEntities(bag);
 		
 		for(Entity e: sortedEntities)
 		{
-			PerformerSprite sprite = mSprite.get(e);
-			Position position = mPosition.get(e);
+			DrawableSprite sprite = mSprite.get(e);
+			MapPosition position = mPosition.get(e);
 			PerformerEmote emote = mEmotion.get(e);
 		
 			//Gdx.app.debug(TAG, "Current entity being rendered: " + e.getComponent(Name.class).entityName);
@@ -99,8 +101,10 @@ public class RenderSystem extends EntitySystem
 			batch.draw(sprite.currentFrame,
 					position.currentPosition.x + position.xOffset,
 					position.currentPosition.y + position.yOffset,
-					sprite.drawWidth,
-					sprite.drawHeight);
+					2,
+					2);
+					//sprite.drawWidth,
+					//sprite.drawHeight);
 			
 			//batch.draw(emote.emoticon, position.currentPosition.x, position.currentPosition.y + 2);
 			batch.draw(emote.emoticon,

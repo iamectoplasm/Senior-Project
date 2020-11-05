@@ -107,7 +107,7 @@ public class PerformanceScreen implements Screen
 		config.setSystem(new PerformanceSystem(map));
 		config.setSystem(new AnimationSystem());
 		config.setSystem(new EntitySortSystem());
-		config.setSystem(new EmoticonSystem());
+		config.setSystem(new EmoticonTrackingSystem());
 		config.setSystem(new MovementSystem(map));
 		config.setSystem(new CollisionSystem(map));
 		config.setSystem(new ZSortSystem());
@@ -144,13 +144,13 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void show()
 	{
-		Gdx.app.debug(TAG, "In show() method, now clearing fadeOverlay...");
+		//Gdx.app.debug(TAG, "In show() method, now clearing fadeOverlay...");
 		fadeOverlay.clear();
 		
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
-		Gdx.app.debug(TAG, "\tAdding fadeOut action to fadeOverlay");
+		//Gdx.app.debug(TAG, "\tAdding fadeOut action to fadeOverlay");
 		fadeOverlay.addAction(Actions.fadeOut(0.5f));
 		/*
 		 * end of bad code
@@ -204,6 +204,11 @@ public class PerformanceScreen implements Screen
 	{
 		return stage;
 	}
+	
+	public StageMap getStageMap()
+	{
+		return map;
+	}
 
 	@Override
 	public void pause()
@@ -222,12 +227,12 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void hide()
 	{
-		Gdx.app.debug(TAG, "In hide() method, clearing fadeOverlay...");
+		//Gdx.app.debug(TAG, "In hide() method, clearing fadeOverlay...");
 		fadeOverlay.clear();
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
-		Gdx.app.debug(TAG, "\tAdding fadeIn action to fadeOverlay");
+		//Gdx.app.debug(TAG, "\tAdding fadeIn action to fadeOverlay");
 		fadeOverlay.addAction(Actions.fadeIn(.5f));
 		/*
 		 * end of bad code

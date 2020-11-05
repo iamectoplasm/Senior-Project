@@ -6,49 +6,49 @@ filter: Linear,Linear
 repeat: none
 arial-12pt
   rotate: false
-  xy: 1, 1307
+  xy: 1, 1355
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-14pt
   rotate: false
-  xy: 1, 793
+  xy: 1029, 1355
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-16pt
   rotate: false
-  xy: 515, 1307
+  xy: 1, 841
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-18pt
   rotate: false
-  xy: 1, 279
+  xy: 515, 1355
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-20pt
   rotate: false
-  xy: 515, 793
+  xy: 1, 327
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-24pt
   rotate: false
-  xy: 1029, 1307
+  xy: 515, 841
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 green-scrollbar
   rotate: false
-  xy: 741, 769
+  xy: 741, 817
   size: 9, 22
   split: 3, 3, 3, 3
   pad: 0, 0, 0, 0
@@ -57,28 +57,28 @@ green-scrollbar
   index: -1
 lined-textbox
   rotate: false
-  xy: 1, 85
+  xy: 1, 133
   size: 288, 192
   orig: 288, 192
   offset: 0, 0
   index: -1
 pull-down-btn
   rotate: false
-  xy: 361, 247
+  xy: 1, 1
   size: 22, 30
   orig: 22, 30
   offset: 0, 0
   index: -1
 pull-down-btn-highlighted
   rotate: false
-  xy: 291, 179
+  xy: 1099, 1287
   size: 26, 32
   orig: 26, 32
   offset: 0, 0
   index: -1
 background
   rotate: false
-  xy: 1543, 1755
+  xy: 1543, 1803
   size: 96, 64
   split: 16, 16, 16, 16
   orig: 96, 64
@@ -86,7 +86,7 @@ background
   index: -1
 blue-label-bg
   rotate: false
-  xy: 1543, 1689
+  xy: 1543, 1671
   size: 64, 64
   split: 16, 16, 16, 16
   orig: 64, 64
@@ -94,7 +94,7 @@ blue-label-bg
   index: -1
 blue-label-scroll-bg
   rotate: false
-  xy: 1543, 1689
+  xy: 1543, 1671
   size: 64, 64
   split: 7, 7, 7, 7
   orig: 64, 64
@@ -102,7 +102,7 @@ blue-label-scroll-bg
   index: -1
 cream-label-bg
   rotate: false
-  xy: 1029, 1207
+  xy: 1029, 1189
   size: 64, 64
   split: 16, 16, 16, 16
   orig: 64, 64
@@ -110,7 +110,7 @@ cream-label-bg
   index: -1
 cream-label-scroll-bg
   rotate: false
-  xy: 1029, 1207
+  xy: 1029, 1189
   size: 64, 64
   split: 7, 7, 7, 7
   orig: 64, 64
@@ -118,21 +118,21 @@ cream-label-scroll-bg
   index: -1
 exit-button-down
   rotate: false
-  xy: 1127, 1273
+  xy: 1127, 1321
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 exit-button-up
   rotate: false
-  xy: 99, 51
+  xy: 99, 99
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 stone-label-bg
   rotate: false
-  xy: 1641, 1755
+  xy: 1613, 1737
   size: 64, 64
   split: 14, 14, 14, 14
   pad: 12, 12, 12, 12
@@ -141,21 +141,77 @@ stone-label-bg
   index: -1
 study-tab-deselected
   rotate: false
-  xy: 291, 213
+  xy: 291, 261
   size: 68, 64
   orig: 68, 64
   offset: 0, 0
   index: -1
 study-tab-selected
   rotate: false
-  xy: 515, 701
+  xy: 515, 749
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-1-deselected
+  rotate: false
+  xy: 1029, 1255
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-1-selected
+  rotate: false
+  xy: 1543, 1737
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-2-deselected
+  rotate: false
+  xy: 1641, 1803
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-2-selected
+  rotate: false
+  xy: 1, 33
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-3-deselected
+  rotate: false
+  xy: 291, 195
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-3-selected
+  rotate: false
+  xy: 361, 261
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-4-deselected
+  rotate: false
+  xy: 515, 683
+  size: 68, 64
+  orig: 68, 64
+  offset: 0, 0
+  index: -1
+tab-4-selected
+  rotate: false
+  xy: 585, 749
   size: 68, 64
   orig: 68, 64
   offset: 0, 0
   index: -1
 tab-title-bg
   rotate: false
-  xy: 1, 51
+  xy: 1, 99
   size: 96, 32
   split: 10, 10, 10, 10
   orig: 96, 32
@@ -163,7 +219,7 @@ tab-title-bg
   index: -1
 white-label-scroll-bg
   rotate: false
-  xy: 1, 1
+  xy: 1711, 1819
   size: 48, 48
   split: 10, 10, 10, 10
   orig: 48, 48
@@ -171,7 +227,7 @@ white-label-scroll-bg
   index: -1
 scroll-bar
   rotate: false
-  xy: 585, 757
+  xy: 291, 185
   size: 4, 8
   split: 0, 2, 2, 3
   pad: 0, 0, 0, 0
@@ -180,7 +236,7 @@ scroll-bar
   index: -1
 scroll-track
   rotate: false
-  xy: 515, 667
+  xy: 71, 65
   size: 6, 32
   split: 2, 2, 8, 8
   pad: 0, 0, 0, 0
@@ -189,14 +245,14 @@ scroll-track
   index: -1
 study-overlay-label
   rotate: false
-  xy: 515, 767
+  xy: 515, 815
   size: 224, 24
   orig: 224, 24
   offset: 0, 0
   index: -1
 title-label
   rotate: false
-  xy: 1029, 1273
+  xy: 1029, 1321
   size: 96, 32
   split: 8, 8, 8, 8
   orig: 96, 32

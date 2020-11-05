@@ -1,13 +1,19 @@
 {
 "sceneSetup":
-[
-	{"actor": "FIRST_WITCH", "startPosition": {"x": 9, "y": 21}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "SECOND_WITCH", "startPosition": {"x": 5, "y": 20}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "THIRD_WITCH", "startPosition": {"x": 3, "y": 15}, "stageLayer": "MAIN_STAGE"},
+{
+	"actorSetup":
+	[
+		{"actor": "FIRST_WITCH", "startPosition": {"x": 7, "y": 7}, "stageLayer": "BALCONY"},
+		{"actor": "SECOND_WITCH", "startPosition": {"x": 10, "y": 21}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "THIRD_WITCH", "startPosition": {"x": 2, "y": 13}, "stageLayer": "MAIN_STAGE"},
 	
-	{"actor": "MACBETH", "startPosition": {"x": 24, "y": 12}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "BANQUO", "startPosition": {"x": 22, "y": 12}, "stageLayer": "MAIN_STAGE"}
-],
+		{"actor": "MACBETH", "startPosition": {"x": 24, "y": 12}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "BANQUO", "startPosition": {"x": 22, "y": 12}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
@@ -19,24 +25,24 @@
 		"actor": "FIRST_WITCH",
 		"actions":
 		[
-			{"action": "WALK", "direction": "UP", "destination": {"x": 9, "y": 20}},
-			{"action": "REFACE", "direction": "RIGHT"}
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 9, "y": 7}},
+			{"action": "REFACE", "direction": "DOWN"}
 		]
 	},
 	{
 		"actor": "SECOND_WITCH",
 		"actions":
 		[
-			{"action": "WALK", "direction": "UP", "destination": {"x": 5, "y": 19}},
-			{"action": "REFACE", "direction": "RIGHT"}
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 9, "y": 21}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 9, "y": 20}}
 		]
 	},
 	{
 		"actor": "THIRD_WITCH",
 		"actions":
 		[
-			{"action": "WALK", "direction": "DOWN", "destination": {"x": 3, "y": 16}},
-			{"action": "REFACE", "direction": "RIGHT"}
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 2, "y": 14}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 4, "y": 14}}
 		]
 	},
 	{
@@ -54,7 +60,7 @@
 		[
 			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 11}},
 			{"action": "WALK", "direction": "DOWN", "destination": {"x": 14, "y": 15}},
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 10, "y": 15}}
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 12, "y": 15}}
 		]
 	}]
 },
@@ -64,19 +70,18 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "SPEECH",
+		"emote": "SURPRISE",
 		"actions":
 		[
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 15}},
-			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 16}},
-			{"action": "REFACE", "direction": "RIGHT"}
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 9, "y": 15}},
+			{"action": "REFACE", "direction": "DOWN"}
 		]
 	},
 	{
 		"actor": "MACBETH",
 		"actions":
 		[
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 13, "y": 14}}
+			{"action": "REFACE", "direction": "LEFT"}
 		]
 	}]
 },
@@ -86,7 +91,31 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "SPEECH"
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 9, "y": 17}},
+			{"action": "REFACE", "direction": "LEFT"},
+			{"action": "REFACE", "direction": "UP"},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 11, "y": 14}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"emote": "POISON"
+	},
+	{
+		"actor": "FIRST_WITCH",
+		"emote": "POISON"
 	}]
 },
 //------------------------------------------------------------
@@ -95,7 +124,26 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "SPEECH"
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 9, "y": 15}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 15}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 12}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 12}}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 7, "y": 14}}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"emote": "POISON"
 	}]
 },
 //------------------------------------------------------------
@@ -104,7 +152,12 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "SPEECH"
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 7, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
 	}]
 },
 //------------------------------------------------------------
@@ -113,85 +166,601 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "SPEECH"
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
 	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 7//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 14}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 8//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 12}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 14}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "UP"}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 9//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 9,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 9, "y": 21}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 21}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 16}}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	}]
 },
 //------------------------------------------------------------
 {
-	"lineID": 10//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 2, "y": 14}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 2, "y": 12}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 5, "y": 11}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 5, "y": 14}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 9, "y": 14}}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
 },
 //------------------------------------------------------------
-{"lineID": 11},
-{"lineID": 12},
-{"lineID": 13},
-{"lineID": 14},
-{"lineID": 15},
-{"lineID": 16},
-{"lineID": 17},
-{"lineID": 18},
-{"lineID": 19},
-{"lineID": 20},
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	}]
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 15, "y": 14}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 11, "y": 18}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 7, "y": 14}},
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 12, "y": 13}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 13}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 15}}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 15, "y": 15}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 15}}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 17}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 17}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 13, "y": 16}}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 7, "y": 15}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 15}}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 16, "y": 15}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 18}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 10, "y": 15}},
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
 
-{"lineID": 21},
-{"lineID": 22},
-{"lineID": 23},
-{"lineID": 24},
-{"lineID": 25},
-{"lineID": 26},
-{"lineID": 27},
-{"lineID": 28},
-{"lineID": 29}
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 14}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 12, "y": 16}},
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"emote": "THINKING",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 16, "y": 12}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 13, "y": 17}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 16, "y": 17}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 16, "y": 12}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 12, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 10, "y": 17}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 16, "y": 17}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 16, "y": 12}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 12, "y": 15}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 15}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 8, "y": 14}}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"emote": "THINKING",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 17}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 9, "y": 17}},
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 14}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		// Stands not within the prospect of belief,
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 16, "y": 14}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	}]
+},
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		// No more than to be Cawdor. Say from whence
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 14, "y": 14}}
+		]
+	}]
+},
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		// You owe this strange intelligence? or why
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 14, "y": 15}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 12, "y": 15}},
+			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "UP"}
+		]
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "UP"}
+		]
+	},
+	{
+		"actor": "BANQUO",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 10, "y": 17}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 10, "y": 16}}
+		]
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "FIRST_WITCH",
+		"actions":
+		[
+			{"action": "DISAPPEAR"}
+		]
+	},
+	{
+		"actor": "SECOND_WITCH",
+		"actions":
+		[
+			{"action": "DISAPPEAR"}
+		]
+	},
+	{
+		"actor": "THIRD_WITCH",
+		"actions":
+		[
+			{"action": "DISAPPEAR"}
+		]
+	}]
+},
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "CONFUSION",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 12, "y": 13}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 15, "y": 13}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 11, "y": 13}}
+		]
+	}]
+},
+{
+	"lineID": 32,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
+{
+	"lineID": 33,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 13, "y": 13}}
+		]
+	}]
+}
 ]
 }

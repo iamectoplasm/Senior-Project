@@ -1,767 +1,797 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 2 Scene 3",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Here's a knocking indeed! If a man were"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "porter of hell gate, he should have old turning the key."}]
 	 	},
 	 	{
 	 		"lineID": 3,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "???", "text": "[Knocking within]"},
+	 				 {"actor": "Porter", "text": "Knock, knock, knock!"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "Who's there, i' the name of Beelzebub? Here's a"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "farmer, that hanged himself on th' expectation of"}]
 	 	},
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "plenty; come in time, have napkins enow about"}]
 	 	},
 	 	{
 	 		"lineID": 7,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Porter", "text": "you, here you'll sweat for't."},
+	 				 {"actor": "???", "text": "[Knocking within]"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "Knock, knock! Who's there, in th' other devil's"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "name? Faith, here's an equivocator, that could"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Porter", "text": "swear in both the scales against either scale, who"}]
 	 	},
 		{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "committed treason enough for God's sake, yet could"}]
 		},
 		{
 			"lineID": 12,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "not equivocate to heaven. Oh, come in, equivocator."}]
 		},
 		{
 			"lineID": 13,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "???", "text": "[Knocking within]"},
+					 {"actor": "Porter", "text": "Knock, knock, knock! Who's"}]
 		},
 		{
 			"lineID": 14,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "there? Faith, here's an English tailor come hither,"}]
 		},
 		{
 			"lineID": 15,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "for stealing out of a French hose. Come in, tailor,"}]
 		},
 		{
 			"lineID": 16,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Porter", "text": "here you may roast your goose."},
+					 {"actor": "???", "text": "[Knocking within]"}]
 		},
 		{
 			"lineID": 17,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Knock, knock, never at quiet! What are you?"}]
 		},
 		{
 			"lineID": 18,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "But this place is too cold for hell. I'll devil-porter"}]
 		},
 		{
 			"lineID": 19,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "it no further. I had thought to have let in"}]
 		},
 		{
 			"lineID": 20,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "some of all professions that go the primrose"}]
 		},
 		{
 			"lineID": 21,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "way to the everlasting bonfire."}]
 		},
 		{
 			"lineID": 22,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "???", "text": "[Knocking within]"}]
 		},
 		{
 			"lineID": 23,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Anon, anon! I pray you, remember the porter."}]
 		},
 		{
 			"lineID": 24,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Was it so late, friend, ere you went to bed,"}]
 		},
 		{
 			"lineID": 25,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 That you do lie so late?"}]
 		},
 		{
 			"lineID": 26,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Faith, sir,"}]
 		},
 		{
 			"lineID": 27,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "we were carousing till the second cock. And drink,"}]
 		},
 		{
 			"lineID": 28,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "sir,"}]
 		},
 		{
 			"lineID": 29,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "is a great provoker of three things."}]
 		},
 		{
 			"lineID": 30,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 What three things does drink especially provoke?"}]
 		},
 		{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Marry, sir, nose-painting, sleep, and urine."}]
 		},
 		{
 			"lineID": 32,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Lechery, sir, it provokes, and unprovokes."}]
 		},
 		{
 			"lineID": 33,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "It provokes the desire, but it takes away the performance."}]
 		},
 		{
 			"lineID": 34,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "Therefore, much drink may be said to be an equivocator"}]
 		},
 		{
 			"lineID": 35,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "with lechery. It makes him and it mars him,"}]
 		},
 		{
 			"lineID": 36,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "it sets him on, and it takes him off,"}]
 		},
 		{
 			"lineID": 37,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "it persuades him, and disheartens him,"}]
 		},
 		{
 			"lineID": 38,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "makes him stand to and not stand to;"}]
 		},
 		{
 			"lineID": 39,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "in conclusion, equivocates him in a sleep"}]
 		},
 		{
 			"lineID": 40,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "and giving him the lie, leaves him."}]
 		},
 		{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 I believe drink gave thee the lie last night."}]
 		},
 		{
 			"lineID": 42,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "That it did, sir, i' the very throat on me."}]
 		},
 		{
 			"lineID": 43,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "But I requited him for his lie,"}]
 		},
 		{
 			"lineID": 44,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "and I think being too strong for him,"}]
 		},
 		{
 			"lineID": 45,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "though he took up my legs sometime,"}]
 		},
 		{
 			"lineID": 46,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Porter", "text": "yet I made a shift to cast him."}]
 		},
 		{
 			"lineID": 47,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Is thy master stirring?"}]
 		},
 		{
 			"lineID": 48,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Our knocking has awaked him; here he comes."}]
 		},
 		{
 			"lineID": 49,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lennox", "text": "\u2022 Good morrow, noble sir."},
+					 {"actor": "Macbeth", "text": "Good morrow, both."}]
 		},
 		{
 			"lineID": 50,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Is the king stirring, worthy thane?"},
+					 {"actor": "Macbeth", "text": "Not yet."}]
 		},
 		{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 He did command me to call timely on him:"}]
 		},
 		{
 			"lineID": 52,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 I have almost slipp'd the hour."},
+					 {"actor": "Macbeth", "text": "I'll bring you to him."}]
 		},
 		{
 			"lineID": 53,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 I know this is a joyful trouble to you;"}]
 		},
 		{
 			"lineID": 54,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 But yet 'tis one."}]
 		},
 		{
 			"lineID": 55,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The labour we delight in physics pain."}]
 		},
 		{
 			"lineID": 56,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 This is the door."},
+					 {"actor": "Macduff", "text": "I'll make so bold to call,"}]
 		},
 		{
 			"lineID": 57,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 For 'tis my limited service."}]
 		},
 		{
 			"lineID": 58,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lennox", "text": "\u2022 Goes the king hence today?"},
+					 {"actor": "Macbeth", "text": "He does. He did appoint so."}]
 		},
 		{
 			"lineID": 59,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 The night has been unruly. Where we lay,"}]
 		},
 		{
 			"lineID": 60,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Our chimneys were blown down, and, as they say,"}]
 		},
 		{
 			"lineID": 61,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Lamentings heard i' the air, strange screams of death,"}]
 		},
 		{
 			"lineID": 62,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 And prophesying with accents terrible"}]
 		},
 		{
 			"lineID": 63,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Of dire combustion and confused events"}]
 		},
 		{
 			"lineID": 64,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 New hatch'd to the woeful time. The obscure bird"}]
 		},
 		{
 			"lineID": 65,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Clamour'd the livelong night. Some say, the earth"}]
 		},
 		{
 			"lineID": 66,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Was feverous and did shake."},
+					 {"actor": "Macbeth", "text": "'Twas a rough night."}]
 		},
 		{
 			"lineID": 67,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 My young remembrance cannot parallel"}]
 		},
 		{
 			"lineID": 68,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 A fellow to it."}]
 		},
 		{
 			"lineID": 69,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 O horror, horror, horror! Tongue nor heart"}]
 		},
 		{
 			"lineID": 70,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Cannot conceive nor name thee!"},
+					 {"actor": "Macbeth and Lennox", "text": "What's the matter?"}]
 		},
 		{
 			"lineID": 71,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Confusion now hath made his masterpiece!"}]
 		},
 		{
 			"lineID": 72,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Most sacrilegious murder hath broke ope"}]
 		},
 		{
 			"lineID": 73,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 The Lord's anointed temple, and stole thence"}]
 		},
 		{
 			"lineID": 74,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 The life o' the building!"},
+					 {"actor": "Macbeth", "text": "What is 't you say? The life?"}]
 		},
 		{
 			"lineID": 75,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Mean you his majesty?"}]
 		},
 		{
 			"lineID": 76,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Approach the chamber, and destroy your sight"}]
 		},
 		{
 			"lineID": 77,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 With a new Gorgon. Do not bid me speak;"}]
 		},
 		{
 			"lineID": 78,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 See, and then speak yourselves. Awake, awake!"}]
 		},
 		{
 			"lineID": 79,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Ring the alarum-bell. Murder and treason!"}]
 		},
 		{
 			"lineID": 80,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Banquo and Donalbain! Malcolm! Awake!"}]
 		},
 		{
 			"lineID": 81,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Shake off this downy sleep, death's counterfeit,"}]
 		},
 		{
 			"lineID": 82,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 And look on death itself! Up, up, and see"}]
 		},
 		{
 			"lineID": 83,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 The great doom's image! Malcolm! Banquo!"}]
 		},
 		{
 			"lineID": 84,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 As from your graves rise up, and walk like sprites,"}]
 		},
 		{
 			"lineID": 85,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 To countenance this horror! Ring the bell."}]
 		},
 		{
 			"lineID": 86,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 What's the business,"}]
 		},
 		{
 			"lineID": 87,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 That such a hideous trumpet calls to parley"}]
 		},
 		{
 			"lineID": 88,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 The sleepers of the house? Speak, speak!"},
+					 {"actor": "Macduff", "text": "\u2022 O gentle lady,"}]
 		},
 		{
 			"lineID": 89,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 'Tis not for you to hear what I can speak."}]
 		},
 		{
 			"lineID": 90,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 The repetition, in a woman's ear,"}]
 		},
 		{
 			"lineID": 91,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Would murder as it fell. O Banquo, Banquo!"}]
 		},
 		{
 			"lineID": 92,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Our royal master 's murder'd!"},
+					 {"actor": "Lady Macbeth", "text": "Woe, alas!"}]
 		},
 		{
 			"lineID": 93,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 What, in our house?"},
+					 {"actor": "Banquo", "text": "Too cruel anywhere."}]
 		},
 		{
 			"lineID": 94,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Dear Duff, I prithee, contradict thyself,"}]
 		},
 		{
 			"lineID": 95,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 And say it is not so."}]
 		},
 		{
 			"lineID": 96,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Had I but died an hour before this chance,"}]
 		},
 		{
 			"lineID": 97,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022  had lived a bless\u00E8d time, for from this instant,"}]
 		},
 		{
 			"lineID": 98,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 There 's nothing serious in mortality:"}]
 		},
 		{
 			"lineID": 99,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 All is but toys. Renown and grace is dead,"}]
 		},
 		{
 			"lineID": 100,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The wine of life is drawn, and the mere lees"}]
 		},
 		{
 			"lineID": 101,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is left this vault to brag of."}]
 		},
 		{
 			"lineID": 102,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Donalbain", "text": "\u2022 What is amiss?"},
+					 {"actor": "Macbeth", "text": "You are, and do not know't."}]
 		},
 		{
 			"lineID": 103,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The spring, the head, the fountain of your blood"}]
 		},
 		{
 			"lineID": 104,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is stopp'd; the very source of it is stopp'd."}]
 		},
 		{
 			"lineID": 105,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Your royal father 's murder'd."},
+					 {"actor": "Malcolm", "text": "O, by whom?"}]
 		},
 		{
 			"lineID": 106,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Those of his chamber, as it seem'd, had done 't."}]
 		},
 		{
 			"lineID": 107,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Their hands and faces were all badged with blood,"}]
 		},
 		{
 			"lineID": 108,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 So were their daggers, which unwiped we found"}]
 		},
 		{
 			"lineID": 109,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Upon their pillows."}]
 		},
 		{
 			"lineID": 110,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 They stared, and were distracted; no man's life"}]
 		},
 		{
 			"lineID": 111,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 Was to be trusted with them."}]
 		},
 		{
 			"lineID": 112,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Oh, yet I do repent me of my fury,"}]
 		},
 		{
 			"lineID": 113,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That I did kill them."},
+					 {"actor": "Macduff", "text": "Wherefore did you so?"}]
 		},
 		{
 			"lineID": 114,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who can be wise, amazed, temperate and furious,"}]
 		},
 		{
 			"lineID": 115,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Loyal and neutral, in a moment? No man."}]
 		},
 		{
 			"lineID": 116,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The expedition my violent love"}]
 		},
 		{
 			"lineID": 117,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Outrun the pauser reason. Here lay Duncan,"}]
 		},
 		{
 			"lineID": 118,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 His silver skin laced with his golden blood,"}]
 		},
 		{
 			"lineID": 119,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And his gash'd stabs looked like a breach in nature"}]
 		},
 		{
 			"lineID": 120,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 For ruin's wasteful entrance. There, the murderers,"}]
 		},
 		{
 			"lineID": 121,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Steeped in the colours of their trade, their daggers"}]
 		},
 		{
 			"lineID": 122,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Unmannerly breech'd with gore. Who could refrain,"}]
 		},
 		{
 			"lineID": 123,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 That had a heart to love, and in that heart"}]
 		},
 		{
 			"lineID": 124,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Courage to make 's love known?"},
+					 {"actor": "Lady Macbeth", "text": "Help me hence, ho!"}]
 		},
 		{
 			"lineID": 125,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Look to the lady."},
+					 {"actor": "Malcolm", "text": "Why do we hold our tongues,"}]
 		},
 		{
 			"lineID": 126,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 That most may claim this argument for ours?"}]
 		},
 		{
 			"lineID": 127,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 What should be spoken here, where our fate,"}]
 		},
 		{
 			"lineID": 128,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 Hid in an auger-hole, may rush, and seize us?"}]
 		},
 		{
 			"lineID": 129,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 Let's away, our tears are not yet brew'd."}]
 		},
 		{
 			"lineID": 130,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Nor our strong sorrow upon the foot of motion."}]
 		},
 		{
 			"lineID": 131,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Look to the lady:"}]
 		},
 		{
 			"lineID": 132,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 And when we have our naked frailties hid,"}]
 		},
 		{
 			"lineID": 133,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 That suffer in exposure, let us meet,"}]
 		},
 		{
 			"lineID": 134,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 And question this most bloody piece of work,"}]
 		},
 		{
 			"lineID": 135,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 To know it further. Fears and scruples shake us."}]
 		},
 		{
 			"lineID": 136,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 In the great hand of God I stand, and thence"}]
 		},
 		{
 			"lineID": 137,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Against the undivulged pretence I fight"}]
 		},
 		{
 			"lineID": 138,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Banquo", "text": "\u2022 Of treasonous malice."},
+					 {"actor": "Macduff", "text": "And so do I."},
+					 {"actor": "All", "text": "So all."}]
 		},
 		{
 			"lineID": 139,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Let's briefly put on manly readiness,"}]
 		},
 		{
 			"lineID": 140,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And meet i' the hall together."},
+					 {"actor": "All", "text": "\u2022 Well contented."}]
 		},
 		{
 			"lineID": 141,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 What will you do? Let's not consort with them."}]
 		},
 		{
 			"lineID": 142,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 To show an unfelt sorrow is an office"}]
 		},
 		{
 			"lineID": 143,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Which the false man does easy. I'll to England."}]
 		},
 		{
 			"lineID": 144,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 To Ireland, I; our separated fortune"}]
 		},
 		{
 			"lineID": 145,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 Shall keep us both the safer. Where we are,"}]
 		},
 		{
 			"lineID": 146,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 There's daggers in men's smiles. The near in blood,"}]
 		},
 		{
 			"lineID": 147,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Donalbain", "text": "\u2022 The nearer bloody."},
+					 {"actor": "Malcolm", "text": "This murderous shaft that's shot"}]
 		},
 		{
 			"lineID": 148,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Hath not yet lighted, and our safest way"}]
 		},
 		{
 			"lineID": 149,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Is to avoid the aim. Therefore to horse,"}]
 		},
 		{
 			"lineID": 150,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 And let us not be dainty of leave-taking,"}]
 		},
 		{
 			"lineID": 151,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 But shift away. There's warrant in that theft"}]
 		},
 		{
 			"lineID": 152,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Which steals itself, when there's no mercy left."}]
 		}
 		]
 }

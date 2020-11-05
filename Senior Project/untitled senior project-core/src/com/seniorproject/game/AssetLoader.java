@@ -16,7 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementAnimation;
 import com.seniorproject.components.Velocity;
-import com.seniorproject.components.MovementAnimation.Animation;
+import com.seniorproject.components.MovementAnimation.WalkAnimation;
 
 public class AssetLoader
 {

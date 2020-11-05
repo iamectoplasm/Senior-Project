@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="left-down" width="24" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="29" nextobjectid="22">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="left-down" width="24" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="22">
  <tileset firstgid="1" name="tileset 003" tilewidth="16" tileheight="16" tilecount="2560" columns="16">
   <image source="tileset 003.png" width="256" height="2560"/>
  </tileset>
@@ -530,7 +530,10 @@
 </data>
   </layer>
  </group>
- <objectgroup id="20" name="stairs">
+ <imagelayer id="30" name="lighting layer">
+  <image source="clear-overlay.png" width="384" height="384"/>
+ </imagelayer>
+ <objectgroup id="20" name="stairs" visible="0">
   <object id="1" name="left stairs down" x="75" y="180" width="2" height="8">
    <properties>
     <property name="activateOnDirection" value="LEFT"/>
@@ -560,7 +563,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="24" name="stage change triggers">
+ <objectgroup id="24" name="stage change triggers" visible="0">
   <object id="6" name="enter balcony" x="116" y="160" width="24" height="1">
    <properties>
     <property name="fromLayer" value="MAIN_STAGE"/>

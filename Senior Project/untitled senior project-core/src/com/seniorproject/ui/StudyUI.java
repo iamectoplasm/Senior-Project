@@ -44,10 +44,10 @@ public class StudyUI extends Window
 		
 		Table tabTable = new Table();
 		
-		definitionsButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-side-button");
-		translationButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-side-button");
-		analysisButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-side-button");
-		fullTextButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-side-button");
+		translationButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-button-1");
+		definitionsButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-button-2");
+		analysisButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-button-3");
+		fullTextButton = new ImageButton(AssetLoader.STUDY_SKIN, "tab-button-4");
 		
 		tabButtons = new ButtonGroup<ImageButton>();
 		tabButtons.add(translationButton);

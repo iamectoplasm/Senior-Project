@@ -15,6 +15,8 @@ public final class StageLayers
 	
 	public final static String OVERLAY_LAYERS = "overlay layers";
 	
+	public final static String LIGHTING_LAYER = "lighting layer";
+	
 	public final static String STAIRS_OBJECT_LAYER = "stairs";
 	public final static String Z_CHANGE_LAYER = "stage change triggers";
 	

@@ -7,7 +7,8 @@ import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.Bag;
 import com.seniorproject.components.Active;
-import com.seniorproject.components.Position;
+import com.seniorproject.components.Name;
+import com.seniorproject.components.MapPosition;
 
 public class EntitySortSystem extends EntitySystem
 {
@@ -18,7 +19,9 @@ public class EntitySortSystem extends EntitySystem
 	public EntitySortSystem()
 	{
 		super(Aspect.all(Active.class,
-				Position.class));
+				MapPosition.class,
+				Name.class));
+		//11/3/20 adding in Name.class so that we only do performer entities, and not prop entities
 		
 		this.comparator = new YComparator();
 	}
@@ -61,7 +64,7 @@ public class EntitySortSystem extends EntitySystem
 		public int compare(Entity entity1, Entity entity2)
 		{
 			//return (int) (entity1.getComponent(Position.class).cellY - entity2.getComponent(Position.class).cellY);
-			return (entity1.getComponent(Position.class).currentPosition.y - entity2.getComponent(Position.class).currentPosition.y) < 0 ? 1 : -1;
+			return (entity1.getComponent(MapPosition.class).currentPosition.y - entity2.getComponent(MapPosition.class).currentPosition.y) < 0 ? 1 : -1;
 		}
 	}
 	

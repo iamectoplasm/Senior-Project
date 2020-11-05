@@ -67,6 +67,7 @@ public class DialogueUI extends Window
 		
 		textDisplay = new ScrollPane(dialogueTextTable, AssetLoader.DIALOGUE_SKIN);
 		textDisplay.setTouchable(Touchable.enabled);
+		textDisplay.setOverscroll(false, false);
 		textDisplay.setHeight(portraitBG.getHeight());
 		
 		//ScrollPane textDisplay = new ScrollPane(dialogueStack, AssetLoader.DIALOGUE_SKIN, "");

@@ -1,0 +1,173 @@
+{
+"sceneIntro":
+	{
+		"title": "Act 2 Scene 1",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is this a dagger which I see before me,"}]
+		},
+		{
+			"lineID": 2,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The handle toward my hand? Come, let me clutch thee."}]
+		},
+		{
+			"lineID": 3,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I have thee not, and yet I see thee still."}]
+		},
+		{
+			"lineID": 4,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou art not, fatal vision, sensible"}]
+		},
+		{
+			"lineID": 5,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To feeling as to sight? Or art thou but"}]
+		},
+		{
+			"lineID": 6,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 A dagger of the mind, a false creation,"}]
+		},
+		{
+			"lineID": 7,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Proceeding from the heat-oppressed brain?"}]
+		},
+		{
+			"lineID": 8,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I see thee yet, in form as palpable"}]
+		},
+		{
+			"lineID": 9,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 As this which now I draw."}]
+		},
+		{
+			"lineID": 10,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou marshal'st me the way that I was going,"}]
+		},
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And such an instrument I was to use."}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Mine eyes are made the fools o' the other senses,"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Or else worth all the rest. I see thee still,"}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And on thy blade and dudgeon gouts of blood,"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which was not so before. There's no such thing."}]
+		},
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 It is the bloody business which informs"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thus to mine eyes. Now o'er the one half-world"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Nature seems dead, and wicked dreams abuse"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The curtained sleep. Witchcraft celebrates"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Pale Hecate's offerings, and withered murder,"}]
+		},
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Alarumed by his sentinel, the wolf,"}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose howl 's his watch, thus with his stealthy pace,"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 With Tarquin's ravishing strides, toward his design"}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Moves like a ghost. Thou sure and firm-set earth,"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hear not my steps, which way they walk, for fear"}]
+		},
+		{
+			"lineID": 26,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thy very stones prate of my whereabout,"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And take the present horror from the time,"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which now suits with it. Whiles I threat, he lives."}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Words to the heat of deeds too cold breath gives."}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I go, and it is done. The bell invites me."}]
+		},
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hear it not, Duncan, for it is a knell"}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That summons thee to Heaven, or to Hell."}]
+		}
+	]
+}

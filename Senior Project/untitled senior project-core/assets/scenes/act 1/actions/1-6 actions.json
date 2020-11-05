@@ -1,5 +1,7 @@
 {
 "sceneSetup":
+{
+	"actorSetup":
 	[
 		{"actor": "DUNCAN", "startPosition": {"x": 12, "y": 25}, "stageLayer": "MAIN_STAGE"},
 		{"actor": "BANQUO", "startPosition": {"x": 11, "y": 26}, "stageLayer": "MAIN_STAGE"},
@@ -15,6 +17,9 @@
 		{"actor": "LADY_MACBETH", "startPosition": {"x": 12, "y": 9}, "stageLayer": "BACKSTAGE"}
 		//{"actor": "LADY_MACBETH", "startPosition": {"x": 12, "y": 8}, "stageLayer": "BACKSTAGE"}
 	],
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [{

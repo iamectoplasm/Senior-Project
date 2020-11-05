@@ -7,10 +7,8 @@ import com.artemis.ArchetypeBuilder;
 import com.artemis.Entity;
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Animation.PlayMode;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.GridPoint2;
@@ -19,11 +17,12 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
 import com.seniorproject.components.*;
-import com.seniorproject.components.MovementAnimation.Animation;
-import com.seniorproject.components.MovementAnimation.AnimationType;
+import com.seniorproject.components.MovementAnimation.WalkAnimation;
 import com.seniorproject.configs.AnimationConfig;
 import com.seniorproject.configs.AnimationConfig.AnimationData;
 import com.seniorproject.enums.CharacterName;
+import com.seniorproject.enums.Prop;
+import com.seniorproject.enums.AnimationType;
 
 /**
  * The EntityFactory class that instantiates and returns the Entity objects
@@ -37,9 +36,6 @@ public class EntityFactory
 	public static World world;
 
 	private static EntityFactory instance = null;
-	private Hashtable<String, String> entities;
-	
-	//private Hashtable<String, TextureRegion> entityTextures;
 	
 	public static EntityFactory getInstance()
 	{
@@ -49,11 +45,6 @@ public class EntityFactory
 		}
 
 		return instance;
-	}
-	
-	public Hashtable<String, String> getEntitiesTable()
-	{
-		return entities;
 	}
 
 	public static enum EntityType
@@ -65,10 +56,16 @@ public class EntityFactory
 				.add(MovementAnimation.class)
 				.add(MovementState.class)
 				.add(Name.class)
-				.add(Position.class)
-				.add(PerformerSprite.class)
+				.add(MapPosition.class)
+				.add(DrawableSprite.class)
 				.add(Velocity.class)
 				.add(StageDirections.class)
+				.build(world)),
+		
+		PROP(new ArchetypeBuilder()
+				.add(PropComponent.class)
+				.add(Position.class)
+				.add(DrawableSprite.class)
 				.build(world));
 
 		private Archetype archetype;
@@ -82,6 +79,11 @@ public class EntityFactory
 	private EntityFactory()
 	{ }
 	
+	public static void setWorld(World setWorld)
+	{
+		world = setWorld;
+	}
+	
 	public static Entity getPerformerEntity(CharacterName character)
 	{
 		Entity entity = null;
@@ -90,17 +92,25 @@ public class EntityFactory
 			
 		entity.getComponent(Name.class).name = character.toString();
 		
-		Gdx.app.debug(TAG, "Name of entity being created: " + character.toString());
+		Gdx.app.debug(TAG, "Name of performer entity being created: " + character.toString() + " with ID " + entity.getId());
 		
-		TextureRegion spriteSheet = PerformerAtlas.getInstance().getPerformerTexture(character);
+		//TextureRegion spriteSheet = PerformerAtlas.getInstance().getPerformerTexture(character);
+		
+		Array<TextureRegion> spriteSheets = PerformerAtlas.getInstance().getPerformerTexture(character);
+		TextureRegion spriteSheet = spriteSheets.get(0);
+		if(spriteSheets.size > 1)
+		{
+			TextureRegion specialSpriteSheet = spriteSheets.get(1);
+			entity.getComponent(MovementAnimation.class).otherAnimations = loadSpecialAnimations(specialSpriteSheet);
+		}
 		
 		if(spriteSheet == null)
 		{
 			Gdx.app.debug(TAG, "spriteSheet for entity " + character.toString() + " is null :(");
 		}
 		
-		entity.getComponent(MovementAnimation.class).animations = loadAnimations(spriteSheet);
-		entity.getComponent(PerformerSprite.class).currentFrame = entity.getComponent(MovementAnimation.class).animations.get(AnimationType.WALK_DOWN).getNextStandingFrame();
+		entity.getComponent(MovementAnimation.class).animations = loadWalkAnimations(spriteSheet);
+		entity.getComponent(DrawableSprite.class).currentFrame = entity.getComponent(MovementAnimation.class).animations.get(AnimationType.WALK_DOWN).getNextStandingFrame();
 		entity.getComponent(Velocity.class).velocity = .25f;
 		
 		//Gdx.app.debug(TAG, "Now calling initBoundingBox on entity " + character.toString());
@@ -108,28 +118,55 @@ public class EntityFactory
 		
 		return entity;
 	}
-
-	public static void setWorld(World setWorld)
+	
+	public static Entity getPropEntity(Prop prop)
 	{
-		world = setWorld;
+		Entity entity = null;
+		
+		entity = world.createEntity(EntityType.PROP.archetype);
+		Gdx.app.debug(TAG, "Name of prop entity being created: " + prop.toString() + " with ID " + entity.getId());
+			
+		entity.getComponent(PropComponent.class).prop = prop;
+		
+		TextureRegion propTexture = PropAtlas.getInstance().getPropTexture(prop);
+		if(propTexture == null)
+		{
+			Gdx.app.debug(TAG, "spriteSheet for entity " + prop.toString() + " is null :(");
+		}
+		entity.getComponent(DrawableSprite.class).currentFrame = propTexture;
+		
+		entity.getComponent(Position.class).position = new Vector2(50, 50);
+		
+		switch(Prop.getPropType(prop))
+		{
+		case OBJECT:
+			
+			break;
+		case FURNITURE:
+			break;
+		case LIGHTING:
+			break;
+		}
+		
+		return entity;
 	}
 	
-	private static Hashtable<AnimationType, Animation> loadAnimations(TextureRegion spriteSheet)
+	private static Hashtable<AnimationType, WalkAnimation> loadWalkAnimations(TextureRegion spriteSheet)
 	{
-		Hashtable<AnimationType, Animation> animations = new Hashtable<AnimationType, Animation>();
+		Hashtable<AnimationType, WalkAnimation> animations = new Hashtable<AnimationType, WalkAnimation>();
 		
 		Json tempJson = new Json();
 		AnimationConfig config = tempJson.fromJson(AnimationConfig.class, Gdx.files.internal("characters/animationconfig.json"));
-		Array<AnimationData> animationDataArray = config.getAnimationData();
+		Array<AnimationData> animationDataArray = config.getWalkAnimationData();
 
 		for (AnimationData animationData : animationDataArray)
 		{
 			Array<GridPoint2> points = animationData.getGridPoints();
 			AnimationType animationType = animationData.getAnimationType();
 
-			Animation currentAnim = null;
+			WalkAnimation currentAnim = null;
 			
-			currentAnim = loadSingleAnimation(spriteSheet, points);
+			currentAnim = loadSingleWalkAnimation(spriteSheet, points);
 			
 			animations.put(animationType, currentAnim);
 		}
@@ -137,7 +174,7 @@ public class EntityFactory
 		return animations;
 	}
 	
-	protected static Animation loadSingleAnimation(TextureRegion spriteSheet, Array<GridPoint2> points)
+	protected static WalkAnimation loadSingleWalkAnimation(TextureRegion spriteSheet, Array<GridPoint2> points)
 	{
 		TextureRegion[][] textureFrames = spriteSheet.split(32, 32);
 	
@@ -148,13 +185,45 @@ public class EntityFactory
 			animationKeyFrames.add(textureFrames[point.x][point.y]);
 		}
 
-		return new MovementAnimation.Animation(animationKeyFrames, .25f);
+		return new MovementAnimation.WalkAnimation(animationKeyFrames, .25f);
+	}
+	
+	protected static Hashtable<AnimationType, Animation<TextureRegion>> loadSpecialAnimations(TextureRegion spriteSheet)
+	{
+		Hashtable<AnimationType, Animation<TextureRegion>> animations = new Hashtable<AnimationType, Animation<TextureRegion>>();
+		
+		Json tempJson = new Json();
+		AnimationConfig config = tempJson.fromJson(AnimationConfig.class, Gdx.files.internal("characters/animationconfig.json"));
+		Array<AnimationData> animationDataArray = config.getSpecialAnimationData();
+		
+		for (AnimationData animationData : animationDataArray)
+		{
+			Array<GridPoint2> points = animationData.getGridPoints();
+			AnimationType animationType = animationData.getAnimationType();
+
+			Animation<TextureRegion> newAnim = null;
+			
+			TextureRegion[][] textureFrames = spriteSheet.split(32, 32);
+			
+			Array<TextureRegion> animationKeyFrames = new Array<TextureRegion>(points.size);
+			
+			for(GridPoint2 point: points)
+			{
+				animationKeyFrames.add(textureFrames[point.x][point.y]);
+			}
+			
+			newAnim = new Animation<TextureRegion>(.2f, animationKeyFrames, PlayMode.NORMAL);
+			
+			animations.put(animationType, newAnim);
+		}
+		
+		return animations;
 	}
 	
 	public static void initBoundingBox(int entityId)
 	{
 		BoundingBox box = world.getEntity(entityId).getComponent(BoundingBox.class);
-		Position position = world.getEntity(entityId).getComponent(Position.class);
+		MapPosition position = world.getEntity(entityId).getComponent(MapPosition.class);
 		
 		box.shapeRenderer = new ShapeRenderer();
 

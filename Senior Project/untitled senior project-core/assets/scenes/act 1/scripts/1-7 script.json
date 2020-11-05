@@ -1,426 +1,432 @@
 {
-"cast": ["Macbeth", "Lady Macbeth", "Server"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 7",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-If it were done when 'tis done, then 'twere well"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 If it were done when 'tis done, then 'twere well"}]
 		},
 		{
 			"lineID": 2,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-It were done quickly. If the assassination"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 It were done quickly. If the assassination"}]
 		},
 		{
 			"lineID": 3,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Could trammel up the consequence, and catch,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Could trammel up the consequence, and catch,"}]
 		},
 		{
 			"lineID": 4,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-With his surcease, success, that but this blow"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 With his surcease, success, that but this blow"}]
 		},
 		{
 			"lineID": 5,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Might be the be-all and the end-all here,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Might be the be-all and the end-all here,"}]
 		},
 		{
 			"lineID": 6,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-But here, upon this bank and shoal of time,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 But here, upon this bank and shoal of time,"}]
 		},
 		{
 			"lineID": 7,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-We'd jump the life to come. But in these cases"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 We'd jump the life to come. But in these cases"}]
 		},
 		{
 			"lineID": 8,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-We still have judgement here, that we but teach"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 We still have judgement here, that we but teach"}]
 		},
 		{
 			"lineID": 9,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Bloody instructions, which being taught return"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Bloody instructions, which being taught return"}]
 		},
 		{
 			"lineID": 10,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-To plague the inventor. This even-handed justice"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 To plague the inventor. This even-handed justice"}]
 		},
 		{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Commends the ingredients of our poisoned chalice"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Commends the ingredients of our poisoned chalice"}]
 		},
 		{
 			"lineID": 12,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-To our own lips. He's here in double trust."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 To our own lips. He's here in double trust."}]
 		},
 		{
 			"lineID": 13,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-First, I am his kinsman and his subject,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 First, I am his kinsman and his subject,"}]
 		},
 		{
 			"lineID": 14,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Strong both against the deed. Then, as his host,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Strong both against the deed. Then, as his host,"}]
 		},
 		{
 			"lineID": 15,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Who would against his murderer shut the door,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who would against his murderer shut the door,"}]
 		},
 		{
 			"lineID": 16,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Not bear the knife myself! Besides, this Duncan"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Not bear the knife myself! Besides, this Duncan"}]
 		},
 		{
 			"lineID": 17,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Hath borne his faculties so meek, hath been"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hath borne his faculties so meek, hath been"}]
 		},
 		{
 			"lineID": 18,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-So clear in his great office, that his virtues"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 So clear in his great office, that his virtues"}]
 		},
 		{
 			"lineID": 19,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Will plead like angels trumpet-tongued against"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Will plead like angels trumpet-tongued against"}]
 		},
 		{
 			"lineID": 20,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-The deep damnation of his taking off."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The deep damnation of his taking off."}]
 		},
 		{
 			"lineID": 21,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-And pity, like a naked newborn babe,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And pity, like a naked newborn babe,"}]
 		},
 		{
 			"lineID": 22,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Striding the blast, or Heaven's cherubin horsed"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Striding the blast, or Heaven's cherubin horsed"}]
 		},
 		{
 			"lineID": 23,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Upon the sightless couriers of the air,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Upon the sightless couriers of the air,"}]
 		},
 		{
 			"lineID": 24,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Shall blow the horrid deed in every eye,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Shall blow the horrid deed in every eye,"}]
 		},
 		{
 			"lineID": 25,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-That tears shall drown the wind. I have no spur"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 That tears shall drown the wind. I have no spur"}]
 		},
 		{
 			"lineID": 26,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-To prick the sides of my intent, but only"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 To prick the sides of my intent, but only"}]
 		},
 		{
 			"lineID": 27,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Vaulting ambition, which o'erleaps itself"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Vaulting ambition, which o'erleaps itself"}]
 		},
 		{
 			"lineID": 28,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-And falls on the other. How now! What news?"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And falls on the other. How now! What news?"}]
 		},
 		{
 			"lineID": 29,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-He has almost supped. Why have you left the chamber?"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 He has almost supped. Why have you left the chamber?"}]
 		},
 		{
 			"lineID": 30,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-Hath he asked for me?"},
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hath he asked for me?"},
 					 {"actor": "Lady Macbeth", "text": "Know you not he has?"}]
 		},
 		{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-We will proceed no further in this business."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 We will proceed no further in this business."}]
 		},
 		{
 			"lineID": 32,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-He hath honored me of late, and I have bought"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 He hath honored me of late, and I have bought"}]
 		},
 		{
 			"lineID": 33,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Golden opinions from all sorts of people,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Golden opinions from all sorts of people,"}]
 		},
 		{
 			"lineID": 34,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Which would be worn now in their newest gloss,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which would be worn now in their newest gloss,"}]
 		},
 		{
 			"lineID": 35,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-Not cast aside so soon."},
+			"line": [{"actor": "Macbeth", "text": "\u2022 Not cast aside so soon."},
 					 {"actor": "Lady Macbeth", "text": "Was the hope drunk"}]
 		},
 		{
 			"lineID": 36,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Wherein you dressed yourself? Hath it slept since?"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Wherein you dressed yourself? Hath it slept since?"}]
 		},
 		{
 			"lineID": 37,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-And wakes it now, to look so green and pale"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And wakes it now, to look so green and pale"}]
 		},
 		{
 			"lineID": 38,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-At what it did so freely? From this time"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 At what it did so freely? From this time"}]
 		},
 		{
 			"lineID": 39,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Such I account thy love. Art thou afeard"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Such I account thy love. Art thou afeard"}]
 		},
 		{
 			"lineID": 40,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-To be the same in thine own act and valor"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 To be the same in thine own act and valor"}]
 		},
 		{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-As thou art in desire? Wouldst thou have that"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 As thou art in desire? Wouldst thou have that"}]
 		},
 		{
 			"lineID": 42,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Which thou esteem'st the ornament of life"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Which thou esteem'st the ornament of life"}]
 		},
 		{
 			"lineID": 43,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-And live a coward in thine own esteem,"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And live a coward in thine own esteem,"}]
 		},
 		{
 			"lineID": 44,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Letting 'I dare not' wait upon 'I would,'"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Letting 'I dare not' wait upon 'I would,'"}]
 		},
 		{
 			"lineID": 45,
 			"sharedLine": true,
-			"line": [{"actor": "Lady Macbeth", "text": "-Like the poor cat i' the adage?"},
-					 {"actor": "Macbeth", "text": "Prithee, peace."}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Like the poor cat i' the adage?"},
+					 {"actor": "Macbeth", "text": "\u2022 Prithee, peace."}]
 		},
 		{
 			"lineID": 46,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-I dare do all that may become a man."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 I dare do all that may become a man."}]
 		},
 		{
 			"lineID": 47,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-Who dares do more is none."},
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who dares do more is none."},
 					 {"actor": "Lady Macbeth", "text": "What beast was 't then"}]
 		},
 		{
 			"lineID": 48,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-That made you break this enterprise to me?"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 That made you break this enterprise to me?"}]
 		},
 		{
 			"lineID": 49,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-When you durst do it, then you were a man,"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 When you durst do it, then you were a man,"}]
 		},
 		{
 			"lineID": 50,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-And to be more than what you were, you would"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And to be more than what you were, you would"}]
 		},
 		{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-You would be so much more the man. Nor time nor place"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 You would be so much more the man. Nor time nor place"}]
 		},
 		{
 			"lineID": 52,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Did then adhere, and yet you would make both."}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Did then adhere, and yet you would make both."}]
 		},
 		{
 			"lineID": 53,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-They have made themselves, and that their fitness now"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 They have made themselves, and that their fitness now"}]
 		},
 		{
 			"lineID": 54,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Does unmake you. I have given suck, and I know"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Does unmake you. I have given suck, and I know"}]
 		},
 		{
 			"lineID": 55,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-How tender 'tis to love the babe that milks me."}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 How tender 'tis to love the babe that milks me."}]
 		},
 		{
 			"lineID": 56,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-I would, while it was smiling in my face,"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 I would, while it was smiling in my face,"}]
 		},
 		{
 			"lineID": 57,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Have plucked my nipple from his boneless gums"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Have plucked my nipple from his boneless gums"}]
 		},
 		{
 			"lineID": 58,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-And dashed the brains out, had I so sworn as you"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And dashed the brains out, had I so sworn as you"}]
 		},
 		{
 			"lineID": 59,
 			"sharedLine": true,
-			"line": [{"actor": "Lady Macbeth", "text": "-Have done to this."},
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Have done to this."},
 					 {"actor": "Macbeth", "text": "If we should fail?"},
 					 {"actor": "Lady Macbeth", "text": "We fail!"}]
 		},
 		{
 			"lineID": 60,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-But screw your courage to the sticking-place"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 But screw your courage to the sticking-place"}]
 		},
 		{
 			"lineID": 61,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-And we'll not fail. When Duncan is asleep--"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And we'll not fail. When Duncan is asleep\u2014"}]
 		},
 		{
 			"lineID": 62,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Whereto the rather shall his day's hard journey"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Whereto the rather shall his day's hard journey"}]
 		},
 		{
 			"lineID": 63,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Soundly invite him-- his two chamberlains"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Soundly invite him\u2014 his two chamberlains"}]
 		},
 		{
 			"lineID": 64,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Will I with wine and wassail so convince"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Will I with wine and wassail so convince"}]
 		},
 		{
 			"lineID": 65,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-That memory, the warder of the brain,"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 That memory, the warder of the brain,"}]
 		},
 		{
 			"lineID": 66,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Shall be a fume, and the receipt of reason"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Shall be a fume, and the receipt of reason"}]
 		},
 		{
 			"lineID": 67,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-A limbec only. When in swinish sleep"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 A limbec only. When in swinish sleep"}]
 		},
 		{
 			"lineID": 68,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-Their drenchèd nature lie as in a death,"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Their drenchèd nature lie as in a death,"}]
 		},
 		{
 			"lineID": 69,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-What cannot you and I perform upon"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 What cannot you and I perform upon"}]
 		},
 		{
 			"lineID": 70,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-The unguarded Duncan? What not put upon"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 The unguarded Duncan? What not put upon"}]
 		},
 		{
 			"lineID": 71,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-His spongy officers, who shall bear the guilt"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 His spongy officers, who shall bear the guilt"}]
 		},
 		{
 			"lineID": 72,
 			"sharedLine": true,
-			"line": [{"actor": "Lady Macbeth", "text": "-Of our great quell?"},
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Of our great quell?"},
 					 {"actor": "Macbeth", "text": "Bring forth men-children only,"}]
 		},
 		{
 			"lineID": 73,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-For thy undaunted mettle should compose"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 For thy undaunted mettle should compose"}]
 		},
 		{
 			"lineID": 74,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Nothing but males. Will it not be received,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Nothing but males. Will it not be received,"}]
 		},
 		{
 			"lineID": 75,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-When we have marked with blood those sleepy two"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 When we have marked with blood those sleepy two"}]
 		},
 		{
 			"lineID": 76,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Of his own chamber, and used their very daggers,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Of his own chamber, and used their very daggers,"}]
 		},
 		{
 			"lineID": 77,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-That they have done 't?"},
+			"line": [{"actor": "Macbeth", "text": "\u2022 That they have done 't?"},
 					 {"actor": "Lady Macbeth", "text": "Who dares receive it other,"}]
 		},
 		{
 			"lineID": 78,
 			"sharedLine": false,
-			"line": [{"actor": "Lady Macbeth", "text": "-As we shall make our griefs and clamor roar"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 As we shall make our griefs and clamor roar"}]
 		},
 		{
 			"lineID": 79,
 			"sharedLine": true,
-			"line": [{"actor": "Lady Macbeth", "text": "-Upon his death?"},
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Upon his death?"},
 					 {"actor": "Macbeth", "text": "I am settled, and bend up"}]
 		},
 		{
 			"lineID": 80,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Each corporal agent to this terrible feat."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Each corporal agent to this terrible feat."}]
 		},
 		{
 			"lineID": 81,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Away, and mock the time with fairest show."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Away, and mock the time with fairest show."}]
 		},
 		{
 			"lineID": 82,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-False face must hide what the false heart doth know."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 False face must hide what the false heart doth know."}]
 		}
 	]
 }

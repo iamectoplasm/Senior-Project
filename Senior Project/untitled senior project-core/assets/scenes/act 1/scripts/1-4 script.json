@@ -1,303 +1,308 @@
 {
-"cast": ["Duncan", "Malcolm", "Donalbain",
-		 "Lennox", "Macbeth", "Banquo"],
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 4",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "Duncan", "text": "-Is the execution done on Cawdor? Are not"}]
+			"line": [{"actor": "Duncan", "text": "\u2022 Is the execution done on Cawdor? Are not"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Duncan", "text": "-Those in commission yet returned?"},
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Those in commission yet returned?"},
 	 				 {"actor": "Malcolm", "text": "My liege,"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-They are not yet come back. But I have spoke"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 They are not yet come back. But I have spoke"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-With one that saw him die, who did report"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 With one that saw him die, who did report"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-That very frankly he confessed his treasons,"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That very frankly he confessed his treasons,"}]
 	 	},
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-Implored your Highness' pardon, and set forth"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Implored your Highness' pardon, and set forth"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-A deep repentance. Nothing in his life"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 A deep repentance. Nothing in his life"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-Became him like his leaving it. He died"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Became him like his leaving it. He died"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-As one that had been studied in his death"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 As one that had been studied in his death"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Malcolm", "text": "-To throw away the dearest thing he owed"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To throw away the dearest thing he owed"}]
 	 	},
 	 	{
 			"lineID": 11,
 			"sharedLine": true,
-			"line": [{"actor": "Malcolm", "text": "-As 'twere a careless trifle."},
+			"line": [{"actor": "Malcolm", "text": "\u2022 As 'twere a careless trifle."},
 					 {"actor": "Duncan", "text": "There's no art"}]
 		},
 	 	{
 	 		"lineID": 12,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-To find the mind's construction in the face."}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 To find the mind's construction in the face."}]
 	 	},
 	 	{
 	 		"lineID": 13,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-He was a gentleman on whom I built"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 He was a gentleman on whom I built"}]
 	 	},
 	 	{
 	 		"lineID": 14,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-An absolute trust. O worthiest Cousin!"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 An absolute trust. O worthiest Cousin!"}]
 	 	},
 	 	{
 	 		"lineID": 15,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-The sin of my ingratitude even now"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 The sin of my ingratitude even now"}]
 	 	},
 	 	{
 	 		"lineID": 16,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Was heavy on me. Thou art so far before"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Was heavy on me. Thou art so far before"}]
 	 	},
 	 	{
 	 		"lineID": 17,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-That swiftest wing of recompense is slow"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 That swiftest wing of recompense is slow"}]
 	 	},
 	 	{
 	 		"lineID": 18,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-To overtake thee. Would thou hadst less deserved,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 To overtake thee. Would thou hadst less deserved,"}]
 	 	},
 	 	{
 	 		"lineID": 19,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-That the proportion both of thanks and payment"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 That the proportion both of thanks and payment"}]
 	 	},
 	 	{
 	 		"lineID": 20,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Might have been mine! Only I have left to say,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Might have been mine! Only I have left to say,"}]
 	 	},
 	 	{
 			"lineID": 21,
 			"sharedLine": false,
-			"line": [{"actor": "Duncan", "text": "-More is thy due than more than all can pay."}]
+			"line": [{"actor": "Duncan", "text": "\u2022 More is thy due than more than all can pay."}]
 		},
 	 	{
 	 		"lineID": 22,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The service and the loyalty I owe,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The service and the loyalty I owe,"}]
 	 	},
 	 	{
 	 		"lineID": 23,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-In doing it, pays itself. Your Highness' part"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 In doing it, pays itself. Your Highness' part"}]
 	 	},
 	 	{
 	 		"lineID": 24,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Is to receive our duties. And our duties"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Is to receive our duties. And our duties"}]
 	 	},
 	 	{
 	 		"lineID": 25,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Are to your throne and state children and servants,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Are to your throne and state children and servants,"}]
 	 	},
 	 	{
 	 		"lineID": 26,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Which do but what they should, by doing everything"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Which do but what they should, by doing everything"}]
 	 	},
 	 	{
 	 		"lineID": 27,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-Safe toward your love and honor."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Safe toward your love and honor."},
 	 				 {"actor": "Duncan", "text": "Welcome hither."}]
 	 	},
 	 	{
 	 		"lineID": 28,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-I have begun to plant thee, and will labor"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 I have begun to plant thee, and will labor"}]
 	 	},
 	 	{
 	 		"lineID": 29,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-To make thee full of growing. Noble Banquo,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 To make thee full of growing. Noble Banquo,"}]
 	 	},
 	 	{
 	 		"lineID": 30,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-That hast not less deserved, nor must be known"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 That hast not less deserved, nor must be known"}]
 	 	},
 	 	{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "Duncan", "text": "-No less to have done so, let me infold thee"}]
+			"line": [{"actor": "Duncan", "text": "\u2022 No less to have done so, let me infold thee"}]
 		},
 	 	{
 	 		"lineID": 32,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Duncan", "text": "-And hold thee to my heart."},
-	 				 {"actor": "Banquo", "text": "There if I grow,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 And hold thee to my heart."},
+	 				 {"actor": "Banquo", "text": "\u2022 There if I grow,"}]
 	 	},
 	 	{
 	 		"lineID": 33,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Banquo", "text": "-The harvest is your own."},
-	 				 {"actor": "Duncan", "text": "My plenteous joys,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 The harvest is your own."},
+	 				 {"actor": "Duncan", "text": "\u2022 My plenteous joys,"}]
 	 	},
 	 	{
 	 		"lineID": 34,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Wanton in fullness, seek to hide themselves"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Wanton in fullness, seek to hide themselves"}]
 	 	},
 	 	{
 	 		"lineID": 35,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-In drops of sorrow. Sons, kinsmen, thanes,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 In drops of sorrow. Sons, kinsmen, thanes,"}]
 	 	},
 	 	{
 	 		"lineID": 36,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-And you whose places are the nearest, know,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 And you whose places are the nearest, know,"}]
 	 	},
 	 	{
 	 		"lineID": 37,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-We will establish our estate upon"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 We will establish our estate upon"}]
 	 	},
 	 	{
 	 		"lineID": 38,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Our eldest, Malcolm, whom we name hereafter"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Our eldest, Malcolm, whom we name hereafter"}]
 	 	},
 	 	{
 	 		"lineID": 39,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-The Prince of Cumberland. Which honor must"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 The Prince of Cumberland. Which honor must"}]
 	 	},
 	 	{
 	 		"lineID": 40,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Not unaccompanied invest him only,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Not unaccompanied invest him only,"}]
 	 	},
 	 	{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "Duncan", "text": "-But signs of nobleness, like stars, shall shine"}]
+			"line": [{"actor": "Duncan", "text": "\u2022 But signs of nobleness, like stars, shall shine"}]
 		},
 	 	{
 	 		"lineID": 42,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-On all observers. From hence to Inverness,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 On all observers. From hence to Inverness,"}]
 	 	},
 	 	{
 	 		"lineID": 43,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-And bind us further to you."}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 And bind us further to you."}]
 	 	},
 	 	{
 	 		"lineID": 44,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The rest is labor, which is not used for you."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The rest is labor, which is not used for you."}]
 	 	},
 	 	{
 	 		"lineID": 45,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-I'll be myself the harbinger, and make joyful"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I'll be myself the harbinger, and make joyful"}]
 	 	},
 	 	{
 	 		"lineID": 46,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The hearing of my wife with your approach,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The hearing of my wife with your approach,"}]
 	 	},
 	 	{
 	 		"lineID": 47,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Macbeth", "text": "-So humbly take my leave."},
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 So humbly take my leave."},
 	 				 {"actor": "Duncan", "text": "My worthy Cawdor!"}]
 	 	},
 	 	{
 	 		"lineID": 48,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The Prince of Cumberland! That is a step"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The Prince of Cumberland! That is a step"}]
 	 	},
 	 	{
 	 		"lineID": 49,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-On which I must fall down or else o'erleap,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 On which I must fall down or else o'erleap,"}]
 	 	},
 	 	{
 	 		"lineID": 50,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-For in my way it lies. Stars, hide your fires,"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 For in my way it lies. Stars, hide your fires,"}]
 	 	},
 	 	{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Let not light see my black and deep desires."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Let not light see my black and deep desires."}]
 		},
 	 	{
 	 		"lineID": 52,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-The eye wink at the hand, yet let that be"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The eye wink at the hand, yet let that be"}]
 	 	},
 	 	{
 	 		"lineID": 53,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Macbeth", "text": "-Which the eye fears, when it is done, to see."}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Which the eye fears, when it is done, to see."}]
 	 	},
 	 	{
 	 		"lineID": 54,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-True, worthy Banquo, he is full so valiant,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 True, worthy Banquo, he is full so valiant,"}]
 	 	},
 	 	{
 	 		"lineID": 55,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-And in his commendations I am fed,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 And in his commendations I am fed,"}]
 	 	},
 	 	{
 	 		"lineID": 56,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-It is a banquet to me. Let's after him,"}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 It is a banquet to me. Let's after him,"}]
 	 	},
 	 	{
 	 		"lineID": 57,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-Whose care is gone before to bid us welcome."}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 Whose care is gone before to bid us welcome."}]
 	 	},
 	 	{
 	 		"lineID": 58,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Duncan", "text": "-It is a peerless kinsman."}]
+	 		"line": [{"actor": "Duncan", "text": "\u2022 It is a peerless kinsman."}]
 	 	}]
 }
