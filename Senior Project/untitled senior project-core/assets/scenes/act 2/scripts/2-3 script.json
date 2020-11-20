@@ -9,6 +9,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -35,6 +38,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Porter", "text": "farmer, that hanged himself on th' expectation of"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -61,6 +67,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Porter", "text": "swear in both the scales against either scale, who"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
 		{
 			"lineID": 11,
 			"sharedLine": false,
@@ -87,6 +96,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Porter", "text": "for stealing out of a French hose. Come in, tailor,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
 		{
 			"lineID": 16,
 			"sharedLine": true,
@@ -113,6 +125,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Porter", "text": "some of all professions that go the primrose"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
 		{
 			"lineID": 21,
 			"sharedLine": false,
@@ -138,6 +153,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macduff", "text": "\u2022 That you do lie so late?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
 		{
 			"lineID": 26,
 			"sharedLine": false,
@@ -163,6 +181,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macduff", "text": "\u2022 What three things does drink especially provoke?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
 		{
 			"lineID": 31,
 			"sharedLine": false,
@@ -188,6 +209,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Porter", "text": "with lechery. It makes him and it mars him,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
 		{
 			"lineID": 36,
 			"sharedLine": false,
@@ -213,6 +237,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Porter", "text": "and giving him the lie, leaves him."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
 		{
 			"lineID": 41,
 			"sharedLine": false,
@@ -238,6 +265,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Porter", "text": "though he took up my legs sometime,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
 		{
 			"lineID": 46,
 			"sharedLine": false,
@@ -265,6 +295,9 @@
 			"line": [{"actor": "Macduff", "text": "\u2022 Is the king stirring, worthy thane?"},
 					 {"actor": "Macbeth", "text": "Not yet."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
 		{
 			"lineID": 51,
 			"sharedLine": false,
@@ -291,6 +324,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 The labour we delight in physics pain."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
 		{
 			"lineID": 56,
 			"sharedLine": true,
@@ -318,6 +354,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lennox", "text": "\u2022 Our chimneys were blown down, and, as they say,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
 		{
 			"lineID": 61,
 			"sharedLine": false,
@@ -343,6 +382,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lennox", "text": "\u2022 Clamour'd the livelong night. Some say, the earth"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
 		{
 			"lineID": 66,
 			"sharedLine": false,
@@ -370,6 +412,9 @@
 			"line": [{"actor": "Macduff", "text": "\u2022 Cannot conceive nor name thee!"},
 					 {"actor": "Macbeth and Lennox", "text": "What's the matter?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
 		{
 			"lineID": 71,
 			"sharedLine": false,
@@ -396,6 +441,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lennox", "text": "\u2022 Mean you his majesty?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
 		{
 			"lineID": 76,
 			"sharedLine": false,
@@ -421,6 +469,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macduff", "text": "\u2022 Banquo and Donalbain! Malcolm! Awake!"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 81 - 85
+	//------------------------------------------------------------
 		{
 			"lineID": 81,
 			"sharedLine": false,
@@ -446,6 +497,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macduff", "text": "\u2022 To countenance this horror! Ring the bell."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 86 - 90
+	//------------------------------------------------------------
 		{
 			"lineID": 86,
 			"sharedLine": false,
@@ -472,6 +526,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macduff", "text": "\u2022 The repetition, in a woman's ear,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 91 - 95
+	//------------------------------------------------------------
 		{
 			"lineID": 91,
 			"sharedLine": false,
@@ -499,6 +556,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Banquo", "text": "\u2022 And say it is not so."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 96 - 100
+	//------------------------------------------------------------
 		{
 			"lineID": 96,
 			"sharedLine": false,
@@ -524,6 +584,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 The wine of life is drawn, and the mere lees"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 101 - 105
+	//------------------------------------------------------------
 		{
 			"lineID": 101,
 			"sharedLine": false,
@@ -551,6 +614,9 @@
 			"line": [{"actor": "Macduff", "text": "\u2022 Your royal father 's murder'd."},
 					 {"actor": "Malcolm", "text": "O, by whom?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 106 - 110
+	//------------------------------------------------------------
 		{
 			"lineID": 106,
 			"sharedLine": false,
@@ -576,6 +642,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lennox", "text": "\u2022 They stared, and were distracted; no man's life"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 111 - 115
+	//------------------------------------------------------------
 		{
 			"lineID": 111,
 			"sharedLine": false,
@@ -602,6 +671,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Loyal and neutral, in a moment? No man."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 116 - 120
+	//------------------------------------------------------------
 		{
 			"lineID": 116,
 			"sharedLine": false,
@@ -627,6 +699,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 For ruin's wasteful entrance. There, the murderers,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 121 - 125
+	//------------------------------------------------------------
 		{
 			"lineID": 121,
 			"sharedLine": false,
@@ -654,6 +729,9 @@
 			"line": [{"actor": "Macduff", "text": "\u2022 Look to the lady."},
 					 {"actor": "Malcolm", "text": "Why do we hold our tongues,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 126 - 130
+	//------------------------------------------------------------
 		{
 			"lineID": 126,
 			"sharedLine": false,
@@ -679,6 +757,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Malcolm", "text": "\u2022 Nor our strong sorrow upon the foot of motion."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 131 - 135
+	//------------------------------------------------------------
 		{
 			"lineID": 131,
 			"sharedLine": false,
@@ -704,6 +785,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Banquo", "text": "\u2022 To know it further. Fears and scruples shake us."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 136 - 140
+	//------------------------------------------------------------
 		{
 			"lineID": 136,
 			"sharedLine": false,
@@ -732,6 +816,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 And meet i' the hall together."},
 					 {"actor": "All", "text": "\u2022 Well contented."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 141 - 145
+	//------------------------------------------------------------
 		{
 			"lineID": 141,
 			"sharedLine": false,
@@ -757,6 +844,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Donalbain", "text": "\u2022 Shall keep us both the safer. Where we are,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 146 - 150
+	//------------------------------------------------------------
 		{
 			"lineID": 146,
 			"sharedLine": false,
@@ -783,6 +873,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Malcolm", "text": "\u2022 And let us not be dainty of leave-taking,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 151 - 152
+	//------------------------------------------------------------
 		{
 			"lineID": 151,
 			"sharedLine": false,

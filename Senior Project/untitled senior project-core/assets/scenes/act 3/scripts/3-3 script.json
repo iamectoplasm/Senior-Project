@@ -1,67 +1,148 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 3 Scene 3",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"sharedLine": true,
+			"line": [{"actor": "First Murderer", "text": "\u2022 But who did bid thee join with us?"},
+					 {"actor": "Third Murderer", "text": "Macbeth."}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Second Murderer", "text": "\u2022 He needs not our mistrust, since he delivers"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Second Murderer", "text": "\u2022 Our offices, and what we have to do,"}]
 	 	},
 	 	{
 	 		"lineID": 4,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Second Murderer", "text": "\u2022 To the direction just."},
+					 {"actor": "First Murderer", "text": "Then stand with us."}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 The west yet glimmers with some streaks of day."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 Now spurs the lated traveller apace"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 To gain the timely inn, and near approaches"}]
 	 	},
 	 	{
 	 		"lineID": 8,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 The subject of our watch."},
+					 {"actor": "Third Murderer", "text": "Hark! I hear horses."}]
 	 	},
 	 	{
 	 		"lineID": 9,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Give us a light there, ho!"},
+					 {"actor": "Second Murderer", "text": "Then 'tis he. The rest"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Second Murderer", "text": "\u2022 That are within the note of expectation"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+			"sharedLine": true,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 Already are i' the Court."},
+					 {"actor": "First Murderer", "text": "His horses go about."}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Third Murderer", "text": "\u2022 Almost a mile. But he does usually\u2014"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Third Murderer", "text": "\u2022 So all men do\u2014from hence to the palace gate"}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": true,
+			"line": [{"actor": "Third Murderer", "text": "\u2022 Make it their walk."},
+					 {"actor": "Second Murderer", "text": "A light, a light!"},
+					 {"actor": "Third Murderer", "text": "'Tis he."}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "First Murderer", "text": "\u2022 Stand to 't."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+			"sharedLine": true,
+			"line": [{"actor": "Banquo", "text": "\u2022 It will be rain tonight."},
+					 {"actor": "First Murderer", "text": "Let it come down."}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Oh, treachery! Fly, good Fleance, fly, fly, fly!"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Thou mayst revenge. O slave!"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": true,
+			"line": [{"actor": "Third Murderer", "text": "\u2022 Who did strike out the light?"},
+					 {"actor": "First Murderer", "text": "Was 't not the way?"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": true,
+			"line": [{"actor": "Third Murderer", "text": "\u2022 There's but one down, the son is fled."},
+					 {"actor": "Second Murderer", "text": "We have lost"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 22
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 Best half of our affair."}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "First Murderer", "text": "\u2022 Well, let's away, and say how much is done."}]
+		}
+	]
 }

@@ -1,25 +1,34 @@
 {
 "sceneSetup":
-[
-	{"actor": "FIRST_WITCH", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "SECOND_WITCH", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "THIRD_WITCH", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
+{
+	"actorSetup":
+	[
+		{"actor": "FIRST_WITCH", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "SECOND_WITCH", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "THIRD_WITCH", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	
-	{"actor": "MACBETH", "startPosition": {"x": 14, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "BANQUO", "startPosition": {"x": 16, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "MACBETH", "startPosition": {"x": 14, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "BANQUO", "startPosition": {"x": 16, "y": 15}, "stageLayer": "MAIN_STAGE"},
 	
-	{"actor": "ROSS", "startPosition": {"x": 11, "y": 12}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "ANGUS", "startPosition": {"x": 13, "y": 12}, "stageLayer": "MAIN_STAGE"}
-],
+		{"actor": "ROSS", "startPosition": {"x": 11, "y": 12}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "ANGUS", "startPosition": {"x": 13, "y": 12}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//			LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "FIRST_WITCH",
+		"actor": "FIRST_WITCH",		// "Where hast thou been, Sister?"
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "DOWN"}
@@ -68,292 +77,1451 @@
 		]
 	}]
 },
-//------------------------------------------------------------
 {
-	"lineID": 2//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 2,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "Killing swine."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 3,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "Sister, where thou?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "A sailor's wife had chestnuts in her lap,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 5,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "And mounched, and mounched, and mounched. 'Give me,' quoth I."
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
-{
-	"lineID": 3//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
-},
+//			LINES 6 - 10
 //------------------------------------------------------------
 {
-	"lineID": 4//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 6,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "'Aroint thee, witch!' the rump-fed ronyon cries."
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Her husband's to Aleppo gone, master o' the Tiger."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "But in a sieve I'll thither sail"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 9,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "And, like a rat without a tail,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "I'll do, I'll do, and I'll do."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 11 - 15
 //------------------------------------------------------------
 {
-	"lineID": 5//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "I'll give thee a wind"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Thou'rt kind."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "And I another."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "I myself have all the other,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "And the very ports they blow,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 16 - 20
 //------------------------------------------------------------
 {
-	"lineID": 6//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "All the quarters that they know"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "I' the shipman's card."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "I will drain him dry as hay."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Sleep shall neither night nor day"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Hang upon his penthouse lid."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 21 - 25
 //------------------------------------------------------------
 {
-	"lineID": 7//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "He shall live a man forbid."
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Weary sennights nine times nine"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Shall he dwindle, peak, and pine."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Though his bark cannot be lost,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Yet it shall be tempest-tost."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 26 - 30
 //------------------------------------------------------------
 {
-	"lineID": 8//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Look what I have."
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "Show me, show me."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Here I have a pilot's thumb,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Wrecked as homeward he did come."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "A drum, a drum!"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 31 - 35
 //------------------------------------------------------------
 {
-	"lineID": 9//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "Macbeth doth come."
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 32		// All: "The weird sisters, hand in hand,"
+},
+{
+	"lineID": 33		// All: "Posters of the sea and land,"
+},
+{
+	"lineID": 34		// All: "Thus do go about, about."
+},
+{
+	"lineID": 35		// All: "Thrice to thine,and thrice to mine,"
+},
+//------------------------------------------------------------
+//			LINES 36 - 40
 //------------------------------------------------------------
 {
-	"lineID": 10//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 36		// All: "And thrice again, to make up nine,"
+},
+{
+	"lineID": 37		// All: "Peace! The charm's wound up."
+},
+{
+	"lineID": 38,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "So foul and fair a day I have not seen."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "How far is 't called to Forres? What are these"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "So withered, and so wild in their attire,"
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
-{"lineID": 11},
-{"lineID": 12},
-{"lineID": 13},
-{"lineID": 14},
-{"lineID": 15},
-{"lineID": 16},
-{"lineID": 17},
-{"lineID": 18},
-{"lineID": 19},
-{"lineID": 20},
-
-{"lineID": 21},
-{"lineID": 22},
-{"lineID": 23},
-{"lineID": 24},
-{"lineID": 25},
-{"lineID": 26},
-{"lineID": 27},
-{"lineID": 28},
-{"lineID": 29},
-{"lineID": 30},
-
-{"lineID": 31},
-{"lineID": 32},
-{"lineID": 33},
-{"lineID": 34},
-{"lineID": 35},
-{"lineID": 36},
-{"lineID": 37},
-{"lineID": 38},
-{"lineID": 39},
-{"lineID": 40},
-
-{"lineID": 41},
-{"lineID": 42},
-{"lineID": 43},
-{"lineID": 44},
-{"lineID": 45},
-{"lineID": 46},
-{"lineID": 47},
-{"lineID": 48},
-{"lineID": 49},
-{"lineID": 50},
-
-{"lineID": 51},
-{"lineID": 52},
-{"lineID": 53},
-{"lineID": 54},
-{"lineID": 55},
-{"lineID": 56},
-{"lineID": 57},
-{"lineID": 58},
-{"lineID": 59},
-{"lineID": 60},
-
-{"lineID": 61},
-{"lineID": 62},
-{"lineID": 63},
-{"lineID": 64},
-{"lineID": 65},
-{"lineID": 66},
-{"lineID": 67},
-{"lineID": 68},
-{"lineID": 69},
-{"lineID": 70},
-
-{"lineID": 71},
-{"lineID": 72},
-{"lineID": 73},
-{"lineID": 74},
-{"lineID": 75},
-{"lineID": 76},
-{"lineID": 77},
-{"lineID": 78},
-{"lineID": 79},
-{"lineID": 80},
-
-{"lineID": 81},
-{"lineID": 82},
-{"lineID": 83},
-{"lineID": 84},
-{"lineID": 85},
-{"lineID": 86},
-{"lineID": 87},
-{"lineID": 88},
-{"lineID": 89},
-{"lineID": 90},
-
-{"lineID": 91},
-{"lineID": 92},
-{"lineID": 93},
-{"lineID": 94},
-{"lineID": 95},
-{"lineID": 96},
-{"lineID": 97},
-{"lineID": 98},
-{"lineID": 99},
-{"lineID": 100},
-
-{"lineID": 101},
-{"lineID": 102},
-{"lineID": 103},
-{"lineID": 104},
-{"lineID": 105},
-{"lineID": 106},
-{"lineID": 107},
-{"lineID": 108},
-{"lineID": 109},
-{"lineID": 110},
-
-{"lineID": 111},
-{"lineID": 112},
-{"lineID": 113},
-{"lineID": 114},
-{"lineID": 115},
-{"lineID": 116},
-{"lineID": 117},
-{"lineID": 118},
-{"lineID": 119},
-{"lineID": 120},
-
-{"lineID": 121},
-{"lineID": 122},
-{"lineID": 123},
-{"lineID": 124},
-{"lineID": 125},
-{"lineID": 126},
-{"lineID": 127},
-{"lineID": 128},
-{"lineID": 129},
-{"lineID": 130},
-
-{"lineID": 131},
-{"lineID": 132},
-{"lineID": 133},
-{"lineID": 134},
-{"lineID": 135},
-{"lineID": 136},
-{"lineID": 137},
-{"lineID": 138},
-{"lineID": 139},
-{"lineID": 140},
-
-{"lineID": 141},
-{"lineID": 142},
-{"lineID": 143},
-{"lineID": 144},
-{"lineID": 145},
-{"lineID": 146},
-{"lineID": 147},
-{"lineID": 148},
-{"lineID": 149},
-{"lineID": 150},
-
-{"lineID": 151},
-{"lineID": 152},
-{"lineID": 153},
-{"lineID": 154},
-{"lineID": 155},
-{"lineID": 156}
-]
+//			LINES 41 - 45
+//------------------------------------------------------------
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "That look not like the inhabitants o' the earth"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 42,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "And yet are on 't? Live you? Or are you aught"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 43,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "That man may question? You seem to understand me,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 44,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "By each at once her choppy finger laying"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 45,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "Upon her skinny lips. You should be women,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 46 - 50
+//------------------------------------------------------------
+{
+	"lineID": 46,
+	"actorActions":
+	[{
+		"actor": "BANQUO",		// "And yet your beards forbid me to interpret"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 47,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "BANQUO",		// "That you are so."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",		// "Speak, if you can. What are you?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 48,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "All hail, Macbeth! Hail to thee, Thane of Glamis!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 49,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "All hail, Macbeth! Hail to thee, Thane of Cawdor!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 50,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "All hail, Macbeth, that shalt be King hereafter!"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 51 - 55
+//------------------------------------------------------------
+{
+	"lineID": 51,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Good sir, why do you start, and seem to fear"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 52,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Things that do sound so fair? I' the name of truth,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 53,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Are ye fantastical, or that indeed"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 54,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Which outwardly ye show? My noble partner"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 55,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "You greet with present grace and great prediction"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 56 - 60
+//------------------------------------------------------------
+{
+	"lineID": 56,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Of noble having and of royal hope,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 57,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "That he seems rapt withal. To me you speak not."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 58,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "If you can look into the seeds of time"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 59,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "And say which grain will grow and which will not,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 60,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Speak then to me, who neither beg nor fear"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 61 - 65
+//------------------------------------------------------------
+{
+	"lineID": 61,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Your favors nor your hate."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 62,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Hail!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 63,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "Hail!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 64,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "Hail!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 65,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Lesser than Macbeth, and greater."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 66 - 70
+//------------------------------------------------------------
+{
+	"lineID": 66,
+	"actorActions":
+	[{
+		"actor": "SECOND_WITCH",	// "Not so happy, yet much happier."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 67,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "Thou shalt get kings, though thou be none."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 68,
+	"actorActions":
+	[{
+		"actor": "THIRD_WITCH",		// "So all hail, Macbeth and Banquo!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 69,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",		// "Banquo and Macbeth, all hail!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 70,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Stay, you imperfect speakers, tell me more."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 71 - 75
+//------------------------------------------------------------
+{
+	"lineID": 71,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "By Sinel's death I know I am Thane of Glamis,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 72,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "But how of Cawdor? The Thane of Cawdor lives,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 73,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "A prosperous gentleman, and to be King"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 74,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Stands not within the prospect of belief,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 75,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "No more than to be Cawdor. Say from whence"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 76 - 80
+//------------------------------------------------------------
+{
+	"lineID": 76,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "You owe this strange intelligence? or why"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 77,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Upon this blasted heath you stop our way"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 78,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "With such prophetic greeting? Speak, I charge you."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 79,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "The earth hath bubbles as the water has,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 80,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "And these are of them. Whither are they vanished?"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 81 - 85
+//------------------------------------------------------------
+{
+	"lineID": 81,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Into the air; and what seemed corporal melted"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 82,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "As breath into the wind. Would they had stay'd!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 83,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Were such things here as we do speak about?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 84,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Or have we eaten on the insane root"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 85,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "That takes the reason prisoner?"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 86 - 90
+//------------------------------------------------------------
+{
+	"lineID": 86,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Your children shall be kings."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "You shall be King."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 87,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "And Thane of Cawdor too. Went it not so?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 88,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "To the selfsame tune and words. Who's here?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 89,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "The King hath happily received, Macbeth,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 90,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "The news of thy success. And when he reads"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 91 - 95
+//------------------------------------------------------------
+{
+	"lineID": 91,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Thy personal venture in the rebels' fight,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 92,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "His wonders and his praises do contend"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 93,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Which should be thine or his. Silenced with that,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 94,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "In viewing o'er the rest o' the selfsame day,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 95,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "He finds thee in stout Norweyan ranks,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 96 - 100
+//------------------------------------------------------------
+{
+	"lineID": 96,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Nothing afeared of what thyself didst make,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 97,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Strange images of death. As thick as hail"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 98,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Came post with post, and every one did bear"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 99,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Thy praises in his kingdom's great defense,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 100,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "And poured them down before them."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ANGUS",	// "We are sent"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//			LINES 101 - 105
+//------------------------------------------------------------
+{
+	"lineID": 101,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "To give thee, from our royal master, thanks,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 102,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "Only to herald thee into his sight,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 103,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "Not pay thee."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 104,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "And for an earnest of a greater honor,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 105,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "He bade me, from him, call thee Thane of Cawdor."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 106 - 110
+//------------------------------------------------------------
+{
+	"lineID": 106,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "In which addition, hail, most worthy Thane!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 107,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "For it is thine."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "What, can the Devil speak true?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 108,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The Thane of Cawdor lives. Why do you dress me"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 109,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "In borrowed robes?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ANGUS",	// "Who was the Thane lives yet,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 110,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "But under heavy judgement bears that life"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 111 - 115
+//------------------------------------------------------------
+{
+	"lineID": 111,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "Which he deserves to lose. Whether he was combined"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 112,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "With those of Norway, or did line the rebel"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 113,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "With hidden help and vantage, or that with both"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 114,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "He labored in his country's wreck, I know not."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 115,
+	"actorActions":
+	[{
+		"actor": "ANGUS",	// "But treasons capital, confessed and proved,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 116 - 120
+//------------------------------------------------------------
+{
+	"lineID": 116,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ANGUS",	// "Have overthrown him."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Glamis, and Thane of Cawdor."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 117,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The greatest is behind. --Thanks for your pains.--"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 118,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Do you not hope your children shall be kings,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 119,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "When those that gave the Thane of Cawdor to me"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 120,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Promised no less to them?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "That, trusted home,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//			LINES 121 - 125
+//------------------------------------------------------------
+{
+	"lineID": 121,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Might yet enkindle you unto the crown,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 122,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Besides the Thane of Cawdor. But 'tis strange."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 123,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "And oftentimes, to win us to our harm,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 124,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "The instruments of darkness tell us truths,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 125,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Win us with honest trifles, to betray 's"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 126 - 130
+//------------------------------------------------------------
+{
+	"lineID": 126,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "In deepest consequence."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 127,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "Cousins, a word, I pray you"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Two truths are told"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 128,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "As happy prologues to the swelling act"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 129,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Of the imperial theme. \u2014I thank you, gentlemen.\u2014"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 130,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "This supernatural soliciting"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 131 - 135
+//------------------------------------------------------------
+{
+	"lineID": 131,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Cannot be ill, cannot be good. If ill,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 132,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Why hath it given me earnest of success,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 133,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Commencing in a truth? I am Thane of Cawdor."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 134,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "If good, why do I yield to that suggestion"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 135,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Whose horrid image doth unfix my hair"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 136 - 140
+//------------------------------------------------------------
+{
+	"lineID": 136,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "And make my seated heart knock at my ribs,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 137,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Against the use of nature? Present fears"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 138,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Are less than horrible imaginings."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 139,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "My thought, whose murder yet is but fantastical,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 140,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Shakes so my single state of man that function"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 141 - 145
+//------------------------------------------------------------
+{
+	"lineID": 141,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Is smothered in surmise, and nothing is"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 142,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "But what is not."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "Look how our partner's rapt."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 143,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "If chance will have me King, why, chance may crown me,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 144,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",		// "Without my stir."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "New honors come upon him,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 145,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Like our strange garments, cleave not to their mold"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 146 - 150
+//------------------------------------------------------------
+{
+	"lineID": 146,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "But with the aid of use."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Come what may,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 147,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		// "Time and the hour runs through the roughest day."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 148,
+	"actorActions":
+	[{
+		"actor": "BANQUO",	// "Worthy Macbeth, we stay upon your leisure."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 149,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Give me your favor. My dull brain was wrought"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 150,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "With things forgotten. Kind gentlemen, your pains"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 151 - 155
+//------------------------------------------------------------
+{
+	"lineID": 151,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Are registered where every day I turn"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 152,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The leaf to read them. Let us toward the King."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 153,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Think upon what hath chanced, and at more time,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 154,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The interim having weighed it, let us speak"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 155,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",	// "Our free hearts each to other."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",	// "Very gladly."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//			LINES 156
+//------------------------------------------------------------
+{
+	"lineID": 156,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Till then, enough. Come, friends."
+		"emote": "SPEECH"
+	}]
+}]
 }

@@ -1,139 +1,330 @@
 {
 "sceneSetup":
-[
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"}
-],
+{
+	"actorSetup":
+	[
+		{"actor": "FIRST_WITCH", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "SECOND_WITCH", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "THIRD_WITCH", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "HECATE", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//					LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "FIRST_WITCH",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 2,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 3,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
 {
 	"lineID": 5,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
+//------------------------------------------------------------
+//					LINES 6 - 10
 //------------------------------------------------------------
 {
 	"lineID": 6,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 7,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 8,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 9,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 10,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "HECATE",
+		"emote": "SPEECH"
 	}]
-}
+},
 //------------------------------------------------------------
-]
+//					LINES 11 - 15
+//------------------------------------------------------------
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 16 - 20
+//------------------------------------------------------------
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 21 - 25
+//------------------------------------------------------------
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 26 - 30
+//------------------------------------------------------------
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 31 - 35
+//------------------------------------------------------------
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 32,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 33,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 34,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 35,
+	"actorActions":
+	[{
+		"actor": "HECATE",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 36
+//------------------------------------------------------------
+{
+	"lineID": 36,
+	"actorActions":
+	[{
+		"actor": "FIRST_WITCH",
+		"emote": "SPEECH"
+	}]
+}]
 }

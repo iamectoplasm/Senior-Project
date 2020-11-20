@@ -56,7 +56,6 @@
 		]
 	 }]
 },
-
 {
 	"lineID": 2,
 	"actorActions":
@@ -145,29 +144,33 @@
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 5,
-"actorActions":
+{
+	"lineID": 5,
+	"actorActions":
 	[{
 		"actor": "BANQUO",
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 6,
-"actorActions":
+{
+	"lineID": 6,
+	"actorActions":
 	[{
 		"actor": "BANQUO",
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 7,
-"actorActions":
+{
+	"lineID": 7,
+	"actorActions":
 	[{
 		"actor": "BANQUO",
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 8,
-"actorActions":
+{
+	"lineID": 8,
+	"actorActions":
 	[{
 		"actor": "BANQUO",
 		"emote": "SPEECH"
@@ -266,22 +269,28 @@
 		]
 	}]
 },
-{ "lineID": 12,
-"actorActions":
+{
+	"lineID": 12,
+	"actorActions":
 	[{
 		"actor": "DUNCAN",
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 13,
-"actorActions":
+{
+	"lineID": 13,
+	"actorActions":
 	[{
 		"actor": "DUNCAN",
 		"emote": "SPEECH"
 	 }]
 },
-{ "lineID": 14 },
-{ "lineID": 15 },
+{
+	"lineID": 14
+},
+{
+	"lineID": 15
+},
 {
 	"lineID": 16,
 	"actorActions":
@@ -296,7 +305,9 @@
 		]
 	 }]
 },
-{ "lineID": 17 },
+{
+	"lineID": 17
+},
 {
 	"lineID": 18
 	//"actorActions":
@@ -346,16 +357,34 @@
 {
 	"lineID": 21
 },
-{ "lineID": 22 },
-{ "lineID": 23 },
-{ "lineID": 24 },
-{ "lineID": 25 },
-{ "lineID": 26 },
-{ "lineID": 27 },
-{ "lineID": 28 },
-{ "lineID": 29 },
-{ "lineID": 30 },
-{ "lineID": 31 }
-]
-
+{
+	"lineID": 22
+},
+{
+	"lineID": 23
+},
+{
+	"lineID": 24
+},
+{
+	"lineID": 25
+},
+{
+	"lineID": 26
+},
+{
+	"lineID": 27
+},
+{
+	"lineID": 28
+},
+{
+	"lineID": 29
+},
+{
+	"lineID": 30
+},
+{
+	"lineID": 31
+}]
 }

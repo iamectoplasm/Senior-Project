@@ -8,6 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.RunnableAction;
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -17,6 +18,7 @@ import com.badlogic.gdx.utils.Json;
 import com.seniorproject.configs.ScriptConfig;
 import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.FadeOverlay;
+import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
 
@@ -35,14 +37,7 @@ public class SceneIntroScreen implements Screen
 	private Label sceneLabel;
 	private Label settingLabel;
 	
-	
-	/*
-	 * 10/25/20 hacking in fade overlay to get screen fades up & running
-	 */
-	private Image fadeOverlay;
-	/*
-	 * end of bad code
-	 */
+	private ScreenTransitionActor transitionActor;
 	
 	public SceneIntroScreen(final SeniorProject game)
 	{
@@ -87,14 +82,8 @@ public class SceneIntroScreen implements Screen
 		stage.addActor(settingLabel);
 		stage.addActor(sceneLabel);
 		
-		/*
-		 * 10/25/20 hacking in fade overlay to get screen fades up & running
-		 */
-		this.fadeOverlay = FadeOverlay.getInstance().getOverlay();
-		stage.addActor(fadeOverlay);
-		/*
-		 * end of bad code
-		 */
+		this.transitionActor = new ScreenTransitionActor();
+		stage.addActor(transitionActor);
 		
 		stage.addListener(new InputListener()
 		{
@@ -103,30 +92,17 @@ public class SceneIntroScreen implements Screen
 			{
 				if(keycode == Keys.SPACE)
 				{
-					/*
-					 * 10/25/20 hacking in fade overlay to get screen fades up & running
-					 */
-					SequenceAction changeScreen = new SequenceAction();
-					Action fadeIn = Actions.fadeIn(0.5f);
-					fadeIn.setActor(fadeOverlay);
+					Action fade = Actions.addAction(ScreenTransitionAction.transition(ScreenTransitionAction.ScreenTransitionType.FADE_OUT	, 0.5f), transitionActor);
 					
-					changeScreen.addAction(fadeIn);
-					changeScreen.addAction(Actions.run(new Runnable()
+					stage.addAction(Actions.sequence(fade, Actions.delay(0.5f), new RunnableAction()
 					{
 						@Override
 						public void run()
 						{
 							//game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
 							game.setScreen(game.getScreenType(ScreenType.PERFORMANCE_SCREEN));
-							
-							fadeOverlay.clear();
 						}
 					}));
-					
-					stage.getRoot().addAction(changeScreen);
-					/*
-					 * end of bad code
-					 */
 				}
 			return true;
 			}
@@ -161,13 +137,12 @@ public class SceneIntroScreen implements Screen
 	@Override
 	public void show()
 	{
-		/*
-		 * 10/25/20 hacking in fade overlay to get screen fades up & running
-		 */
-		fadeOverlay.addAction(Actions.fadeOut(0.5f));
-		/*
-		 * end of bad code
-		 */
+		transitionActor.setVisible(true);
+		stage.addAction(
+				Actions.sequence(
+				Actions.addAction(
+				ScreenTransitionAction.transition(ScreenTransitionAction.ScreenTransitionType.FADE_IN, 0.5f), 
+				transitionActor)));
 		
 		Gdx.input.setInputProcessor(stage);
 	}
@@ -203,13 +178,6 @@ public class SceneIntroScreen implements Screen
 	@Override
 	public void hide()
 	{
-		/*
-		 * 10/25/20 hacking in fade overlay to get screen fades up & running
-		 */
-		fadeOverlay.addAction(Actions.fadeIn(.5f));
-		/*
-		 * end of bad code
-		 */
 		Gdx.input.setInputProcessor(null);
 	}
 

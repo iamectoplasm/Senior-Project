@@ -1,67 +1,505 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 4 Scene 2",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macduff", "text": "\u2022 What had he done, to make him fly the land?"}]
 		},
 	 	{
 	 		"lineID": 2,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 You must have patience, madam."},
+					 {"actor": "Lady Macduff", "text": "He had none:"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 His flight was madness: when our actions do not,"}]
 	 	},
 	 	{
 	 		"lineID": 4,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Our fears do make us traitors."},
+					 {"actor": "Ross", "text": "You know not"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Whether it was his wisdom or his fear."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Wisdom! to leave his wife, to leave his babes,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 His mansion and his titles in a place"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 From whence himself does fly? He loves us not;"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 He wants the natural touch: for the poor wren,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 The most diminutive of birds, will fight,"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Her young ones in her nest, against the owl."}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 All is the fear and nothing is the love;"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 As little is the wisdom, where the flight"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 So runs against all reason."},
+					 {"actor": "Ross", "text": "My dearest coz,"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 I pray you, school yourself: but for your husband,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 He is noble, wise, judicious, and best knows"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 The fits o' the season. I dare not speak much further;"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 But cruel are the times, when we are traitors"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 And do not know ourselves, when we hold rumour"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 From what we fear, yet know not what we fear,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 But float upon a wild and violent sea"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Each way and move. I take my leave of you:"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Shall not be long but I'll be here again:"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Things at the worst will cease, or else climb upward"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 To what they were before. My pretty cousin,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Blessing upon you!"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Father'd he is, and yet he's fatherless."}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 I am so much a fool, should I stay longer,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 It would be my disgrace and your discomfort:"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 I take my leave at once."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Sirrah, your father's dead; And what will you"}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "do now? How will you live?"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "As birds do, mother."}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "What, with worms and flies?"}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "With what I get, I mean; and so do they."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Poor bird! thou'ldst never fear the net nor lime,"}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "the pitfall nor the gin."}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Why should I, mother? Poor birds they are not set for."}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "My father is not dead, for all your saying."}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Yes, he is dead; how wilt thou do for a father?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Nay, how will you do for a husband?"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Why, I can buy me twenty at any market."}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Then you'll buy 'em to sell again."}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Thou speak'st with all thy wit: and yet, i' faith,"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "with wit enough for thee."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Was my father a traitor, mother?"}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Ay, that he was."}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "What is a traitor?"}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Why, one that swears and lies."}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "And be all traitors that do so?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Every one that does so is a traitor,"}]
+		},
+		{
+			"lineID": 52,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "and must be hanged."}]
+		},
+		{
+			"lineID": 53,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "And must they all be hanged that swear and lie?"}]
+		},
+		{
+			"lineID": 54,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Every one."}]
+		},
+		{
+			"lineID": 55,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Who must hang them?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Why, the honest men."}]
+		},
+		{
+			"lineID": 57,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "Then the liars and swearers are fools,"}]
+		},
+		{
+			"lineID": 58,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "for there are liars and swearers enow to beat"}]
+		},
+		{
+			"lineID": 59,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "the honest men and hang up them."}]
+		},
+		{
+			"lineID": 60,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Now, God help thee, poor monkey!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "But how wilt thou do for a father?"}]
+		},
+		{
+			"lineID": 62,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "If he were dead, you'ld weep for him:"}]
+		},
+		{
+			"lineID": 63,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "if you would not, it were a good sign"}]
+		},
+		{
+			"lineID": 64,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "that I should quickly have a new father."}]
+		},
+		{
+			"lineID": 65,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "Poor prattler, how thou talk'st!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
+		{
+			"lineID": 66,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Bless you, fair dame! I am not to you known,"}]
+		},
+		{
+			"lineID": 67,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Though in your state of honour I am perfect."}]
+		},
+		{
+			"lineID": 68,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 I doubt some danger does approach you nearly:"}]
+		},
+		{
+			"lineID": 69,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 If you will take a homely man's advice,"}]
+		},
+		{
+			"lineID": 70,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Be not found here; hence, with your little ones."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
+		{
+			"lineID": 71,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 To fright you thus, methinks, I am too savage;"}]
+		},
+		{
+			"lineID": 72,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 To do worse to you were fell cruelty,"}]
+		},
+		{
+			"lineID": 73,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Which is too nigh your person. Heaven preserve you!"}]
+		},
+		{
+			"lineID": 74,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 I dare abide no longer."}]
+		},
+		{
+			"lineID": 75,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Whither should I fly?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
+		{
+			"lineID": 76,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 I have done no harm. But I remember now"}]
+		},
+		{
+			"lineID": 77,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 I am in this earthly world; where to do harm"}]
+		},
+		{
+			"lineID": 78,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Is often laudable, to do good sometime"}]
+		},
+		{
+			"lineID": 79,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Accounted dangerous folly: why then, alas,"}]
+		},
+		{
+			"lineID": 80,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Do I put up that womanly defence,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 81 - 85
+	//------------------------------------------------------------
+		{
+			"lineID": 81,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 To say I have done no harm? What are these faces?"}]
+		},
+		{
+			"lineID": 82,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 Where is your husband?"}]
+		},
+		{
+			"lineID": 83,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 I hope, in no place so unsanctified"}]
+		},
+		{
+			"lineID": 84,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macduff", "text": "\u2022 Where such as thou mayst find him."},
+					 {"actor": "First Murderer", "text": "He's a traitor."}]
+		},
+		{
+			"lineID": 85,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Son", "text": "\u2022 Thou liest, thou shag-hair'd villain!"},
+					 {"actor": "First Murderer", "text": "What, you egg!"}]
+		},
+		{
+			"lineID": 86,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "First Murderer", "text": "\u2022 Young fry of treachery!"},
+					 {"actor": "Son", "text": "He has kill'd me, mother:"}]
+		},
+		{
+			"lineID": 87,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Son", "text": "\u2022 Run away, I pray you!"}]
+		}
+	]
 }

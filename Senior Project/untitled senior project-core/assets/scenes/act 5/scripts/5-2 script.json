@@ -1,67 +1,195 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 2",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Menteith", "text": "\u2022 The English power is near, led on by Malcolm,"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Menteith", "text": "\u2022 His uncle Siward and the good Macduff:"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Menteith", "text": "\u2022 Revenges burn in them; for their dear causes"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Menteith", "text": "\u2022 Would to the bleeding and the grim alarm"}]
 	 	},
 	 	{
 	 		"lineID": 5,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Menteith", "text": "\u2022 Excite the mortified man."},
+					 {"actor": "Angus", "text": "Near Birnam wood"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Angus", "text": "\u2022 Shall we well meet them; that way are they coming."}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Who knows if Donalbain be with his brother?"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 For certain, sir, he is not: I have a file"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Of all the gentry: there is Siward's son,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 And many unrough youths that even now"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Protest their first of manhood."},
+					 {"actor": "Menteith", "text": "What does the tyrant?"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Great Dunsinane he strongly fortifies:"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Some say he's mad; others that lesser hate him"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Do call it valiant fury: but, for certain,"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 He cannot buckle his distemper'd cause"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Within the belt of rule."},
+					 {"actor": "Angus", "text": "Now does he feel"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Angus", "text": "\u2022 His secret murders sticking on his hands;"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Angus", "text": "\u2022 Now minutely revolts upbraid his faith-breach;"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Angus", "text": "\u2022 Those he commands move only in command,"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Angus", "text": "\u2022 Nothing in love: now does he feel his title"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Angus", "text": "\u2022 Hang loose about him, like a giant's robe"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Angus", "text": "\u2022 Upon a dwarfish thief."},
+					 {"actor": "Menteith", "text": "Who then shall blame"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Menteith", "text": "\u2022 His pester'd senses to recoil and start,"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Menteith", "text": "\u2022 When all that is within him does condemn"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Menteith", "text": "\u2022 Itself for being there?"},
+					 {"actor": "Caithness", "text": "Well, march we on,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 To give obedience where 'tis truly owed:"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Meet we the medicine of the sickly weal,"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 And with him pour we in our country's purge"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Caithness", "text": "\u2022 Each drop of us."},
+					 {"actor": "Lennox", "text": "Or so much as it needs,"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 To dew the sovereign flower and drown the weeds."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Make we our march towards Birnam."}]
+		}
+	]
 }

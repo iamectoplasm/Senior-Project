@@ -10,6 +10,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//			LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -36,6 +39,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Malcolm", "text": "\u2022 'Gainst my captivity. Hail, brave friend!"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -62,6 +68,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 Worthy to be a rebel, for to that"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 11 - 15
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 11,
 	 		"sharedLine": false,
@@ -87,6 +96,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 Showed like a rebel's whore. But all's too weak."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 16,
 	 		"sharedLine": false,
@@ -112,6 +124,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 Till he faced the slave,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 21,
 	 		"sharedLine": false,
@@ -137,6 +152,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 As whence the sun 'gins his reflection"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 26,
 	 		"sharedLine": false,
@@ -162,6 +180,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 Compelled these skipping kerns to trust their heels,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 31,
 	 		"sharedLine": false,
@@ -189,6 +210,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 As sparrows eagles, or the hare the lion."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 36,
 	 		"sharedLine": false,
@@ -214,6 +238,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Sergeant", "text": "\u2022 Or memorize another Golgotha,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 41,
 	 		"sharedLine": false,
@@ -240,6 +267,9 @@
 	 		"line": [{"actor": "Duncan", "text": "\u2022 Who comes here?"},
 	 				 {"actor": "Malcolm", "text": "The worthy Thane of Ross."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 46 - 50
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 46,
 	 		"sharedLine": false,
@@ -267,6 +297,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 And fan our people cold."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 51 - 55
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 51,
 	 		"sharedLine": false,
@@ -292,6 +325,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 Confronted him with self-comparisons,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 56 - 60
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 56,
 	 		"sharedLine": false,
@@ -319,6 +355,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 Nor would we deign him burial of his men"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 61 - 65
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 61,
 	 		"sharedLine": false,
@@ -344,6 +383,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 And with his former title greet Macbeth."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 66 - 67
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 66,
 	 		"sharedLine": false,

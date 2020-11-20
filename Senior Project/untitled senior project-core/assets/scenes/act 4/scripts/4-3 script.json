@@ -1,67 +1,1407 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 4 Scene 3",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Malcolm, Duncan's son and the rightful heir to the Scottish throne, is on the run",
+		"from Macbeth in England, where he hopes to find allies in his old friends so that he may otherthrow Macbeth,",
+		"and free Scotland from his increasingly tyrannical reign..."]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Let us seek out some desolate shade, and there"}]
 		},
 	 	{
 	 		"lineID": 2,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Weep our sad bosoms empty."},
+					 {"actor": "Macduff", "text": "Let us rather"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Hold fast the mortal sword, and like good men"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Bestride our down-fall'n birthdom: each new morn"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 New widows howl, new orphans cry, new sorrows"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Strike heaven on the face, that it resounds"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 As if it felt with Scotland and yell'd out"}]
 	 	},
 	 	{
 	 		"lineID": 8,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Like syllable of dolour."},
+					 {"actor": "Malcolm", "text": "What I believe I'll wail,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 What know believe, and what I can redress,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 As I shall find the time to friend, I will."}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 What you have spoke, it may be so perchance."}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 This tyrant, whose sole name blisters our tongues,"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Was once thought honest: you have loved him well."}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 He hath not touch'd you yet. I am young; but something"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 You may deserve of him through me, and wisdom"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To offer up a weak poor innocent lamb"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To appease an angry god."}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I am not treacherous."},
+					 {"actor": "Malcolm", "text": "But Macbeth is."}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 A good and virtuous nature may recoil"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 In an imperial charge. But I shall crave your pardon;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That which you are my thoughts cannot transpose:"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Angels are bright still, though the brightest fell;"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Though all things foul would wear the brows of grace,"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Yet grace must still look so."},
+					 {"actor": "Macduff", "text": "I have lost my hopes."}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Perchance even there where I did find my doubts."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Why in that rawness left you wife and child,"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Those precious motives, those strong knots of love,"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Without leave-taking? I pray you,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Let not my jealousies be your dishonours,"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 But mine own safeties. You may be rightly just,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Whatever I shall think."},
+					 {"actor": "Macduff", "text": "Bleed, bleed, poor country!"}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Great tyranny! lay thou thy basis sure,"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 For goodness dare not cheque thee: wear thou thy wrongs;"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The title is affeer'd! Fare thee well, lord:"}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I would not be the villain that thou think'st"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 For the whole space that's in the tyrant's grasp,"}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And the rich East to boot."},
+					 {"actor": "Malcolm", "text": "Be not offended:"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I speak not as in absolute fear of you."}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I think our country sinks beneath the yoke;"}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 It weeps, it bleeds; and each new day a gash"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Is added to her wounds: I think withal"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 There would be hands uplifted in my right;"}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And here from gracious England have I offer"}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Of goodly thousands: but, for all this,"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 When I shall tread upon the tyrant's head,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Or wear it on my sword, yet my poor country"}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Shall have more vices than it had before,"}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 More suffer and more sundry ways than ever,"}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 By him that shall succeed."},
+					 {"actor": "Macduff", "text": "What should he be?"}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 It is myself I mean: in whom I know"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 All the particulars of vice so grafted"}]
+		},
+		{
+			"lineID": 52,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That, when they shall be open'd, black Macbeth"}]
+		},
+		{
+			"lineID": 53,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Will seem as pure as snow, and the poor state"}]
+		},
+		{
+			"lineID": 54,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Esteem him as a lamb, being compared"}]
+		},
+		{
+			"lineID": 55,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 With my confineless harms."},
+					 {"actor": "Macduff", "text": "Not in the legions"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Of horrid hell can come a devil more damn'd"}]
+		},
+		{
+			"lineID": 57,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 In evils to top Macbeth."},
+					 {"actor": "Malcolm", "text": "I grant him bloody,"}]
+		},
+		{
+			"lineID": 58,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Luxurious, avaricious, false, deceitful,"}]
+		},
+		{
+			"lineID": 59,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Sudden, malicious, smacking of every sin"}]
+		},
+		{
+			"lineID": 60,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That has a name: but there's no bottom, none,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 In my voluptuousness: your wives, your daughters,"}]
+		},
+		{
+			"lineID": 62,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Your matrons and your maids, could not fill up"}]
+		},
+		{
+			"lineID": 63,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The cistern of my lust, and my desire"}]
+		},
+		{
+			"lineID": 64,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 All continent impediments would o'erbear"}]
+		},
+		{
+			"lineID": 65,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That did oppose my will: better Macbeth"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
+		{
+			"lineID": 66,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Than such an one to reign."},
+					 {"actor": "Macduff", "text": "Boundless intemperance"}]
+		},
+		{
+			"lineID": 67,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 In nature is a tyranny; it hath been"}]
+		},
+		{
+			"lineID": 68,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The untimely emptying of the happy throne"}]
+		},
+		{
+			"lineID": 69,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And fall of many kings. But fear not yet"}]
+		},
+		{
+			"lineID": 70,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 To take upon you what is yours: you may"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
+		{
+			"lineID": 71,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Convey your pleasures in a spacious plenty,"}]
+		},
+		{
+			"lineID": 72,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And yet seem cold, the time you may so hoodwink."}]
+		},
+		{
+			"lineID": 73,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 We have willing dames enough: there cannot be"}]
+		},
+		{
+			"lineID": 74,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 That vulture in you, to devour so many"}]
+		},
+		{
+			"lineID": 75,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 As will to greatness dedicate themselves,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
+		{
+			"lineID": 76,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Finding it so inclined."},
+					 {"actor": "Malcolm", "text": "With this there grows"}]
+		},
+		{
+			"lineID": 77,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 In my most ill-composed affection such"}]
+		},
+		{
+			"lineID": 78,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 A stanchless avarice that, were I king,"}]
+		},
+		{
+			"lineID": 79,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I should cut off the nobles for their lands,"}]
+		},
+		{
+			"lineID": 80,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Desire his jewels and this other's house:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 81 - 85
+	//------------------------------------------------------------
+		{
+			"lineID": 81,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And my more-having would be as a sauce"}]
+		},
+		{
+			"lineID": 82,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To make me hunger more; that I should forge"}]
+		},
+		{
+			"lineID": 83,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Quarrels unjust against the good and loyal,"}]
+		},
+		{
+			"lineID": 84,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Destroying them for wealth."},
+					 {"actor": "Macduff", "text": "This avarice"}]
+		},
+		{
+			"lineID": 85,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Sticks deeper, grows with more pernicious root"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 86 - 90
+	//------------------------------------------------------------
+		{
+			"lineID": 86,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Than summer-seeming lust, and it hath been"}]
+		},
+		{
+			"lineID": 87,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The sword of our slain kings: yet do not fear;"}]
+		},
+		{
+			"lineID": 88,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Scotland hath foisons to fill up your will."}]
+		},
+		{
+			"lineID": 89,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Of your mere own: all these are portable,"}]
+		},
+		{
+			"lineID": 90,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 With other graces weigh'd."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 91 - 95
+	//------------------------------------------------------------
+		{
+			"lineID": 91,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 But I have none: the king-becoming graces,"}]
+		},
+		{
+			"lineID": 92,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 As justice, verity, temperance, stableness,"}]
+		},
+		{
+			"lineID": 93,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Bounty, perseverance, mercy, lowliness,"}]
+		},
+		{
+			"lineID": 94,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Devotion, patience, courage, fortitude,"}]
+		},
+		{
+			"lineID": 95,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I have no relish of them, but abound"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 96 - 100
+	//------------------------------------------------------------
+		{
+			"lineID": 96,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 In the division of each several crime,"}]
+		},
+		{
+			"lineID": 97,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Acting it many ways. Nay, had I power, I should"}]
+		},
+		{
+			"lineID": 98,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Pour the sweet milk of concord into hell,"}]
+		},
+		{
+			"lineID": 99,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Uproar the universal peace, confound"}]
+		},
+		{
+			"lineID": 100,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 All unity on earth."},
+					 {"actor": "Macduff", "text": "O Scotland, Scotland!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 101 - 105
+	//------------------------------------------------------------
+		{
+			"lineID": 101,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 If such a one be fit to govern, speak:"}]
+		},
+		{
+			"lineID": 102,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I am as I have spoken."},
+					 {"actor": "Macduff", "text": "Fit to govern!"}]
+		},
+		{
+			"lineID": 103,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 No, not to live. O nation miserable,"}]
+		},
+		{
+			"lineID": 104,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 With an untitled tyrant bloody-scepter'd,"}]
+		},
+		{
+			"lineID": 105,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 When shalt thou see thy wholesome days again,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 106 - 110
+	//------------------------------------------------------------
+		{
+			"lineID": 106,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Since that the truest issue of thy throne"}]
+		},
+		{
+			"lineID": 107,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 By his own interdiction stands accursed,"}]
+		},
+		{
+			"lineID": 108,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And does blaspheme his breed? Thy royal father"}]
+		},
+		{
+			"lineID": 109,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Was a most sainted king: the queen that bore thee,"}]
+		},
+		{
+			"lineID": 110,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Oftener upon her knees than on her feet,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 111 - 115
+	//------------------------------------------------------------
+		{
+			"lineID": 111,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Died every day she lived. Fare thee well!"}]
+		},
+		{
+			"lineID": 112,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 These evils thou repeat'st upon thyself"}]
+		},
+		{
+			"lineID": 113,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Have banish'd me from Scotland. O my breast,"}]
+		},
+		{
+			"lineID": 114,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Thy hope ends here!"},
+					 {"actor": "Malcolm", "text": "Macduff, this noble passion,"}]
+		},
+		{
+			"lineID": 115,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Child of integrity, hath from my soul"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 116 - 120
+	//------------------------------------------------------------
+		{
+			"lineID": 116,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Wiped the black scruples, reconciled my thoughts"}]
+		},
+		{
+			"lineID": 117,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To thy good truth and honour. Devilish Macbeth"}]
+		},
+		{
+			"lineID": 118,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 By many of these trains hath sought to win me"}]
+		},
+		{
+			"lineID": 119,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Into his power, and modest wisdom plucks me"}]
+		},
+		{
+			"lineID": 120,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 From over-credulous haste: but God above"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 121 - 125
+	//------------------------------------------------------------
+		{
+			"lineID": 121,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Deal between thee and me! for even now"}]
+		},
+		{
+			"lineID": 122,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I put myself to thy direction, and"}]
+		},
+		{
+			"lineID": 123,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Unspeak mine own detraction, here abjure"}]
+		},
+		{
+			"lineID": 124,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The taints and blames I laid upon myself,"}]
+		},
+		{
+			"lineID": 125,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 For strangers to my nature. I am yet"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 126 - 130
+	//------------------------------------------------------------
+		{
+			"lineID": 126,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Unknown to woman, never was forsworn,"}]
+		},
+		{
+			"lineID": 127,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Scarcely have coveted what was mine own,"}]
+		},
+		{
+			"lineID": 128,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 At no time broke my faith, would not betray"}]
+		},
+		{
+			"lineID": 129,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The devil to his fellow and delight"}]
+		},
+		{
+			"lineID": 130,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 No less in truth than life: my first false speaking"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 131 - 135
+	//------------------------------------------------------------
+		{
+			"lineID": 131,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Was this upon myself: what I am truly,"}]
+		},
+		{
+			"lineID": 132,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Is thine and my poor country's to command:"}]
+		},
+		{
+			"lineID": 133,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Whither indeed, before thy here-approach,"}]
+		},
+		{
+			"lineID": 134,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Old Siward, with ten thousand warlike men,"}]
+		},
+		{
+			"lineID": 135,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Already at a point, was setting forth."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 136 - 140
+	//------------------------------------------------------------
+		{
+			"lineID": 136,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Now we'll together; and the chance of goodness"}]
+		},
+		{
+			"lineID": 137,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Be like our warranted quarrel! Why are you silent?"}]
+		},
+		{
+			"lineID": 138,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Such welcome and unwelcome things at once"}]
+		},
+		{
+			"lineID": 139,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 'Tis hard to reconcile."},
+					 {"actor": "Malcolm", "text": "Well, more anon."}]
+		},
+		{
+			"lineID": 140,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Comes the king forth, I pray you?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 141 - 145
+	//------------------------------------------------------------
+		{
+			"lineID": 141,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Ay, sir; there are a crew of wretched souls"}]
+		},
+		{
+			"lineID": 142,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 That stay his cure: their malady convinces"}]
+		},
+		{
+			"lineID": 143,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 The great assay of art; but at his touch--"}]
+		},
+		{
+			"lineID": 144,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Such sanctity hath heaven given his hand--"}]
+		},
+		{
+			"lineID": 145,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 They presently amend."},
+					 {"actor": "Malcolm", "text": "I thank you, doctor."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 146 - 150
+	//------------------------------------------------------------
+		{
+			"lineID": 146,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 What's the disease he means?"},
+					 {"actor": "Malcolm", "text": "'Tis call'd the Evil:"}]
+		},
+		{
+			"lineID": 147,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 A most miraculous work in this good king;"}]
+		},
+		{
+			"lineID": 148,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Which often, since my here-remain in England,"}]
+		},
+		{
+			"lineID": 149,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I have seen him do. How he solicits heaven,"}]
+		},
+		{
+			"lineID": 150,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Himself best knows: but strangely-visited people,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 151 - 155
+	//------------------------------------------------------------
+		{
+			"lineID": 151,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 All swoln and ulcerous, pitiful to the eye,"}]
+		},
+		{
+			"lineID": 152,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The mere despair of surgery, he cures,"}]
+		},
+		{
+			"lineID": 153,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Hanging a golden stamp about their necks,"}]
+		},
+		{
+			"lineID": 154,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Put on with holy prayers: and 'tis spoken,"}]
+		},
+		{
+			"lineID": 155,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To the succeeding royalty he leaves"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 156 - 160
+	//------------------------------------------------------------
+		{
+			"lineID": 156,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The healing benediction. With this strange virtue,"}]
+		},
+		{
+			"lineID": 157,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 He hath a heavenly gift of prophecy,"}]
+		},
+		{
+			"lineID": 158,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And sundry blessings hang about his throne,"}]
+		},
+		{
+			"lineID": 159,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That speak him full of grace."},
+					 {"actor": "Macduff", "text": "See, who comes here?"}]
+		},
+		{
+			"lineID": 160,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 My countryman; but yet I know him not."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 161 - 165
+	//------------------------------------------------------------
+		{
+			"lineID": 161,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 My ever-gentle cousin, welcome hither."}]
+		},
+		{
+			"lineID": 162,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 I know him now. Good God, betimes remove"}]
+		},
+		{
+			"lineID": 163,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The means that makes us strangers!"},
+					 {"actor": "Ross", "text": "Sir, amen."}]
+		},
+		{
+			"lineID": 164,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Stands Scotland where it did?"},
+					 {"actor": "Ross", "text": "Alas, poor country!"}]
+		},
+		{
+			"lineID": 165,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Almost afraid to know itself. It cannot"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 166 - 170
+	//------------------------------------------------------------
+		{
+			"lineID": 166,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Be call'd our mother, but our grave; where nothing,"}]
+		},
+		{
+			"lineID": 167,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 But who knows nothing, is once seen to smile;"}]
+		},
+		{
+			"lineID": 168,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Where sighs and groans and shrieks that rend the air"}]
+		},
+		{
+			"lineID": 169,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Are made, not mark'd; where violent sorrow seems"}]
+		},
+		{
+			"lineID": 170,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 A modern ecstasy; the dead man's knell"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 171 - 175
+	//------------------------------------------------------------
+		{
+			"lineID": 171,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Is there scarce ask'd for who; and good men's lives"}]
+		},
+		{
+			"lineID": 172,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Expire before the flowers in their caps,"}]
+		},
+		{
+			"lineID": 173,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Dying or ere they sicken."}]
+		},
+		{
+			"lineID": 174,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 O, relation too nice, and yet too true!"}]
+		},
+		{
+			"lineID": 175,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 What's the newest grief?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 176 - 180
+	//------------------------------------------------------------
+		{
+			"lineID": 176,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 That of an hour's age doth hiss the speaker:"}]
+		},
+		{
+			"lineID": 177,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Each minute teems a new one."},
+					 {"actor": "Macduff", "text": "How does my wife?"}]
+		},
+		{
+			"lineID": 178,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Why, well."},
+					 {"actor": "Macduff", "text": "And all my children?"},
+					 {"actor": "Ross", "text": "Well too."}]
+		},
+		{
+			"lineID": 179,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The tyrant has not batter'd at their peace?"}]
+		},
+		{
+			"lineID": 180,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 No; they were well at peace when I did leave 'em."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 181 - 185
+	//------------------------------------------------------------
+		{
+			"lineID": 181,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 But not a niggard of your speech: how goes't?"}]
+		},
+		{
+			"lineID": 182,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 When I came hither to transport the tidings,"}]
+		},
+		{
+			"lineID": 183,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Which I have heavily borne, there ran a rumour"}]
+		},
+		{
+			"lineID": 184,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Of many worthy fellows that were out;"}]
+		},
+		{
+			"lineID": 185,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Which was to my belief witness'd the rather,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 186 - 190
+	//------------------------------------------------------------
+		{
+			"lineID": 186,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 For that I saw the tyrant's power a-foot:"}]
+		},
+		{
+			"lineID": 187,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Now is the time of help; your eye in Scotland"}]
+		},
+		{
+			"lineID": 188,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Would create soldiers, make our women fight,"}]
+		},
+		{
+			"lineID": 189,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 To doff their dire distresses."},
+					 {"actor": "Malcolm", "text": "Be't their comfort"}]
+		},
+		{
+			"lineID": 190,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 We are coming thither: gracious England hath"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 191 - 195
+	//------------------------------------------------------------
+		{
+			"lineID": 191,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Lent us good Siward and ten thousand men;"}]
+		},
+		{
+			"lineID": 192,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 An older and a better soldier none"}]
+		},
+		{
+			"lineID": 193,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That Christendom gives out."},
+					 {"actor": "Ross", "text": "Would I could answer"}]
+		},
+		{
+			"lineID": 194,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 This comfort with the like! But I have words"}]
+		},
+		{
+			"lineID": 195,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 That would be howl'd out in the desert air,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 196 - 200
+	//------------------------------------------------------------
+		{
+			"lineID": 196,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Where hearing should not latch them."},
+					 {"actor": "Macduff", "text": "What concern they?"}]
+		},
+		{
+			"lineID": 197,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The general cause? or is it a fee-grief"}]
+		},
+		{
+			"lineID": 198,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Due to some single breast?"},
+					 {"actor": "Ross", "text": "No mind that's honest"}]
+		},
+		{
+			"lineID": 199,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 But in it shares some woe; though the main part"}]
+		},
+		{
+			"lineID": 200,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Pertains to you alone."},
+					 {"actor": "Macduff", "text": "If it be mine,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 201 - 205
+	//------------------------------------------------------------
+		{
+			"lineID": 201,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Keep it not from me, quickly let me have it."}]
+		},
+		{
+			"lineID": 202,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Let not your ears despise my tongue for ever,"}]
+		},
+		{
+			"lineID": 203,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Which shall possess them with the heaviest sound"}]
+		},
+		{
+			"lineID": 204,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 That ever yet they heard."},
+					 {"actor": "Macduff", "text": "Hum! I guess at it."}]
+		},
+		{
+			"lineID": 205,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Your castle is surprised; your wife and babes"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 206 - 210
+	//------------------------------------------------------------
+		{
+			"lineID": 206,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Savagely slaughter'd: to relate the manner,"}]
+		},
+		{
+			"lineID": 207,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Were, on the quarry of these murder'd deer,"}]
+		},
+		{
+			"lineID": 208,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 To add the death of you."},
+					 {"actor": "Malcolm", "text": "Merciful heaven!"}]
+		},
+		{
+			"lineID": 209,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 What, man! ne'er pull your hat upon your brows;"}]
+		},
+		{
+			"lineID": 210,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Give sorrow words: the grief that does not speak"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 211 - 215
+	//------------------------------------------------------------
+		{
+			"lineID": 211,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Whispers the o'er-fraught heart and bids it break."}]
+		},
+		{
+			"lineID": 212,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 My children too?"}]
+		},
+		{
+			"lineID": 213,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Wife, children, servants, all that could be found."}]
+		},
+		{
+			"lineID": 214,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And I must be from thence? My wife killed too?"}]
+		},
+		{
+			"lineID": 215,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 I have said."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 216 - 220
+	//------------------------------------------------------------
+		{
+			"lineID": 216,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Be comforted:"}]
+		},
+		{
+			"lineID": 217,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Let's make us medicines of our great revenge,"}]
+		},
+		{
+			"lineID": 218,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 To cure this deadly grief."}]
+		},
+		{
+			"lineID": 219,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 He has no children. All my pretty ones?"}]
+		},
+		{
+			"lineID": 220,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Did you say all? O hell-kite! All?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 221 - 225
+	//------------------------------------------------------------
+		{
+			"lineID": 221,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 What, all my pretty chickens and their dam"}]
+		},
+		{
+			"lineID": 222,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 At one fell swoop?"}]
+		},
+		{
+			"lineID": 223,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Dispute it like a man."},
+					 {"actor": "Macduff", "text": "I shall do so;"}]
+		},
+		{
+			"lineID": 224,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 But I must also feel it as a man:"}]
+		},
+		{
+			"lineID": 225,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I cannot but remember such things were,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 226 - 230
+	//------------------------------------------------------------
+		{
+			"lineID": 226,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 That were most precious to me. Did heaven look on,"}]
+		},
+		{
+			"lineID": 227,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And would not take their part? Sinful Macduff,"}]
+		},
+		{
+			"lineID": 228,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 They were all struck for thee! naught that I am,"}]
+		},
+		{
+			"lineID": 229,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Not for their own demerits, but for mine,"}]
+		},
+		{
+			"lineID": 230,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Fell slaughter on their souls. Heaven rest them now!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 231 - 235
+	//------------------------------------------------------------
+		{
+			"lineID": 231,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Be this the whetstone of your sword: let grief"}]
+		},
+		{
+			"lineID": 232,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Convert to anger; blunt not the heart, enrage it."}]
+		},
+		{
+			"lineID": 233,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 O, I could play the woman with mine eyes"}]
+		},
+		{
+			"lineID": 234,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And braggart with my tongue! But, gentle heavens,"}]
+		},
+		{
+			"lineID": 235,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Cut short all intermission; front to front"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 236 - 240
+	//------------------------------------------------------------
+		{
+			"lineID": 236,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Bring thou this fiend of Scotland and myself;"}]
+		},
+		{
+			"lineID": 237,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Within my sword's length set him; if he 'scape,"}]
+		},
+		{
+			"lineID": 238,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Heaven forgive him too!"},
+					 {"actor": "Malcolm", "text": "This tune goes manly."}]
+		},
+		{
+			"lineID": 239,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Come, go we to the king; our power is ready;"}]
+		},
+		{
+			"lineID": 240,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Our lack is nothing but our leave; Macbeth"}]
+		},
+		{
+			"lineID": 241,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Is ripe for shaking, and the powers above"}]
+		},
+		{
+			"lineID": 242,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Put on their instruments. Receive what cheer you may:"}]
+		},
+		{
+			"lineID": 243,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The night is long that never finds the day."}]
+		}
+	]
 }

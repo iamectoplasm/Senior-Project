@@ -12,7 +12,7 @@ import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.StagePosition;
 import com.seniorproject.enums.StageLayer;
 import com.seniorproject.maps.StageMap;
 import com.seniorproject.maps.StairsTrigger;
@@ -22,7 +22,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 {
 	public static final String TAG = CollisionSystem.class.getSimpleName();
 
-	protected ComponentMapper<MapPosition> mPosition;
+	protected ComponentMapper<StagePosition> mPosition;
 	protected ComponentMapper<MovementDirection> mDirection;
 	protected ComponentMapper<BoundingBox> mBox;
 	
@@ -31,7 +31,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	public CollisionSystem(StageMap map)
 	{
 		super(Aspect.all(Active.class,
-				MapPosition.class,
+				StagePosition.class,
 				MovementDirection.class,
 				BoundingBox.class), (1/60f));
 		
@@ -41,7 +41,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	public void initBoundingBox(int entityId)
 	{
 		BoundingBox box = mBox.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		StagePosition position = mPosition.get(entityId);
 		
 		box.shapeRenderer = new ShapeRenderer();
 
@@ -64,7 +64,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	protected void updateBoundingBoxPosition(int entityId)
 	{
 		BoundingBox box = mBox.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		StagePosition position = mPosition.get(entityId);
 		//MovementDirection direction = mDirection.get(entityId);
 		
 		box.xPos = position.currentPosition.x;
@@ -75,7 +75,7 @@ public class CollisionSystem extends IntervalIteratingSystem
 	public boolean checkForMapCollision(int entityId)
 	{
 		BoundingBox box = mBox.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		StagePosition position = mPosition.get(entityId);
 		MovementDirection direction = mDirection.get(entityId);
 		
 		Array<ZPortal> portals = map.getStageChangeObjects();

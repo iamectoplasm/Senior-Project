@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
 import com.seniorproject.components.DrawableSprite;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.StagePosition;
 import com.seniorproject.components.Position;
 import com.seniorproject.components.PropComponent;
 import com.seniorproject.configs.PerformConfig;
@@ -17,7 +17,7 @@ import com.seniorproject.configs.StudyConfig;
 import com.seniorproject.configs.PerformConfig.ActionsForLine;
 import com.seniorproject.configs.PerformConfig.ActorSetup;
 import com.seniorproject.configs.PerformConfig.PropSetup;
-import com.seniorproject.configs.PerformConfig.Setup;
+import com.seniorproject.configs.PerformConfig.SceneSetup;
 import com.seniorproject.configs.ScriptConfig.Line;
 import com.seniorproject.enums.*;
 import com.seniorproject.maps.StageMap;
@@ -34,7 +34,7 @@ public class Scene
 	private Hashtable<String, StudyConfig> studyConfigs;
 	private Array<Line> lines;
 	//private Array<SceneSetup> sceneSetup;
-	private Setup sceneSetup;
+	private SceneSetup sceneSetup;
 	private Array<ActorSetup> actorSetupArray;
 	private Array<PropSetup> propSetupArray;
 	
@@ -91,9 +91,9 @@ public class Scene
 			
 			//Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
 			
-			newPerformer.getComponent(MapPosition.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
-			newPerformer.getComponent(MapPosition.class).resetAllToStarting();
-			newPerformer.getComponent(MapPosition.class).mapZIndex = setup.getStageLayer().getZIndex();
+			newPerformer.getComponent(StagePosition.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
+			newPerformer.getComponent(StagePosition.class).resetAllToStarting();
+			newPerformer.getComponent(StagePosition.class).mapZIndex = setup.getStageLayer().getZIndex();
 			
 			performerTable.put(setup.getActor(), newPerformer.getId());
 		}

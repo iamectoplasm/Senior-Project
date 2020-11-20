@@ -9,6 +9,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//			LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -35,6 +38,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Malcolm", "text": "\u2022 That very frankly he confessed his treasons,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -60,6 +66,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Malcolm", "text": "\u2022 To throw away the dearest thing he owed"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 11 - 15
+	//------------------------------------------------------------
 	 	{
 			"lineID": 11,
 			"sharedLine": true,
@@ -86,6 +95,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 The sin of my ingratitude even now"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 16,
 	 		"sharedLine": false,
@@ -111,6 +123,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 Might have been mine! Only I have left to say,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
 	 	{
 			"lineID": 21,
 			"sharedLine": false,
@@ -136,6 +151,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Are to your throne and state children and servants,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 26,
 	 		"sharedLine": false,
@@ -162,6 +180,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 That hast not less deserved, nor must be known"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
 	 	{
 			"lineID": 31,
 			"sharedLine": false,
@@ -171,13 +192,13 @@
 	 		"lineID": 32,
 	 		"sharedLine": true,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 And hold thee to my heart."},
-	 				 {"actor": "Banquo", "text": "\u2022 There if I grow,"}]
+	 				 {"actor": "Banquo", "text": "There if I grow,"}]
 	 	},
 	 	{
 	 		"lineID": 33,
 	 		"sharedLine": true,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 The harvest is your own."},
-	 				 {"actor": "Duncan", "text": "\u2022 My plenteous joys,"}]
+	 				 {"actor": "Duncan", "text": "My plenteous joys,"}]
 	 	},
 	 	{
 	 		"lineID": 34,
@@ -189,6 +210,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 In drops of sorrow. Sons, kinsmen, thanes,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 36,
 	 		"sharedLine": false,
@@ -214,6 +238,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 Not unaccompanied invest him only,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
 	 	{
 			"lineID": 41,
 			"sharedLine": false,
@@ -239,6 +266,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 I'll be myself the harbinger, and make joyful"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 46 - 50
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 46,
 	 		"sharedLine": false,
@@ -265,6 +295,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 For in my way it lies. Stars, hide your fires,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 51 - 55
+	//------------------------------------------------------------
 	 	{
 			"lineID": 51,
 			"sharedLine": false,
@@ -290,6 +323,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Duncan", "text": "\u2022 And in his commendations I am fed,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 56 - 58
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 56,
 	 		"sharedLine": false,

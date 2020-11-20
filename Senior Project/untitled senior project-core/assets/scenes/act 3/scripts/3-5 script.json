@@ -1,67 +1,217 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 3 Scene 5",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "First Witch", "text": "\u2022 Why, how now, Hecate! You look angerly."}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Have I not reason, beldams as you are,"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Saucy and overbold? How did you dare"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 To trade and traffic with Macbeth"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 In riddles and affairs of death,"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 And I, the mistress of your charms,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 The close contriver of all harms,"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Was never called to bear my part,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Or show the glory of our art?"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Hecate", "text": "\u2022 And, which is worse, all you have done"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Hath been but for a wayward son,"}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Spiteful and wrathful, who, as others do,"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Loves for his own ends, not for you."}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 But make amends now. Get you gone,"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 And at the pit of Acheron"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Meet me i' the morning. Thither he"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Will come to know his destiny."}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Your vessels and your spells provide,"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Your charms and every thing beside."}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 I am for the air, this night I'll spend"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Unto a dismal and a fatal end."}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Great business must be wrought ere noon."}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Upon the corner of the moon"}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 There hangs a vaporous drop profound."}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 I'll catch it ere it come to ground,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 And that distilled by magic sleights"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Shall raise such artificial sprites"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 As by the strength of their illusion"}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Shall draw him on to his confusion."}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 He shall spurn fate, scorn death, and bear"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 His hopes 'bove wisdom, grace and fear."}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 And you all know, security"}]
+		},
+		{
+			"lineID": 33,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Is mortals' chiefest enemy."}]
+		},
+		{
+			"lineID": 34,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Hark! I am called. My little spirit, see,"}]
+		},
+		{
+			"lineID": 35,
+			"sharedLine": false,
+			"line": [{"actor": "Hecate", "text": "\u2022 Sits in a foggy cloud and stays for me."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+			"sharedLine": false,
+			"line": [{"actor": "First Witch", "text": "\u2022 Come, let's make haste, she'll soon be back again."}]
+		}
+	]
 }

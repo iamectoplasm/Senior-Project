@@ -4,11 +4,11 @@ import com.artemis.Entity;
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.components.StageDirections;
+import com.seniorproject.components.ActionsQueue;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.StagePosition;
 import com.seniorproject.components.PropComponent;
 import com.seniorproject.enums.CharacterName;
 import com.seniorproject.enums.Prop;
@@ -63,7 +63,7 @@ public class PerformerManager
 			if(performers.get(i).getComponent(Name.class).name.equals(name.name()))
 			{
 				performers.get(i).edit().add(new Active());
-				performers.get(i).getComponent(StageDirections.class).resetActionsArray();
+				performers.get(i).getComponent(ActionsQueue.class).resetActionsArray();
 				performers.get(i).getComponent(MovementState.class).resetAll();
 				
 				Gdx.app.debug(TAG, "Performer " + name + " has been activated.");

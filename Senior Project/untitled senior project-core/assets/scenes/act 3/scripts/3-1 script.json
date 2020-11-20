@@ -1,67 +1,822 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 3 Scene 1",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Thou hast it now. King, Cawdor, Glamis, all,"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 As the weird women promised, and I fear,"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Thou play'dst most foully for 't. Yet it was said"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 It should not stand in thy posterity,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 But that myself should be the root and father"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Of many kings. If there come truth from them\u2014"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 As upon thee, Macbeth, their speeches shine\u2014"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Why, by the verities on thee made good,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 May they not be my oracles as well"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And set me up in hope? But hush! no more."}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Here's our chief guest."},
+					 {"actor": "Lady Macbeth", "text": "If he had been forgotten,"}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 It had been as a gap in our great feast,"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And all-thing unbecoming."}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Tonight we hold a solemn supper, sir,"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And I'll request your presence."},
+					 {"actor": "Banquo", "text": "Let your highness"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Command upon me; to the which my duties"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Are with a most indissoluble tie"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 For ever knit."}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Ride you this afternoon?"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Ay, my good lord."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 We should have else desired your good advice,"}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which still hath been both grave and prosperous,"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 In this day's council, but we'll take tomorrow."}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is 't far you ride?"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 As far, my lord, as will fill up the time"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 'Twixt this and supper. Go not my horse the better,"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 I must become a borrower of the night"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": true,
+			"line": [{"actor": "Banquo", "text": "\u2022 For a dark hour or twain."},
+					 {"actor": "Macbeth", "text": "Fail not our feast."}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 My lord, I will not."}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 We hear our bloody cousins are bestow'd"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 In England and in Ireland, not confessing"}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Their cruel parricide, filling their hearers"}]
+		},
+		{
+			"lineID": 33,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 With strange invention. But of that tomorrow,"}]
+		},
+		{
+			"lineID": 34,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 When therewithal we shall have cause of state"}]
+		},
+		{
+			"lineID": 35,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Craving us jointly. Hie you to horse. Adieu,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Till you return at night. Goes Fleance with you?"}]
+		},
+		{
+			"lineID": 37,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Aye, my good lord. Our time does call upon 's."}]
+		},
+		{
+			"lineID": 38,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I wish your horses swift and sure of foot;"}]
+		},
+		{
+			"lineID": 39,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And so I do commend you to their backs."}]
+		},
+		{
+			"lineID": 40,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Farewell."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Let every man be master of his time"}]
+		},
+		{
+			"lineID": 42,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Till seven at night. To make society"}]
+		},
+		{
+			"lineID": 43,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The sweeter welcome, we will keep ourself"}]
+		},
+		{
+			"lineID": 44,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Till supper-time alone. While then, God be with you!"}]
+		},
+		{
+			"lineID": 45,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Sirrah, a word with you. Attend those men"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Our pleasure?"}]
+		},
+		{
+			"lineID": 47,
+			"sharedLine": false,
+			"line": [{"actor": "Attendent", "text": "\u2022 They are, my lord, without the palace gate."}]
+		},
+		{
+			"lineID": 48,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Bring them before us. To be thus is nothing,"}]
+		},
+		{
+			"lineID": 49,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 But to be safely thus.\u2014Our fears in Banquo"}]
+		},
+		{
+			"lineID": 50,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Stick deep, and in his royalty of nature"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Reigns that which would be feared. 'Tis much he dares,"}]
+		},
+		{
+			"lineID": 52,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And, to that dauntless temper of his mind,"}]
+		},
+		{
+			"lineID": 53,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 He hath a wisdom that doth guide his valor"}]
+		},
+		{
+			"lineID": 54,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To act in safety. There is none but he"}]
+		},
+		{
+			"lineID": 55,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose being I do fear. And under him,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 My Genius is rebuked, as, it is said,"}]
+		},
+		{
+			"lineID": 57,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Mark Antony's was by Caesar. He chid the sisters"}]
+		},
+		{
+			"lineID": 58,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 When first they put the name of King upon me,"}]
+		},
+		{
+			"lineID": 59,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And bade them speak to him. Then prophet-like"}]
+		},
+		{
+			"lineID": 60,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 They hailed him father to a line of kings."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Upon my head they placed a fruitless crown"}]
+		},
+		{
+			"lineID": 62,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And put a barren sceptre in my gripe,"}]
+		},
+		{
+			"lineID": 63,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thence to be wrenched with an unlineal hand,"}]
+		},
+		{
+			"lineID": 64,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 No son of mine succeeding. If 't be so,"}]
+		},
+		{
+			"lineID": 65,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 For Banquo's issue have I filed my mind,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
+		{
+			"lineID": 66,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 For them the gracious Duncan have I murder'd,"}]
+		},
+		{
+			"lineID": 67,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Put rancors in the vessel of my peace"}]
+		},
+		{
+			"lineID": 68,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Only for them, and mine eternal jewel"}]
+		},
+		{
+			"lineID": 69,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Given to the common enemy of man"}]
+		},
+		{
+			"lineID": 70,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To make them kings/u2014the seed of Banquo kings!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
+		{
+			"lineID": 71,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Rather than so, come, Fate, into the list,"}]
+		},
+		{
+			"lineID": 72,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And champion me to the utterance! Who's there?"}]
+		},
+		{
+			"lineID": 73,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Now go to the door, and stay there till we call."}]
+		},
+		{
+			"lineID": 74,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Was it not yesterday we spoke together?"}]
+		},
+		{
+			"lineID": 75,
+			"sharedLine": true,
+			"line": [{"actor": "First Murderer", "text": "\u2022 It was, so please your highness."},
+					 {"actor": "Macbeth", "text": "Well then, now"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
+		{
+			"lineID": 76,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Have you considered of my speeches? Know"}]
+		},
+		{
+			"lineID": 77,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That it was he in the times past which held you"}]
+		},
+		{
+			"lineID": 78,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 So under fortune, which you thought had been"}]
+		},
+		{
+			"lineID": 79,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Our innocent self. This I made good to you"}]
+		},
+		{
+			"lineID": 80,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 In our last conference, passed in probation with you,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 81 - 85
+	//------------------------------------------------------------
+		{
+			"lineID": 81,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 How you were borne in hand, how crossed, the instruments,"}]
+		},
+		{
+			"lineID": 82,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who wrought with them, and all things else that might"}]
+		},
+		{
+			"lineID": 83,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To half a soul and to a notion crazed"}]
+		},
+		{
+			"lineID": 84,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Say 'Thus did Banquo.'"},
+					 {"actor": "First Murderer", "text": "You made it known to us."}]
+		},
+		{
+			"lineID": 85,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I did so, and went further, which is now"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 86 - 90
+	//------------------------------------------------------------
+		{
+			"lineID": 86,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Our point of second meeting. Do you find"}]
+		},
+		{
+			"lineID": 87,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Your patience so predominant in your nature"}]
+		},
+		{
+			"lineID": 88,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That you can let this go? Are you so gospeled,"}]
+		},
+		{
+			"lineID": 89,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To pray for this good man and for his issue,"}]
+		},
+		{
+			"lineID": 90,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose heavy hand hath bowed you to the grave"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 91 - 95
+	//------------------------------------------------------------
+		{
+			"lineID": 91,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And beggared yours forever?"},
+					 {"actor": "First Murderer", "text": "We are men, my liege."}]
+		},
+		{
+			"lineID": 92,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Aye, in the catalogue ye go for men,"}]
+		},
+		{
+			"lineID": 93,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 As hounds and greyhounds, mongrels, spaniels, curs,"}]
+		},
+		{
+			"lineID": 94,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Shoughs, water rugs and demiwolves, are clept"}]
+		},
+		{
+			"lineID": 95,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 All by the name of dogs. The valued file"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 96 - 100
+	//------------------------------------------------------------
+		{
+			"lineID": 96,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Distinguishes the swift, the slow, the subtle,"}]
+		},
+		{
+			"lineID": 97,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The housekeeper, the hunter, every one"}]
+		},
+		{
+			"lineID": 98,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 According to the gift which bounteous Nature"}]
+		},
+		{
+			"lineID": 99,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hath in him closed, whereby he does receive"}]
+		},
+		{
+			"lineID": 100,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Particular addition from the bill"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 101 - 105
+	//------------------------------------------------------------
+		{
+			"lineID": 101,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That writes them all alike. And so of men."}]
+		},
+		{
+			"lineID": 102,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Now, if you have a station in the file,"}]
+		},
+		{
+			"lineID": 103,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Not i' the worst rank of manhood, say it;"}]
+		},
+		{
+			"lineID": 104,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And I will put that business in your bosoms"}]
+		},
+		{
+			"lineID": 105,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose execution takes your enemy off,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 106 - 110
+	//------------------------------------------------------------
+		{
+			"lineID": 106,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Grapples you to the heart and love of us,"}]
+		},
+		{
+			"lineID": 107,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who wear our health but sickly in his life,"}]
+		},
+		{
+			"lineID": 108,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which in his death were perfect."},
+					 {"actor": "Second Murderer", "text": "I am one, my liege,"}]
+		},
+		{
+			"lineID": 109,
+			"sharedLine": false,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 Whom the vile blows and buffets of the world"}]
+		},
+		{
+			"lineID": 110,
+			"sharedLine": false,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 Have so incensed that I am reckless what"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 111 - 115
+	//------------------------------------------------------------
+		{
+			"lineID": 111,
+			"sharedLine": true,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 I do to spite the world."},
+					 {"actor": "First Murderer", "text": "And I another"}]
+		},
+		{
+			"lineID": 112,
+			"sharedLine": false,
+			"line": [{"actor": "First Murderer", "text": "\u2022 So weary with disasters, tugged with fortune,"}]
+		},
+		{
+			"lineID": 113,
+			"sharedLine": false,
+			"line": [{"actor": "First Murderer", "text": "\u2022 That I would set my life on any chance,"}]
+		},
+		{
+			"lineID": 114,
+			"sharedLine": true,
+			"line": [{"actor": "First Murderer", "text": "\u2022 To mend it, or be rid on 't."},
+					 {"actor": "Macbeth", "text": "Both of you"}]
+		},
+		{
+			"lineID": 115,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Know Banquo was your enemy."},
+					 {"actor": "Both Murderers", "text": "True, my lord."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 116 - 120
+	//------------------------------------------------------------
+		{
+			"lineID": 116,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 So is he mine; and in such bloody distance"}]
+		},
+		{
+			"lineID": 117,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That every minute of his being thrusts"}]
+		},
+		{
+			"lineID": 118,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Against my near'st of life. And though I could"}]
+		},
+		{
+			"lineID": 119,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 With barefaced power sweep him from my sight"}]
+		},
+		{
+			"lineID": 120,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And bid my will avouch it, yet I must not,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 121 - 125
+	//------------------------------------------------------------
+		{
+			"lineID": 121,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 For certain friends that are both his and mine,"}]
+		},
+		{
+			"lineID": 122,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose loves I may not drop, but wail his fall"}]
+		},
+		{
+			"lineID": 123,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who I myself struck down. And thence it is"}]
+		},
+		{
+			"lineID": 124,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That I to your assistance do make love,"}]
+		},
+		{
+			"lineID": 125,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Masking the business from the common eye"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 126 - 130
+	//------------------------------------------------------------
+		{
+			"lineID": 126,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 For sundry weighty reasons."},
+					 {"actor": "Second Murderer", "text": "We shall, my lord,"}]
+		},
+		{
+			"lineID": 127,
+			"sharedLine": false,
+			"line": [{"actor": "Second Murderer", "text": "\u2022 Perform what you command us."},
+					 {"actor": "First Murderer", "text": "Though our lives\u2014"}]
+		},
+		{
+			"lineID": 128,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Your spirits shine through you. Within this hour at most"}]
+		},
+		{
+			"lineID": 129,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I will advise you where to plant yourselves,"}]
+		},
+		{
+			"lineID": 130,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Acquaint you with the perfect spy o' the time,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 131 - 135
+	//------------------------------------------------------------
+		{
+			"lineID": 131,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The moment on 't. For 't must be done tonight,"}]
+		},
+		{
+			"lineID": 132,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And something from the palace, always thought"}]
+		},
+		{
+			"lineID": 133,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That I require a clearness. And with him\u2014"}]
+		},
+		{
+			"lineID": 134,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 To leave no rubs nor botches in the work\u2014"}]
+		},
+		{
+			"lineID": 135,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Fleance his son, that keeps him company,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 136 - 140
+	//------------------------------------------------------------
+		{
+			"lineID": 136,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose absence is no less material to me"}]
+		},
+		{
+			"lineID": 137,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Than is his father's, must embrace the fate"}]
+		},
+		{
+			"lineID": 138,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Of that dark hour. Resolve yourselves apart."}]
+		},
+		{
+			"lineID": 139,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I'll come to you anon."},
+					 {"actor": "Both Murderers", "text": "We are resolved, my lord."}]
+		},
+		{
+			"lineID": 140,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I'll call upon you straight. Abide within."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 141 - 142
+	//------------------------------------------------------------
+		{
+			"lineID": 141,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 It is concluded. Banquo, thy soul's flight,"}]
+		},
+		{
+			"lineID": 142,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 If it find heaven, must find it out tonight."}]
+		}]
 }

@@ -1,67 +1,458 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 1",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["The guilt of everything they have done has begun to eat away at",
+		"Lady Macbeth's sanity. Queue the famous sleepwalking scene!"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Doctor", "text": "I have two nights watched with you, but can"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Doctor", "text": "perceive no truth in your report."}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Doctor", "text": "When was it she last walked?"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Gentlewoman", "text": "Since his majesty went into the field,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Gentlewoman", "text": "I have seen her rise from her bed, throw her nightgown"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Gentlewoman", "text": "upon her, unlock her closet, take forth paper, fold it,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Gentlewoman", "text": "write upon't, read it, afterwards seal it, and again"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Gentlewoman", "text": "return to bed, yet all this while in a most fast sleep."}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Doctor", "text": "A great perturbation in nature, to receive at once"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Doctor", "text": "the benefit of sleep, and do the effects of"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "watching! In this slumbery agitation, besides her"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "walking and other actual performances, what, at any"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "time, have you heard her say?"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "That, sir, which I"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "will not report after her."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "You may to me, and 'tis most meet you should."}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Neither to you, nor any one, having no"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "witness to confirm my speech."}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Lo you, here she comes! This is her very guise, and"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "upon my life, fast asleep. Observe her, stand close."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "How came she by that light?"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Why, it stood by her: she has light"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "by her continually; 'tis her command."}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "You see her eyes are open."}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Ay, but their sense is shut."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "What is it she does now? Look how"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "she rubs her hands."}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "It is an accustomed action with her,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "to seem thus washing her hands. I have known her"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "continue in this a quarter of an hour."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Yet here's a spot."}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Hark, she speaks. I will set down what comes"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "from her, to satisfy my remembrance"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "the more strongly."}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Out, damned spot: out, I say! One; two. Why"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "then 'tis time to do't. Hell is murky. Fie, my lord,"}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "fie, a soldier and afeared? What need we fear? Who"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "knows it when none can call our power to account?"}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Yet who would have thought the old man to have"}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "had so much blood in him?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Do you mark that?"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "The thane of Fife had a wife. Where is she now?"}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "What, will these hands ne'er be clean? No more"}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "o' that, my lord, no more o' that. You mar all"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "with this starting."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Go to, go to. You have known"}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "what you should not."}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "She has spoke what she should not, I am"}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "sure of that. Heaven knows what she has known."}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Here's the smell of the blood still. All the"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "perfumes of Arabia will not sweeten this little hand."}]
+		},
+		{
+			"lineID": 52,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Oh, oh, oh!"}]
+		},
+		{
+			"lineID": 53,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "What a sigh is there! The heart is"}]
+		},
+		{
+			"lineID": 54,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "sorely charged."}]
+		},
+		{
+			"lineID": 55,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "I would not have such a heart in my bosom"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "for the dignity of the whole body."}]
+		},
+		{
+			"lineID": 57,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Well, well, well."}]
+		},
+		{
+			"lineID": 58,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Pray God it be, sir."}]
+		},
+		{
+			"lineID": 59,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "This disease is beyond my practise: yet I have"}]
+		},
+		{
+			"lineID": 60,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "known those which have walked in their sleep,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "who have died holily in their beds."}]
+		},
+		{
+			"lineID": 62,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "Wash your hands, put on your nightgown, look not"}]
+		},
+		{
+			"lineID": 63,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "so pale. I tell you yet again, Banquo's buried; he"}]
+		},
+		{
+			"lineID": 64,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "cannot come out on's grave."}]
+		},
+		{
+			"lineID": 65,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Even so?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
+		{
+			"lineID": 66,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "To bed, to bed: there's knocking at the gate. Come,"}]
+		},
+		{
+			"lineID": 67,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "come, come, come, give me your hand. What's done,"}]
+		},
+		{
+			"lineID": 68,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lady Macbeth", "text": "cannot be undone. To bed, to bed, to bed."}]
+		},
+		{
+			"lineID": 69,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "Will she go now to bed?"}]
+		},
+		{
+			"lineID": 70,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Gentlewoman", "text": "Directly."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
+		{
+			"lineID": 71,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Foul whisperings are abroad. Unnatural deeds"}]
+		},
+		{
+			"lineID": 72,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Do breed unnatural troubles. Infected minds"}]
+		},
+		{
+			"lineID": 73,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 To their deaf pillows will discharge their secrets."}]
+		},
+		{
+			"lineID": 74,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 More needs she the divine than the physician."}]
+		},
+		{
+			"lineID": 75,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 God, God forgive us all! Look after her,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
+		{
+			"lineID": 76,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Remove from her the means of all annoyance,"}]
+		},
+		{
+			"lineID": 77,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 And still keep eyes upon her. So, good night."}]
+		},
+		{
+			"lineID": 78,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 My mind she has mated and amazed my sight."}]
+		},
+		{
+			"lineID": 79,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 I think, but dare not speak."},
+					 {"actor": "Gentlewoman", "text": "Good night, good doctor."}]
+		}
+	]
 }

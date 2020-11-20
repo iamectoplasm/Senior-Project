@@ -6,7 +6,7 @@ filter: Linear,Linear
 repeat: none
 ALL
   rotate: false
-  xy: 1029, 1013
+  xy: 679, 663
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -46,6 +46,13 @@ FIRST_WITCH
   orig: 80, 80
   offset: 0, 0
   index: -1
+FLEANCE
+  rotate: false
+  xy: 1029, 1013
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
 LADY_MACBETH
   rotate: false
   xy: 515, 663
@@ -81,6 +88,20 @@ MALCOLM
   orig: 80, 80
   offset: 0, 0
   index: -1
+OLD_MAN
+  rotate: false
+  xy: 1111, 1095
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+PORTER
+  rotate: false
+  xy: 1193, 1177
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
 ROSS
   rotate: false
   xy: 597, 663
@@ -97,14 +118,14 @@ SECOND_WITCH
   index: -1
 SERGEANT
   rotate: false
-  xy: 515, 499
+  xy: 1543, 1527
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 THIRD_WITCH
   rotate: false
-  xy: 597, 581
+  xy: 515, 499
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
@@ -162,7 +183,7 @@ blue-name-label
   index: -1
 green-scrollbar
   rotate: false
-  xy: 1111, 1153
+  xy: 1625, 1667
   size: 9, 22
   split: 0, 0, 4, 4
   pad: 0, 0, 0, 0
@@ -171,14 +192,14 @@ green-scrollbar
   index: -1
 portrait-bg-gray
   rotate: false
-  xy: 679, 663
+  xy: 597, 581
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 scroll-line
   rotate: false
-  xy: 1193, 1211
+  xy: 1707, 1725
   size: 4, 46
   split: 0, 0, 8, 8
   pad: 0, 0, 0, 0

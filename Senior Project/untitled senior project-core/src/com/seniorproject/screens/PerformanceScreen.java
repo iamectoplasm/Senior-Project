@@ -15,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.RunnableAction;
 import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.viewport.FitViewport;
@@ -25,6 +26,7 @@ import com.seniorproject.game.FadeOverlay;
 import com.seniorproject.game.PerformerManager;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
+import com.seniorproject.game.SeniorProject.ScreenType;
 import com.seniorproject.maps.PerformanceRenderer;
 import com.seniorproject.maps.StageMap;
 import com.seniorproject.systems.*;
@@ -49,6 +51,8 @@ public class PerformanceScreen implements Screen
 	private SeniorProject game;
 	private FitViewport viewport;
 	
+	private ScreenTransitionActor transitionActor;
+	
 	private Stage stage;
 	
 	//private OrthographicCamera camera = null;
@@ -66,14 +70,6 @@ public class PerformanceScreen implements Screen
 	
 	private SceneManager sceneManager;
 	
-	/*
-	 * 10/25/20 hacking in fade overlay to get screen fades up & running
-	 */
-	private Image fadeOverlay;
-	/*
-	 * end of bad code
-	 */
-	
 	public PerformanceScreen(SeniorProject currentGame)
 	{
 		PerformanceScreen.camera = new OrthographicCamera();
@@ -83,15 +79,8 @@ public class PerformanceScreen implements Screen
 		 */
 		this.stage = new Stage();
 		stage.getRoot().setTouchable(Touchable.disabled);
-		AssetLoader.loadTextureAsset("backgrounds/transition fade.png");
-		this.fadeOverlay = new Image(AssetLoader.getTextureAsset("backgrounds/transition fade.png"));
-		fadeOverlay.setSize(800, 600);
-		fadeOverlay.setTouchable(Touchable.disabled);
-		//this.fadeOverlay = FadeOverlay.getInstance().getOverlay();
-		stage.addActor(fadeOverlay);
-		/*
-		 * end of bad code
-		 */
+		this.transitionActor = new ScreenTransitionActor();
+		stage.addActor(transitionActor);
 		
 		viewport = new FitViewport(4, 3, camera);
 		
@@ -104,11 +93,11 @@ public class PerformanceScreen implements Screen
 		
 		WorldConfiguration config = new WorldConfiguration();
 
-		config.setSystem(new PerformanceSystem(map));
+		config.setSystem(new PerformanceSystem());
 		config.setSystem(new AnimationSystem());
 		config.setSystem(new EntitySortSystem());
 		config.setSystem(new EmoticonTrackingSystem());
-		config.setSystem(new MovementSystem(map));
+		config.setSystem(new MovementSystem());
 		config.setSystem(new CollisionSystem(map));
 		config.setSystem(new ZSortSystem());
 		config.setSystem(new RenderSystem(camera, mapRenderer.getBatch()));
@@ -144,17 +133,13 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void show()
 	{
-		//Gdx.app.debug(TAG, "In show() method, now clearing fadeOverlay...");
-		fadeOverlay.clear();
-		
-		/*
-		 * 10/25/20 hacking in fade overlay to get screen fades up & running
-		 */
-		//Gdx.app.debug(TAG, "\tAdding fadeOut action to fadeOverlay");
-		fadeOverlay.addAction(Actions.fadeOut(0.5f));
-		/*
-		 * end of bad code
-		 */
+		transitionActor.setVisible(true);
+		transitionActor.toFront();
+		stage.addAction(
+				Actions.sequence(
+				Actions.addAction(
+				ScreenTransitionAction.transition(ScreenTransitionAction.ScreenTransitionType.FADE_IN, 0.5f), 
+				transitionActor)));
 		
 		Gdx.input.setInputProcessor(multiplexer);
 		
@@ -195,11 +180,6 @@ public class PerformanceScreen implements Screen
 		return performanceHUD;
 	}
 	
-	public Image getFadeOverlay()
-	{
-		return this.fadeOverlay;
-	}
-	
 	public Stage getStage()
 	{
 		return stage;
@@ -227,16 +207,6 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void hide()
 	{
-		//Gdx.app.debug(TAG, "In hide() method, clearing fadeOverlay...");
-		fadeOverlay.clear();
-		/*
-		 * 10/25/20 hacking in fade overlay to get screen fades up & running
-		 */
-		//Gdx.app.debug(TAG, "\tAdding fadeIn action to fadeOverlay");
-		fadeOverlay.addAction(Actions.fadeIn(.5f));
-		/*
-		 * end of bad code
-		 */
 		//sceneManager.getCurrentScene().deactivateEntities();
 	}
 
@@ -247,31 +217,20 @@ public class PerformanceScreen implements Screen
 		
 	}
 	
-	public void fadeOutOfScreen()
+	public void fadeToNewScreen(final ScreenType newScreen)
 	{
-		fadeOverlay.toFront();
-		fadeOverlay.addAction(Actions.fadeIn(0.5f));
-	}
-	
-	public void fadeToNewScreen(final Screen newScreen)
-	{
-		SequenceAction performanceFadeOut = new SequenceAction();
-		Action fadeIn = Actions.fadeIn(0.5f);
-		fadeIn.setActor(fadeOverlay);
+		Action fade = Actions.addAction(
+				ScreenTransitionAction.transition(ScreenTransitionAction.ScreenTransitionType.FADE_OUT, 0.5f),
+				transitionActor);
 		
-		performanceFadeOut.addAction(fadeIn);
-		performanceFadeOut.addAction(Actions.run(new Runnable()
+		stage.addAction(Actions.sequence(fade, Actions.delay(0.5f), new RunnableAction()
 		{
 			@Override
 			public void run()
 			{
-				game.setScreen(newScreen);
-				
-				fadeOverlay.clear();
+				game.setScreen(game.getScreenType(newScreen));
 			}
 		}));
-		
-		stage.getRoot().addAction(performanceFadeOut);
 	}
 	
 	private void setupViewport(int width, int height)

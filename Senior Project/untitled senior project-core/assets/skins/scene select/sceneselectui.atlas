@@ -4,6 +4,13 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+glamis-exterior
+  rotate: false
+  xy: 1, 1373
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
 arial-12pt
   rotate: false
   xy: 803, 1461
@@ -44,13 +51,6 @@ arial-24pt
   xy: 515, 345
   size: 512, 512
   orig: 512, 512
-  offset: 0, 0
-  index: -1
-glamis-exterior
-  rotate: false
-  xy: 1, 1373
-  size: 800, 600
-  orig: 800, 600
   offset: 0, 0
   index: -1
 act-back-active

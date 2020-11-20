@@ -56,10 +56,10 @@ public class EntityFactory
 				.add(MovementAnimation.class)
 				.add(MovementState.class)
 				.add(Name.class)
-				.add(MapPosition.class)
+				.add(StagePosition.class)
 				.add(DrawableSprite.class)
 				.add(Velocity.class)
-				.add(StageDirections.class)
+				.add(ActionsQueue.class)
 				.build(world)),
 		
 		PROP(new ArchetypeBuilder()
@@ -111,7 +111,8 @@ public class EntityFactory
 		
 		entity.getComponent(MovementAnimation.class).animations = loadWalkAnimations(spriteSheet);
 		entity.getComponent(DrawableSprite.class).currentFrame = entity.getComponent(MovementAnimation.class).animations.get(AnimationType.WALK_DOWN).getNextStandingFrame();
-		entity.getComponent(Velocity.class).velocity = .25f;
+		//entity.getComponent(Velocity.class).velocity = .25f;
+		entity.getComponent(Velocity.class).speed = Velocity.Speed.MED;
 		
 		//Gdx.app.debug(TAG, "Now calling initBoundingBox on entity " + character.toString());
 		initBoundingBox(entity.getId());
@@ -223,7 +224,7 @@ public class EntityFactory
 	public static void initBoundingBox(int entityId)
 	{
 		BoundingBox box = world.getEntity(entityId).getComponent(BoundingBox.class);
-		MapPosition position = world.getEntity(entityId).getComponent(MapPosition.class);
+		StagePosition position = world.getEntity(entityId).getComponent(StagePosition.class);
 		
 		box.shapeRenderer = new ShapeRenderer();
 

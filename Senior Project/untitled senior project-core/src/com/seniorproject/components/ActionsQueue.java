@@ -4,7 +4,7 @@ import com.artemis.Component;
 import com.badlogic.gdx.utils.Queue;
 import com.seniorproject.configs.PerformConfig.ActionToPerform;
 
-public class StageDirections extends Component
+public class ActionsQueue extends Component
 {
 	public Queue<ActionToPerform> stageDirectionQueue;
 	
@@ -15,7 +15,7 @@ public class StageDirections extends Component
 	public boolean actionInProgress = false;
 	public boolean actionEnded = false;
 	
-	public StageDirections()
+	public ActionsQueue()
 	{
 		stageDirectionQueue = new Queue<ActionToPerform>();
 	}

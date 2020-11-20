@@ -1,67 +1,370 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 3",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Bring me no more reports; let them fly all:"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Till Birnam wood remove to Dunsinane,"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I cannot taint with fear. What's the boy Malcolm?"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Was he not born of woman? The spirits that know"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 All mortal consequences have pronounced me thus:"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 'Fear not, Macbeth; no man that's born of woman"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Shall e'er have power upon thee.' Then fly, false thanes,"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And mingle with the English epicures:"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The mind I sway by and the heart I bear"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Shall never sag with doubt nor shake with fear."}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The devil damn thee black, thou cream-faced loon!"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Where got'st thou that goose look?"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Servant", "text": "\u2022 There is ten thousand--"},
+					 {"actor": "Macbeth", "text": "Geese, villain?"},
+					 {"actor": "Servant", "text": "Soldiers, sir."}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Go prick thy face, and over-red thy fear,"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou lily-liver'd boy. What soldiers, patch?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Death of thy soul! those linen cheeks of thine"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Are counsellors to fear. What soldiers, whey-face?"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Servant", "text": "\u2022 The English force, so please you."}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Take thy face hence. Seyton! I am sick at heart,"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 When I behold--Seyton, I say--This push"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Will cheer me ever, or disseat me now."}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I have lived long enough: my way of life"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Is fallen into the sere, the yellow leaf,"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And that which should accompany old age,"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As honour, love, obedience, troops of friends,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I must not look to have; but in their stead,"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Curses not loud but deep, mouth-honour, breath"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Which the poor heart would fain deny, and dare not."}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Seyton?"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Seyton", "text": "\u2022 What is your gracious pleasure?"},
+					 {"actor": "Macbeth", "text": "What news more?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Seyton", "text": "\u2022 All is confirm'd, my lord, which was reported."}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I'll fight till from my bones my flesh be hack'd."}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Give me my armour."},
+					 {"actor": "Seyton", "text": "'Tis not needed yet."}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I'll put it on."}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Send out more horses; skirr the country round;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Hang those that talk of fear. Give me mine armour."}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 How does your patient, doctor?"},
+					 {"actor": "Doctor", "text": "Not so sick, my lord,"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 As she is troubled with thick coming fancies,"}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 That keep her from her rest."},
+					 {"actor": "Macbeth", "text": "Cure her of that."}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Canst thou not minister to a mind diseased,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Pluck from the memory a rooted sorrow,"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Raze out the written troubles of the brain"}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And with some sweet oblivious antidote"}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Cleanse the stuff'd bosom of that perilous stuff"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Which weighs upon the heart?"},
+					 {"actor": "Doctor", "text": "Therein the patient"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Must minister to himself."}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Throw physic to the dogs; I'll none of it."}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Come, put mine armour on; give me my staff."}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Seyton, send out. Doctor, the thanes fly from me."}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Come, sir, dispatch. If thou couldst, doctor, cast"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The water of my land, find her disease,"}]
+		},
+		{
+			"lineID": 52,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And purge it to a sound and pristine health,"}]
+		},
+		{
+			"lineID": 53,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I would applaud thee to the very echo,"}]
+		},
+		{
+			"lineID": 54,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That should applaud again.--Pull't off, I say.--"}]
+		},
+		{
+			"lineID": 55,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 What rhubarb, cyme, or what purgative drug,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Would scour these English hence? Hear'st thou of them?"}]
+		},
+		{
+			"lineID": 57,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Ay, my good lord; your royal preparation"}]
+		},
+		{
+			"lineID": 58,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Makes us hear something."},
+					 {"actor": "Macbeth", "text": "Bring it after me."}]
+		},
+		{
+			"lineID": 59,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I will not be afraid of death and bane,"}]
+		},
+		{
+			"lineID": 60,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Till Birnam forest come to Dunsinane."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Were I from Dunsinane away and clear,"}]
+		},
+		{
+			"lineID": 62,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Doctor", "text": "\u2022 Profit again should hardly draw me here."}]
+		}
+	]
 }

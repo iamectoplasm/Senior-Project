@@ -1,67 +1,186 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 7",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 They have tied me to a stake; I cannot fly,"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But, bear-like, I must fight the course. What's he"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That was not born of woman? Such a one"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Am I to fear, or none."}]
 	 	},
 	 	{
 	 		"lineID": 5,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 What is thy name?"},
+					 {"actor": "Macbeth", "text": "Thou'lt be afraid to hear it."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 No; though thou call'st thyself a hotter name"}]
 	 	},
 	 	{
 	 		"lineID": 7,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 Than any is in hell."},
+					 {"actor": "Macbeth", "text": "My name's Macbeth."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 The devil himself could not pronounce a title"}]
 	 	},
 	 	{
 	 		"lineID": 9,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 More hateful to mine ear."},
+					 {"actor": "Macbeth", "text": "No, nor more fearful."}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 Thou liest, abhorred tyrant; with my sword"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Young Siward", "text": "\u2022 I'll prove the lie thou speak'st."}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou wast born of woman"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But swords I smile at, weapons laugh to scorn,"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Brandish'd by man that's of a woman born."}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 That way the noise is. Tyrant, show thy face!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 If thou be'st slain and with no stroke of mine,"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 My wife and children's ghosts will haunt me still."}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I cannot strike at wretched kerns, whose arms"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Are hired to bear their staves: either thou, Macbeth,"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Or else my sword with an unbatter'd edge"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I sheathe again undeeded. There thou shouldst be;"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 By this great clatter, one of greatest note"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Seems bruited. Let me find him, fortune!"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And more I beg not."}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 This way, my lord; the castle's gently render'd:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 The tyrant's people on both sides do fight;"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 The noble thanes do bravely in the war;"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 The day almost itself professes yours,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Siward", "text": "\u2022 And little is to do."},
+					 {"actor": "Malcolm", "text": "We have met with foes"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That strike beside us."},
+					 {"actor": "Siward", "text": "Enter, sir, the castle."}]
+		}
+	]
 }

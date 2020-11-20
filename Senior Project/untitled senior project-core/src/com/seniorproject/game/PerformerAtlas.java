@@ -27,11 +27,14 @@ public class PerformerAtlas
 	private TextureRegion banquo;
 	private TextureRegion donalbain;
 	private TextureRegion duncan;
+	private TextureRegion fleance;
 	private TextureRegion ladyMacbeth;
 	private TextureRegion lennox;
 	private TextureRegion macbeth;
 	private TextureRegion macduff;
 	private TextureRegion malcolm;
+	private TextureRegion oldMan;
+	private TextureRegion porter;
 	private TextureRegion ross;
 	private TextureRegion sergeant;
 	private TextureRegion messenger;
@@ -59,11 +62,14 @@ public class PerformerAtlas
 		this.banquo = atlas.findRegion("banquo");
 		this.donalbain = atlas.findRegion("donalbain");
 		this.duncan = atlas.findRegion("duncan");
+		this.fleance = atlas.findRegion("fleance");
 		this.ladyMacbeth = atlas.findRegion("lady-macbeth");
 		this.lennox = atlas.findRegion("lennox");
 		this.macbeth = atlas.findRegion("macbeth");
 		this.macduff = atlas.findRegion("macduff");
 		this.malcolm = atlas.findRegion("malcolm");
+		this.oldMan = atlas.findRegion("old-man");
+		this.porter = atlas.findRegion("porter");
 		this.ross = atlas.findRegion("ross");
 		this.sergeant = atlas.findRegion("sergeant");
 		this.messenger = atlas.findRegion("messenger");
@@ -94,6 +100,9 @@ public class PerformerAtlas
 			case DUNCAN:
 				array.add(duncan);
 				return array;
+			case FLEANCE:
+				array.add(fleance);
+				return array;
 			case LADY_MACBETH:
 				array.add(ladyMacbeth);
 				return array;
@@ -108,6 +117,12 @@ public class PerformerAtlas
 				return array;
 			case MALCOLM:
 				array.add(malcolm);
+				return array;
+			case OLD_MAN:
+				array.add(oldMan);
+				return array;
+			case PORTER:
+				array.add(porter);
 				return array;
 			case ROSS:
 				array.add(ross);

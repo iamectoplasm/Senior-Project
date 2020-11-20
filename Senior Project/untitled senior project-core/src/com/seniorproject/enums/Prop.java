@@ -2,7 +2,6 @@ package com.seniorproject.enums;
 
 public enum Prop
 {
-	SMOKE_BOMB(PropType.OBJECT),
 	GHOST_DAGGER(PropType.OBJECT),
 	SOLILOQUY_LIGHTING(PropType.LIGHTING);
 	
@@ -13,12 +12,15 @@ public enum Prop
 		this.type = type;
 	}
 	
+	public PropType getType()
+	{
+		return type;
+	}
+	
 	public static PropType getPropType(Prop prop)
 	{
 		switch(prop)
 		{
-		case SMOKE_BOMB:
-			return PropType.OBJECT;
 		case GHOST_DAGGER:
 			return PropType.OBJECT;
 		case SOLILOQUY_LIGHTING:

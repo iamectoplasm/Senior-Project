@@ -10,7 +10,7 @@ import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.StagePosition;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.PerformerEmote;
@@ -21,7 +21,7 @@ public class RenderSystem extends EntitySystem
 	private static final String TAG = RenderSystem.class.getSimpleName();
 	
 	ComponentMapper<DrawableSprite> mSprite;
-	ComponentMapper<MapPosition> mPosition;
+	ComponentMapper<StagePosition> mPosition;
 	ComponentMapper<BoundingBox> mBoundingBox;
 	ComponentMapper<PerformerEmote> mEmotion;
 	
@@ -35,7 +35,7 @@ public class RenderSystem extends EntitySystem
 	{
 		super(Aspect.all(Active.class,
 				DrawableSprite.class,
-				MapPosition.class,
+				StagePosition.class,
 				PerformerEmote.class
 				));
 
@@ -85,7 +85,7 @@ public class RenderSystem extends EntitySystem
 		for(Entity e: sortedEntities)
 		{
 			DrawableSprite sprite = mSprite.get(e);
-			MapPosition position = mPosition.get(e);
+			StagePosition position = mPosition.get(e);
 			PerformerEmote emote = mEmotion.get(e);
 		
 			//Gdx.app.debug(TAG, "Current entity being rendered: " + e.getComponent(Name.class).entityName);

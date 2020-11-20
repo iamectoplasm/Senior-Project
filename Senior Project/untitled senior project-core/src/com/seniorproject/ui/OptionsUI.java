@@ -71,26 +71,7 @@ public class OptionsUI extends Window
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
-				SequenceAction changeScreen = new SequenceAction();
-				Action fadeIn = Actions.fadeIn(0.5f);
-				fadeIn.setActor(FadeOverlay.getInstance().getOverlay());
-				
-				changeScreen.addAction(fadeIn);
-				changeScreen.addAction(Actions.run(new Runnable()
-				{
-					@Override
-					public void run()
-					{
-						PerformanceScreen screen = SeniorProject.performanceScreen;
-						screen.fadeOutOfScreen();
-						
-						SeniorProject game = (SeniorProject) Gdx.app.getApplicationListener();
-						game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
-					}
-				}));
-				
-				returnToScene.getStage().getRoot().addAction(changeScreen);
-				returnToScene.getParent().setVisible(false);
+				SeniorProject.performanceScreen.fadeToNewScreen(ScreenType.MAIN_MENU_SCREEN);
 			}
 		});
 	}

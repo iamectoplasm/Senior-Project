@@ -5,7 +5,7 @@ import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.Bag;
 import com.seniorproject.components.Active;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.StagePosition;
 
 public class ZSortSystem extends EntitySystem
 {
@@ -13,7 +13,7 @@ public class ZSortSystem extends EntitySystem
 	public ZSortSystem()
 	{
 		super(Aspect.all(Active.class,
-				MapPosition.class));
+				StagePosition.class));
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class ZSortSystem extends EntitySystem
 		for(int i = 0; i < getEntities().size(); i++)
 		{
 			Entity e = getEntities().get(i);
-			if(e.getComponent(MapPosition.class).mapZIndex == index)
+			if(e.getComponent(StagePosition.class).mapZIndex == index)
 			{
 				bag.add(e);
 			}

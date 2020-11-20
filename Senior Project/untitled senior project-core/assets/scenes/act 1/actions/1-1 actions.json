@@ -1,12 +1,16 @@
 {
 "sceneSetup":
+{
+	"actorSetup":
 	[
-		//{"actor": "FIRST_WITCH", "startPosition": {"x": 8, "y": 11}, "stageLayer": "MAIN_STAGE"},
-		//{"actor": "FIRST_WITCH", "startPosition": {"x": 11, "y": 5}, "stageLayer": "BACKSTAGE"},
 		{"actor": "FIRST_WITCH", "startPosition": {"x": 7, "y": 11}, "stageLayer": "MAIN_STAGE"},
 		{"actor": "SECOND_WITCH", "startPosition": {"x": 12, "y": 12}, "stageLayer": "MAIN_STAGE"},
 		{"actor": "THIRD_WITCH", "startPosition": {"x": 14, "y": 14}, "stageLayer": "MAIN_STAGE"}
 	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [{

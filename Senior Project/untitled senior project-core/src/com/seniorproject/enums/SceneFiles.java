@@ -49,14 +49,7 @@ public enum SceneFiles
 				"scene study/act 1/analysis/1-7 analysis.json",
 				"scene study/act 1/breakdown/1-7 breakdown.json",
 				"scene study/act 1/text/1-7 fulltext.json",
-				"scene study/act 1/translation/1-7 translation.json"),//;
-	
-	ACT1SCENE1_DEMO("scenes/act 1/scripts/1-1 script demo.json",
-			"scenes/act 1/actions/1-1 actions demo.json",
-			"scene study/act 1/analysis/1-1 analysis demo.json",
-			"scene study/act 1/breakdown/1-1 breakdown demo.json",
-			"scene study/act 1/text/1-1 fulltext demo.json",
-			"scene study/act 1/translation/1-1 translation demo.json"),
+				"scene study/act 1/translation/1-7 translation.json"),
 	
 	ACT1SCENE3_DEMO("scenes/act 1/scripts/1-3 script demo.json",
 			"scenes/act 1/actions/1-3 actions demo.json",
@@ -65,26 +58,33 @@ public enum SceneFiles
 			"scene study/act 1/text/1-3 fulltext demo.json",
 			"scene study/act 1/translation/1-3 translation demo.json"),
 	
-	ACT1SCENE4_DEMO("scenes/act 1/scripts/1-4 script demo.json",
-			"scenes/act 1/actions/1-4 actions demo.json",
-			"scene study/act 1/analysis/1-4 analysis demo.json",
-			"scene study/act 1/breakdown/1-4 breakdown demo.json",
-			"scene study/act 1/text/1-4 fulltext demo.json",
-			"scene study/act 1/translation/1-4 translation demo.json"),
+	ACT2SCENE1(	"scenes/act 2/scripts/2-1 script.json",
+				"scenes/act 2/actions/2-1 actions.json",
+			"scene study/act 2/analysis/2-1 analysis.json",
+			"scene study/act 2/breakdown/2-1 breakdown.json",
+			"scene study/act 2/text/2-1 fulltext.json",
+			"scene study/act 2/translation/2-1 translation.json"),
 	
-	ACT1SCENE5_DEMO("scenes/act 1/scripts/1-5 script demo.json",
-			"scenes/act 1/actions/1-5 actions demo.json",
-			"scene study/act 1/analysis/1-5 analysis demo.json",
-			"scene study/act 1/breakdown/1-5 breakdown demo.json",
-			"scene study/act 1/text/1-5 fulltext demo.json",
-			"scene study/act 1/translation/1-5 translation demo.json"),
+	ACT2SCENE2(	"scenes/act 2/scripts/2-2 script.json",
+				"scenes/act 2/actions/2-2 actions.json",
+		"scene study/act 2/analysis/2-2 analysis.json",
+		"scene study/act 2/breakdown/2-2 breakdown.json",
+		"scene study/act 2/text/2-2 fulltext.json",
+		"scene study/act 2/translation/2-2 translation.json"),
 	
-	ACT2SCENE1_DEMO("scenes/act 2/scripts/2-1 script demo.json",
-			"scenes/act 2/actions/2-1 actions demo.json",
-			"scene study/act 2/analysis/2-1 analysis demo.json",
-			"scene study/act 2/breakdown/2-1 breakdown demo.json",
-			"scene study/act 2/text/2-1 fulltext demo.json",
-			"scene study/act 2/translation/2-1 translation demo.json");
+	ACT2SCENE3(	"scenes/act 2/scripts/2-3 script.json",
+				"scenes/act 2/actions/2-3 actions.json",
+		"scene study/act 2/analysis/2-3 analysis.json",
+		"scene study/act 2/breakdown/2-3 breakdown.json",
+		"scene study/act 2/text/2-3 fulltext.json",
+		"scene study/act 2/translation/2-3 translation.json"),
+	
+	ACT2SCENE4(	"scenes/act 2/scripts/2-4 script.json",
+				"scenes/act 2/actions/2-4 actions.json",
+		"scene study/act 2/analysis/2-4 analysis.json",
+		"scene study/act 2/breakdown/2-4 breakdown.json",
+		"scene study/act 2/text/2-4 fulltext.json",
+		"scene study/act 2/translation/2-4 translation.json");
 	
 	private String scriptFile;
 	private String actionsFile;
