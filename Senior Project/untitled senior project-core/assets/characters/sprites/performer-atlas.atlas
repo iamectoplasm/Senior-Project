@@ -6,106 +6,127 @@ filter: Nearest,Nearest
 repeat: none
 angus
   rotate: false
-  xy: 1822, 2
+  xy: 1822, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 banquo
   rotate: false
-  xy: 652, 2
+  xy: 652, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 donalbain
   rotate: false
-  xy: 392, 2
+  xy: 392, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 duncan
   rotate: false
-  xy: 1692, 2
+  xy: 1692, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 first-witch
   rotate: false
-  xy: 1432, 2
+  xy: 1432, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
-lady-macbeth
+first-witch-disappear
   rotate: false
   xy: 2, 2
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+lady-macbeth
+  rotate: false
+  xy: 2, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 lennox
   rotate: false
-  xy: 1172, 2
+  xy: 1172, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 macbeth
   rotate: false
-  xy: 262, 2
+  xy: 262, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 macduff
   rotate: false
-  xy: 912, 2
+  xy: 912, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 malcolm
   rotate: false
-  xy: 132, 2
+  xy: 132, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 messenger
   rotate: false
-  xy: 522, 2
+  xy: 522, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 ross
   rotate: false
-  xy: 782, 2
+  xy: 782, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 second-witch
   rotate: false
-  xy: 1562, 2
+  xy: 1562, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
+second-witch-disappear
+  rotate: false
+  xy: 132, 2
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
 sergeant
   rotate: false
-  xy: 1302, 2
+  xy: 1302, 68
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 third-witch
   rotate: false
-  xy: 1042, 2
+  xy: 1042, 68
   size: 128, 128
   orig: 128, 128
+  offset: 0, 0
+  index: -1
+third-witch-disappear
+  rotate: false
+  xy: 262, 2
+  size: 128, 64
+  orig: 128, 64
   offset: 0, 0
   index: -1

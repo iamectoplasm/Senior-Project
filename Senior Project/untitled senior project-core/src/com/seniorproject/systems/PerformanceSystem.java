@@ -8,13 +8,14 @@ import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.StageDirections;
 import com.seniorproject.components.Active;
+import com.seniorproject.components.DrawableSprite;
 import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.Position;
+import com.seniorproject.components.MapPosition;
 import com.seniorproject.components.Velocity;
-import com.seniorproject.components.MovementState.State;
 import com.seniorproject.configs.PerformConfig.ActionToPerform;
+import com.seniorproject.enums.State;
 import com.seniorproject.game.EmoticonAtlas;
 import com.seniorproject.maps.StageMap;
 
@@ -25,11 +26,13 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	//private StageMap map;
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<Position> mPosition;
+	ComponentMapper<MapPosition> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
 	ComponentMapper<StageDirections> mStageDirections;
 	ComponentMapper<PerformerEmote> mEmotion;
+	
+	ComponentMapper<DrawableSprite> mSprite;
 	
 	ComponentMapper<Name> mName;
 
@@ -37,7 +40,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				Position.class,
+				MapPosition.class,
 				Velocity.class,
 				MovementState.class,
 				StageDirections.class,
@@ -79,9 +82,11 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		Position position = mPosition.get(entityId);
+		MapPosition position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		StageDirections stageDirections = mStageDirections.get(entityId);
+		
+		DrawableSprite sprite = mSprite.get(entityId);
 		
 		//Name name = mName.get(entityId);
 		
@@ -118,6 +123,10 @@ public class PerformanceSystem extends IntervalIteratingSystem
 					
 					//Gdx.app.debug(TAG, "\t\tTo direction " + stageDirections.currentStageDirection.getDirection());
 					
+					break;
+					
+				case DISAPPEAR:
+					movementState.currentState = State.DISAPPEAR;
 					break;
 					
 				default:

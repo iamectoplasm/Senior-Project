@@ -3,29 +3,23 @@ package com.seniorproject.components;
 import java.util.Hashtable;
 
 import com.artemis.Component;
-import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.configs.AnimationConfig;
+import com.seniorproject.enums.AnimationType;
 
 public class MovementAnimation extends Component
 {
-	public Hashtable<AnimationType, Animation> animations = new Hashtable<AnimationType, Animation>();
+	public Hashtable<AnimationType, WalkAnimation> animations = new Hashtable<AnimationType, WalkAnimation>();
 	//public float animationTimer = 0.0f;
 	public boolean playWalkAnim = false;
 	
 	public int frameWidth = 32;
 	public int frameHeight = 32;
-
-	public static enum AnimationType
-	{
-		WALK_LEFT, WALK_RIGHT, WALK_UP, WALK_DOWN,
-		
-		REFACE_LEFT, REFACE_RIGHT, REFACE_UP, REFACE_DOWN
-	}
 	
-	public static class Animation
+	public Hashtable<AnimationType, Animation<TextureRegion>> otherAnimations = new Hashtable<AnimationType, Animation<TextureRegion>>();
+	
+	public static class WalkAnimation
 	{
 		private int currentFrameIndex;
 		private Array<TextureRegion> frames;
@@ -34,7 +28,7 @@ public class MovementAnimation extends Component
 		private float refaceFrameDuration;
 		private float frameTime;
 		
-		public Animation(Array<TextureRegion> keyFrames, float velocity)
+		public WalkAnimation(Array<TextureRegion> keyFrames, float velocity)
 		{
 			frames = keyFrames;
 			currentFrameIndex = 0;

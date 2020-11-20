@@ -1,0 +1,178 @@
+{
+"sceneIntro":
+	{
+		"title": "Act 1 Scene 3",
+		"backgroundImage": "dark-heath-exterior",
+		"setting": "A wasteland. Thunder rumbles in the distance.",
+		"description": ["Having won in their battle against Irish and Norwegian raiders- and Scottish rebels-",
+		"Macbeth and Banquo head home, but on their way they stumble into a prophecy that sets the play in motion..."]
+	},
+
+"script":
+	[
+	 	{
+	 		"lineID": 1,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 So foul and fair a day I have not seen."}]
+	 	},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 How far is 't called to Forres? What are these"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 So withered, and so wild in their attire,"}]
+	 	},
+	 	{
+			"lineID": 4,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 That look not like the inhabitants o' the earth"}]
+		},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And yet are on 't? Live you? Or are you aught"}]
+	 	},
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That man may question?"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Speak, if you can. What are you?"}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 All hail, Macbeth! Hail to thee, Thane of Glamis!"}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 All hail, Macbeth! Hail to thee, Thane of Cawdor!"}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 All hail, Macbeth, that shalt be King hereafter!"}]
+	 	},
+	 	{
+	 		"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Are ye fantastical, or that indeed"}]
+	 	},
+	 	{
+	 		"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Which outwardly ye show? My noble partner"}]
+	 	},
+	 	{
+	 		"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 You greet with present grace and great prediction"}]
+	 	},
+	 	{
+	 		"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 That he seems rapt withal. To me you speak not."}]
+	 	},
+	 	{
+	 		"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Speak then to me, who neither beg nor fear"}]
+	 	},
+	 	{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Banquo", "text": "\u2022 Your favors nor your hate."}]
+		},
+	 	{
+	 		"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Lesser than Macbeth, and greater."}]
+	 	},
+	 	{
+	 		"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second witch", "text": "\u2022 Not so happy, yet much happier."}]
+	 	},
+	 	{
+	 		"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Thou shalt get kings, though thou be none."}]
+	 	},
+	 	{
+	 		"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 So all hail, Macbeth and Banquo!"}]
+	 	},
+	 	{
+	 		"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stay, you imperfect speakers, tell me more."}]
+	 	},
+	 	{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 By Sinel's death I know I am Thane of Glamis,"}]
+		},
+	 	{
+	 		"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But how of Cawdor? The Thane of Cawdor lives,"}]
+	 	},
+	 	{
+	 		"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 A prosperous gentleman, and to be King"}]
+	 	},
+	 	{
+	 		"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stands not within the prospect of belief,"}]
+	 	},
+	 	{
+	 		"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 No more than to be Cawdor. Say from whence"}]
+	 	},
+	 	{
+	 		"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 You owe this strange intelligence? or why"}]
+	 	},
+	 	{
+	 		"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Upon this blasted heath you stop our way"}]
+	 	},
+	 	{
+	 		"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 With such prophetic greeting? Speak, I charge you."}]
+	 	},
+	 	{
+	 		"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 The earth hath bubbles as the water has,"}]
+	 	},
+	 	{
+	 		"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And these are of them. Whither are they vanished?"}]
+	 	},
+	 	{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Into the air; and what seemed corporal melted"}]
+		},
+	 	{
+	 		"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As breath into the wind. Would they had stay'd!"}]
+	 	}]
+}

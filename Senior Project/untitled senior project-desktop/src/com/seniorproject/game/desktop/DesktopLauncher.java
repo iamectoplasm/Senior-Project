@@ -16,6 +16,7 @@ public class DesktopLauncher
 		config.useGL30 = false;	// This lets us use OpenGL 2.0 
 		config.width = 800;
 		config.height = 600;
+		config.resizable = false;
 		config.x = 20;
 		config.y = 20;
 		

@@ -109,6 +109,48 @@ THIRD_WITCH
   orig: 80, 80
   offset: 0, 0
   index: -1
+arial-12pt
+  rotate: false
+  xy: 1, 1259
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 1, 745
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-16pt
+  rotate: false
+  xy: 515, 1259
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-18pt
+  rotate: false
+  xy: 1, 231
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-20pt
+  rotate: false
+  xy: 515, 745
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-24pt
+  rotate: false
+  xy: 1029, 1259
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
 blue-name-label
   rotate: false
   xy: 259, 213
@@ -150,47 +192,5 @@ text-scrollpane-white
   split: 16, 16, 16, 16
   pad: 12, 20, 12, 16
   orig: 256, 64
-  offset: 0, 0
-  index: -1
-arial-12pt
-  rotate: false
-  xy: 1, 1259
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-14pt
-  rotate: false
-  xy: 1, 745
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-16pt
-  rotate: false
-  xy: 515, 1259
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-18pt
-  rotate: false
-  xy: 1, 231
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-20pt
-  rotate: false
-  xy: 515, 745
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-24pt
-  rotate: false
-  xy: 1029, 1259
-  size: 512, 512
-  orig: 512, 512
   offset: 0, 0
   index: -1

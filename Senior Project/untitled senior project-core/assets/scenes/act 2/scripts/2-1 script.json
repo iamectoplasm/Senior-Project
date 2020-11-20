@@ -1,334 +1,340 @@
 {
-"cast": ["Banquo", "Fleance", "Macbeth", "Servant"],
+"sceneIntro":
+	{
+		"title": "Act 2 Scene 1",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-How goes the night, boy?"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 How goes the night, boy?"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Fleance", "text": "-The moon is down, I have not heard the clock."}]
+	 		"line": [{"actor": "Fleance", "text": "\u2022 The moon is down, I have not heard the clock."}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": true,
-	 		"line": [{"actor": "Banquo", "text": "-And she goes down at 12."},
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And she goes down at 12."},
 	 				 {"actor": "Fleance", "text": "I take 't 'tis later, sir."}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Hold, take my sword. There's husbandry in Heaven,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Hold, take my sword. There's husbandry in Heaven,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Their candles are all out. Take thee that too."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Their candles are all out. Take thee that too."}]
 	 	},
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-A heavy summons lies like lead upon me,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 A heavy summons lies like lead upon me,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-And yet I would not sleep. Merciful powers,"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 And yet I would not sleep. Merciful powers,"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Restrain me in the cursed thoughts that nature"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Restrain me in the cursed thoughts that nature"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Gives way to in repose! Give me my sword."}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Gives way to in repose! Give me my sword."}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "Banquo", "text": "-Who's there?"}]
+	 		"line": [{"actor": "Banquo", "text": "\u2022 Who's there?"}]
 	 	},
 		{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-A friend."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 A friend."}]
 		},
 		{
 			"lineID": 12,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-What, sir, not yet at rest? The King's abed."}]
+			"line": [{"actor": "Banquo", "text": "\u2022 What, sir, not yet at rest? The King's abed."}]
 		},
 		{
 			"lineID": 13,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-He hath been in unusual pleasure, and"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 He hath been in unusual pleasure, and"}]
 		},
 		{
 			"lineID": 14,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-Sent forth great largess to your offices."}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Sent forth great largess to your offices."}]
 		},
 		{
 			"lineID": 15,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-This diamond he greets your wife withal,"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 This diamond he greets your wife withal,"}]
 		},
 		{
 			"lineID": 16,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-By the name of most kind hostess, and shut up"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 By the name of most kind hostess, and shut up"}]
 		},
 		{
 			"lineID": 17,
 			"sharedLine": true,
-			"line": [{"actor": "Banquo", "text": "-In measureless content."},
+			"line": [{"actor": "Banquo", "text": "\u2022 In measureless content."},
 					 {"actor": "Macbeth", "text": "Being unprepared,"}]
 		},
 		{
 			"lineID": 18,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Our will became the servant to defect,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Our will became the servant to defect,"}]
 		},
 		{
 			"lineID": 19,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-Which else should free have wrought."},
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which else should free have wrought."},
 					 {"actor": "Banquo", "text": "All's well."}]
 		},
 		{
 			"lineID": 20,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-I dreamed last night of the three weird sisters."}]
+			"line": [{"actor": "Banquo", "text": "\u2022 I dreamed last night of the three weird sisters."}]
 		},
 		{
 			"lineID": 21,
 			"sharedLine": true,
-			"line": [{"actor": "Banquo", "text": "-To you they have showed some truth."},
+			"line": [{"actor": "Banquo", "text": "\u2022 To you they have showed some truth."},
 					 {"actor": "Macbeth", "text": "I think not of them."}]
 		},
 		{
 			"lineID": 22,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Yet when we can entreat an hour to serve,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Yet when we can entreat an hour to serve,"}]
 		},
 		{
 			"lineID": 23,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-We would spend it in some words upon that business,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 We would spend it in some words upon that business,"}]
 		},
 		{
 			"lineID": 24,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-If you would grant the time."},
+			"line": [{"actor": "Macbeth", "text": "\u2022 If you would grant the time."},
 					 {"actor": "Banquo", "text": "At your kind'st leisure."}]
 		},
 		{
 			"lineID": 25,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-If you shall cleave to my consent, when 'tis,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 If you shall cleave to my consent, when 'tis,"}]
 		},
 		{
 			"lineID": 26,
 			"sharedLine": true,
-			"line": [{"actor": "Macbeth", "text": "-It shall make honor for you."},
+			"line": [{"actor": "Macbeth", "text": "\u2022 It shall make honor for you."},
 					 {"actor": "Banquo", "text": "So I lose none"}]
 		},
 		{
 			"lineID": 27,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-In seeking to augment it, but still keep"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 In seeking to augment it, but still keep"}]
 		},
 		{
 			"lineID": 28,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-My bosom franchised and allegiance clear,"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 My bosom franchised and allegiance clear,"}]
 		},
 		{
 			"lineID": 29,
 			"sharedLine": true,
-			"line": [{"actor": "Banquo", "text": "-I shall be counseled."},
+			"line": [{"actor": "Banquo", "text": "\u2022 I shall be counseled."},
 					 {"actor": "Macbeth", "text": "Good repose the while!"}]
 		},
 		{
 			"lineID": 30,
 			"sharedLine": false,
-			"line": [{"actor": "Banquo", "text": "-Thanks, sir. The like to you!"}]
+			"line": [{"actor": "Banquo", "text": "\u2022 Thanks, sir. The like to you!"}]
 		},
 		{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Go bid thy mistress, when my drink is ready,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Go bid thy mistress, when my drink is ready,"}]
 		},
 		{
 			"lineID": 32,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-She strike upon the bell. Get thee to bed."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 She strike upon the bell. Get thee to bed."}]
 		},
 		{
 			"lineID": 33,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Is this a dagger which I see before me,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Is this a dagger which I see before me,"}]
 		},
 		{
 			"lineID": 34,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-The handle toward my hand? Come, let me clutch thee."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The handle toward my hand? Come, let me clutch thee."}]
 		},
 		{
 			"lineID": 35,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-I have thee not, and yet I see thee still."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 I have thee not, and yet I see thee still."}]
 		},
 		{
 			"lineID": 36,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Thou art not, fatal vision, sensible"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou art not, fatal vision, sensible"}]
 		},
 		{
 			"lineID": 37,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-To feeling as to sight? Or art thou but"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 To feeling as to sight? Or art thou but"}]
 		},
 		{
 			"lineID": 38,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-A dagger of the mind, a false creation,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 A dagger of the mind, a false creation,"}]
 		},
 		{
 			"lineID": 39,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Proceeding from the heat-oppressed brain?"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Proceeding from the heat-oppressed brain?"}]
 		},
 		{
 			"lineID": 40,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-I see thee yet, in form as palpable"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 I see thee yet, in form as palpable"}]
 		},
 		{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-As this which now I draw."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 As this which now I draw."}]
 		},
 		{
 			"lineID": 42,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Thou marshal'st me the way that I was going,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou marshal'st me the way that I was going,"}]
 		},
 		{
 			"lineID": 43,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-And such an instrument I was to use."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And such an instrument I was to use."}]
 		},
 		{
 			"lineID": 44,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Mine eyes are made the fools o' the other senses,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Mine eyes are made the fools o' the other senses,"}]
 		},
 		{
 			"lineID": 45,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Or else worth all the rest. I see thee still,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Or else worth all the rest. I see thee still,"}]
 		},
 		{
 			"lineID": 46,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-And on thy blade and dudgeon gouts of blood,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And on thy blade and dudgeon gouts of blood,"}]
 		},
 		{
 			"lineID": 47,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Which was not so before. There's no such thing."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which was not so before. There's no such thing."}]
 		},
 		{
 			"lineID": 48,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-It is the bloody business which informs"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 It is the bloody business which informs"}]
 		},
 		{
 			"lineID": 49,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Thus to mine eyes. Now o'er the one half-world"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thus to mine eyes. Now o'er the one half-world"}]
 		},
 		{
 			"lineID": 50,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Nature seems dead, and wicked dreams abuse"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Nature seems dead, and wicked dreams abuse"}]
 		},
 		{
 			"lineID": 51,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-The curtained sleep. Witchcraft celebrates"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 The curtained sleep. Witchcraft celebrates"}]
 		},
 		{
 			"lineID": 52,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Pale Hecate's offerings, and withered murder,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Pale Hecate's offerings, and withered murder,"}]
 		},
 		{
 			"lineID": 53,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Alarumed by his sentinel, the wolf,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Alarumed by his sentinel, the wolf,"}]
 		},
 		{
 			"lineID": 54,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Whose howl 's his watch, thus with his stealthy pace,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whose howl 's his watch, thus with his stealthy pace,"}]
 		},
 		{
 			"lineID": 55,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-With Tarquin's ravishing strides, toward his design"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 With Tarquin's ravishing strides, toward his design"}]
 		},
 		{
 			"lineID": 56,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Moves like a ghost. Thou sure and firm-set earth,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Moves like a ghost. Thou sure and firm-set earth,"}]
 		},
 		{
 			"lineID": 57,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Hear not my steps, which way they walk, for fear"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hear not my steps, which way they walk, for fear"}]
 		},
 		{
 			"lineID": 58,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Thy very stones prate of my whereabout,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thy very stones prate of my whereabout,"}]
 		},
 		{
 			"lineID": 59,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-And take the present horror from the time,"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 And take the present horror from the time,"}]
 		},
 		{
 			"lineID": 60,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Which now suits with it. Whiles I threat, he lives."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which now suits with it. Whiles I threat, he lives."}]
 		},
 		{
 			"lineID": 61,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Words to the heat of deeds too cold breath gives."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Words to the heat of deeds too cold breath gives."}]
 		},
 		{
 			"lineID": 62,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-I go, and it is done. The bell invites me."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 I go, and it is done. The bell invites me."}]
 		},
 		{
 			"lineID": 63,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-Hear it not, Duncan, for it is a knell"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hear it not, Duncan, for it is a knell"}]
 		},
 		{
 			"lineID": 64,
 			"sharedLine": false,
-			"line": [{"actor": "Macbeth", "text": "-That summons thee to Heaven, or to Hell."}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 That summons thee to Heaven, or to Hell."}]
 		}
 	 ]
 }

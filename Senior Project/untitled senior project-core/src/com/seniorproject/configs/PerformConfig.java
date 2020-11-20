@@ -4,28 +4,38 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementState;
+import com.seniorproject.components.PropComponent;
 import com.seniorproject.enums.CharacterName;
+import com.seniorproject.enums.Prop;
 import com.seniorproject.enums.StageLayer;
+import com.seniorproject.enums.State;
 import com.seniorproject.game.EmoticonAtlas;;
 
 public class PerformConfig
 {
 	//private static final String TAG = ActionsConfig.class.getSimpleName();
 	
-	private Array<Setup> sceneSetup;
+	//private Array<SceneSetup> sceneSetup;
+	private Setup sceneSetup;
 	private Array<ActionsForLine> lineActions;
 	
 	public PerformConfig()
 	{
-		this.sceneSetup = new Array<Setup>();
+		//this.sceneSetup = new Array<SceneSetup>();
+		this.sceneSetup = new Setup();
 		this.lineActions = new Array<ActionsForLine>();
 	}
 	
-	public Array<Setup> getSceneSetup()
-	{ return sceneSetup; }
+	public Setup getSetup()
+	{
+		return sceneSetup;
+	}
+	
+	//public Array<SceneSetup> getSceneSetup()
+	//{ return sceneSetup; }
 
-	public void setSceneSetup(Array<Setup> sceneSetup)
-	{ this.sceneSetup = sceneSetup; }
+	//public void setSceneSetup(Array<SceneSetup> sceneSetup)
+	//{ this.sceneSetup = sceneSetup; }
 
 	public Array<ActionsForLine> getActionsForLine()
 	{ return lineActions; }
@@ -35,11 +45,33 @@ public class PerformConfig
 	
 	public static class Setup
 	{
+		private Array<ActorSetup> actorSetup;
+		private Array<PropSetup> propSetup;
+		
+		public Setup()
+		{
+			actorSetup = new Array<ActorSetup>();
+			propSetup = new Array<PropSetup>();
+		}
+		
+		public Array<ActorSetup> getActorSetup()
+		{
+			return actorSetup;
+		}
+		
+		public Array<PropSetup> getPropSetup()
+		{
+			return propSetup;
+		}
+	}
+	
+	public static class ActorSetup
+	{
 		private CharacterName actor;
 		private Vector2 startPosition;
 		private StageLayer stageLayer;
 		
-		public Setup()
+		public ActorSetup()
 		{
 			actor = CharacterName.SERGEANT;
 			startPosition = new Vector2(0, 0);
@@ -69,14 +101,31 @@ public class PerformConfig
 		}
 	}
 	
+	public static class PropSetup
+	{
+		private Prop prop;
+		
+		public PropSetup()
+		{
+			prop = null;
+		}
+		
+		public Prop getProp()
+		{
+			return prop;
+		}
+	}
+	
 	public static class ActionsForLine
 	{
 		private int lineID;
 		private Array<ActionsForPerformer> actorActions;
+		private Array<ActionsForProp> propActions;
 		
 		public ActionsForLine()
 		{
 			this.actorActions = new Array<ActionsForPerformer>();
+			this.propActions = new Array<ActionsForProp>();
 		}
 		
 		public int getLineID()
@@ -90,6 +139,11 @@ public class PerformConfig
 		
 		public void setActiondForPerformer(Array<ActionsForPerformer> blocking)
 		{ this.actorActions = blocking; }
+		
+		public Array<ActionsForProp> getActionsForProp()
+		{
+			return propActions;
+		}
 		
 	}
 	
@@ -134,31 +188,42 @@ public class PerformConfig
 		//}
 	}
 	
+	public static class ActionsForProp
+	{
+		private Prop prop;
+		private Array<ActionForProp> actions;
+		
+		public ActionsForProp()
+		{
+			this.prop = null;
+			this.actions = new Array<ActionForProp>();
+		}
+		
+		public Prop getProp()
+		{ return prop; }
+		
+		public Array<ActionForProp> getActions()
+		{ return actions; }
+	}
+	
 	public static class ActionToPerform
 	{
-		private MovementState.State action;
-		private int tiles;
+		private State action;
 		private MovementDirection.Direction direction;
 		private Vector2 destination;
 		
 		public ActionToPerform()
 		{
-			this.action = MovementState.State.IDLE;
+			this.action = State.IDLE;
 			this.direction = MovementDirection.Direction.DOWN;
 			this.destination = new Vector2();
 		}
 		
-		public MovementState.State getAction()
+		public State getAction()
 		{ return action; }
 		
-		public void setAction(MovementState.State action)
+		public void setAction(State action)
 		{ this.action = action; }
-		
-		public int getTiles()
-		{ return tiles; }
-		
-		public void setTiles(int tiles)
-		{ this.tiles = tiles; }
 		
 		public MovementDirection.Direction getDirection()
 		{ return direction; }
@@ -174,6 +239,26 @@ public class PerformConfig
 		public void setDestination(Vector2 destination)
 		{
 			this.destination = destination;
+		}
+	}
+	
+	public static class ActionForProp
+	{
+		private PropComponent.PropAction action;
+		private Vector2 location;
+		
+		public ActionForProp()
+		{
+			this.action = null;
+			this.location = new Vector2();
+		}
+		
+		public PropComponent.PropAction getAction()
+		{ return action; }
+		
+		public Vector2 getLocation()
+		{
+			return location;
 		}
 	}
 }

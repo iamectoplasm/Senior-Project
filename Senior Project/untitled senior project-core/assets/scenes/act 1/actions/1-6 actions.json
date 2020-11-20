@@ -1,5 +1,7 @@
 {
 "sceneSetup":
+{
+	"actorSetup":
 	[
 		{"actor": "DUNCAN", "startPosition": {"x": 12, "y": 25}, "stageLayer": "MAIN_STAGE"},
 		{"actor": "BANQUO", "startPosition": {"x": 11, "y": 26}, "stageLayer": "MAIN_STAGE"},
@@ -15,6 +17,9 @@
 		{"actor": "LADY_MACBETH", "startPosition": {"x": 12, "y": 9}, "stageLayer": "BACKSTAGE"}
 		//{"actor": "LADY_MACBETH", "startPosition": {"x": 12, "y": 8}, "stageLayer": "BACKSTAGE"}
 	],
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [{
@@ -22,6 +27,7 @@
 	"actorActions":
 	[{
 		"actor": "DUNCAN",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (12, 25)
@@ -55,6 +61,10 @@
 	"lineID": 2,
 	"actorActions":
 	[{
+		"actor": "DUNCAN",
+		"emote": "SPEECH"
+	},
+	{
 		"actor": "MALCOLM",
 		"actions":
 		[
@@ -87,6 +97,7 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (13, 15)
@@ -126,16 +137,48 @@
 		]
 	 }]
 },
-{ "lineID": 4 },
-{ "lineID": 5 },
-{ "lineID": 6 },
-{ "lineID": 7 },
-{ "lineID": 8 },
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	 }]
+},
+{ "lineID": 5,
+"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	 }]
+},
+{ "lineID": 6,
+"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	 }]
+},
+{ "lineID": 7,
+"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	 }]
+},
+{ "lineID": 8,
+"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	 }]
+},
 {
 	"lineID": 9,
 	"actorActions":
 	[{
 		"actor": "BANQUO",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (8, 10)
@@ -177,6 +220,7 @@
 	},
 	{
 		"actor": "DUNCAN",
+		"emote": "SPEECH",
 		"actions":
 		[
 			// starts at (15, 14)
@@ -222,8 +266,20 @@
 		]
 	}]
 },
-{ "lineID": 12 },
-{ "lineID": 13 },
+{ "lineID": 12,
+"actorActions":
+	[{
+		"actor": "DUNCAN",
+		"emote": "SPEECH"
+	 }]
+},
+{ "lineID": 13,
+"actorActions":
+	[{
+		"actor": "DUNCAN",
+		"emote": "SPEECH"
+	 }]
+},
 { "lineID": 14 },
 { "lineID": 15 },
 {

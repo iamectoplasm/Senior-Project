@@ -1,0 +1,56 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"arial-12pt": {
+		"file": "fonts/arial-12pt.fnt"
+	},
+	"arial-14pt": {
+		"file": "fonts/arial-14pt.fnt"
+	},
+	"arial-16pt": {
+		"file": "fonts/arial-16pt.fnt"
+	},
+	"arial-18pt": {
+		"file": "fonts/arial-18pt.fnt"
+	},
+	"arial-20pt": {
+		"file": "fonts/arial-20pt.fnt"
+	},
+	"arial-24pt": {
+		"file": "fonts/arial-24pt.fnt"
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"lightGrey": {
+		"r": 0.7527451,
+		"g": 0.7527451,
+		"b": 0.7527451,
+		"a": 1
+	},
+	"medGrey": {
+		"r": 0.5,
+		"g": 0.5,
+		"b": 0.5,
+		"a": 1
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+	"scene-selection-button": {
+		"up": "scene-selection-button-up",
+		"down": "scene-selection-button-down"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"scene-selection-button": {
+		"font": "arial-18pt",
+		"fontColor": "black",
+		"up": "scene-selection-button-up",
+		"down": "scene-selection-button-down"
+	}
+}
+}

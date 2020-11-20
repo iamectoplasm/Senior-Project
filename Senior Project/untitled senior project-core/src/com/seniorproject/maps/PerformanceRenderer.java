@@ -43,7 +43,7 @@ public class PerformanceRenderer
 		mapRenderer.getBatch().setProjectionMatrix(PerformanceScreen.camera.combined);
 		
 		Bag<Entity> backstageEntities = world.getSystem(ZSortSystem.class).getEntitiesByZIndex(StageLayer.BACKSTAGE.getZIndex());
-		world.getSystem(RenderSystem.class).subsetRender(backstageEntities);
+		world.getSystem(RenderSystem.class).entitySubsetRender(backstageEntities);
 		
 		mapRenderer.getBatch().begin();
 		for(int i = 0; i < map.baseLayers.getLayers().getCount(); i++)
@@ -53,7 +53,7 @@ public class PerformanceRenderer
 		mapRenderer.getBatch().end();
 		
 		Bag<Entity> upStageLeftEntities = world.getSystem(ZSortSystem.class).getEntitiesByZIndex(StageLayer.UP_STAGE_LEFT.getZIndex());
-		world.getSystem(RenderSystem.class).subsetRender(upStageLeftEntities);
+		world.getSystem(RenderSystem.class).entitySubsetRender(upStageLeftEntities);
 		
 		mapRenderer.getBatch().begin();
 		for(int i = 0; i < map.landingLayers.getLayers().getCount(); i++)
@@ -63,7 +63,7 @@ public class PerformanceRenderer
 		mapRenderer.getBatch().end();
 		
 		Bag<Entity> mainStageEntities = world.getSystem(ZSortSystem.class).getEntitiesByZIndex(StageLayer.MAIN_STAGE.getZIndex());
-		world.getSystem(RenderSystem.class).subsetRender(mainStageEntities);
+		world.getSystem(RenderSystem.class).entitySubsetRender(mainStageEntities);
 		
 		mapRenderer.getBatch().begin();
 		for(int i = 0; i < map.balconyLayers.getLayers().getCount(); i++)
@@ -73,13 +73,14 @@ public class PerformanceRenderer
 		mapRenderer.getBatch().end();
 		
 		Bag<Entity> balconyEntities = world.getSystem(ZSortSystem.class).getEntitiesByZIndex(StageLayer.BALCONY.getZIndex());
-		world.getSystem(RenderSystem.class).subsetRender(balconyEntities);
+		world.getSystem(RenderSystem.class).entitySubsetRender(balconyEntities);
 		
 		mapRenderer.getBatch().begin();
 		for(int i = 0; i < map.overlayLayers.getLayers().getCount(); i++)
 		{
 			mapRenderer.renderTileLayer((TiledMapTileLayer) map.overlayLayers.getLayers().get(i));
 		}
+		mapRenderer.renderImageLayer(map.getLightingLayer());
 		mapRenderer.getBatch().end();
 		
 		//shapeRenderer.begin(ShapeType.Filled);

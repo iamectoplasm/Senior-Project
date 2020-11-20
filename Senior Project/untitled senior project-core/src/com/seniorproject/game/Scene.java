@@ -7,11 +7,16 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
+import com.seniorproject.components.DrawableSprite;
+import com.seniorproject.components.MapPosition;
 import com.seniorproject.components.Position;
+import com.seniorproject.components.PropComponent;
 import com.seniorproject.configs.PerformConfig;
 import com.seniorproject.configs.ScriptConfig;
 import com.seniorproject.configs.StudyConfig;
 import com.seniorproject.configs.PerformConfig.ActionsForLine;
+import com.seniorproject.configs.PerformConfig.ActorSetup;
+import com.seniorproject.configs.PerformConfig.PropSetup;
 import com.seniorproject.configs.PerformConfig.Setup;
 import com.seniorproject.configs.ScriptConfig.Line;
 import com.seniorproject.enums.*;
@@ -28,11 +33,17 @@ public class Scene
 	
 	private Hashtable<String, StudyConfig> studyConfigs;
 	private Array<Line> lines;
-	private Array<Setup> sceneSetup;
+	//private Array<SceneSetup> sceneSetup;
+	private Setup sceneSetup;
+	private Array<ActorSetup> actorSetupArray;
+	private Array<PropSetup> propSetupArray;
+	
+	
 	private Array<ActionsForLine> lineActions;
 	
-	private Hashtable<CharacterName, Integer> entityTable;
+	private Hashtable<CharacterName, Integer> performerTable;
 	private Array<Entity> performersInScene;
+	private Array<Entity> propsInScene;
 	
 	public Scene(SceneFiles scene)
 	{
@@ -54,15 +65,22 @@ public class Scene
 		
 		lines = scriptConfig.getScript();
 		
-		sceneSetup = actionsConfig.getSceneSetup();
+		//sceneSetup = actionsConfig.getSceneSetup();
+		sceneSetup = actionsConfig.getSetup();
+		actorSetupArray = sceneSetup.getActorSetup();
+		propSetupArray = sceneSetup.getPropSetup();
+		
 		lineActions = actionsConfig.getActionsForLine();
 		
-		entityTable = new Hashtable<CharacterName, Integer>();
+		performerTable = new Hashtable<CharacterName, Integer>();
 		performersInScene = new Array<Entity>();
+		propsInScene = new Array<Entity>();
 		
-		for(int i = 0; i < sceneSetup.size; i++)
+		//for(int i = 0; i < sceneSetup.size; i++)
+		for(int i = 0; i < actorSetupArray.size; i++)
 		{
-			Setup setup = sceneSetup.get(i);
+			//ActorSetup setup = sceneSetup.get(i);
+			ActorSetup setup = actorSetupArray.get(i);
 			
 			PerformerManager.getInstance();
 			Entity newPerformer = PerformerManager.activatePerformer(setup.getActor());
@@ -73,20 +91,48 @@ public class Scene
 			
 			//Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
 			
-			newPerformer.getComponent(Position.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
-			newPerformer.getComponent(Position.class).resetAllToStarting();
-			newPerformer.getComponent(Position.class).mapZIndex = setup.getStageLayer().getZIndex();
+			newPerformer.getComponent(MapPosition.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
+			newPerformer.getComponent(MapPosition.class).resetAllToStarting();
+			newPerformer.getComponent(MapPosition.class).mapZIndex = setup.getStageLayer().getZIndex();
 			
-			entityTable.put(setup.getActor(), newPerformer.getId());
+			performerTable.put(setup.getActor(), newPerformer.getId());
+		}
+		
+		for(int i = 0; i < propSetupArray.size; i++)
+		{
+			PropSetup setup = propSetupArray.get(i);
+			Entity newProp = PerformerManager.activateProp(setup.getProp());
+			propsInScene.add(newProp);
+			
+			Prop.PropType type = Prop.getPropType(setup.getProp());
+			
+			StageMap map = SeniorProject.performanceScreen.getStageMap();
+			switch(type)
+			{
+			case LIGHTING:
+				map.setLightingLayer(newProp.getComponent(DrawableSprite.class).currentFrame);
+				break;
+			case OBJECT:
+				newProp.getComponent(Position.class).position = new Vector2(50, 50);
+			default:
+				break;
+			}
 		}
 	}
 	
 	public void deactivateEntities()
 	{
-		for(int i = 0; i < sceneSetup.size; i++)
+		//for(int i = 0; i < sceneSetup.size; i++)
+		for(int i = 0; i < actorSetupArray.size; i++)
 		{
-			PerformerManager.deactivatePerformer(sceneSetup.get(i).getActor());
+			//PerformerManager.deactivatePerformer(sceneSetup.get(i).getActor());
+			PerformerManager.deactivatePerformer(actorSetupArray.get(i).getActor());
 			//Gdx.app.debug(TAG, "Performer " + sceneSetup.get(i).getActor().name() + " has been deactivated.");
+		}
+		
+		for(int i = 0; i < propSetupArray.size; i++)
+		{
+			PerformerManager.activateProp(propSetupArray.get(i).getProp());
 		}
 	}
 	
@@ -134,7 +180,7 @@ public class Scene
 	
 	public int getEntityIdByName(CharacterName name)
 	{
-		return entityTable.get(name);
+		return performerTable.get(name);
 	}
 	
 	public Hashtable<String, StudyConfig> getStudyConfigs()

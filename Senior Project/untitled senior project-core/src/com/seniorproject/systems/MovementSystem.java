@@ -12,9 +12,9 @@ import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementDirection.Direction;
 import com.seniorproject.components.MovementState;
-import com.seniorproject.components.MovementState.State;
-import com.seniorproject.components.Position;
+import com.seniorproject.components.MapPosition;
 import com.seniorproject.components.Velocity;
+import com.seniorproject.enums.State;
 import com.seniorproject.maps.StageMap;
 
 public class MovementSystem extends IntervalIteratingSystem
@@ -22,7 +22,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	private final static String TAG = MovementSystem.class.getSimpleName();
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<Position> mPosition;
+	ComponentMapper<MapPosition> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
 	
@@ -32,7 +32,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				Position.class,
+				MapPosition.class,
 				Velocity.class,
 				MovementState.class),
 				(1/60f));
@@ -43,7 +43,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void calculateNextPosition(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		Position position = mPosition.get(entityId);
+		MapPosition position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -81,7 +81,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void move(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		Position position = mPosition.get(entityId);
+		MapPosition position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		Direction currentDirection = direction.currentDirection;
@@ -163,7 +163,7 @@ public class MovementSystem extends IntervalIteratingSystem
 
 	private void completeMove(int entityId)
 	{
-		Position position = mPosition.get(entityId);
+		MapPosition position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -200,7 +200,8 @@ public class MovementSystem extends IntervalIteratingSystem
 		movementState.stateTime += world.getDelta();
 		
 		//if(movementState.stateTime >= State.refaceTime)
-		if(movementState.stateTime >= .15f)
+		//if(movementState.stateTime >= .15f)
+		if(movementState.stateTime >= .2f)
 		{
 			direction.currentDirection = direction.refaceDirection;
 			
@@ -215,7 +216,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementState movementState = mMovementState.get(entityId);
-		Position position = mPosition.get(entityId);
+		MapPosition position = mPosition.get(entityId);
 		
 		if(movementState.refaceRequested)
 		{

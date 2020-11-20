@@ -2,8 +2,12 @@ package com.seniorproject.game;
 
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.scenes.scene2d.Action;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.enums.SceneFiles;
+import com.seniorproject.game.SeniorProject.GameMode;
 import com.seniorproject.game.SeniorProject.ScreenType;
 import com.seniorproject.screens.PerformanceScreen;
 import com.seniorproject.screens.SceneIntroScreen;
@@ -19,9 +23,8 @@ public class SceneManager
 {
 	private static final String TAG = SceneManager.class.getSimpleName();
 	
-	//private static SceneManager instance;
-	
 	private SeniorProject currentGame;
+	private GameMode mode;
 	
 	private int currentLineID;
 	
@@ -41,8 +44,6 @@ public class SceneManager
 	
 	private boolean actorHasChanged;
 	
-	//
-	
 	private ActionsForLine currentLineAction;
 	private World world;
 	
@@ -52,16 +53,39 @@ public class SceneManager
 		this.currentGame = (SeniorProject) Gdx.app.getApplicationListener();
 		
 		this.scenes = new Array<SceneFiles>();
-		scenes.addAll(SceneFiles.ACT1SCENE1,
-				SceneFiles.ACT1SCENE2,
-				SceneFiles.ACT1SCENE3,
-				SceneFiles.ACT1SCENE4,
-				SceneFiles.ACT1SCENE5,
-				SceneFiles.ACT1SCENE6,
-				SceneFiles.ACT1SCENE7);
+	}
+	
+	public void setMode(GameMode mode)
+	{
+		this.mode = mode;
 		
-		//this.currentSceneIndex = 0;
-		this.currentSceneIndex = 1;
+		switch(mode)
+		{
+		case STORY_MODE:
+			scenes.addAll(SceneFiles.ACT1SCENE1,
+					SceneFiles.ACT1SCENE2,
+					SceneFiles.ACT1SCENE3,
+					SceneFiles.ACT1SCENE4,
+					SceneFiles.ACT1SCENE5,
+					SceneFiles.ACT1SCENE6,
+					SceneFiles.ACT1SCENE7);
+			break;
+		case STUDY_MODE:
+			scenes.add(SceneFiles.ACT1SCENE6);
+			break;
+		case DEMO_MODE:
+			//scenes.addAll(SceneFiles.ACT1SCENE1_DEMO,
+					//SceneFiles.ACT1SCENE3_DEMO,
+			//		SceneFiles.ACT1SCENE6);
+			
+			scenes.addAll(SceneFiles.ACT1SCENE3_DEMO,
+					SceneFiles.ACT1SCENE6);
+					//SceneFiles.ACT2SCENE1_DEMO);
+			break;
+		}
+		this.currentSceneIndex = 0;
+		//this.currentSceneIndex = 1;
+		//this.currentSceneIndex = 2;
 		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
@@ -84,7 +108,7 @@ public class SceneManager
 		currentTextDisplay.add(currentLineText.getText());
 		
 		currentLineAction = currentScene.getLineActions().get(0);
-		updateCharacterActions();
+		updatePerformerActions();
 	}
 	
 	public void stepForward()
@@ -93,6 +117,13 @@ public class SceneManager
 		{	
 			currentScene.deactivateEntities();
 			currentSceneIndex += 1;
+			
+			if(currentSceneIndex == scenes.size)
+			{
+				currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				return;
+			}
+			
 			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 			
 			SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
@@ -100,6 +131,35 @@ public class SceneManager
 			
 			currentGame.getScreen().hide();
 			currentGame.setScreen(SeniorProject.sceneIntroScreen);
+			
+			/*
+			SequenceAction performanceFadeOut = new SequenceAction();
+			Action fadeIn = Actions.fadeIn(0.5f);
+			fadeIn.setActor(SeniorProject.performanceScreen.getFadeOverlay());
+			
+			performanceFadeOut.addAction(fadeIn);
+			performanceFadeOut.addAction(Actions.run(new Runnable()
+			{
+				@Override
+				public void run()
+				{
+					currentScene.deactivateEntities();
+					currentSceneIndex += 1;
+					
+					setupNewScene(new Scene(scenes.get(currentSceneIndex)));
+					
+					SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
+					PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
+					
+					currentGame.setScreen(SeniorProject.sceneIntroScreen);
+					
+					SeniorProject.performanceScreen.getFadeOverlay().clear();
+				}
+			}));
+			
+			SeniorProject.performanceScreen.getStage().getRoot().addAction(performanceFadeOut);
+			*/
+			
 		}
 		else
 		{
@@ -131,7 +191,7 @@ public class SceneManager
 		if(sharedLineIndex == 0)
 		{
 			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
-			resetCharacterEmoticons();
+			resetPerformerEmotes();
 			updatePerformance(currentLineID);
 		}
 	}
@@ -192,7 +252,7 @@ public class SceneManager
 	{
 		currentLineAction = currentScene.getLineActionsByID(lineID);
 		
-		updateCharacterActions();
+		updatePerformerActions();
 	}
 	
 	public Scene getCurrentScene()
@@ -232,7 +292,7 @@ public class SceneManager
 		//Gdx.app.debug(TAG, "text displayed array now size " + currentTextDisplay.size);
 	}
 	
-	private void resetCharacterEmoticons()
+	private void resetPerformerEmotes()
 	{
 		for(int i = 0; i < currentScene.getPerformersInScene().size; i++)
 		{
@@ -240,7 +300,7 @@ public class SceneManager
 		}
 	}
 	
-	private void updateCharacterActions()
+	private void updatePerformerActions()
 	{
 		Array<ActionsForPerformer> actionsList = currentLineAction.getActionsForPerformer();
 		

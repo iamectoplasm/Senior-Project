@@ -49,7 +49,42 @@ public enum SceneFiles
 				"scene study/act 1/analysis/1-7 analysis.json",
 				"scene study/act 1/breakdown/1-7 breakdown.json",
 				"scene study/act 1/text/1-7 fulltext.json",
-				"scene study/act 1/translation/1-7 translation.json");
+				"scene study/act 1/translation/1-7 translation.json"),//;
+	
+	ACT1SCENE1_DEMO("scenes/act 1/scripts/1-1 script demo.json",
+			"scenes/act 1/actions/1-1 actions demo.json",
+			"scene study/act 1/analysis/1-1 analysis demo.json",
+			"scene study/act 1/breakdown/1-1 breakdown demo.json",
+			"scene study/act 1/text/1-1 fulltext demo.json",
+			"scene study/act 1/translation/1-1 translation demo.json"),
+	
+	ACT1SCENE3_DEMO("scenes/act 1/scripts/1-3 script demo.json",
+			"scenes/act 1/actions/1-3 actions demo.json",
+			"scene study/act 1/analysis/1-3 analysis demo.json",
+			"scene study/act 1/breakdown/1-3 breakdown demo.json",
+			"scene study/act 1/text/1-3 fulltext demo.json",
+			"scene study/act 1/translation/1-3 translation demo.json"),
+	
+	ACT1SCENE4_DEMO("scenes/act 1/scripts/1-4 script demo.json",
+			"scenes/act 1/actions/1-4 actions demo.json",
+			"scene study/act 1/analysis/1-4 analysis demo.json",
+			"scene study/act 1/breakdown/1-4 breakdown demo.json",
+			"scene study/act 1/text/1-4 fulltext demo.json",
+			"scene study/act 1/translation/1-4 translation demo.json"),
+	
+	ACT1SCENE5_DEMO("scenes/act 1/scripts/1-5 script demo.json",
+			"scenes/act 1/actions/1-5 actions demo.json",
+			"scene study/act 1/analysis/1-5 analysis demo.json",
+			"scene study/act 1/breakdown/1-5 breakdown demo.json",
+			"scene study/act 1/text/1-5 fulltext demo.json",
+			"scene study/act 1/translation/1-5 translation demo.json"),
+	
+	ACT2SCENE1_DEMO("scenes/act 2/scripts/2-1 script demo.json",
+			"scenes/act 2/actions/2-1 actions demo.json",
+			"scene study/act 2/analysis/2-1 analysis demo.json",
+			"scene study/act 2/breakdown/2-1 breakdown demo.json",
+			"scene study/act 2/text/2-1 fulltext demo.json",
+			"scene study/act 2/translation/2-1 translation demo.json");
 	
 	private String scriptFile;
 	private String actionsFile;

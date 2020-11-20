@@ -3,11 +3,13 @@ package com.seniorproject.maps;
 import com.artemis.Entity;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.MapGroupLayer;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapImageLayer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
@@ -33,6 +35,9 @@ public class StageMap
 	MapGroupLayer landingLayers;
 	MapGroupLayer balconyLayers;
 	MapGroupLayer overlayLayers;
+	
+	private TiledMapImageLayer lightingLayer;
+	private TextureRegion clearOverlay;
 	
 	private MapLayer stairsLayer;
 	private MapLayer stageChangeLayer;
@@ -118,6 +123,9 @@ public class StageMap
 			Gdx.app.debug(TAG, "Overlay layers not found for map " + fullMapPath);
 		}
 		
+		this.lightingLayer = (TiledMapImageLayer) tiledMap.getLayers().get(StageLayers.LIGHTING_LAYER);
+		this.clearOverlay = lightingLayer.getTextureRegion();
+		
 		stairsLayer = tiledMap.getLayers().get(StageLayers.STAIRS_OBJECT_LAYER);
 		
 		stairsTriggers = new Array<StairsTrigger>();
@@ -191,5 +199,17 @@ public class StageMap
 	public Array<StairsTrigger> getStairsTriggers()
 	{
 		return stairsTriggers;
+	}
+	
+	public TiledMapImageLayer getLightingLayer()
+	{
+		return lightingLayer;
+	}
+	
+	public void setLightingLayer(TextureRegion overlay)
+	{
+		Gdx.app.debug(TAG, "lighting layer has texture " + lightingLayer.getTextureRegion());
+		
+		lightingLayer.setTextureRegion(overlay);
 	}
 }

@@ -3,12 +3,12 @@ package com.seniorproject.configs;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.components.MovementAnimation;
-import com.seniorproject.components.MovementAnimation.AnimationType;
+import com.seniorproject.enums.AnimationType;
 
 public class AnimationConfig
 {
-	private Array<AnimationData> animationData;
+	private Array<AnimationData> walkAnimationData;
+	private Array<AnimationData> specialAnimationData;
 	private TextureRegion animationTexture;
 
 	/*
@@ -21,12 +21,13 @@ public class AnimationConfig
 	public AnimationConfig()
 	{
 		//this.animationTexture = animationTexture;
-		this.animationData = new Array<AnimationData>();
+		this.walkAnimationData = new Array<AnimationData>();
+		this.specialAnimationData = new Array<AnimationData>();
 	}
 	
 	public static class AnimationData
 	{
-		private MovementAnimation.AnimationType animationType;
+		private AnimationType animationType;
 		private Array<GridPoint2> gridPoints;
 		
 		public AnimationData()
@@ -35,7 +36,7 @@ public class AnimationConfig
 			gridPoints = new Array<GridPoint2>();
 		}
 		
-		public MovementAnimation.AnimationType getAnimationType()
+		public AnimationType getAnimationType()
 		{
 			return animationType;
 		}
@@ -63,9 +64,14 @@ public class AnimationConfig
 	 * 
 	 * = = = = = = = = = = = = = = = = = = = =
 	 */
-	public Array<AnimationData> getAnimationData()
+	public Array<AnimationData> getWalkAnimationData()
 	{
-		return this.animationData;
+		return this.walkAnimationData;
+	}
+	
+	public Array<AnimationData> getSpecialAnimationData()
+	{
+		return this.specialAnimationData;
 	}
 	
 	public TextureRegion getAnimationTexture()

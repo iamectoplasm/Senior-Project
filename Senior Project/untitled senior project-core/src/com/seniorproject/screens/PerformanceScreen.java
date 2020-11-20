@@ -11,9 +11,11 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
@@ -62,8 +64,6 @@ public class PerformanceScreen implements Screen
 	
 	private static PerformanceHUD performanceHUD;
 	
-	//private SpriteBatch performanceBatch;
-	
 	private SceneManager sceneManager;
 	
 	/*
@@ -76,8 +76,6 @@ public class PerformanceScreen implements Screen
 	
 	public PerformanceScreen(SeniorProject currentGame)
 	{
-		//setupViewport(4, 3);
-		
 		PerformanceScreen.camera = new OrthographicCamera();
 		
 		/*
@@ -97,14 +95,10 @@ public class PerformanceScreen implements Screen
 		
 		viewport = new FitViewport(4, 3, camera);
 		
-		//camera.setToOrtho(false, VIEWPORT.viewportWidth, VIEWPORT.viewportHeight);
 		camera.setToOrtho(false, viewport.getWorldWidth(), viewport.getWorldHeight());
 		
-		//camera.zoom = 8f;
 		camera.zoom = 6f;
-		//camera.zoom = 4f;
 		
-		//performanceBatch = new SpriteBatch();
 		this.map = new StageMap("maps/test-map-003.tmx");
 		mapRenderer = new OrthogonalTiledMapRenderer(StageMap.getTiledMap(), StageMap.UNIT_SCALE);
 		
@@ -113,7 +107,7 @@ public class PerformanceScreen implements Screen
 		config.setSystem(new PerformanceSystem(map));
 		config.setSystem(new AnimationSystem());
 		config.setSystem(new EntitySortSystem());
-		config.setSystem(new EmoticonSystem());
+		config.setSystem(new EmoticonTrackingSystem());
 		config.setSystem(new MovementSystem(map));
 		config.setSystem(new CollisionSystem(map));
 		config.setSystem(new ZSortSystem());
@@ -136,6 +130,7 @@ public class PerformanceScreen implements Screen
 		hudCamera.zoom = 1f;
 		
 		performanceHUD = new PerformanceHUD(hudCamera, sceneManager);
+		//performanceHUD.updateStudyUIToNewScene(sceneManager.getCurrentScene());
 		
 		multiplexer = new InputMultiplexer();
 		multiplexer.addProcessor(performanceHUD.getStage());
@@ -149,11 +144,13 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void show()
 	{
+		//Gdx.app.debug(TAG, "In show() method, now clearing fadeOverlay...");
 		fadeOverlay.clear();
 		
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
+		//Gdx.app.debug(TAG, "\tAdding fadeOut action to fadeOverlay");
 		fadeOverlay.addAction(Actions.fadeOut(0.5f));
 		/*
 		 * end of bad code
@@ -163,9 +160,9 @@ public class PerformanceScreen implements Screen
 		
 		camera.position.x = StageMap.getWidth() / 2;
 		camera.position.y = StageMap.getHeight() / 2;
-		//camera.position.y = 0;
 		
 		mapRenderer.setView(camera);
+		performanceHUD.updateStudyUIToNewScene(sceneManager.getCurrentScene());
 	}
 
 	@Override
@@ -197,6 +194,21 @@ public class PerformanceScreen implements Screen
 	{
 		return performanceHUD;
 	}
+	
+	public Image getFadeOverlay()
+	{
+		return this.fadeOverlay;
+	}
+	
+	public Stage getStage()
+	{
+		return stage;
+	}
+	
+	public StageMap getStageMap()
+	{
+		return map;
+	}
 
 	@Override
 	public void pause()
@@ -215,10 +227,12 @@ public class PerformanceScreen implements Screen
 	@Override
 	public void hide()
 	{
+		//Gdx.app.debug(TAG, "In hide() method, clearing fadeOverlay...");
 		fadeOverlay.clear();
 		/*
 		 * 10/25/20 hacking in fade overlay to get screen fades up & running
 		 */
+		//Gdx.app.debug(TAG, "\tAdding fadeIn action to fadeOverlay");
 		fadeOverlay.addAction(Actions.fadeIn(.5f));
 		/*
 		 * end of bad code
@@ -235,7 +249,29 @@ public class PerformanceScreen implements Screen
 	
 	public void fadeOutOfScreen()
 	{
+		fadeOverlay.toFront();
 		fadeOverlay.addAction(Actions.fadeIn(0.5f));
+	}
+	
+	public void fadeToNewScreen(final Screen newScreen)
+	{
+		SequenceAction performanceFadeOut = new SequenceAction();
+		Action fadeIn = Actions.fadeIn(0.5f);
+		fadeIn.setActor(fadeOverlay);
+		
+		performanceFadeOut.addAction(fadeIn);
+		performanceFadeOut.addAction(Actions.run(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				game.setScreen(newScreen);
+				
+				fadeOverlay.clear();
+			}
+		}));
+		
+		stage.getRoot().addAction(performanceFadeOut);
 	}
 	
 	private void setupViewport(int width, int height)
