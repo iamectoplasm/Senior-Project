@@ -1,8 +1,9 @@
 package com.seniorproject.components;
 
 import com.artemis.Component;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.seniorproject.game.EmoticonAtlas;
+import com.seniorproject.assetmanagement.EmoticonAtlas;
 
 public class PerformerEmote extends Component
 {
@@ -14,7 +15,9 @@ public class PerformerEmote extends Component
 	public boolean hasEmote;
 	
 	public EmoticonAtlas.Emoticon emote;
+	
 	public TextureRegion emoticon;
+	public Animation<TextureRegion> animatedEmoticon;
 	
 	public PerformerEmote()
 	{

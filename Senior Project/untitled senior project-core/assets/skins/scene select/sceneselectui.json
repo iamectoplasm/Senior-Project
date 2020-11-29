@@ -25,18 +25,24 @@
 		"g": 0,
 		"b": 0,
 		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
 	"act-back": {
-		"imageUp": "act-back-up",
-		"imageDown": "act-back-down",
-		"imageOver": "act-back-over"
+		"up": "act-back-button-up",
+		"down": "act-back-button-down",
+		"disabled": "act-back-button-disabled"
 	},
 	"act-forward": {
-		"imageUp": "act-forward-up",
-		"imageDown": "act-forward-down",
-		"imageOver": "act-forward-over"
+		"up": "act-forward-button-up",
+		"down": "act-forward-button-down",
+		"disabled": "act-forward-button-disabled"
 	},
 	"exit": {
 		"imageUp": "back-button-up",
@@ -46,9 +52,10 @@
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle": {
 	"scene-button": {
-		"font": "arial-20pt",
-		"fontColor": "black",
-		"up": "scene-label"
+		"font": "arial-16pt",
+		"fontColor": "white",
+		"up": "scene-button",
+		"down": "scene-button-down"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
@@ -56,6 +63,11 @@
 		"font": "arial-20pt",
 		"fontColor": "black",
 		"background": "act-label"
+	},
+	"scene-description": {
+		"font": "arial-14pt",
+		"fontColor": "black",
+		"background": "textbox"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {

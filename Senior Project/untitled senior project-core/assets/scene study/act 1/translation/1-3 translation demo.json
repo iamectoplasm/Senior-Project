@@ -1,41 +1,422 @@
 {
 	"doesDisplayInfoChange": true,
-	"studyText": [
-		"MACBETH",
-		"I have never seen a day that's both so beautiful and so terrible.",
-		"",
-		"BANQUO",
-		"How much longer until we reach Forres? What are these creatures",
-		"that look so old and and bizarre? They don't look like",
-		"they're from Earth, but they're still standing here.",
-		"Are you alive? Can you even answer my questions?",
-		"",
-		"MACBETH",
-		"Talk to us! What are you?",
-		"",
-		"FIRST WITCH",
-		"All hail Macbeth, Thane of Glamis!",
-		"",
-		"SECOND WITCH",
-		"All hail Macbeth, Thane of Cawdor!",
-		"",
-		"THIRD WITCH",
-		"All hail Macbeth, who is going to be King of Scotland!",
-		"",
-		"BANQUO",
-		"are you illusions, or are you really what you seem to be? You’ve greeted my friend",
-		"with honors and talk of a future so glorious that you’ve made him speechless.",
-		"But you don't say anything to me.",
-		"Tell me what's to come for me. I don’t want your favors, and I’m not afraid of your hatred.",
-		"",
-		"FIRST WITCH",
-		"Lesser than Macbeth but also greater",
-		"",
-		"SECOND WITCH",
-		"Less happy then him, but then also happier",
-		"",
-		"THIRD WITCH",
-		"Your children will be kings, though you won't be one.",
-		"So all hail the both of you!"
+	
+	"translationTabInfo":
+	[
+		{
+			"lineID": 1,
+			"text":
+			[
+				"MACBETH",
+				"So foul and fair a day I have not seen.",
+				""
+			],
+			"translation":
+			[
+				"MACBETH",
+				"I have never seen a day that's both so beautiful and so terrible.",
+				""
+			]
+		},
+		{
+			"lineID": 2,
+			"text":
+			[
+				"BANQUO",
+				"How far is't call'd to Forres? What are these"
+			],
+			"translation":
+			[
+				"BANQUO",
+				"How much longer until we reach Forres? And who are these"
+			]
+		},
+		{
+			"lineID": 3,
+			"text":
+			[
+				"So wither'd and so wild in their attire,"
+			],
+			"translation":
+			[
+				"that look so old and and bizarre? They don't look like"
+			]
+		},
+		{
+			"lineID": 4,
+			"text":
+			[
+				"That look not like the inhabitants o' the earth,"
+			],
+			"translation":
+			[
+				"They don't even look like they're from Earth,"
+			]
+		},
+		{
+			"lineID": 5,
+			"text":
+			[
+				"And yet are on't? Live you? or are you aught"
+			],
+			"translation":
+			[
+				"but still they're standing here. Are you alive?"
+			]
+		},
+		{
+			"lineID": 6,
+			"text":
+			[
+				"That man may question?",
+				""
+			],
+			"translation":
+			[
+				"Can you even answer my questions?",
+				""
+			]
+		},
+		{
+			"lineID": 7,
+			"text":
+			[
+				"MACBETH",
+				"Speak, if you can: what are you?",
+				""
+			],
+			"translation":
+			[
+				"MACBETH",
+				"Talk to us! What are you?",
+				""
+			]
+		},
+		{
+			"lineID": 8,
+			"text":
+			[
+				"FIRST WITCH",
+				"All hail, Macbeth! hail to thee, thane of Glamis!",
+				""
+			],
+			"translation":
+			[
+				"FIRST WITCH",
+				"All hail Macbeth, the Thane of Glamis!",
+				""
+			]
+		},
+		{
+			"lineID": 9,
+			"text":
+			[
+				"Second Witch",
+				"All hail, Macbeth, hail to thee, thane of Cawdor!",
+				""
+			],
+			"translation":
+			[
+				"SECOND WITCH",
+				"All hail Macbeth, the Thane of Cawdor!",
+				""
+			]
+		},
+		{
+			"lineID": 10,
+			"text":
+			[
+				"Third Witch",
+				"All hail, Macbeth, thou shalt be king hereafter!",
+				""
+			],
+			"translation":
+			[
+				"THIRD WITCH",
+				"All hail Macbeth, who will soon be King of Scotland!",
+				""
+			]
+		},
+		{
+			"lineID": 11,
+			"text":
+			[
+				"BANQUO",
+				"Are ye fantastical, or that indeed"
+			],
+			"translation":
+			[
+				"BANQUO",
+				"Are we just imagining you? Or are you"
+			]
+		},
+		{
+			"lineID": 12,
+			"text":
+			[
+				"Which outwardly ye show? My noble partner"
+			],
+			"translation":
+			[
+				"actually real? To my friend, Macbeth,"
+			]
+		},
+		{
+			"lineID": 13,
+			"text":
+			[
+				"You greet with present grace and great prediction"
+			],
+			"translation":
+			[
+				"you're giving all of these predictions of greatness"
+			]
+		},
+		{
+			"lineID": 14,
+			"text":
+			[
+				"That he seems rapt withal: to me you speak not."
+			],
+			"translation":
+			[
+				"that he can no longer speak out of amazement. Then you're ignoring me."
+			]
+		},
+		{
+			"lineID": 15,
+			"text":
+			[
+				"Speak then to me, who neither beg nor fear"
+			],
+			"translation":
+			[
+				"Tell me about my future. I'm not begging for any favors,"
+			]
+		},
+		{
+			"lineID": 16,
+			"text":
+			[
+				"Your favours nor your hate.",
+				""
+			],
+			"translation":
+			[
+				"and I'm not afraid of your hate.",
+				""
+			]
+		},
+		{
+			"lineID": 17,
+			"text":
+			[
+				"First Witch",
+				"Lesser than Macbeth, and greater.",
+				""
+			],
+			"translation":
+			[
+				"First Witch",
+				"You'll be lesser than Macbeth... and also greater than him.",
+				""
+			]
+		},
+		{
+			"lineID": 18,
+			"text":
+			[
+				"Second Witch",
+				"Not so happy, yet much happier.",
+				""
+			],
+			"translation":
+			[
+				"Second Witch",
+				"You won't be as happy as him, but you'll end up much happier.",
+				""
+			]
+		},
+		{
+			"lineID": 19,
+			"text":
+			[
+				"Third Witch",
+				"Thou shalt get kings, though thou be none."
+			],
+			"translation":
+			[
+				"Third Witch",
+				"Your sons will be kings, but you won't be one."
+			]
+		},
+		{
+			"lineID": 20,
+			"text":
+			[
+				"So all hail, Macbeth and Banquo!",
+				""
+			],
+			"translation":
+			[
+				"So all hail to the both of you!",
+				""
+			]
+		},
+		{
+			"lineID": 21,
+			"text":
+			[
+				"MACBETH",
+				"Stay, you imperfect speakers, tell me more."
+			],
+			"translation":
+			[
+				"MACBETH",
+				"Wait, you haven't told us everything! Tell me more!"
+			]
+		},
+		{
+			"lineID": 22,
+			"text":
+			[
+				"By Sinel's death I know I am thane of Glamis,"
+			],
+			"translation":
+			[
+				"I inherited the title Thane of Glamis when my father, Sinel, passed away."
+			]
+		},
+		{
+			"lineID": 23,
+			"text":
+			[
+				"But how of Cawdor? the thane of Cawdor lives,"
+			],
+			"translation":
+			[
+				"But how am I the Thane of Cawdor? He's still alive,"
+			]
+		},
+		{
+			"lineID": 24,
+			"text":
+			[
+				"A prosperous gentleman; and to be king"
+			],
+			"translation":
+			[
+				"and doing well for himself. And being king"
+			]
+		},
+		{
+			"lineID": 25,
+			"text":
+			[
+				"Stands not within the prospect of belief,"
+			],
+			"translation":
+			[
+				"isn't even possible for me!"
+			]
+		},
+		{
+			"lineID": 26,
+			"text":
+			[
+				"No more than to be Cawdor. Say from whence"
+			],
+			"translation":
+			[
+				"Nor is it possible for me to be thane of Cawdor. From where"
+			]
+		},
+		{
+			"lineID": 27,
+			"text":
+			[
+				"You owe this strange intelligence? or why"
+			],
+			"translation":
+			[
+				"did you get this strange information? Also, why"
+			]
+		},
+		{
+			"lineID": 28,
+			"text":
+			[
+				"Upon this blasted heath you stop our way"
+			],
+			"translation":
+			[
+				"are you stopping us in the middle of nowhere"
+			]
+		},
+		{
+			"lineID": 29,
+			"text":
+			[
+				"With such prophetic greeting? Speak, I charge you.",
+				""
+			],
+			"translation":
+			[
+				"just to tell us this? Answer me!",
+				""
+			]
+		},
+		{
+			"lineID": 30,
+			"text":
+			[
+				"[The witches vanish]",
+				"",
+				"BANQUO",
+				"The earth hath bubbles as the water has,"
+			],
+			"translation":
+			[
+				"BANQUO",
+				"I think that the land has bubbles like the water does,"
+			]
+		},
+		{
+			"lineID": 31,
+			"text":
+			[
+				"And these are of them. Whither are they vanished?",
+				""
+			],
+			"translation":
+			[
+				"and they were from one of those. Where did they vanish to?",
+				""
+			]
+		},
+		{
+			"lineID": 32,
+			"text":
+			[
+				"MACBETH",
+				"Into the air; and what seemed corporal melted"
+			],
+			"translation":
+			[
+				"MACBETH",
+				"They just vanished into the air. They looked real,"
+			]
+		},
+		{
+			"lineID": 33,
+			"text":
+			[
+				"As breath into the wind. Would they had stay'd!"
+			],
+			"translation":
+			[
+				"but melted into nothing. I wish they had stayed!"
+			]
+		}
 	]
 }

@@ -4,51 +4,44 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-arial-12pt
-  rotate: false
-  xy: 803, 111
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-arial-14pt
-  rotate: false
-  xy: 1317, 111
-  size: 512, 512
-  orig: 512, 512
-  offset: 0, 0
-  index: -1
-main-menu-bg-1
-  rotate: false
-  xy: 803, 625
-  size: 800, 600
-  orig: 800, 600
-  offset: 0, 0
-  index: -1
 barley-hall-study-interior
   rotate: false
-  xy: 1, 23
+  xy: 1, 1
   size: 800, 600
   orig: 800, 600
   offset: 0, 0
   index: -1
 camp-exterior
   rotate: false
-  xy: 803, 1227
+  xy: 803, 1205
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+courtyard-night
+  rotate: false
+  xy: 803, 1
   size: 800, 600
   orig: 800, 600
   offset: 0, 0
   index: -1
 dark-heath-exterior
   rotate: false
-  xy: 1, 1227
+  xy: 1, 1205
   size: 800, 600
   orig: 800, 600
   offset: 0, 0
   index: -1
 heath-exterior
   rotate: false
-  xy: 1, 625
+  xy: 1, 603
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+inverness-exterior
+  rotate: false
+  xy: 803, 603
   size: 800, 600
   orig: 800, 600
   offset: 0, 0
@@ -59,37 +52,58 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+barley-hall-interior
+  rotate: false
+  xy: 1, 1293
+  size: 800, 600
+  orig: 800, 600
+  offset: 0, 0
+  index: -1
+arial-12pt
+  rotate: false
+  xy: 1, 779
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+arial-14pt
+  rotate: false
+  xy: 803, 1381
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
 arial-16pt
   rotate: false
-  xy: 1, 1095
+  xy: 1, 265
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-18pt
   rotate: false
-  xy: 1, 581
+  xy: 1317, 1381
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-20pt
   rotate: false
-  xy: 515, 1095
+  xy: 515, 779
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-24pt
   rotate: false
-  xy: 1, 67
+  xy: 515, 265
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 label-tab
   rotate: false
-  xy: 515, 1059
+  xy: 1, 229
   size: 96, 34
   split: 12, 12, 12, 14
   orig: 96, 34
@@ -97,7 +111,7 @@ label-tab
   index: -1
 scene-label
   rotate: false
-  xy: 1, 1
+  xy: 803, 1315
   size: 64, 64
   split: 16, 16, 16, 16
   orig: 64, 64
@@ -105,7 +119,7 @@ scene-label
   index: -1
 title-label
   rotate: false
-  xy: 1029, 1543
+  xy: 1831, 1829
   size: 64, 64
   split: 16, 17, 16, 18
   pad: 16, 16, 16, 16

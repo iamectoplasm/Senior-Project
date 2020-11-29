@@ -4,9 +4,11 @@ public enum CharacterName
 {
 	ANGUS,
 	BANQUO,
+	CAITHNESS,
 	DONALBAIN,
 	DUNCAN,
 	FLEANCE,
+	GHOST,
 	LADY_MACBETH,
 	LENNOX,
 	MACBETH,

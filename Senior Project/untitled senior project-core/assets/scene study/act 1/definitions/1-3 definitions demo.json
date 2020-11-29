@@ -1,0 +1,133 @@
+{
+	"doesDisplayInfoChange": true,
+	"definitionsTabInfo":
+	[
+		{
+			"lineID": 1,
+			"definitions":
+			[{
+				"term": "",
+				"definition": ""
+			}]
+		},
+		{
+			"lineID": 2,
+			"definitions":
+			[{
+				"term": "Forres",
+				"definition": "A town in the Moray Firth region in Scotland."
+			}]
+		},
+		{
+			"lineID": 3
+		},
+		{
+			"lineID": 4
+		},
+		{
+			"lineID": 5,
+			"definitions":
+			[{
+				"term": "aught",
+				"definition": "An archaic pronoun meaning \"everything, all\" or \"anything at all\""
+			}]
+		},
+		{
+			"lineID": 6
+		},
+		{
+			"lineID": 7
+		},
+		{
+			"lineID": 8,
+			"definitions":
+			[{
+				"term": "hail",
+				"definition": "An archaic interjection used to express acclaim"
+			},
+			{
+				"term": "thane",
+				"definition": "A Scottish feudal lord"
+			},
+			{
+				"term": "Glamis",
+				"definition": "The name of a small village in Scotland, as well as the castle that was built there"
+			}]
+		},
+		{
+			"lineID": 9
+		},
+		{
+			"lineID": 10
+		},
+		{
+			"lineID": 11
+		},
+		{
+			"lineID": 12
+		},
+		{
+			"lineID": 13
+		},
+		{
+			"lineID": 14
+		},
+		{
+			"lineID": 15
+		},
+		{
+			"lineID": 16
+		},
+		{
+			"lineID": 17
+		},
+		{
+			"lineID": 18
+		},
+		{
+			"lineID": 19
+		},
+		{
+			"lineID": 20
+		},
+		{
+			"lineID": 21
+		},
+		{
+			"lineID": 22
+		},
+		{
+			"lineID": 23
+		},
+		{
+			"lineID": 24
+		},
+		{
+			"lineID": 25
+		},
+		{
+			"lineID": 26
+		},
+		{
+			"lineID": 27
+		},
+		{
+			"lineID": 28
+		},
+		{
+			"lineID": 29
+		},
+		{
+			"lineID": 30
+		},
+		{
+			"lineID": 31
+		},
+		{
+			"lineID": 32
+		},
+		{
+			"lineID": 33
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+"sceneIntro":
+	{
+		"title": "Act 2 Scene 2",
+		"backgroundImage": "courtyard-night",
+		"setting": "Court of Macbeth's castle.",
+		"description": ["Nothing of importance happens in this scene. Oh, except for when they murder the king."]
+	},
+
+"script":
+	[
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I have done the deed. Didst thou not hear a noise?"}]
+		},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 2,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 I heard the owl scream and the crickets cry."}]
+		},
+		{
+			"lineID": 3,
+			"sharedLine": true,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Did you not speak?"},
+					 {"actor": "Macbeth", "text": "When?"},
+					 {"actor": "Lady Macbeth", "text": "Now."},
+					 {"actor": "Macbeth", "text": "As I descended?"}]
+		},
+		{
+			"lineID": 4,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Aye."}]
+		},
+		{
+			"lineID": 5,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hark!"}]
+		},
+		{
+			"lineID": 6,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Who lies i' the second chamber?"},
+					 {"actor": "Lady Macbeth", "text": "Donalbain."}]
+		},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 7,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 This is a sorry sight."}]
+		},
+		{
+			"lineID": 8,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 A foolish thought, to say a sorry sight."}]
+		},
+		{
+			"lineID": 9,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 There's one that did laugh in 's sleep, and one cried \"Murder!\""}]
+		},
+		{
+			"lineID": 10,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That they did wake each other. I stood and heard them."}]
+		},
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 But they did say their prayers, and addressed them"}]
+		},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 12,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Again to sleep."},
+					 {"actor": "Lady Macbeth", "text": "There are two lodged together."}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 One cried \"God bless us!\" and \"Amen\" the other,"}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 As they had seen me with these hangman's hands."}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Listening their fear, I could not say \"Amen\""}]
+		},
+		{
+			"lineID": 16,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 When they did say \"God bless us!\""},
+					 {"actor": "Lady Macbeth", "text": "Consider it not so deeply."}]
+		},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 But wherefore could not I pronounce \"Amen\"?"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 I had most need of blessing, and \"Amen\""}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Stuck in my throat."},
+					 {"actor": "Lady Macbeth", "text": "These deeds must not be thought"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 After these ways. So, it will make us mad."}]
+		},
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Methought I heard a voice cry \"Sleep no more!"}]
+		},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Macbeth does murder sleep\" - the innocent sleep,"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Sleep that knits up the raveled sleave of care,"}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The death of each day's life, sore labor's bath,"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Balm of hurt minds, great nature's second course,"}]
+		},
+		{
+			"lineID": 26,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Chief nourisher in life's feast\u2014"},
+					 {"actor": "Lady Macbeth", "text": "What do you mean?"}]
+		},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Still it cried \"Sleep no more!\" to all the house."}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 \"Glamis hath murdered sleep, and therefore Cawdor"}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Shall sleep no more. Macbeth shall sleep no more.\""}]
+		}]
+}

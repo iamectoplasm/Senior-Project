@@ -6,21 +6,16 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.actions.RunnableAction;
-import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.seniorproject.game.AssetLoader;
-import com.seniorproject.game.FadeOverlay;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.GameMode;
 import com.seniorproject.game.SeniorProject.ScreenType;
-import com.seniorproject.screens.ScreenTransitionAction.ScreenTransitionType;
 
 public class MainMenuScreen implements Screen
 {
@@ -76,7 +71,7 @@ public class MainMenuScreen implements Screen
 						game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
 						
 						SceneManager sm = SeniorProject.performanceScreen.getSceneManager();
-						sm.setMode(SeniorProject.currentGameMode);
+						sm.setMode(SeniorProject.currentGameMode, null);
 						SeniorProject.sceneIntroScreen.updateToNextScene(sm.getCurrentScene().getScriptConfigFile());
 					}
 				}));
@@ -124,7 +119,7 @@ public class MainMenuScreen implements Screen
 						game.setScreen(game.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
 						
 						SceneManager sm = SeniorProject.performanceScreen.getSceneManager();
-						sm.setMode(SeniorProject.currentGameMode);
+						sm.setMode(SeniorProject.currentGameMode, null);
 						SeniorProject.sceneIntroScreen.updateToNextScene(sm.getCurrentScene().getScriptConfigFile());
 					}
 				}));

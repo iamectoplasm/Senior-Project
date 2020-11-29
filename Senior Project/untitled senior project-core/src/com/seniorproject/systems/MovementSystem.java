@@ -12,7 +12,7 @@ import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementDirection.Direction;
 import com.seniorproject.components.MovementState;
-import com.seniorproject.components.StagePosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Velocity;
 import com.seniorproject.enums.State;
 import com.seniorproject.maps.StageMap;
@@ -22,7 +22,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	private final static String TAG = MovementSystem.class.getSimpleName();
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<StagePosition> mPosition;
+	ComponentMapper<Position> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
 
@@ -30,7 +30,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				StagePosition.class,
+				Position.class,
 				Velocity.class,
 				MovementState.class),
 				(1/60f));
@@ -39,7 +39,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void calculateNextPosition(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -77,7 +77,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void move(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		Direction currentDirection = direction.currentDirection;
@@ -159,7 +159,7 @@ public class MovementSystem extends IntervalIteratingSystem
 
 	private void completeMove(int entityId)
 	{
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -212,7 +212,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementState movementState = mMovementState.get(entityId);
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		
 		if(movementState.refaceRequested)
 		{

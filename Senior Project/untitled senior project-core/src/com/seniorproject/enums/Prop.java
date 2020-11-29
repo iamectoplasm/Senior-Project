@@ -2,8 +2,11 @@ package com.seniorproject.enums;
 
 public enum Prop
 {
+	CAMP_TABLE(PropType.FURNITURE),
 	GHOST_DAGGER(PropType.OBJECT),
-	SOLILOQUY_LIGHTING(PropType.LIGHTING);
+	SOLILOQUY_LIGHTING(PropType.LIGHTING),
+	DINING_TABLE(PropType.FURNITURE),
+	DINING_CHAIR(PropType.FURNITURE);
 	
 	private PropType type;
 	
@@ -21,10 +24,16 @@ public enum Prop
 	{
 		switch(prop)
 		{
+		case CAMP_TABLE:
+			return PropType.FURNITURE;
 		case GHOST_DAGGER:
 			return PropType.OBJECT;
 		case SOLILOQUY_LIGHTING:
 			return PropType.LIGHTING;
+		case DINING_TABLE:
+			return PropType.FURNITURE;
+		case DINING_CHAIR:
+			return PropType.FURNITURE;
 			default:
 			return null;
 		}

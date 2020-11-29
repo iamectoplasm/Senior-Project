@@ -51,9 +51,11 @@ public class SceneManager
 		this.scenes = new Array<SceneFiles>();
 	}
 	
-	public void setMode(GameMode mode)
+	public void setMode(GameMode mode, SceneFiles requestedScene)
 	{
 		this.mode = mode;
+		
+		scenes.clear();
 		
 		switch(mode)
 		{
@@ -70,29 +72,36 @@ public class SceneManager
 					SceneFiles.ACT2SCENE2,
 					SceneFiles.ACT2SCENE3,
 					SceneFiles.ACT2SCENE4);
+			
+			this.currentSceneIndex = 0;
+			//this.currentSceneIndex = 1;
+			//this.currentSceneIndex = 5;
+			//this.currentSceneIndex = 2;
+			//this.currentSceneIndex = 7;
+			
+			initScene(new Scene(scenes.get(currentSceneIndex)));
+			
 			break;
 		case STUDY_MODE:
-			scenes.add(SceneFiles.ACT1SCENE6);
+			initScene(new Scene(requestedScene));
 			break;
 		case DEMO_MODE:
-			//scenes.addAll(SceneFiles.ACT1SCENE1_DEMO,
-					//SceneFiles.ACT1SCENE3_DEMO,
-			//		SceneFiles.ACT1SCENE6);
-			
 			scenes.addAll(SceneFiles.ACT1SCENE3_DEMO,
-					SceneFiles.ACT1SCENE6);
+					SceneFiles.ACT2SCENE2_DEMO,
+					SceneFiles.ACT3SCENE4_DEMO);
+					//SceneFiles.ACT1SCENE6);
 					//SceneFiles.ACT2SCENE1_DEMO);
+			
+			//this.currentSceneIndex = 0;
+			//this.currentSceneIndex = 1;
+			this.currentSceneIndex = 2;
+			initScene(new Scene(scenes.get(currentSceneIndex)));
+			
 			break;
 		}
-		//this.currentSceneIndex = 0;
-		//this.currentSceneIndex = 1;
-		this.currentSceneIndex = 5;
-		//this.currentSceneIndex = 2;
-		//this.currentSceneIndex = 7;
-		initNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
-	public void initNewScene(Scene scene)
+	public void initScene(Scene scene)
 	{
 		currentScene = scene;
 		currentLineID = 1;
@@ -117,24 +126,45 @@ public class SceneManager
 	
 	public void stepForward()
 	{
-		if(hasReachedLastLine())
-		{	
+		if(hasReachedEndOfScene(currentScene))
+		{
 			currentScene.deactivateEntities();
+			
+			if(mode == GameMode.STUDY_MODE)
+			{
+				currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_SELECT_SCREEN));
+				return;
+			}
+			else
+			{
+				currentSceneIndex += 1;
+				
+				if(currentSceneIndex == scenes.size)
+				{
+					currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				}
+				else
+				{
+					continueToNextScene();
+				}
+			}
+			/*
 			currentSceneIndex += 1;
 			
 			if(currentSceneIndex == scenes.size)
 			{
-				currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				returnToMainMenu();
 				return;
 			}
 			
 			//SeniorProject.performanceScreen.fadeToNewScreen(ScreenType.SCENE_INTRO_SCREEN);
 			currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
 			
-			initNewScene(new Scene(scenes.get(currentSceneIndex)));
+			initScene(new Scene(scenes.get(currentSceneIndex)));
 			
 			SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
 			PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
+			*/
 			
 		}
 		else
@@ -209,6 +239,22 @@ public class SceneManager
 		}
 	}
 	
+	public void endScene(Scene scene)
+	{
+		currentScene.deactivateEntities();
+		currentLineID = 0;
+	}
+	
+	public void continueToNextScene()
+	{
+		currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+		
+		initScene(new Scene(scenes.get(currentSceneIndex)));
+		
+		SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
+		PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
+	}
+	
 	public void updatePerformance(int lineID, boolean lineIsShared)
 	{
 		resetPerformerEmotes();
@@ -228,14 +274,31 @@ public class SceneManager
 		//updatePerformerActions();
 	}
 	
-	public boolean hasReachedLastLine()
+	public boolean hasReachedEndOfScene(Scene scene)
 	{
-		return currentLineID == currentScene.getLines().size;
+		if(currentLineID == scene.getLines().size)
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public void returnToMainMenu()
+	{
+		currentScene.deactivateEntities();
+		currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+		initScene(currentScene);
 	}
 	
 	public boolean lineIsShared()
 	{
 		return lineIsShared;
+	}
+	
+	public int getSharedLineIndex()
+	{
+		return sharedLineIndex;
 	}
 	
 	public boolean actorHasChanged()

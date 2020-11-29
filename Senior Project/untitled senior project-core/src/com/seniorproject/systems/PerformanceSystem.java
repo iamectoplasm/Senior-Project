@@ -6,17 +6,17 @@ import com.artemis.systems.IntervalIteratingSystem;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
+import com.seniorproject.assetmanagement.EmoticonAtlas;
 import com.seniorproject.components.ActionsQueue;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.DrawableSprite;
 import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.StagePosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Velocity;
 import com.seniorproject.configs.PerformConfig.ActionToPerform;
 import com.seniorproject.enums.State;
-import com.seniorproject.game.EmoticonAtlas;
 import com.seniorproject.maps.StageMap;
 
 public class PerformanceSystem extends IntervalIteratingSystem
@@ -24,7 +24,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	//private final static String TAG = PerformanceSystem.class.getSimpleName();
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<StagePosition> mPosition;
+	ComponentMapper<Position> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
 	ComponentMapper<ActionsQueue> mStageDirections;
@@ -38,7 +38,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				StagePosition.class,
+				Position.class,
 				Velocity.class,
 				MovementState.class,
 				ActionsQueue.class,
@@ -52,7 +52,14 @@ public class PerformanceSystem extends IntervalIteratingSystem
 		
 		performerEmote.hasEmote = true;
 		performerEmote.emote = emote;
-		performerEmote.emoticon = EmoticonAtlas.getInstance().getEmoticon(emote);
+		//if(emote.isAnimated())
+		//{
+		//	performerEmote.animatedEmoticon = EmoticonAtlas.getInstance().getAnimatedEmoticon(emote);
+		//}
+		//else
+		//{
+			performerEmote.emoticon = EmoticonAtlas.getInstance().getEmoticon(emote);
+		//}
 	}
 	
 	public void resetCharacterEmotes(int entityId)
@@ -78,7 +85,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		ActionsQueue stageDirections = mStageDirections.get(entityId);
 		

@@ -1,5 +1,6 @@
 package com.seniorproject.maps;
 
+import com.artemis.Aspect;
 import com.artemis.Entity;
 import com.artemis.World;
 import com.artemis.utils.Bag;
@@ -9,6 +10,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.enums.StageLayer;
 import com.seniorproject.screens.PerformanceScreen;
 import com.seniorproject.systems.RenderSystem;

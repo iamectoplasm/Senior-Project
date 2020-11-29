@@ -1,4 +1,4 @@
-package com.seniorproject.game;
+package com.seniorproject.assetmanagement;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -25,9 +25,11 @@ public class PerformerAtlas
 	
 	private TextureRegion angus;
 	private TextureRegion banquo;
+	private TextureRegion caithness;
 	private TextureRegion donalbain;
 	private TextureRegion duncan;
 	private TextureRegion fleance;
+	private TextureRegion ghost;
 	private TextureRegion ladyMacbeth;
 	private TextureRegion lennox;
 	private TextureRegion macbeth;
@@ -60,9 +62,11 @@ public class PerformerAtlas
 		
 		this.angus = atlas.findRegion("angus");
 		this.banquo = atlas.findRegion("banquo");
+		this.caithness = atlas.findRegion("caithness");
 		this.donalbain = atlas.findRegion("donalbain");
 		this.duncan = atlas.findRegion("duncan");
 		this.fleance = atlas.findRegion("fleance");
+		this.ghost = atlas.findRegion("ghost");
 		this.ladyMacbeth = atlas.findRegion("lady-macbeth");
 		this.lennox = atlas.findRegion("lennox");
 		this.macbeth = atlas.findRegion("macbeth");
@@ -94,6 +98,9 @@ public class PerformerAtlas
 			case BANQUO:
 				array.add(banquo);
 				return array;
+			case CAITHNESS:
+				array.add(caithness);
+				return array;
 			case DONALBAIN:
 				array.add(donalbain);
 				return array;
@@ -102,6 +109,9 @@ public class PerformerAtlas
 				return array;
 			case FLEANCE:
 				array.add(fleance);
+				return array;
+			case GHOST:
+				array.add(ghost);
 				return array;
 			case LADY_MACBETH:
 				array.add(ladyMacbeth);

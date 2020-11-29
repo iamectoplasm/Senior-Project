@@ -10,7 +10,8 @@ import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
-import com.seniorproject.components.StagePosition;
+import com.seniorproject.components.Position;
+import com.seniorproject.components.PropComponent;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.BoundingBox;
 import com.seniorproject.components.PerformerEmote;
@@ -21,7 +22,7 @@ public class RenderSystem extends EntitySystem
 	private static final String TAG = RenderSystem.class.getSimpleName();
 	
 	ComponentMapper<DrawableSprite> mSprite;
-	ComponentMapper<StagePosition> mPosition;
+	ComponentMapper<Position> mPosition;
 	ComponentMapper<BoundingBox> mBoundingBox;
 	ComponentMapper<PerformerEmote> mEmotion;
 	
@@ -30,14 +31,13 @@ public class RenderSystem extends EntitySystem
 	Camera camera;
 	//SpriteBatch batch;
 	Batch batch;
+	float delta = 0;
 	
 	public RenderSystem(Camera camera, Batch batch)
 	{
 		super(Aspect.all(Active.class,
 				DrawableSprite.class,
-				StagePosition.class,
-				PerformerEmote.class
-				));
+				Position.class));
 
 		this.camera = camera;
 		this.batch = batch;
@@ -51,6 +51,11 @@ public class RenderSystem extends EntitySystem
 	@Override
 	protected void processSystem()
 	{
+		if(delta >= 5)
+		{
+			delta = 0;
+		}
+		
 //		Bag<Entity> sortedEntities = world.getSystem(EntitySortSystem.class).getSortedEntities();
 //		
 //		for(Entity e: sortedEntities)
@@ -85,7 +90,7 @@ public class RenderSystem extends EntitySystem
 		for(Entity e: sortedEntities)
 		{
 			DrawableSprite sprite = mSprite.get(e);
-			StagePosition position = mPosition.get(e);
+			Position position = mPosition.get(e);
 			PerformerEmote emote = mEmotion.get(e);
 		
 			//Gdx.app.debug(TAG, "Current entity being rendered: " + e.getComponent(Name.class).entityName);
@@ -99,21 +104,58 @@ public class RenderSystem extends EntitySystem
 			
 			batch.begin();
 			batch.draw(sprite.currentFrame,
-					position.currentPosition.x + position.xOffset,
-					position.currentPosition.y + position.yOffset,
-					2,
-					2);
-					//sprite.drawWidth,
-					//sprite.drawHeight);
-			
-			//batch.draw(emote.emoticon, position.currentPosition.x, position.currentPosition.y + 2);
-			batch.draw(emote.emoticon,
-					position.currentPosition.x + position.xOffset,
-					position.currentPosition.y + position.yOffset + 2,
-					2,
-					2);
+					position.currentPosition.x + sprite.xOffset,
+					position.currentPosition.y + sprite.yOffset,
+					//position.currentPosition.x + position.xOffset,
+					//position.currentPosition.y + position.yOffset,
+					//2,
+					//2);
+					sprite.drawWidth,
+					sprite.drawHeight);
 			batch.end();
+			
+			if(Aspect.all(PerformerEmote.class).build(world).isInterested(e))
+			{
+				batch.begin();
+				batch.draw(emote.emoticon,
+						position.currentPosition.x + sprite.xOffset,
+						position.currentPosition.y + sprite.yOffset + 2,
+						2,
+						2);
+				batch.end();
+			}
+			
+			/*
+			if(emote.emote.isAnimated())
+			{
+				delta += world.getDelta();
+				
+				batch.begin();
+				//batch.draw(emote.emoticon, position.currentPosition.x, position.currentPosition.y + 2);
+				batch.draw(emote.animatedEmoticon.getKeyFrame(delta),
+						position.currentPosition.x + position.xOffset,
+						position.currentPosition.y + position.yOffset + 2,
+						2,
+						2);
+				batch.end();
+			}
+			else
+			{
+			*/
+				//batch.begin();
+				//batch.draw(emote.emoticon,
+				//		position.currentPosition.x + position.xOffset,
+				//		position.currentPosition.y + position.yOffset + 2,
+				//		2,
+				//		2);
+				//batch.end();
+			//}
 		}
+	}
+	
+	public void entityEmoteRender(Bag<Entity> bag)
+	{
+		
 	}
 	
 	protected void debugBoundingBox(int entityId)

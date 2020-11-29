@@ -1,6 +1,8 @@
-package com.seniorproject.game;
+package com.seniorproject.assetmanagement;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Animation.PlayMode;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -23,15 +25,27 @@ public class EmoticonAtlas
 	
 	public static enum Emoticon
 	{
-		CONFUSION,
-		DRUNK,
-		NONE,
-		POISON,
-		SINGING,
-		SMILE,
-		SPEECH,
-		SURPRISE,
-		THINKING;
+		CONFUSION(false),
+		DRUNK(true),
+		NONE(false),
+		POISON(true),
+		SINGING(true),
+		SMILE(false),
+		SPEECH(false),
+		SURPRISE(false),
+		THINKING(false);
+		
+		private boolean isAnimated;
+		
+		private Emoticon(boolean isAnimated)
+		{
+			this.isAnimated = isAnimated;
+		}
+		
+		public boolean isAnimated()
+		{
+			return isAnimated;
+		}
 	}
 	
 	private TextureRegion confusion;
@@ -46,6 +60,10 @@ public class EmoticonAtlas
 	private TextureRegion speech;
 	private TextureRegion surprise;
 	private TextureRegion thinking;
+	
+	private Animation<TextureRegion> drunk;
+	private Animation<TextureRegion> poison;
+	private Animation<TextureRegion> singing;
 	
 	private EmoticonAtlas()
 	{
@@ -71,14 +89,19 @@ public class EmoticonAtlas
 		this.speech = atlas.findRegion("speech");
 		this.surprise = atlas.findRegion("surprise");
 		this.thinking = atlas.findRegion("thinking");
+		
+		this.drunk = new Animation<TextureRegion>(.25f, drunk1, drunk2);
+		drunk.setPlayMode(PlayMode.LOOP);
+		this.poison = new Animation<TextureRegion>(.25f, poison1, poison2);
+		poison.setPlayMode(PlayMode.LOOP);
+		
+		this.singing = new Animation<TextureRegion>(.25f, singing1, singing2);
 	}
 	
 	public TextureRegion getEmoticon(Emoticon emote)
 	{
 		switch(emote)
 		{
-		case CONFUSION:
-			return this.confusion;
 		case DRUNK:
 			return this.drunk1;
 		case POISON:
@@ -95,6 +118,21 @@ public class EmoticonAtlas
 			return this.thinking;
 		default:
 			return this.none;
+		}
+	}
+	
+	public Animation<TextureRegion> getAnimatedEmoticon(Emoticon emote)
+	{
+		switch(emote)
+		{
+		case DRUNK:
+			return this.drunk;
+		case POISON:
+			return this.poison;
+		case SINGING:
+			return this.singing;
+			default:
+			return null;
 		}
 	}
 }

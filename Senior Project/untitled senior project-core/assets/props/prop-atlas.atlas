@@ -4,23 +4,37 @@ size: 512,512
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
+camp-table
+  rotate: false
+  xy: 388, 470
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 dagger-75
   rotate: false
-  xy: 388, 436
+  xy: 52, 100
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
-disappear-prop
+dining-chair
   rotate: false
   xy: 2, 2
-  size: 128, 64
-  orig: 128, 64
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+dining-table
+  rotate: false
+  xy: 2, 36
+  size: 48, 80
+  orig: 48, 80
   offset: 0, 0
   index: -1
 soliloquy-overlay
   rotate: false
-  xy: 2, 68
+  xy: 2, 118
   size: 384, 384
   orig: 384, 384
   offset: 0, 0

@@ -16,6 +16,8 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
+import com.seniorproject.assetmanagement.PerformerAtlas;
+import com.seniorproject.assetmanagement.PropAtlas;
 import com.seniorproject.components.*;
 import com.seniorproject.components.MovementAnimation.WalkAnimation;
 import com.seniorproject.configs.AnimationConfig;
@@ -56,7 +58,7 @@ public class EntityFactory
 				.add(MovementAnimation.class)
 				.add(MovementState.class)
 				.add(Name.class)
-				.add(StagePosition.class)
+				.add(Position.class)
 				.add(DrawableSprite.class)
 				.add(Velocity.class)
 				.add(ActionsQueue.class)
@@ -64,6 +66,12 @@ public class EntityFactory
 		
 		PROP(new ArchetypeBuilder()
 				.add(PropComponent.class)
+				.add(Position.class)
+				.add(DrawableSprite.class)
+				.build(world)),
+		
+		EMOTE(new ArchetypeBuilder()
+				.add(PerformerEmote.class)
 				.add(Position.class)
 				.add(DrawableSprite.class)
 				.build(world));
@@ -88,14 +96,15 @@ public class EntityFactory
 	{
 		Entity entity = null;
 		
+		// Create the entity
 		entity = world.createEntity(EntityType.PERFORMER.archetype);
-			
-		entity.getComponent(Name.class).name = character.toString();
 		
+		// Set the entity's name, to make debugging who is who easier
+		entity.getComponent(Name.class).name = character.toString();
 		Gdx.app.debug(TAG, "Name of performer entity being created: " + character.toString() + " with ID " + entity.getId());
 		
+		// Set up the textures
 		//TextureRegion spriteSheet = PerformerAtlas.getInstance().getPerformerTexture(character);
-		
 		Array<TextureRegion> spriteSheets = PerformerAtlas.getInstance().getPerformerTexture(character);
 		TextureRegion spriteSheet = spriteSheets.get(0);
 		if(spriteSheets.size > 1)
@@ -109,9 +118,20 @@ public class EntityFactory
 			Gdx.app.debug(TAG, "spriteSheet for entity " + character.toString() + " is null :(");
 		}
 		
+		// Now set all the basic info that a performer entity will need
+		// Load walk animations
 		entity.getComponent(MovementAnimation.class).animations = loadWalkAnimations(spriteSheet);
+		
+		// Set current frame, otherwise everything dies in a null pointer exception
 		entity.getComponent(DrawableSprite.class).currentFrame = entity.getComponent(MovementAnimation.class).animations.get(AnimationType.WALK_DOWN).getNextStandingFrame();
-		//entity.getComponent(Velocity.class).velocity = .25f;
+		
+		// Sprites are 32 x 32, so to render them properly on the maps we set them to be 2 units high and 2 units wide
+		entity.getComponent(DrawableSprite.class).drawWidth = 2;
+		entity.getComponent(DrawableSprite.class).drawHeight = 2;
+		
+		// We want the sprite to render in the center of each 16 x 16 tile
+		entity.getComponent(DrawableSprite.class).xOffset = -(1/2f);
+		entity.getComponent(DrawableSprite.class).yOffset = (1/4f);
 		entity.getComponent(Velocity.class).speed = Velocity.Speed.MED;
 		
 		//Gdx.app.debug(TAG, "Now calling initBoundingBox on entity " + character.toString());
@@ -120,7 +140,7 @@ public class EntityFactory
 		return entity;
 	}
 	
-	public static Entity getPropEntity(Prop prop)
+	public static Entity createPropEntity(Prop prop)
 	{
 		Entity entity = null;
 		
@@ -135,8 +155,11 @@ public class EntityFactory
 			Gdx.app.debug(TAG, "spriteSheet for entity " + prop.toString() + " is null :(");
 		}
 		entity.getComponent(DrawableSprite.class).currentFrame = propTexture;
+		entity.getComponent(DrawableSprite.class).drawWidth = propTexture.getRegionWidth() / 16;
+		entity.getComponent(DrawableSprite.class).drawHeight = propTexture.getRegionHeight() / 16;
 		
-		entity.getComponent(Position.class).position = new Vector2(50, 50);
+		//entity.getComponent(StagePosition.class).currentPosition = new Vector2(5, 5);
+		//entity.getComponent(StagePosition.class).mapZIndex = 2;
 		
 		switch(Prop.getPropType(prop))
 		{
@@ -224,7 +247,7 @@ public class EntityFactory
 	public static void initBoundingBox(int entityId)
 	{
 		BoundingBox box = world.getEntity(entityId).getComponent(BoundingBox.class);
-		StagePosition position = world.getEntity(entityId).getComponent(StagePosition.class);
+		Position position = world.getEntity(entityId).getComponent(Position.class);
 		
 		box.shapeRenderer = new ShapeRenderer();
 

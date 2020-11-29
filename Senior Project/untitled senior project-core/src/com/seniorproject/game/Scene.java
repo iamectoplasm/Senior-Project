@@ -7,13 +7,17 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
+import com.seniorproject.components.Active;
 import com.seniorproject.components.DrawableSprite;
-import com.seniorproject.components.StagePosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Position;
 import com.seniorproject.components.PropComponent;
+import com.seniorproject.configs.AnalysisConfig;
+import com.seniorproject.configs.DefinitionsConfig;
 import com.seniorproject.configs.PerformConfig;
 import com.seniorproject.configs.ScriptConfig;
 import com.seniorproject.configs.StudyConfig;
+import com.seniorproject.configs.TranslationConfig;
 import com.seniorproject.configs.PerformConfig.ActionsForLine;
 import com.seniorproject.configs.PerformConfig.ActorSetup;
 import com.seniorproject.configs.PerformConfig.PropSetup;
@@ -52,20 +56,22 @@ public class Scene
 		scriptConfig = tempJson.fromJson(ScriptConfig.class, Gdx.files.internal(scene.getScriptFilePath()).read());
 		actionsConfig = tempJson.fromJson(PerformConfig.class, Gdx.files.internal(scene.getActionsFilePath()).read());
 		
-		StudyConfig analysisConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getAnalysisFilePath()).read());
-		StudyConfig breakdownConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getBreakdownFilePath()).read());
+		//StudyConfig analysisConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getAnalysisFilePath()).read());
+		AnalysisConfig analysisConfig = tempJson.fromJson(AnalysisConfig.class, Gdx.files.internal(scene.getAnalysisFilePath()).read());
+		//StudyConfig definitionsConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getBreakdownFilePath()).read());
+		DefinitionsConfig definitionsConfig = tempJson.fromJson(DefinitionsConfig.class, Gdx.files.internal(scene.getBreakdownFilePath()).read());
 		StudyConfig fullTextConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getFullTextFilePath()).read());
-		StudyConfig translationConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getTranslationFilePath()).read());
+		//StudyConfig translationConfig = tempJson.fromJson(StudyConfig.class, Gdx.files.internal(scene.getTranslationFilePath()).read());
+		TranslationConfig translationConfig = tempJson.fromJson(TranslationConfig.class, Gdx.files.internal(scene.getTranslationFilePath()).read());
 		
 		studyConfigs = new Hashtable<String, StudyConfig>();
 		studyConfigs.put("analysis", analysisConfig);
-		studyConfigs.put("breakdown", breakdownConfig);
+		studyConfigs.put("definitions", definitionsConfig);
 		studyConfigs.put("fulltext", fullTextConfig);
 		studyConfigs.put("translation", translationConfig);
 		
 		lines = scriptConfig.getScript();
 		
-		//sceneSetup = actionsConfig.getSceneSetup();
 		sceneSetup = actionsConfig.getSetup();
 		actorSetupArray = sceneSetup.getActorSetup();
 		propSetupArray = sceneSetup.getPropSetup();
@@ -91,9 +97,9 @@ public class Scene
 			
 			//Gdx.app.debug(TAG, "player being started at (" + normalizedStart.x + ", " + normalizedStart.y + ")");
 			
-			newPerformer.getComponent(StagePosition.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
-			newPerformer.getComponent(StagePosition.class).resetAllToStarting();
-			newPerformer.getComponent(StagePosition.class).mapZIndex = setup.getStageLayer().getZIndex();
+			newPerformer.getComponent(Position.class).startingPosition = new Vector2(normalizedStart.x, normalizedStart.y);
+			newPerformer.getComponent(Position.class).resetAllToStarting();
+			newPerformer.getComponent(Position.class).mapZIndex = setup.getStageLayer().getZIndex();
 			
 			performerTable.put(setup.getActor(), newPerformer.getId());
 		}
@@ -101,7 +107,10 @@ public class Scene
 		for(int i = 0; i < propSetupArray.size; i++)
 		{
 			PropSetup setup = propSetupArray.get(i);
-			Entity newProp = PerformerManager.activateProp(setup.getProp());
+			//Entity newProp = PerformerManager.activateProp(setup.getProp());
+			Entity newProp = EntityFactory.createPropEntity(setup.getProp());
+			newProp.edit().add(new Active());
+			
 			propsInScene.add(newProp);
 			
 			Prop.PropType type = Prop.getPropType(setup.getProp());
@@ -113,7 +122,18 @@ public class Scene
 				map.setLightingLayer(newProp.getComponent(DrawableSprite.class).currentFrame);
 				break;
 			case OBJECT:
-				newProp.getComponent(Position.class).position = new Vector2(50, 50);
+				newProp.getComponent(Position.class).currentPosition = new Vector2(1, 1);
+				break;
+			case FURNITURE:
+				Gdx.app.debug(TAG, "Now setting up new prop position: (" + setup.getLocation().x + ", " + setup.getLocation().y + ")");
+				
+				Vector2 normalizedLocation = StageMap.getPositionNormalized(setup.getLocation());
+				
+				newProp.getComponent(Position.class).cellX = (int) normalizedLocation.x;
+				newProp.getComponent(Position.class).cellY = (int) normalizedLocation.y;
+				newProp.getComponent(Position.class).snapToCurrentToCell();
+				
+				newProp.getComponent(Position.class).mapZIndex = setup.getStageLayer().getZIndex();
 			default:
 				break;
 			}
@@ -132,7 +152,7 @@ public class Scene
 		
 		for(int i = 0; i < propSetupArray.size; i++)
 		{
-			PerformerManager.activateProp(propSetupArray.get(i).getProp());
+			PerformerManager.deactivateProp(propSetupArray.get(i).getProp());
 		}
 	}
 	

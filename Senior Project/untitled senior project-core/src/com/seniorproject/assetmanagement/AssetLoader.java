@@ -1,4 +1,4 @@
-package com.seniorproject.game;
+package com.seniorproject.assetmanagement;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;

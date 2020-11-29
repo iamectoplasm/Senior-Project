@@ -11,10 +11,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.configs.StudyConfig;
-import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
+import com.seniorproject.ui.SceneSelectUI;
 
 public class SceneSelectScreen implements Screen
 {

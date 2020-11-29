@@ -1,0 +1,559 @@
+{
+"sceneSetup":
+{
+	"actorSetup":
+	[
+		{"actor": "MACBETH", "startPosition": {"x": 8, "y": 9}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "LADY_MACBETH", "startPosition": {"x": 16, "y": 11}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "LENNOX", "startPosition": {"x": 13, "y": 12}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "ROSS", "startPosition": {"x": 13, "y": 14}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "ANGUS", "startPosition": {"x": 17, "y": 12}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "CAITHNESS", "startPosition": {"x": 17, "y": 14}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "GHOST", "startPosition": {"x": 12, "y": 8}, "stageLayer": "BACKSTAGE"}
+	],
+	
+	"propSetup":
+	[
+		{"prop": "DINING_TABLE", "location": {"x": 14, "y": 16}, "stageLayer": "MAIN_STAGE"},
+		{"prop": "DINING_CHAIR", "location": {"x": 13, "y": 16}, "stageLayer": "UP_STAGE_LEFT"},
+		{"prop": "DINING_CHAIR", "location": {"x": 13, "y": 14}, "stageLayer": "UP_STAGE_LEFT"},
+		{"prop": "DINING_CHAIR", "location": {"x": 14, "y": 13}, "stageLayer": "UP_STAGE_LEFT"},
+		{"prop": "DINING_CHAIR", "location": {"x": 16, "y": 13}, "stageLayer": "UP_STAGE_LEFT"},
+		{"prop": "DINING_CHAIR", "location": {"x": 17, "y": 14}, "stageLayer": "UP_STAGE_LEFT"},
+		{"prop": "DINING_CHAIR", "location": {"x": 17, "y": 16}, "stageLayer": "UP_STAGE_LEFT"}
+	]
+},
+
+"lineActions":
+[
+{
+	"lineID": 1,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Were the graced person of our Banquo present,"
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (8, 9)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11}}
+		]
+	},
+	{
+		"actor": "LADY_MACBETH",
+		"actions":
+		[
+			// starts at (16, 11)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 16, "y": 12}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "LENNOX",
+		"actions":
+		[
+			// starts at (13, 12)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 13}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "ROSS",
+		"actions":
+		[
+			// starts at (13, 14)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 13, "y": 15}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "ANGUS",
+		"actions":
+		[
+			// starts at (17, 12)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 17, "y": 13}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	},
+	{
+		"actor": "CAITHNESS",
+		"actions":
+		[
+			// starts at (17, 14)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 17, "y": 15}},
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	}]
+},
+{
+	"lineID": 2,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Who may I rather challenge for unkindness"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 3,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 Than pity for mischance!"
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "GHOST",
+			"actions":
+			[
+				// starts at (12, 8)
+				{"action": "WALK", "direction": "DOWN", "destination": {"x": 12, "y": 12}},
+				{"action": "WALK", "direction": "RIGHT", "destination": {"x": 14, "y": 12}},
+				{"action": "REFACE", "direction": "DOWN"}
+			]
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",			//"His absence, sir,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "ROSS",			//"\u2022 Lays blame upon his promise. Please 't your Highness"
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	}]
+},
+{
+	"lineID": 5,
+	"actorActions":
+	[{
+		"actor": "ROSS",			//"\u2022 To grace us with your royal company."
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}},
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 9, "y": 12}}
+		]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 46 - 50
+//------------------------------------------------------------
+{
+	"lineID": 6,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 The table's full."
+			"emote": "SURPRISE"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LENNOX",			//"Here is a place reserved, sir."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Where?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "LENNOX",			//"\u2022 Here, my good lord. What is 't that moves your Highness?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 9,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 Which of you have done this?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",			//"What, my good lord?"
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "LENNOX",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Thou canst not say I did it. Never shake"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 51 - 55
+//------------------------------------------------------------
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Thy gory locks at me."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "ROSS",			//"\u2022 Gentlemen, rise. His Highness is not well."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 Sit, worthy friends. My lord is often thus,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 And hath been from his youth. Pray you keep seat;"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 The fit is momentary, upon a thought"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 56 - 60
+//------------------------------------------------------------
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 He will again be well."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 Feed, and regard him not. Are you a man?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Aye, and a bold one, that dare look on that"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 Which might appal the devil."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"Oh, proper stuff!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 61 - 65
+//------------------------------------------------------------
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 This is the very painting of your fear."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 This is the air-drawn dagger which, you said,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"\u2022 Led you to Duncan. Shame itself!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Prithee, see there! Behold! Look! Lo! How say you?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Why, what care I? If thou canst nod, speak too."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 71 - 75
+//------------------------------------------------------------
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 If charnel houses and our graves must send"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Those that we bury back, our monuments"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 27,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 Shall be the maws of kites."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"What, quite unmanned in folly?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 28,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 If I stand here, I saw him."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"Fie, for shame!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "MACBETH",		//"\u2022 Blood hath been shed ere now, i' the olden time,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 76 - 80
+//------------------------------------------------------------
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Ere human statute purged the gentle weal\u2014"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Aye, and since too, murders have been performed"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 32,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Too terrible for the ear. The time has been"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 33,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 That when the brains were out, the man would die,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 34,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 And there an end. But now they rise again,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 81 - 85
+//------------------------------------------------------------
+{
+	"lineID": 35,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 With twenty mortal murders on their crowns,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 36,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 And push us from our stools. This is more strange"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 37,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"\u2022 Than such a murder is."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"My worthy lord,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 38,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"\u2022 Your noble friends do lack you."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"I do forget."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 I have a strange infirmity, which is nothing"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 86 - 90
+//------------------------------------------------------------
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 To those that know me. Come, love and health to all,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "MACBETH",			//"\u2022 Then I'll sit down. Give me some wine, fill full."
+		"emote": "SPEECH"
+	}]
+}]
+}

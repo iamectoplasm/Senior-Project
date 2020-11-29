@@ -2,14 +2,14 @@ package com.seniorproject.configs;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+import com.seniorproject.assetmanagement.EmoticonAtlas;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.PropComponent;
 import com.seniorproject.enums.CharacterName;
 import com.seniorproject.enums.Prop;
 import com.seniorproject.enums.StageLayer;
-import com.seniorproject.enums.State;
-import com.seniorproject.game.EmoticonAtlas;;
+import com.seniorproject.enums.State;;
 
 public class PerformConfig
 {
@@ -105,15 +105,29 @@ public class PerformConfig
 	public static class PropSetup
 	{
 		private Prop prop;
+		private Vector2 location;
+		private StageLayer stageLayer;
 		
 		public PropSetup()
 		{
 			prop = null;
+			this.location = new Vector2();
+			this.stageLayer = StageLayer.BACKSTAGE;
 		}
 		
 		public Prop getProp()
 		{
 			return prop;
+		}
+		
+		public Vector2 getLocation()
+		{
+			return location;
+		}
+		
+		public StageLayer getStageLayer()
+		{
+			return stageLayer;
 		}
 	}
 	

@@ -6,20 +6,20 @@ import com.artemis.systems.IntervalIteratingSystem;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.components.DrawableSprite;
-import com.seniorproject.components.StagePosition;
+import com.seniorproject.components.Position;
 
 public class EmoticonTrackingSystem extends IntervalIteratingSystem
 {
-	public static final String TAG = CollisionSystem.class.getSimpleName();
+	public static final String TAG = EmoticonTrackingSystem.class.getSimpleName();
 
-	protected ComponentMapper<StagePosition> mPosition;
+	protected ComponentMapper<Position> mPosition;
 	protected ComponentMapper<DrawableSprite> mSprite;
 	protected ComponentMapper<PerformerEmote> mEmotion;
 
 	public EmoticonTrackingSystem()
 	{
 		super(Aspect.all(Active.class,
-				StagePosition.class,
+				Position.class,
 				DrawableSprite.class,
 				PerformerEmote.class), (1/60f));
 	}
@@ -33,7 +33,7 @@ public class EmoticonTrackingSystem extends IntervalIteratingSystem
 	protected void updateRenderPosition(int entityId)
 	{
 		PerformerEmote emoticon = mEmotion.get(entityId);
-		StagePosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		//DrawableSprite sprite = mSprite.get(entityId);
 		
 		emoticon.xPos = position.currentPosition.x;

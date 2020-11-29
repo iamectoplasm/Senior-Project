@@ -25,15 +25,26 @@
 //------------------------------------------------------------
 {
 	"lineID": 2,
-	"actorActions":
+	"sharedLineActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "",
+			"emote": "SPEECH",
+			"actions":
+			[
+				{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}}
+			]
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "",
+			"emote": "SPEECH"
+		}]
 	}]
 },
 //------------------------------------------------------------

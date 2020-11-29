@@ -16,8 +16,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.enums.SceneFiles;
-import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.Scene;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
@@ -92,13 +92,12 @@ public class PerformanceHUD implements Screen
 						{
 							dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
 						}
+						if(sceneManager.getSharedLineIndex() == 0)
+						{
+							studyUI.updateStudyTabs();
+						}
 							
 						dialogueUI.setTextDrawInProgress(true);
-					}
-					
-					if(sceneManager.hasReachedLastLine())
-					{
-						
 					}
 				}
 			return true;
