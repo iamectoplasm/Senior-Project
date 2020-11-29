@@ -4,11 +4,11 @@ import com.artemis.Entity;
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.components.StageDirections;
+import com.seniorproject.components.ActionsQueue;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.PropComponent;
 import com.seniorproject.enums.CharacterName;
 import com.seniorproject.enums.Prop;
@@ -44,11 +44,11 @@ public class PerformerManager
 		}
 		
 		props = new Array<Entity>();
-		for(int i = 0; i < Prop.values().length; i++)
-		{
-			props.add(EntityFactory.getPropEntity(Prop.values()[i]));
-			Gdx.app.debug(TAG, "Creating prop " + props.get(props.size - 1).getComponent(PropComponent.class).prop.toString());
-		}
+		//for(int i = 0; i < Prop.values().length; i++)
+		//{
+		//	props.add(EntityFactory.createPropEntity(Prop.values()[i]));
+		//	Gdx.app.debug(TAG, "Creating prop " + props.get(props.size - 1).getComponent(PropComponent.class).prop.toString());
+		//}
 	}
 	
 	public static void setWorld(World setWorld)
@@ -63,7 +63,7 @@ public class PerformerManager
 			if(performers.get(i).getComponent(Name.class).name.equals(name.name()))
 			{
 				performers.get(i).edit().add(new Active());
-				performers.get(i).getComponent(StageDirections.class).resetActionsArray();
+				performers.get(i).getComponent(ActionsQueue.class).resetActionsArray();
 				performers.get(i).getComponent(MovementState.class).resetAll();
 				
 				Gdx.app.debug(TAG, "Performer " + name + " has been activated.");
@@ -82,6 +82,8 @@ public class PerformerManager
 			if(performers.get(i).getComponent(Name.class).name.equals(name.name()))
 			{
 				performers.get(i).edit().remove(Active.class);
+				
+				Gdx.app.debug(TAG, "Performer " + name + " has been deactivated");
 				//performers.get(i).getComponent(Actions.class).resetActionsArray();
 				//performers.get(i).getComponent(MovementState.class).resetAll();
 			}
@@ -114,6 +116,7 @@ public class PerformerManager
 			if(props.get(i).getComponent(PropComponent.class).prop.equals(prop))
 			{
 				props.get(i).edit().remove(Active.class);
+				Gdx.app.debug(TAG, "Prop " + prop + " has been deactivated");
 				//performers.get(i).getComponent(Actions.class).resetActionsArray();
 				//performers.get(i).getComponent(MovementState.class).resetAll();
 			}

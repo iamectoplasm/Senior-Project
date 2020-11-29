@@ -1,67 +1,296 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 3 Scene 6",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lennox", "text": "\u2022 My former speeches have but hit your thoughts,"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Which can interpret further. Only I say"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Things have been strangely borne. The gracious Duncan"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Was pitied of Macbeth. Marry, he was dead."}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 And the right-valiant Banquo walked too late,"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Whom, you may say, if 't please you, Fleance killed,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 For Fleance fled. Men must not walk too late."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Who cannot want the thought how monstrous"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 It was for Malcolm and for Donalbain"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lennox", "text": "\u2022 To kill their gracious father? Damn\u00E8d fact!"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 How it did grieve Macbeth! Did he not straight,"}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 In pious rage, the two delinquents tear"}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 That were the slaves of drink and thralls of sleep?"}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 Was not that nobly done? Aye, and wisely too,"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 For 'twould have angered any heart alive"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 To hear the men deny 't. So that, I say,"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 He has borne all things well. And I do think"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 That had he Duncan's sons under his key\u2014"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 As, an 't please Heaven, he shall not\u2014they should find"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 What 'twere to kill a father. So should Fleance."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 But, peace! For from broad words, and 'cause he failed"}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 His presence at the tyrant's feast, I hear"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 Macduff lives in disgrace. Sir, can you tell"}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": true,
+			"line": [{"actor": "Lennox", "text": "\u2022 Where he bestows himself?"},
+					 {"actor": "Lord", "text": "The son of Duncan,"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 From whom this tyrant holds the due of birth,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Lives in the English Court, and is received"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Of the most pious Edward with such grace"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 That the malevolence of fortune nothing"}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Takes from his high respect. Thither Macduff"}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Is gone to pray the holy King, upon his aid"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 To wake Northumberland and warlike Siward,"}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 That by the help of these, with Him above"}]
+		},
+		{
+			"lineID": 33,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 To ratify the work, we may again"}]
+		},
+		{
+			"lineID": 34,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Give to our tables meat, sleep to our nights,"}]
+		},
+		{
+			"lineID": 35,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Free from our feasts and banquets bloody knives,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Do faithful homage and receive free honors\u2014"}]
+		},
+		{
+			"lineID": 37,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 All which we pine for now. And this report"}]
+		},
+		{
+			"lineID": 38,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 Hath so exasperate the King that he"}]
+		},
+		{
+			"lineID": 39,
+			"sharedLine": true,
+			"line": [{"actor": "Lord", "text": "\u2022 Prepares for some attempt of war."},
+					 {"actor": "Lennox", "text": "Sent he to Macduff?"}]
+		},
+		{
+			"lineID": 40,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 He did. And with an absolute 'Sir, not I,'"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 The cloudy messenger turns me his back,"}]
+		},
+		{
+			"lineID": 42,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 And hums, as who should say 'You'll rue the time"}]
+		},
+		{
+			"lineID": 43,
+			"sharedLine": true,
+			"line": [{"actor": "Lord", "text": "\u2022 That clogs me with this answer.'"},
+					 {"actor": "Lennox", "text": "And that well might"}]
+		},
+		{
+			"lineID": 44,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 Advise him to a caution, to hold what distance"}]
+		},
+		{
+			"lineID": 45,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 His wisdom can provide. Some holy angel"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 Fly to the Court of England and unfold"}]
+		},
+		{
+			"lineID": 47,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 His message ere he come, that a swift blessing"}]
+		},
+		{
+			"lineID": 48,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 May soon return to this our suffering country"}]
+		},
+		{
+			"lineID": 49,
+			"sharedLine": false,
+			"line": [{"actor": "Lennox", "text": "\u2022 Under a hand accursed!"}]
+		},
+		{
+			"lineID": 50,
+			"sharedLine": false,
+			"line": [{"actor": "Lord", "text": "\u2022 I'll send my prayers with him."}]
+		}
+	]
 }

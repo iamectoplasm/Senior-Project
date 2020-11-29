@@ -1,67 +1,209 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 8",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Why should I play the Roman fool, and die"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 On mine own sword? whiles I see lives, the gashes"}]
 	 	},
 	 	{
 	 		"lineID": 3,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Do better upon them."},
+					 {"actor": "Macduff", "text": "Turn, hell-hound, turn!"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Of all men else I have avoided thee:"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But get thee back; my soul is too much charged"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 With blood of thine already."},
+					 {"actor": "Macduff", "text": "I have no words:"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macduff", "text": "\u2022 My voice is in my sword: thou bloodier villain"}]
 	 	},
 	 	{
 	 		"lineID": 8,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Than terms can give thee out!"},
+					 {"actor": "Macbeth", "text": "Thou losest labour:"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As easy mayst thou the intrenchant air"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 With thy keen sword impress as make me bleed:"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Let fall thy blade on vulnerable crests;"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I bear a charmed life, which must not yield,"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To one of woman born."},
+					 {"actor": "Macduff", "text": "Despair thy charm;"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And let the angel whom thou still hast served"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Tell thee, Macduff was from his mother's womb"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Untimely ripp'd."}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Accursed be that tongue that tells me so,"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 For it hath cow'd my better part of man!"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And be these juggling fiends no more believed,"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That palter with us in a double sense;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That keep the word of promise to our ear,"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And break it to our hope. I'll not fight with thee."}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Then yield thee, coward,"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 And live to be the show and gaze o' the time:"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 We'll have thee, as our rarer monsters are,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Painted on a pole, and underwrit,"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 'Here may you see the tyrant.'"},
+					 {"actor": "Macbeth", "text": "I will not yield,"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To kiss the ground before young Malcolm's feet,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And to be baited with the rabble's curse."}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Though Birnam wood be come to Dunsinane,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And thou opposed, being of no woman born,"}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Yet I will try the last. Before my body"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I throw my warlike shield. Lay on, Macduff,"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And damn'd be him that first cries, 'Hold, enough!'"}]
+		}
+	]
 }

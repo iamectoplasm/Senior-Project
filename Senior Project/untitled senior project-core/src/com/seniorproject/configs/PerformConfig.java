@@ -2,53 +2,61 @@ package com.seniorproject.configs;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+import com.seniorproject.assetmanagement.EmoticonAtlas;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.PropComponent;
 import com.seniorproject.enums.CharacterName;
 import com.seniorproject.enums.Prop;
 import com.seniorproject.enums.StageLayer;
-import com.seniorproject.enums.State;
-import com.seniorproject.game.EmoticonAtlas;;
+import com.seniorproject.enums.State;;
 
 public class PerformConfig
 {
 	//private static final String TAG = ActionsConfig.class.getSimpleName();
 	
-	//private Array<SceneSetup> sceneSetup;
-	private Setup sceneSetup;
+	private SceneSetup sceneSetup;
 	private Array<ActionsForLine> lineActions;
+	
+	/*
+	 * = = = = = = = = = = = = = = = = = = = =
+	 * 
+	 * - PerformConfig Constructor
+	 * 
+	 * = = = = = = = = = = = = = = = = = = = =
+	 */
 	
 	public PerformConfig()
 	{
 		//this.sceneSetup = new Array<SceneSetup>();
-		this.sceneSetup = new Setup();
+		this.sceneSetup = new SceneSetup();
 		this.lineActions = new Array<ActionsForLine>();
 	}
 	
-	public Setup getSetup()
+	public SceneSetup getSetup()
 	{
 		return sceneSetup;
 	}
-	
-	//public Array<SceneSetup> getSceneSetup()
-	//{ return sceneSetup; }
-
-	//public void setSceneSetup(Array<SceneSetup> sceneSetup)
-	//{ this.sceneSetup = sceneSetup; }
 
 	public Array<ActionsForLine> getActionsForLine()
-	{ return lineActions; }
-
-	public void setActionsForLine(Array<ActionsForLine> blockingList)
-	{ this.lineActions = blockingList; }
+	{
+		return lineActions;
+	}
 	
-	public static class Setup
+	/*
+	 * = = = = = = = = = = = = = = = = = = = =
+	 * 
+	 * - Setup Classes
+	 * 
+	 * = = = = = = = = = = = = = = = = = = = =
+	 */
+	
+	public static class SceneSetup
 	{
 		private Array<ActorSetup> actorSetup;
 		private Array<PropSetup> propSetup;
 		
-		public Setup()
+		public SceneSetup()
 		{
 			actorSetup = new Array<ActorSetup>();
 			propSetup = new Array<PropSetup>();
@@ -79,46 +87,61 @@ public class PerformConfig
 		}
 		
 		public CharacterName getActor()
-		{ return actor; }
-
-		public void setActor(CharacterName actor)
-		{ this.actor = actor; }
+		{
+			return actor;
+		}
 
 		public Vector2 getStartPosition()
-		{ return startPosition; }
-
-		public void setStartPosition(Vector2 startPosition)
-		{ this.startPosition = startPosition; }
+		{
+			return startPosition;
+		}
 		
 		public StageLayer getStageLayer()
 		{
 			return stageLayer;
-		}
-		
-		public void setStageLayer(StageLayer layer)
-		{
-			this.stageLayer = layer;
 		}
 	}
 	
 	public static class PropSetup
 	{
 		private Prop prop;
+		private Vector2 location;
+		private StageLayer stageLayer;
 		
 		public PropSetup()
 		{
 			prop = null;
+			this.location = new Vector2();
+			this.stageLayer = StageLayer.BACKSTAGE;
 		}
 		
 		public Prop getProp()
 		{
 			return prop;
 		}
+		
+		public Vector2 getLocation()
+		{
+			return location;
+		}
+		
+		public StageLayer getStageLayer()
+		{
+			return stageLayer;
+		}
 	}
 	
+	/*
+	 * = = = = = = = = = = = = = = = = = = = =
+	 * 
+	 * - Actions per line classes
+	 * 
+	 * = = = = = = = = = = = = = = = = = = = =
+	 */
 	public static class ActionsForLine
 	{
 		private int lineID;
+		private Array<SharedLineActions> sharedLineActions;
 		private Array<ActionsForPerformer> actorActions;
 		private Array<ActionsForProp> propActions;
 		
@@ -129,22 +152,52 @@ public class PerformConfig
 		}
 		
 		public int getLineID()
-		{ return lineID; }
+		{
+			return lineID;
+		}
 		
-		public void setLineID(int lineID)
-		{ this.lineID = lineID; }
+		public Array<SharedLineActions> getSharedLineActions()
+		{
+			return sharedLineActions;
+		}
 		
 		public Array<ActionsForPerformer> getActionsForPerformer()
-		{ return actorActions; }
-		
-		public void setActiondForPerformer(Array<ActionsForPerformer> blocking)
-		{ this.actorActions = blocking; }
+		{
+			return actorActions;
+		}
 		
 		public Array<ActionsForProp> getActionsForProp()
 		{
 			return propActions;
 		}
+	}
+	
+	public static class SharedLineActions
+	{
+		private int sharedIndex;
+		private Array<ActionsForPerformer> actorActions;
+		private Array<ActionsForProp> propActions;
 		
+		public SharedLineActions()
+		{
+			this.actorActions = new Array<ActionsForPerformer>();
+			this.propActions = new Array<ActionsForProp>();
+		}
+		
+		public int getSharedIndex()
+		{
+			return sharedIndex;
+		}
+
+		public Array<ActionsForPerformer> getActions()
+		{
+			return actorActions;
+		}
+
+		public Array<ActionsForProp> getPropActions()
+		{
+			return propActions;
+		}
 	}
 	
 	public static class ActionsForPerformer
@@ -156,36 +209,24 @@ public class PerformConfig
 		public ActionsForPerformer()
 		{
 			this.actor = CharacterName.SERGEANT;
-			this.emote = null;
+			this.emote = EmoticonAtlas.Emoticon.NONE;
 			this.actions = new Array<ActionToPerform>();
 		}
 		
 		public CharacterName getActor()
-		{ return actor; }
-		
-		public void setActor(CharacterName actor)
-		{ this.actor = actor; }
-		
-		public Array<ActionToPerform> getActions()
-		{ return actions; }
-		
-		public void setActions(Array<ActionToPerform> directions)
-		{ this.actions = directions; }
+		{
+			return actor;
+		}
 		
 		public EmoticonAtlas.Emoticon getEmoticon()
 		{
 			return emote;
 		}
 		
-		public void setEmoticon(EmoticonAtlas.Emoticon emoticon)
+		public Array<ActionToPerform> getActions()
 		{
-			this.emote = emoticon;
+			return actions;
 		}
-		
-		//public TextureRegion getEmoticonTexture()
-		//{
-		//	return emote.getIcon();
-		//}
 	}
 	
 	public static class ActionsForProp
@@ -200,10 +241,14 @@ public class PerformConfig
 		}
 		
 		public Prop getProp()
-		{ return prop; }
+		{
+			return prop;
+		}
 		
 		public Array<ActionForProp> getActions()
-		{ return actions; }
+		{
+			return actions;
+		}
 	}
 	
 	public static class ActionToPerform
@@ -220,25 +265,18 @@ public class PerformConfig
 		}
 		
 		public State getAction()
-		{ return action; }
-		
-		public void setAction(State action)
-		{ this.action = action; }
+		{
+			return action;
+		}
 		
 		public MovementDirection.Direction getDirection()
-		{ return direction; }
-		
-		public void setDirection(MovementDirection.Direction direction)
-		{ this.direction = direction; }
+		{
+			return direction;
+		}
 		
 		public Vector2 getDestination()
 		{
 			return destination;
-		}
-		
-		public void setDestination(Vector2 destination)
-		{
-			this.destination = destination;
 		}
 	}
 	

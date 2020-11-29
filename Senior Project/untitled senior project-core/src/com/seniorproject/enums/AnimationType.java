@@ -12,6 +12,6 @@ public enum AnimationType
 	REFACE_UP,
 	REFACE_DOWN,
 	
-	BOW,
-	DISAPPEAR;
+	BOW_ANIM,
+	DISAPPEAR_ANIM;
 }

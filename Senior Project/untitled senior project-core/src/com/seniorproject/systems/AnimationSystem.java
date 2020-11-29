@@ -43,7 +43,7 @@ public class AnimationSystem extends IntervalIteratingSystem
 		if(mMovementState.get(entityId).currentState == State.DISAPPEAR)
 		{
 			delta += world.getDelta();
-			sprite.currentFrame = movementAnim.otherAnimations.get(AnimationType.DISAPPEAR).getKeyFrame(delta);
+			sprite.currentFrame = movementAnim.otherAnimations.get(AnimationType.DISAPPEAR_ANIM).getKeyFrame(delta);
 		}
 		else
 		{

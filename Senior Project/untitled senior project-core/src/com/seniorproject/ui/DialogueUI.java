@@ -10,7 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
-import com.seniorproject.game.AssetLoader;
+import com.seniorproject.assetmanagement.AssetLoader;
 
 public class DialogueUI extends Window
 {
@@ -101,7 +101,9 @@ public class DialogueUI extends Window
 	public void updateTextDisplay()
 	{
 		//textDisplay.setScrollY(textDisplay.getHeight());
-		textDisplay.scrollTo(0, 0, 0, 0);
+		textDisplay.layout();
+		//textDisplay.scrollTo(0, 0, 0, 0);
+		textDisplay.setScrollPercentY(100);
 	}
 	
 	public boolean isTextDrawInProgress()

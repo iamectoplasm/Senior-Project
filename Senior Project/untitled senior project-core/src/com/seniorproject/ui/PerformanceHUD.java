@@ -16,12 +16,13 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.enums.SceneFiles;
-import com.seniorproject.game.AssetLoader;
 import com.seniorproject.game.Scene;
 import com.seniorproject.game.SceneManager;
 import com.seniorproject.game.SeniorProject;
 import com.seniorproject.game.SeniorProject.ScreenType;
+import com.seniorproject.screens.ScreenTransitionActor;
 
 public class PerformanceHUD implements Screen
 {
@@ -46,6 +47,8 @@ public class PerformanceHUD implements Screen
 	
 	private DialogueUI sharedLineDialogue;
 	
+	private ScreenTransitionActor transitionActor;
+	
 	public PerformanceHUD(Camera camera, final SceneManager sceneManager)
 	{
 		this.camera = camera;
@@ -53,6 +56,9 @@ public class PerformanceHUD implements Screen
 		this.viewport = new FitViewport(800, 600, this.camera);
 		this.stage = new Stage(viewport);
 		this.sceneManager = sceneManager;
+		
+		//this.transitionActor = new ScreenTransitionActor();
+		//stage.addActor(transitionActor);
 		
 		//this.currentSceneLabel = new Label(sceneManager.getCurrentScene().getSceneTitle(), AssetLoader.STUDY_SKIN, "title-label");
 		this.currentSceneLabel = new Label("Act 0 Scene 0", AssetLoader.STUDY_SKIN, "title-label");
@@ -85,6 +91,10 @@ public class PerformanceHUD implements Screen
 						if(sceneManager.actorHasChanged())
 						{
 							dialogueUI.setNewSpeaker(sceneManager.getCurrentActor());
+						}
+						if(sceneManager.getSharedLineIndex() == 0)
+						{
+							studyUI.updateStudyTabs();
 						}
 							
 						dialogueUI.setTextDrawInProgress(true);

@@ -8,8 +8,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
+import com.seniorproject.assetmanagement.AssetLoader;
+import com.seniorproject.configs.AnalysisConfig;
+import com.seniorproject.configs.DefinitionsConfig;
 import com.seniorproject.configs.StudyConfig;
-import com.seniorproject.game.AssetLoader;
+import com.seniorproject.configs.TranslationConfig;
 import com.seniorproject.game.Scene;
 import com.seniorproject.ui.studytabs.AnalysisTab;
 import com.seniorproject.ui.studytabs.DefinitionsTab;
@@ -30,10 +33,10 @@ public class StudyUI extends Window
 	
 	private Window studyWindow;
 	
-	private TranslationTab translation;
-	private DefinitionsTab definitions;
-	private AnalysisTab analysis;
-	private TextTab fullText;
+	private TranslationTab translationTab;
+	private DefinitionsTab definitionsTab;
+	private AnalysisTab analysisTab;
+	private TextTab fullTextTab;
 	
 	@SuppressWarnings("unchecked")
 	public StudyUI(Scene scene)
@@ -85,12 +88,12 @@ public class StudyUI extends Window
 		this.getCell(studyWindow).fillX();
 		this.pack();
 		
-		translation = new TranslationTab();
-		definitions = new DefinitionsTab();
-		analysis = new AnalysisTab();
-		fullText = new TextTab();
+		translationTab = new TranslationTab();
+		definitionsTab = new DefinitionsTab();
+		analysisTab = new AnalysisTab();
+		fullTextTab = new TextTab();
 		
-		studyWindow.add(translation);
+		studyWindow.add(translationTab);
 	}
 	
 	private void setupTabButtonListeners(final Scene scene)
@@ -115,7 +118,7 @@ public class StudyUI extends Window
                     int button)
 			{
 				studyWindow.clearChildren();
-				studyWindow.add(translation);
+				studyWindow.add(translationTab);
 			}
 		});
 		
@@ -139,7 +142,7 @@ public class StudyUI extends Window
                     int button)
 			{
 				studyWindow.clearChildren();
-				studyWindow.add(definitions);
+				studyWindow.add(definitionsTab);
 			}
 		});
 		
@@ -163,7 +166,7 @@ public class StudyUI extends Window
                     int button)
 			{
 				studyWindow.clearChildren();
-				studyWindow.add(analysis);
+				studyWindow.add(analysisTab);
 			}
 		});
 		
@@ -187,24 +190,34 @@ public class StudyUI extends Window
                     int button)
 			{
 				studyWindow.clearChildren();
-				studyWindow.add(fullText);
+				studyWindow.add(fullTextTab);
 			}
 		});
+	}
+	
+	public void updateStudyTabs()
+	{
+		definitionsTab.stepForward();
+		translationTab.stepForward();
+		analysisTab.stepForward();
 	}
 	
 	public void updateToNewScene(Scene newScene)
 	{
 		StudyConfig text = newScene.getStudyConfigs().get("fulltext");
-		fullText.updateText(text);
+		fullTextTab.updateText(text);
 		
-		StudyConfig definitions = newScene.getStudyConfigs().get("breakdown");
-		this.definitions.updateText(definitions);
+		//StudyConfig definitions = newScene.getStudyConfigs().get("definitions");
+		DefinitionsConfig definitions = (DefinitionsConfig) newScene.getStudyConfigs().get("definitions");
+		this.definitionsTab.updateToNewScene(definitions);
 		
-		StudyConfig analysisConfig = newScene.getStudyConfigs().get("analysis");
-		this.analysis.updateText(analysisConfig);
+		//StudyConfig analysisConfig = newScene.getStudyConfigs().get("analysis");
+		AnalysisConfig analysisConfig = (AnalysisConfig) newScene.getStudyConfigs().get("analysis");
+		this.analysisTab.updateToNewScene(analysisConfig);
 		
-		StudyConfig translationConfig = newScene.getStudyConfigs().get("translation");
-		this.translation.updateText(translationConfig);
+		//StudyConfig translationConfig = newScene.getStudyConfigs().get("translation");
+		TranslationConfig translationConfig = (TranslationConfig) newScene.getStudyConfigs().get("translation");
+		this.translationTab.updateToNewScene(translationConfig);
 	}
 
 }

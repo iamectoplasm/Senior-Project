@@ -1,0 +1,477 @@
+{
+"sceneSetup":
+{
+	"actorSetup":
+	[
+		{"actor": "MACBETH", "startPosition": {"x": 12, "y": 5}, "stageLayer": "BACKSTAGE"},
+		{"actor": "LADY_MACBETH", "startPosition": {"x": 9, "y": 14}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
+
+"lineActions":
+[
+//------------------------------------------------------------
+//					LINES 1 - 5
+//------------------------------------------------------------
+{
+	"lineID": 1,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"I have done the deed. Didst thou not hear a noise?"
+		"emote": "SPEECH",
+		"actions":
+		[
+			// starts at (12, 5)
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 12, "y": 7} }
+		]
+	},
+	{
+		"actor": "LADY_MACBETH",
+		"emote": "SURPRISE",
+		"actions":
+		[
+			// starts at (9, 14)
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 14} },
+			{"action": "REFACE", "direction": "UP"}
+		]
+	}]
+},
+{
+	"lineID": 2,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",			//"I heard the owl scream and the crickets cry."
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "MACBETH",
+		"actions":
+		[
+			// starts at (12, 7)
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 8, "y": 7} }
+		]
+	}]
+},
+{
+	"lineID": 3,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"Did you not speak?"
+			"emote": "SPEECH",
+			"actions":
+			[
+				{"action": "WALK", "direction": "LEFT", "destination": {"x": 9, "y": 14}},
+				{"action": "REFACE", "direction": "UP"}
+			]
+		},
+		{
+			"actor": "MACBETH",
+			"actions":
+			[
+				// starts at (8, 7)
+				{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 11}}
+			]
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",				//"When?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 2,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",		//"Now."
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "MACBETH",
+			"emote": "CONFUSION"
+		}]
+	},
+	{
+		"sharedIndex": 3,
+		"actorActions":
+		[{
+			"actor": "MACBETH",				//"As I descended?"
+			"emote": "SPEECH",
+			"actions":
+			[
+				// starts at (8, 11)
+				{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12} },
+				{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 12} },
+				{"action": "REFACE", "direction": "DOWN"}
+			]
+		},
+		{
+		"actor": "LADY_MACBETH",
+			"actions":
+			[
+				// starts at (12, 13)
+				{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 14} },
+				{"action": "REFACE", "direction": "UP"}
+			]
+		}]
+	}]
+},
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",			//"Aye."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 5,
+	"actorActions":
+	[{
+		"actor": "MACBETH",					//"Hark!"
+		"emote": "SURPRISE",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "LEFT"}
+		]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 6 - 10
+//------------------------------------------------------------
+{
+	"lineID": 6,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"Who lies i' the second chamber?"
+			"emote": "SPEECH",
+			"actions":
+			[
+				{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 11}},
+				{"action": "WALK", "direction": "LEFT", "destination": {"x": 9, "y": 11}}
+			]
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",	//"Donalbain."
+			"emote": "SPEECH",
+			"actions":
+			[
+				{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 12}},
+				{"action": "REFACE", "direction": "LEFT"}
+			]
+		},
+		{
+			"actor": "MACBETH",
+			"actions":
+			[
+				{"action": "REFACE", "direction": "RIGHT"}
+			]
+		}]
+	}]
+},
+{
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"This is a sorry sight."
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 14, "y": 11}},
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 14, "y": 15}}
+		]
+	},
+	{
+			"actor": "LADY_MACBETH",
+			"actions":
+			[
+				{"action": "REFACE", "direction": "RIGHT"}
+			]
+		}]
+},
+{
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",		//"A foolish thought, to say a sorry sight."
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 11, "y": 15}},
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	},
+	{
+		"actor": "MACBETH",
+		"emote": "THINKING"
+	}]
+},
+{
+	"lineID": 9,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"There's one that did laugh in 's sleep, and one cried "Murder!""
+		"emote": "SPEECH"
+	},
+	{
+		"actor": "LADY_MACBETH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 14}},
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 6, "y": 14}},
+			{"action": "WALK", "direction": "UP", "destination": {"x": 6, "y": 11}}
+		]
+	}]
+},
+{
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"That they did wake each other. I stood and heard them."
+		"emote": "SPEECH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "LEFT", "destination": {"x": 12, "y": 15}}
+		]
+	},
+	{
+		"actor": "LADY_MACBETH",
+		"actions":
+		[
+			{"action": "WALK", "direction": "DOWN", "destination": {"x": 6, "y": 14}},
+			{"action": "REFACE", "direction": "RIGHT"}
+		]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 11 - 15
+//------------------------------------------------------------
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"But they did say their prayers, and addressed them"
+		"emote": "THINKING",
+		"actions":
+		[
+			{"action": "REFACE", "direction": "DOWN"}
+		]
+	}]
+},
+{
+	"lineID": 12,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"Again to sleep."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",	//"There are two lodged together."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"One cried "God bless us!" and "Amen" the other,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"As they had seen me with these hangman's hands."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "MACBETH",				//"Listening their fear, I could not say "Amen""
+		"emote": "POISON"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 16 - 20
+//------------------------------------------------------------
+{
+	"lineID": 16,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",			//"When they did say "God bless us!""
+			"emote": "POISON"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",	//"Consider it not so deeply."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 21 - 25
+//------------------------------------------------------------
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 26 - 30
+//------------------------------------------------------------
+{
+	"lineID": 26,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+}]
+}

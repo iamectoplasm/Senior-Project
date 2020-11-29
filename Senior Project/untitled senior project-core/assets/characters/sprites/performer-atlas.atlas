@@ -1,132 +1,335 @@
 
 performer-atlas.png
-size: 2048,256
+size: 2048,512
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
 angus
   rotate: false
-  xy: 1822, 68
+  xy: 1432, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+attendant-f
+  rotate: false
+  xy: 1042, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+attendant-m
+  rotate: false
+  xy: 1172, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 banquo
   rotate: false
-  xy: 652, 68
+  xy: 652, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+caithness
+  rotate: false
+  xy: 522, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+doctor
+  rotate: false
+  xy: 782, 362
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 donalbain
   rotate: false
-  xy: 392, 68
+  xy: 262, 102
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 duncan
   rotate: false
-  xy: 1692, 68
+  xy: 1302, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+first-murderer
+  rotate: false
+  xy: 1302, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 first-witch
   rotate: false
-  xy: 1432, 68
+  xy: 1172, 362
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 first-witch-disappear
   rotate: false
-  xy: 2, 2
+  xy: 2, 36
   size: 128, 64
   orig: 128, 64
   offset: 0, 0
   index: -1
+fleance
+  rotate: false
+  xy: 1302, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+gentlewoman
+  rotate: false
+  xy: 782, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ghost
+  rotate: false
+  xy: 392, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+hecate
+  rotate: false
+  xy: 132, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-1
+  rotate: false
+  xy: 1692, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-2
+  rotate: false
+  xy: 1562, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-3
+  rotate: false
+  xy: 1692, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-4
+  rotate: false
+  xy: 1822, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-5
+  rotate: false
+  xy: 1692, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-6
+  rotate: false
+  xy: 262, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+king-7
+  rotate: false
+  xy: 2, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
 lady-macbeth
   rotate: false
-  xy: 2, 68
+  xy: 132, 362
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lady-macduff
+  rotate: false
+  xy: 522, 102
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 lennox
   rotate: false
-  xy: 1172, 68
+  xy: 912, 362
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 macbeth
   rotate: false
-  xy: 262, 68
+  xy: 262, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
+macbeth-bow
+  rotate: false
+  xy: 2, 2
+  size: 128, 32
+  orig: 128, 32
+  offset: 0, 0
+  index: -1
 macduff
   rotate: false
-  xy: 912, 68
+  xy: 652, 102
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 malcolm
   rotate: false
-  xy: 132, 68
+  xy: 2, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+menteith
+  rotate: false
+  xy: 1562, 362
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 messenger
   rotate: false
-  xy: 522, 68
+  xy: 392, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+old-man
+  rotate: false
+  xy: 1432, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+porter
+  rotate: false
+  xy: 132, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 ross
   rotate: false
-  xy: 782, 68
+  xy: 522, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+second-murderer
+  rotate: false
+  xy: 1432, 362
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 second-witch
   rotate: false
-  xy: 1562, 68
+  xy: 912, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 second-witch-disappear
   rotate: false
-  xy: 132, 2
+  xy: 1822, 296
   size: 128, 64
   orig: 128, 64
   offset: 0, 0
   index: -1
 sergeant
   rotate: false
-  xy: 1302, 68
+  xy: 1042, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+server
+  rotate: false
+  xy: 1562, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+seyton
+  rotate: false
+  xy: 1172, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+siward
+  rotate: false
+  xy: 1042, 102
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+soldier
+  rotate: false
+  xy: 2, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+son
+  rotate: false
+  xy: 652, 232
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+third-murderer
+  rotate: false
+  xy: 392, 102
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 third-witch
   rotate: false
-  xy: 1042, 68
+  xy: 782, 232
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 third-witch-disappear
   rotate: false
-  xy: 262, 2
+  xy: 132, 36
   size: 128, 64
   orig: 128, 64
+  offset: 0, 0
+  index: -1
+young-siward
+  rotate: false
+  xy: 912, 102
+  size: 128, 128
+  orig: 128, 128
   offset: 0, 0
   index: -1

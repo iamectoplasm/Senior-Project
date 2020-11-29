@@ -1,67 +1,903 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 4 Scene 1",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "First Witch", "text": "\u2022 Thrice the brinded cat hath mewed."}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Thrice and once the hedgepig whined."}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Harpier cries \"'Tis time, 'tis time.\""}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Round about the cauldron go."}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 In the poisoned entrails throw."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Toad, that under cold stone"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Days and nights has thirty-one"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Sweltered venom sleeping got,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Boil thou first i' the charm\u00E8d pot."}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "All", "text": "\u2022 Double, double toil and trouble,"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Fire burn and cauldron bubble."}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Fillet of a fenny snake,"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 In the cauldron boil and bake."}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Eye of newt and toe of frog,"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Wool of bat and tongue of dog,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Adder's fork and blindworm's sting,"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Lizard's leg and owlet's wing,"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 For a charm of powerful trouble,"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Like a Hell broth boil and bubble."}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Double, double toil and trouble,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Fire burn and cauldron bubble."}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Scale of dragon, tooth of wolf,"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Witches' mummy, maw and gulf"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Of the ravined salt-sea shark,"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Root of hemlock digged i' the dark,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Liver of blaspheming Jew,"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Gall of goat, and slips of yew"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Silvered in the moon's eclipse,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Nose of Turk and Tartar's lips,"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Finger of birth-strangled babe"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Ditch-delivered by a drab,"}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Make the gruel thick and slab."}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Add thereto a tiger's chaudron,"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 For the ingredients of our cauldron."}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Double, double toil and trouble,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Fire burn and cauldron bubble."}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Cool it with a baboon's blood,"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Then the charm is firm and good."}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Oh, well done! I commend your pains,"}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Hecate", "text": "\u2022 And everyone shall share i' the gains."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Hecate", "text": "\u2022 And now about the cauldron sing"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Live elves and fairies in a ring,"}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Hecate", "text": "\u2022 Enchanting all that you put in."}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 By the pricking of my thumbs,"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Something wicked this way comes."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Open, locks,"}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Whoever knocks!"}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 How now, you secret, black, and midnight hags!"}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 What is 't you do?"},
+	 				 {"actor": "All", "text": "A deed without a name."}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I conjure you, by that which you profess,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Howe'er you come to know it, answer me."}]
+		},
+		{
+			"lineID": 52,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Though you untie the winds and let them fight"}]
+		},
+		{
+			"lineID": 53,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Against the churches; though the yesty waves"}]
+		},
+		{
+			"lineID": 54,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Confound and swallow navigation up;"}]
+		},
+		{
+			"lineID": 55,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Though bladed corn be lodged and trees blown down;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Though castles topple on their warders' heads;"}]
+		},
+		{
+			"lineID": 57,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Though palaces and pyramids do slope"}]
+		},
+		{
+			"lineID": 58,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Their heads to their foundations; though the treasure"}]
+		},
+		{
+			"lineID": 59,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Of nature's germens tumble all together,"}]
+		},
+		{
+			"lineID": 60,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Even till destruction sicken; answer me"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 61 - 65
+	//------------------------------------------------------------
+		{
+			"lineID": 61,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To what I ask you."},
+	 				 {"actor": "First Witch", "text": "Speak."},
+	 				 {"actor": "Second Witch", "text": "Demand."},
+	 				 {"actor": "Third Witch", "text": "We'll answer."}]
+		},
+		{
+			"lineID": 62,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Say, if thou'dst rather hear it from our mouths,"}]
+		},
+		{
+			"lineID": 63,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Or from our masters?"},
+	 				 {"actor": "Macbeth", "text": "Call 'em; let me see 'em."}]
+		},
+		{
+			"lineID": 64,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Pour in sow's blood, that hath eaten"}]
+		},
+		{
+			"lineID": 65,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Her nine farrow; grease that's sweaten"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 66 - 70
+	//------------------------------------------------------------
+		{
+			"lineID": 66,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 From the murderer's gibbet throw"}]
+		},
+		{
+			"lineID": 67,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Into the flame."},
+	 				 {"actor": "All", "text": "Come, high or low;"}]
+		},
+		{
+			"lineID": 68,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Thyself and office deftly show!"}]
+		},
+		{
+			"lineID": 69,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Tell me, thou unknown power,--"},
+					 {"actor": "First Witch", "text": "He knows thy thought:"}]
+		},
+		{
+			"lineID": 70,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Hear his speech, but say thou nought."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 71 - 75
+	//------------------------------------------------------------
+		{
+			"lineID": 71,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Apparition", "text": "\u2022 Macbeth! Macbeth! Macbeth! beware Macduff;"}]
+		},
+		{
+			"lineID": 72,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Apparition", "text": "\u2022 Beware the thane of Fife. Dismiss me. Enough."}]
+		},
+		{
+			"lineID": 73,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Whate'er thou art, for thy good caution, thanks;"}]
+		},
+		{
+			"lineID": 74,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou hast harp'd my fear aright: but one word more,--"}]
+		},
+		{
+			"lineID": 75,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 He will not be commanded: here's another,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 76 - 80
+	//------------------------------------------------------------
+		{
+			"lineID": 76,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 More potent than the first."}]
+		},
+		{
+			"lineID": 77,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Apparition", "text": "\u2022 Macbeth! Macbeth! Macbeth!"}]
+		},
+		{
+			"lineID": 78,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Had I three ears, I'ld hear thee."}]
+		},
+		{
+			"lineID": 79,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Apparition", "text": "\u2022 Be bloody, bold, and resolute; laugh to scorn"}]
+		},
+		{
+			"lineID": 80,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Apparition", "text": "\u2022 The power of man, for none of woman born"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 81 - 85
+	//------------------------------------------------------------
+		{
+			"lineID": 81,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Apparition", "text": "\u2022 Shall harm Macbeth."}]
+		},
+		{
+			"lineID": 82,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Then live, Macduff: what need I fear of thee?"}]
+		},
+		{
+			"lineID": 83,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But yet I'll make assurance double sure,"}]
+		},
+		{
+			"lineID": 84,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And take a bond of fate: thou shalt not live;"}]
+		},
+		{
+			"lineID": 85,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That I may tell pale-hearted fear it lies,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 86 - 90
+	//------------------------------------------------------------
+		{
+			"lineID": 86,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And sleep in spite of thunder. What is this"}]
+		},
+		{
+			"lineID": 87,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That rises like the issue of a king,"}]
+		},
+		{
+			"lineID": 88,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And wears upon his baby-brow the round"}]
+		},
+		{
+			"lineID": 89,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And top of sovereignty?"},
+					 {"actor": "All", "text": "Listen, but speak not to't."}]
+		},
+		{
+			"lineID": 90,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Apparition", "text": "\u2022 Be lion-mettled, proud; and take no care"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 91 - 95
+	//------------------------------------------------------------
+		{
+			"lineID": 91,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Apparition", "text": "\u2022 Who chafes, who frets, or where conspirers are:"}]
+		},
+		{
+			"lineID": 92,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Apparition", "text": "\u2022 Macbeth shall never vanquish'd be until"}]
+		},
+		{
+			"lineID": 93,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Apparition", "text": "\u2022 Great Birnam wood to high Dunsinane hill"}]
+		},
+		{
+			"lineID": 94,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Third Apparition", "text": "\u2022 Shall come against him."},
+					 {"actor": "Macbeth", "text": "That will never be"}]
+		},
+		{
+			"lineID": 95,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Who can impress the forest, bid the tree"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 96 - 100
+	//------------------------------------------------------------
+		{
+			"lineID": 96,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Unfix his earth-bound root? Sweet bodements! good!"}]
+		},
+		{
+			"lineID": 97,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Rebellion's head, rise never till the wood"}]
+		},
+		{
+			"lineID": 98,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Of Birnam rise, and our high-placed Macbeth"}]
+		},
+		{
+			"lineID": 99,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Shall live the lease of nature, pay his breath"}]
+		},
+		{
+			"lineID": 100,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To time and mortal custom. Yet my heart"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 101 - 105
+	//------------------------------------------------------------
+		{
+			"lineID": 101,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Throbs to know one thing: tell me, if your art"}]
+		},
+		{
+			"lineID": 102,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Can tell so much: shall Banquo's issue ever"}]
+		},
+		{
+			"lineID": 103,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Reign in this kingdom?"},
+					 {"actor": "All", "text": "Seek to know no more."}]
+		},
+		{
+			"lineID": 104,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I will be satisfied: deny me this,"}]
+		},
+		{
+			"lineID": 105,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And an eternal curse fall on you! Let me know."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 106 - 110
+	//------------------------------------------------------------
+		{
+			"lineID": 106,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Why sinks that cauldron? and what noise is this?"}]
+		},
+		{
+			"lineID": 107,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Show!"}]
+		},
+		{
+			"lineID": 108,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Second Witch", "text": "\u2022 Show!"}]
+		},
+		{
+			"lineID": 109,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Third Witch", "text": "\u2022 Show!"}]
+		},
+		{
+			"lineID": 110,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Show his eyes, and grieve his heart;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 111 - 115
+	//------------------------------------------------------------
+		{
+			"lineID": 111,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "All", "text": "\u2022 Come like shadows, so depart!"}]
+		},
+		{
+			"lineID": 112,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou art too like the spirit of Banquo: down!"}]
+		},
+		{
+			"lineID": 113,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thy crown does sear mine eye-balls. And thy hair,"}]
+		},
+		{
+			"lineID": 114,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou other gold-bound brow, is like the first."}]
+		},
+		{
+			"lineID": 115,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 A third is like the former. Filthy hags!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 116 - 120
+	//------------------------------------------------------------
+		{
+			"lineID": 116,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Why do you show me this? A fourth! Start, eyes!"}]
+		},
+		{
+			"lineID": 117,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 What, will the line stretch out to the crack of doom?"}]
+		},
+		{
+			"lineID": 118,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Another yet! A seventh! I'll see no more:"}]
+		},
+		{
+			"lineID": 119,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And yet the eighth appears, who bears a glass"}]
+		},
+		{
+			"lineID": 120,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Which shows me many more; and some I see"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 121 - 125
+	//------------------------------------------------------------
+		{
+			"lineID": 121,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That two-fold balls and treble scepters carry:"}]
+		},
+		{
+			"lineID": 122,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Horrible sight! Now, I see, 'tis true;"}]
+		},
+		{
+			"lineID": 123,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 For the blood-bolter'd Banquo smiles upon me,"}]
+		},
+		{
+			"lineID": 124,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And points at them for his. What, is this so?"}]
+		},
+		{
+			"lineID": 125,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Ay, sir, all this is so: but why"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 126 - 130
+	//------------------------------------------------------------
+		{
+			"lineID": 126,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Stands Macbeth thus amazedly?"}]
+		},
+		{
+			"lineID": 127,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Come, sisters, cheer we up his sprites,"}]
+		},
+		{
+			"lineID": 128,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 And show the best of our delights:"}]
+		},
+		{
+			"lineID": 129,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 I'll charm the air to give a sound,"}]
+		},
+		{
+			"lineID": 130,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 While you perform your antic round:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 131 - 135
+	//------------------------------------------------------------
+		{
+			"lineID": 131,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 That this great king may kindly say,"}]
+		},
+		{
+			"lineID": 132,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "First Witch", "text": "\u2022 Our duties did his welcome pay."}]
+		},
+		{
+			"lineID": 133,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Where are they? Gone? Let this pernicious hour"}]
+		},
+		{
+			"lineID": 134,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stand aye accursed in the calendar!"}]
+		},
+		{
+			"lineID": 135,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Come in, without there!"},
+					 {"actor": "Lennox", "text": "What's your grace's will?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 136 - 140
+	//------------------------------------------------------------
+		{
+			"lineID": 136,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Saw you the weird sisters?"},
+					 {"actor": "Lennox", "text": "No, my lord."}]
+		},
+		{
+			"lineID": 137,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Came they not by you?"},
+					 {"actor": "Lennox", "text": "No, indeed, my lord."}]
+		},
+		{
+			"lineID": 138,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Infected be the air whereon they ride;"}]
+		},
+		{
+			"lineID": 139,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And damn'd all those that trust them! I did hear"}]
+		},
+		{
+			"lineID": 140,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The galloping of horse: who was't came by?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 141 - 145
+	//------------------------------------------------------------
+		{
+			"lineID": 141,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 'Tis two or three, my lord, that bring you word"}]
+		},
+		{
+			"lineID": 142,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Macduff is fled to England."},
+					 {"actor": "Macbeth", "text": "Fled to England!"}]
+		},
+		{
+			"lineID": 143,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Lennox", "text": "\u2022 Ay, my good lord."}]
+		},
+		{
+			"lineID": 144,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Time, thou anticipatest my dread exploits:"}]
+		},
+		{
+			"lineID": 145,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The flighty purpose never is o'ertook"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 146 - 150
+	//------------------------------------------------------------
+		{
+			"lineID": 146,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Unless the deed go with it; from this moment"}]
+		},
+		{
+			"lineID": 147,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The very firstlings of my heart shall be"}]
+		},
+		{
+			"lineID": 148,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The firstlings of my hand. And even now,"}]
+		},
+		{
+			"lineID": 149,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To crown my thoughts with acts, be it thought and done:"}]
+		},
+		{
+			"lineID": 150,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The castle of Macduff I will surprise;"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 151 - 155
+	//------------------------------------------------------------
+		{
+			"lineID": 151,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Seize upon Fife; give to the edge o' the sword"}]
+		},
+		{
+			"lineID": 152,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 His wife, his babes, and all unfortunate souls"}]
+		},
+		{
+			"lineID": 153,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That trace him in his line. No boasting like a fool;"}]
+		},
+		{
+			"lineID": 154,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 This deed I'll do before this purpose cool."}]
+		},
+		{
+			"lineID": 155,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 But no more sights!--Where are these gentlemen?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 156
+	//------------------------------------------------------------
+		{
+			"lineID": 156,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Come, bring me where they are."}]
+		}
+	]
 }

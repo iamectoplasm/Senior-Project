@@ -12,7 +12,7 @@ import com.seniorproject.components.Active;
 import com.seniorproject.components.MovementDirection;
 import com.seniorproject.components.MovementDirection.Direction;
 import com.seniorproject.components.MovementState;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Velocity;
 import com.seniorproject.enums.State;
 import com.seniorproject.maps.StageMap;
@@ -22,28 +22,24 @@ public class MovementSystem extends IntervalIteratingSystem
 	private final static String TAG = MovementSystem.class.getSimpleName();
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<MapPosition> mPosition;
+	ComponentMapper<Position> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
-	
-	private StageMap map;
 
-	public MovementSystem(StageMap map)
+	public MovementSystem()
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				MapPosition.class,
+				Position.class,
 				Velocity.class,
 				MovementState.class),
 				(1/60f));
-		
-		this.map = map;
 	}
 
 	protected void calculateNextPosition(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -81,7 +77,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void move(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		Direction currentDirection = direction.currentDirection;
@@ -163,7 +159,7 @@ public class MovementSystem extends IntervalIteratingSystem
 
 	private void completeMove(int entityId)
 	{
-		MapPosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
 		
 		/*
@@ -216,7 +212,7 @@ public class MovementSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementState movementState = mMovementState.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		
 		if(movementState.refaceRequested)
 		{
@@ -261,7 +257,8 @@ public class MovementSystem extends IntervalIteratingSystem
 		
 		//Gdx.app.debug(TAG, "In calculateLerpAlpha, current time is " + currentTime);
 		
-		float alpha = (currentTime/ velocity.velocity);
+		//float alpha = (currentTime/ velocity.velocity);
+		float alpha = (currentTime/ velocity.speed.getDuration());
 		Float roundedAlpha = new BigDecimal(alpha).setScale(3, BigDecimal.ROUND_HALF_UP).floatValue();
 		return roundedAlpha;
 	}

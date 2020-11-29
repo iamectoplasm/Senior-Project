@@ -1,31 +1,37 @@
 {
 "sceneSetup":
-[
-	// Enter from balcony
-	{"actor": "DUNCAN", "startPosition": {"x": 11, "y": 5}, "stageLayer": "BACKSTAGE"},
+{
+	"actorSetup":
+	[
+		// Enter from balcony
+		{"actor": "DUNCAN", "startPosition": {"x": 11, "y": 5}, "stageLayer": "BACKSTAGE"},
 	
-	// Down stage left
-	{"actor": "MALCOLM", "startPosition": {"x": 6, "y": 13}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "ROSS", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
+		// Down stage left
+		{"actor": "MALCOLM", "startPosition": {"x": 6, "y": 13}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "ROSS", "startPosition": {"x": 25, "y": 12}, "stageLayer": "MAIN_STAGE"},
 	
-	// Center right/down stage right
-	{"actor": "LENNOX", "startPosition": {"x": 8, "y": 11}, "stageLayer": "UP_STAGE_LEFT"},
-	{"actor": "DONALBAIN", "startPosition": {"x": 17, "y": 14}, "stageLayer": "MAIN_STAGE"},
+		// Center right/down stage right
+		{"actor": "LENNOX", "startPosition": {"x": 8, "y": 11}, "stageLayer": "UP_STAGE_LEFT"},
+		{"actor": "DONALBAIN", "startPosition": {"x": 17, "y": 14}, "stageLayer": "MAIN_STAGE"},
 	
-	// Enter from front ground
-	{"actor": "SERGEANT", "startPosition": {"x": 11, "y": 24}, "stageLayer": "MAIN_STAGE"}
-],
-
-//"beginScene": [],
+		// Enter from front ground
+		{"actor": "SERGEANT", "startPosition": {"x": 11, "y": 24}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//			LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "DUNCAN",
+		"actor": "DUNCAN",		// "What bloody man is that? He can report,"
 		"emote": "SURPRISE",
 		"actions":
 		[
@@ -67,12 +73,11 @@
 		]
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 2,
 	"actorActions":
 	[{
-		"actor": "DUNCAN",
+		"actor": "DUNCAN",		// "As seemeth by his plight, of the revolt"
 		"emote": "SPEECH",
 		"actions":
 		[
@@ -106,44 +111,54 @@
 		]
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 3,
-	"actorActions":
+	"sharedLineActions":
 	[{
-		"actor": "DUNCAN",
-		"actions":
-		[
-			// starts at (8, 11)
-			{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}},
-			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 12}},
-			{"action": "REFACE", "direction": "DOWN", "destination": null}
-		]
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "The newest state."
+			"emote": "SPEECH",
+			"actions":
+			[
+				// starts at (8, 11)
+				{"action": "WALK", "direction": "DOWN", "destination": {"x": 8, "y": 12}},
+				{"action": "WALK", "direction": "RIGHT", "destination": {"x": 11, "y": 12}},
+				{"action": "REFACE", "direction": "DOWN", "destination": null}
+			]
+		},
+		{
+			"actor": "SERGEANT",
+			"actions":
+			[
+				// starts at (11, 16)
+				{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 15}}
+			]
+		},
+		{
+			"actor": "MALCOLM",
+			"actions":
+			[
+				// starts at (10, 15)
+				{"action": "WALK", "direction": "UP", "destination": {"x": 10, "y": 14}}
+			]
+		}]
 	},
 	{
-		"actor": "SERGEANT",
-		"actions":
-		[
-			// starts at (11, 16)
-			{"action": "WALK", "direction": "UP", "destination": {"x": 11, "y": 15}}
-		]
-	},
-	{
-		"actor": "MALCOLM",
-		"emote": "SPEECH",
-		"actions":
-		[
-			// starts at (10, 15)
-			{"action": "WALK", "direction": "UP", "destination": {"x": 10, "y": 14}}
-		]
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",		// "This is the Sergeant"
+			"emote": "SPEECH"
+		}]
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 4,
 	"actorActions":
 	[{
-		"actor": "MALCOLM",
+		"actor": "MALCOLM",		// "Who like a good and hardy soldier fought"
 		"emote": "SPEECH",
 		"actions":
 		[
@@ -153,12 +168,11 @@
 		]
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 5,
 	"actorActions":
 	[{
-		"actor": "MALCOLM",
+		"actor": "MALCOLM",		// "'Gainst my captivity. Hail, brave friend!"
 		"emote": "SPEECH",
 		"actions":
 		[
@@ -177,60 +191,68 @@
 	}]
 },
 //------------------------------------------------------------
+//			LINES 6 - 10
+//------------------------------------------------------------
 {
 	"lineID": 6,
 	"actorActions":
 	[{
-		"actor": "MALCOLM",
+		"actor": "MALCOLM",		// "Say to the King the knowledge of the broil"
 		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 7,
-	"actorActions":
+	"sharedLineActions":
 	[{
-		"actor": "MALCOLM",
-		"emote": "SPEECH"
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",		// "As thou didst leave it."
+			"emote": "SPEECH"
+		}]
 	},
 	{
-		"actor": "SERGEANT",
-		"emote": "SPEECH"
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "SERGEANT",	// "Doubtful it stood,"
+			"emote": "SPEECH"
+		}]
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 8,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "As two spent swimmers that do cling together"
 		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 9,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "And choke their art. The merciless Macdonwald--"
 		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 10,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Worthy to be a rebel, for to that"
 		"emote": "SPEECH"
 	}]
 },
+//------------------------------------------------------------
+//			LINES 11 - 15
 //------------------------------------------------------------
 {
 	"lineID": 11,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "The multiplying villainies of nature"
 		"emote": "SPEECH"
 	}]
 },
@@ -238,7 +260,7 @@
 	"lineID": 12,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Do swarm upon him-- from the western isles"
 		"emote": "SPEECH"
 	}]
 },
@@ -246,7 +268,7 @@
 	"lineID": 13,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Of kerns and gallowglasses is supplied."
 		"emote": "SPEECH"
 	}]
 },
@@ -254,7 +276,7 @@
 	"lineID": 14,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "And fortune, on his damn\u00E8d quarrel smiling"
 		"emote": "SPEECH"
 	}]
 },
@@ -262,15 +284,18 @@
 	"lineID": 15,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Showed like a rebel's whore. But all's too weak."
 		"emote": "SPEECH"
 	}]
 },
+//------------------------------------------------------------
+//			LINES 16 - 20
+//------------------------------------------------------------
 {
 	"lineID": 16,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "For brave Macbeth-- well he deserves that name--"
 		"emote": "SPEECH"
 	}]
 },
@@ -278,7 +303,7 @@
 	"lineID": 17,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Disdaining fortune, with his brandished steel,"
 		"emote": "SPEECH"
 	}]
 },
@@ -286,7 +311,7 @@
 	"lineID": 18,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Which smoked with bloody execution,"
 		"emote": "SPEECH"
 	}]
 },
@@ -294,7 +319,7 @@
 	"lineID": 19,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Like valor's minion carved out his passage"
 		"emote": "SPEECH"
 	}]
 },
@@ -302,16 +327,18 @@
 	"lineID": 20,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Till he faced the slave,"
 		"emote": "SPEECH"
 	}]
 },
-
+//------------------------------------------------------------
+//			LINES 21 - 25
+//------------------------------------------------------------
 {
 	"lineID": 21,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Which ne'er shook hands, nor bade farewell to him,"
 		"emote": "SPEECH"
 	}]
 },
@@ -319,7 +346,7 @@
 	"lineID": 22,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "Till he unseamed him from the nave to his chaps,"
 		"emote": "SPEECH"
 	}]
 },
@@ -327,68 +354,475 @@
 	"lineID": 23,
 	"actorActions":
 	[{
-		"actor": "SERGEANT",
+		"actor": "SERGEANT",	// "And fixed his head upon our battlements."
 		"emote": "SPEECH"
 	}]
 },
-{"lineID": 24},
-{"lineID": 25},
-{"lineID": 26},
-{"lineID": 27},
-{"lineID": 28},
-{"lineID": 29},
-{"lineID": 30},
-
-{"lineID": 31},
-{"lineID": 32},
-{"lineID": 33},
-{"lineID": 34},
-{"lineID": 35},
-{"lineID": 36},
-{"lineID": 37},
-{"lineID": 38},
-{"lineID": 39},
-{"lineID": 40},
-
-{"lineID": 41},
-{"lineID": 42},
-{"lineID": 43},
-{"lineID": 44},
 {
-	"lineID": 45,
+	"lineID": 24,
 	"actorActions":
 	[{
-		"actor": "ROSS",
-		"actions":
-		[
-			// starts at (25, 12)
-			{"action": "WALK", "direction": "LEFT", "destination": {"x": 16, "y": 11}}
-		]
+		"actor": "DUNCAN",		// "Oh, valiant cousin! Worthy gentleman!"
+		"emote": "SPEECH"
 	}]
 },
-{"lineID": 46},
-{"lineID": 47},
-{"lineID": 48},
-{"lineID": 49},
-{"lineID": 50},
-
-{"lineID": 51},
-{"lineID": 52},
-{"lineID": 53},
-{"lineID": 54},
-{"lineID": 55},
-{"lineID": 56},
-{"lineID": 57},
-{"lineID": 58},
-{"lineID": 59},
-{"lineID": 60},
-
-{"lineID": 61},
-{"lineID": 62},
-{"lineID": 63},
-{"lineID": 64},
-{"lineID": 65},
-{"lineID": 66},
-{"lineID": 67}
-]
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "As whence the sun 'gins his reflection"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 26 - 30
+//------------------------------------------------------------
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "Shipwrecking storms and direful thunders break,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "So from that spring whence comfort seemed to come"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "Discomfort swells. Mark, King of Scotland, mark."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "No sooner justice had, with valor armed,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "Compelled these skipping kerns to trust their heels,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 31 - 35
+//------------------------------------------------------------
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "But the Norweyan lord, surveying vantage,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 32,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "With furbished arms and new supplies of men,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 33,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "SERGEANT",	// "Began a fresh assault"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "Dismayed not this"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 34,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "Our captains, Macbeth and Banquo?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "SERGEANT",	// "Yes,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 35,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "As sparrows eagles, or the hare the lion."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 36 - 40
+//------------------------------------------------------------
+{
+	"lineID": 36,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "If I say sooth, I must report they were"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 37,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "As cannons overcharged with double cracks,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 38,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "So they doubly redoubled strokes upon the foe"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "Except they meant to bathe in reeking wounds,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "Or memorize another Golgotha,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 41 - 45
+//------------------------------------------------------------
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "I cannot tell--"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 42,
+	"actorActions":
+	[{
+		"actor": "SERGEANT",	// "But I am faint, my gashes cry for help."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 43,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",		// "So well thy words become thee as thy wounds."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 44,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",		// "They smack of honor both. Go get him surgeons."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 45,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",	// "Who comes here?"
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "ROSS",
+			"actions":
+			[
+				// starts at (25, 12)
+				{"action": "WALK", "direction": "LEFT", "destination": {"x": 16, "y": 11}}
+			]
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",	// "The worthy Thane of Ross."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//			LINES 46 - 50
+//------------------------------------------------------------
+{
+	"lineID": 46,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 47,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LENNOX",	// "That seems to speak things strange."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "God save the King!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 48,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",	// "Whence camest thou, worthy Thane?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "From Fife, great King,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 49,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Where the Norweyan banners flout the sky"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 50,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "And fan our people cold."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 51 - 55
+//------------------------------------------------------------
+{
+	"lineID": 51,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Norway himself, with terrible numbers,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 52,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Assisted by that most disloyal traitor"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 53,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "The Thane of Cawdor, began a dismal conflict,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 54,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Till that Bellona's bridegroom, lapped in proof,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 55,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Confronted him with self-comparisons,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 56 - 60
+//------------------------------------------------------------
+{
+	"lineID": 56,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Point against point rebellious, arm 'gainst arm,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 57,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Curbing his lavish spirit. And, to conclude,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 58,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "The victory fell on us."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",	// "Great happiness!"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 2,
+		"actorActions":
+		[{
+			"actor": "ROSS",	// "That now"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 59,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Sweno, the Norway's king, craves composition"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 60,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Nor would we deign him burial of his men"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 61 - 65
+//------------------------------------------------------------
+{
+	"lineID": 61,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Till he disbursed, at Saint Colme's inch,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 62,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "Ten thousand dollars to our general use."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 63,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "No more that Thane of Cawdor shall deceive"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 64,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Our bosom interest. Go pronounce his present death,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 65,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "And with his former title greet Macbeth."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 66 - 67
+//------------------------------------------------------------
+{
+	"lineID": 66,
+	"actorActions":
+	[{
+		"actor": "ROSS",	// "I'll see it done."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 67,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "What he hath lost noble Macbeth hath won."
+		"emote": "SPEECH"
+	}]
+}]
 }

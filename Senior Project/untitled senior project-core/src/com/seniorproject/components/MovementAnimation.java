@@ -19,6 +19,12 @@ public class MovementAnimation extends Component
 	
 	public Hashtable<AnimationType, Animation<TextureRegion>> otherAnimations = new Hashtable<AnimationType, Animation<TextureRegion>>();
 	
+	public MovementAnimation()
+	{
+		animations = new Hashtable<AnimationType, WalkAnimation>();
+		otherAnimations = new Hashtable<AnimationType, Animation<TextureRegion>>();
+	}
+	
 	public static class WalkAnimation
 	{
 		private int currentFrameIndex;

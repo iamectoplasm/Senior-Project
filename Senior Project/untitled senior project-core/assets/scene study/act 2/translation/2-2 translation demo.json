@@ -1,0 +1,376 @@
+{
+	"doesDisplayInfoChange": true,
+	
+	"translationTabInfo":
+	[
+		{
+			"lineID": 1,
+			"text":
+			[
+				"MACBETH",
+				"I have done the deed. Didst thou not hear a noise?",
+				""
+			],
+			"translation":
+			[
+				"MACBETH",
+				"I did it. I killed him. Did you hear a noise?",
+				""
+			]
+		},
+		{
+			"lineID": 2,
+			"text":
+			[
+				"LADY MACBETH",
+				"I heard the owl scream and the crickets cry."
+			],
+			"translation":
+			[
+				"LADY MACBETH",
+				"I just heard normal night noises."
+			]
+		},
+		{
+			"lineID": 3,
+			"text":
+			[
+				"Did not you speak?",
+				"",
+				"MACBETH",
+				"When?",
+				"",
+				"LADY MACBETH",
+				"Now.",
+				"",
+				"MACBETH",
+				"As I descended?",
+				""
+			],
+			"translation":
+			[
+				"Didn't you say something?",
+				"",
+				"MACBETH",
+				"When?",
+				"",
+				"LADY MACBETH",
+				"Now.",
+				"",
+				"MACBETH",
+				"When I walked down the stairs?",
+				""
+			]
+		},
+		{
+			"lineID": 4,
+			"text":
+			[
+				"LADY MACBETH",
+				"Aye.",
+				""
+			],
+			"translation":
+			[
+				"LADY MACBETH",
+				"Yes.",
+				""
+			]
+		},
+		{
+			"lineID": 5,
+			"text":
+			[
+				"MACBETH",
+				"Hark!",
+				""
+			],
+			"translation":
+			[
+				"MACBETH",
+				"Shh!",
+				""
+			]
+		},
+		{
+			"lineID": 6,
+			"text":
+			[
+				"Who lies i' the second chamber?",
+				"",
+				"LADY MACBETH",
+				"Donalbain.",
+				""
+			],
+			"translation":
+			[
+				"Who is asleep in the second room?",
+				"",
+				"LADY MACBETH",
+				"Donalbain.",
+				""
+			]
+		},
+		{
+			"lineID": 7,
+			"text":
+			[
+				"MACBETH",
+				"This is a sorry sight.",
+				""
+			],
+			"translation":
+			[
+				"MACBETH",
+				"This blood isn't a good look.",
+				""
+			]
+		},
+		{
+			"lineID": 8,
+			"text":
+			[
+				"LADY MACBETH",
+				"A foolish thought, to say a sorry sight.",
+				""
+			],
+			"translation":
+			[
+				"LADY MACBETH",
+				"That's a silly thing to be worried about.",
+				""
+			]
+		},
+		{
+			"lineID": 9,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 10,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 11,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 12,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 13,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 14,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 15,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 16,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 17,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 18,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 19,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 20,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 21,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 22,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 23,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 24,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 25,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 26,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 27,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 28,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		},
+		{
+			"lineID": 29,
+			"text":
+			[
+				""
+			],
+			"translation":
+			[
+				""
+			]
+		}
+	]
+}

@@ -277,7 +277,7 @@
 	"actorActions":
 	[{
 		"actor": "BANQUO",
-		"emote": "CONFUSION",
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "WALK", "direction": "RIGHT", "destination": {"x": 12, "y": 12}},

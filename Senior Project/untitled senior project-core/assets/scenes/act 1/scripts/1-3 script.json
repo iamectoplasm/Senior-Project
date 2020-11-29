@@ -11,6 +11,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//			LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -36,6 +39,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 And mounched, and mounched, and mounched. 'Give me,' quoth I."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -61,6 +67,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 I'll do, I'll do, and I'll do."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 11 - 15
+	//------------------------------------------------------------
 	 	{
 			"lineID": 11,
 			"sharedLine": false,
@@ -86,6 +95,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 And the very ports they blow,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 16,
 	 		"sharedLine": false,
@@ -111,6 +123,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 Hang upon his penthouse lid."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
 	 	{
 			"lineID": 21,
 			"sharedLine": false,
@@ -136,6 +151,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 Yet it shall be tempest-tost."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 26,
 	 		"sharedLine": false,
@@ -161,6 +179,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Third Witch", "text": "\u2022 A drum, a drum!"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
 	 	{
 			"lineID": 31,
 			"sharedLine": false,
@@ -186,6 +207,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "All", "text": "\u2022 Thrice to thine,and thrice to mine,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 36,
 	 		"sharedLine": false,
@@ -211,6 +235,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 So withered, and so wild in their attire,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
 	 	{
 			"lineID": 41,
 			"sharedLine": false,
@@ -236,6 +263,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Upon her skinny lips. You should be women,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 46 - 50
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 46,
 	 		"sharedLine": false,
@@ -262,6 +292,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Third Witch", "text": "\u2022 All hail, Macbeth, that shalt be King hereafter!"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 51 - 55
+	//------------------------------------------------------------
 	 	{
 			"lineID": 51,
 			"sharedLine": false,
@@ -287,6 +320,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 You greet with present grace and great prediction"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 56 - 60
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 56,
 	 		"sharedLine": false,
@@ -312,6 +348,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Speak then to me, who neither beg nor fear"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 61 - 65
+	//------------------------------------------------------------
 	 	{
 			"lineID": 61,
 			"sharedLine": false,
@@ -337,6 +376,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "First Witch", "text": "\u2022 Lesser than Macbeth, and greater."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 66 - 70
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 66,
 	 		"sharedLine": false,
@@ -362,6 +404,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Stay, you imperfect speakers, tell me more."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 71 - 75
+	//------------------------------------------------------------
 	 	{
 			"lineID": 71,
 			"sharedLine": false,
@@ -387,6 +432,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 No more than to be Cawdor. Say from whence"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 76 - 80
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 76,
 	 		"sharedLine": false,
@@ -412,6 +460,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 And these are of them. Whither are they vanished?"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 81 - 85
+	//------------------------------------------------------------
 	 	{
 			"lineID": 81,
 			"sharedLine": false,
@@ -437,6 +488,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 That takes the reason prisoner?"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 86 - 90
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 86,
 	 		"sharedLine": true,
@@ -463,6 +517,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 The news of thy success. And when he reads"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 91 - 95
+	//------------------------------------------------------------
 	 	{
 			"lineID": 91,
 			"sharedLine": false,
@@ -488,6 +545,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 He finds thee in stout Norweyan ranks,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 96 - 100
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 96,
 	 		"sharedLine": false,
@@ -514,6 +574,9 @@
 	 		"line": [{"actor": "Ross", "text": "\u2022 And poured them down before them."},
 	 				 {"actor": "Angus", "text": "We are sent"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 101 - 105
+	//------------------------------------------------------------
 	 	{
 			"lineID": 101,
 			"sharedLine": false,
@@ -539,6 +602,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Ross", "text": "\u2022 He bade me, from him, call thee Thane of Cawdor."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 106 - 110
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 106,
 	 		"sharedLine": false,
@@ -566,6 +632,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Angus", "text": "\u2022 But under heavy judgement bears that life"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 111 - 115
+	//------------------------------------------------------------
 	 	{
 			"lineID": 111,
 			"sharedLine": false,
@@ -591,6 +660,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Angus", "text": "\u2022 But treasons capital, confessed and proved,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 116 - 120
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 116,
 	 		"sharedLine": true,
@@ -618,6 +690,9 @@
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Promised no less to them?"},
 	 				 {"actor": "Banquo", "text": "That, trusted home,"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 121 - 125
+	//------------------------------------------------------------
 	 	{
 			"lineID": 121,
 			"sharedLine": false,
@@ -643,6 +718,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Win us with honest trifles, to betray 's"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 126 - 130
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 126,
 	 		"sharedLine": false,
@@ -669,6 +747,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 This supernatural soliciting"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 131 - 135
+	//------------------------------------------------------------
 	 	{
 			"lineID": 131,
 			"sharedLine": false,
@@ -694,6 +775,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Whose horrid image doth unfix my hair"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 136 - 140
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 136,
 	 		"sharedLine": false,
@@ -719,6 +803,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Shakes so my single state of man that function"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 141 - 145
+	//------------------------------------------------------------
 	 	{
 			"lineID": 141,
 			"sharedLine": false,
@@ -746,6 +833,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Like our strange garments, cleave not to their mold"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 146 - 150
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 146,
 	 		"sharedLine": true,
@@ -772,6 +862,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 With things forgotten. Kind gentlemen, your pains"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 151 - 156
+	//------------------------------------------------------------
 	 	{
 			"lineID": 151,
 			"sharedLine": false,
@@ -798,6 +891,9 @@
 	 		"line": [{"actor": "Macbeth", "text": "\u2022 Our free hearts each to other."},
 	 				 {"actor": "Banquo", "text": "Very gladly."}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 156
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 156,
 	 		"sharedLine": false,

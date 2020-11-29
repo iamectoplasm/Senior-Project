@@ -9,6 +9,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//			LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -34,6 +37,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 The doors are open, and the surfeited grooms"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -59,6 +65,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Alack, I am afraid they have awaked"}]
 	 	},
+	//------------------------------------------------------------
+	//			LINES 11 - 15
+	//------------------------------------------------------------
 	 	{
 			"lineID": 11,
 			"sharedLine": false,
@@ -84,6 +93,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 I have done the deed. Didst thou not hear a noise?"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
 		{
 			"lineID": 16,
 			"sharedLine": false,
@@ -113,6 +125,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 Who lies i' the second chamber?"},
 					 {"actor": "Lady Macbeth", "text": "\u2022 Donalbain."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
 		{
 			"lineID": 21,
 			"sharedLine": false,
@@ -138,6 +153,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 But they did say their prayers, and addressed them"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
 		{
 			"lineID": 26,
 			"sharedLine": true,
@@ -165,6 +183,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 When they did say \"God bless us!\""},
 					 {"actor": "Lady Macbeth", "text": "Consider it not so deeply."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
 		{
 			"lineID": 31,
 			"sharedLine": false,
@@ -191,6 +212,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Methought I heard a voice cry \"Sleep no more!"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
 		{
 			"lineID": 36,
 			"sharedLine": false,
@@ -217,6 +241,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 Chief nourisher in life's feast\u2014"},
 					 {"actor": "Lady Macbeth", "text": "What do you mean?"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
 		{
 			"lineID": 41,
 			"sharedLine": false,
@@ -242,6 +269,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 You do unbend your noble strength to think"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 46 - 50
+	//------------------------------------------------------------
 		{
 			"lineID": 46,
 			"sharedLine": false,
@@ -268,6 +298,9 @@
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 The sleepy grooms with blood."},
 					 {"actor": "Macbeth", "text": "I'll go no more."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 51 - 55
+	//------------------------------------------------------------
 		{
 			"lineID": 51,
 			"sharedLine": false,
@@ -294,6 +327,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 That fears a painted devil. If he do bleed,"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 56 - 60
+	//------------------------------------------------------------
 		{
 			"lineID": 56,
 			"sharedLine": false,
@@ -320,6 +356,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Will all great Neptune's ocean wash this blood"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 61 - 65
+	//------------------------------------------------------------
 		{
 			"lineID": 61,
 			"sharedLine": false,
@@ -345,6 +384,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 To wear a heart so white. I hear a knocking"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 66 - 70
+	//------------------------------------------------------------
 		{
 			"lineID": 66,
 			"sharedLine": false,
@@ -370,6 +412,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Get on your nightgown, lest occasion call us"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 71 - 74
+	//------------------------------------------------------------
 		{
 			"lineID": 71,
 			"sharedLine": false,

@@ -6,8 +6,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.configs.StudyConfig;
-import com.seniorproject.game.AssetLoader;
 
 public class TextTab extends Window
 {

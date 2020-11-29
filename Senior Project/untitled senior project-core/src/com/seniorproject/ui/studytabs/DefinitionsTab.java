@@ -6,11 +6,15 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.utils.Array;
+import com.seniorproject.assetmanagement.AssetLoader;
+import com.seniorproject.configs.DefinitionsConfig;
+import com.seniorproject.configs.DefinitionsConfig.Definition;
 import com.seniorproject.configs.StudyConfig;
-import com.seniorproject.game.AssetLoader;
 
 public class DefinitionsTab extends Window
 {
+	private DefinitionsConfig config;
+	private int currentLineIndex;
 	
 	private String displayText;
 	private Label text;
@@ -47,18 +51,54 @@ public class DefinitionsTab extends Window
 		this.text.setText(displayText);
 	}
 	
-	public void updateText(StudyConfig config)
+	public void updateToNewScene(DefinitionsConfig config)
 	{
 		resetTextLabel();
 		
-		Array<String> studyText = config.getStudyText();
+		this.config = config;
+		this.currentLineIndex = 1;
 		
-		for(int i = 0; i < studyText.size; i++)
+		Array<Definition> definitions = config.getDefinitionTabInfo().get(currentLineIndex - 1).getDefinitions();
+		
+		if(definitions.isEmpty())
 		{
-			displayText = displayText + "\n" + studyText.get(i);
+			return;
+		}
+		
+		for(int i = 0; i < definitions.size; i++)
+		{
+			displayText = displayText + "Term: " + definitions.get(i).getTerm() + "\n" +
+					"Definition:\n" + definitions.get(i).getDefinition() + "\n\n";
 		}
 		
 		this.text.setText(displayText);
+		
+		//Array<String> studyText = config.getStudyText();
+		//
+		//for(int i = 0; i < studyText.size; i++)
+		//{
+		//	displayText = displayText + "\n" + studyText.get(i);
+		//}
+		
+		//this.text.setText(displayText);
+	}
+	
+	public void stepForward()
+	{
+		currentLineIndex++;
+		
+		if(currentLineIndex < config.getDefinitionTabInfo().size)
+		{
+			Array<Definition> definitions = config.getDefinitionTabInfo().get(currentLineIndex - 1).getDefinitions();
+		
+			for(int i = 0; i < definitions.size; i++)
+			{
+				displayText = displayText + "Term: " + definitions.get(i).getTerm() + "\n" +
+						"Definition:\n" + definitions.get(i).getDefinition() + "\n\n";
+			}
+		
+			this.text.setText(displayText);
+		}
 	}
 
 }

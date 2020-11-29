@@ -1,139 +1,1586 @@
 {
 "sceneSetup":
-[
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"}
-],
+{
+	"actorSetup":
+	[
+		{"actor": "PORTER", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "MACDUFF", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "LENNOX", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "MACBETH", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "LADY_MACBETH", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "BANQUO", "startPosition": {"x": 14, "y": 13}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "ROSS", "startPosition": {"x": 16, "y": 13}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "MALCOLM", "startPosition": {"x": 11, "y": 11}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "DONALBAIN", "startPosition": {"x": 13, "y": 11}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//					LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 2,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 3,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
 {
 	"lineID": 5,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
+//------------------------------------------------------------
+//					LINES 6 - 10
 //------------------------------------------------------------
 {
 	"lineID": 6,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 7,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 8,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 9,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 10,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "PORTER",
+		"emote": "SPEECH"
 	}]
-}
+},
 //------------------------------------------------------------
-]
+//					LINES 11 - 15
+//------------------------------------------------------------
+{
+	"lineID": 11,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 16 - 20
+//------------------------------------------------------------
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 21 - 25
+//------------------------------------------------------------
+{
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 22
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 26 - 30
+//------------------------------------------------------------
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 27,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 31 - 35
+//------------------------------------------------------------
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 32,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 33,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 34,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 35,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 36 - 40
+//------------------------------------------------------------
+{
+	"lineID": 36,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 37,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 38,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 41 - 45
+//------------------------------------------------------------
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 42,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 43,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 44,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 45,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 46 - 50
+//------------------------------------------------------------
+{
+	"lineID": 46,
+	"actorActions":
+	[{
+		"actor": "PORTER",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 47,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 48,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 49,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LENNOX",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 50,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 51 - 55
+//------------------------------------------------------------
+{
+	"lineID": 51,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 52,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 53,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 54,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 55,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 56 - 60
+//------------------------------------------------------------
+{
+	"lineID": 56,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 57,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 58,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LENNOX",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 59,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 60,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 61 - 65
+//------------------------------------------------------------
+{
+	"lineID": 61,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 62,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 63,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 64,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 65,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 66 - 70
+//------------------------------------------------------------
+{
+	"lineID": 66,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LENNOX",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 67,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 68,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 69,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 70,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "LENNOX",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 71 - 75
+//------------------------------------------------------------
+{
+	"lineID": 71,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 72,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 73,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 74,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 75,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 76 - 80
+//------------------------------------------------------------
+{
+	"lineID": 76,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 77,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 78,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 79,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 80,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 81 - 85
+//------------------------------------------------------------
+{
+	"lineID": 81,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 82,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 83,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 84,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 85,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 86 - 90
+//------------------------------------------------------------
+{
+	"lineID": 86,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 87,
+	"actorActions":
+	[{
+		"actor": "LADY_MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 88,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 89,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 90,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 91 - 95
+//------------------------------------------------------------
+{
+	"lineID": 91,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 92,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 93,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 94,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 95,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 96 - 100
+//------------------------------------------------------------
+{
+	"lineID": 96,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 97,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 98,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 99,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 100,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 101 - 105
+//------------------------------------------------------------
+{
+	"lineID": 101,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 102,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DONALBAIN",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 103,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 104,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 105,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 106 - 110
+//------------------------------------------------------------
+{
+	"lineID": 106,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 107,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 108,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 109,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 110,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 111 - 115
+//------------------------------------------------------------
+{
+	"lineID": 111,
+	"actorActions":
+	[{
+		"actor": "LENNOX",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 112,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 113,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 114,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 115,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 116 - 120
+//------------------------------------------------------------
+{
+	"lineID": 116,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 117,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 118,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 119,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 120,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 121 - 125
+//------------------------------------------------------------
+{
+	"lineID": 121,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 122,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 123,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 124,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "LADY_MACBETH",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 125,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 126 - 130
+//------------------------------------------------------------
+{
+	"lineID": 126,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 127,
+	"actorActions":
+	[{
+		"actor": "DONALBAIN",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 128,
+	"actorActions":
+	[{
+		"actor": "DONALBAIN",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 129,
+	"actorActions":
+	[{
+		"actor": "DONALBAIN",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 130,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 131 - 135
+//------------------------------------------------------------
+{
+	"lineID": 131,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 132,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 133,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 134,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 135,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 136 - 140
+//------------------------------------------------------------
+{
+	"lineID": 136,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 137,
+	"actorActions":
+	[{
+		"actor": "BANQUO",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 138,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "BANQUO",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 2,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "BANQUO",
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 139,
+	"actorActions":
+	[{
+		"actor": "MACBETH",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 140,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACBETH",
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "BANQUO",
+			"emote": "SPEECH"
+		},
+		{
+			"actor": "MACDUFF",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 141 - 145
+//------------------------------------------------------------
+{
+	"lineID": 141,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 142,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 143,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 144,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 145,
+	"actorActions":
+	[{
+		"actor": "DONALBAIN",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 146 - 150
+//------------------------------------------------------------
+{
+	"lineID": 146,
+	"actorActions":
+	[{
+		"actor": "DONALBAIN",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 147,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DONALBAIN",
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 148,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 149,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 150,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 151 - 152
+//------------------------------------------------------------
+{
+	"lineID": 151,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 152,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",
+		"emote": "SPEECH"
+	}]
+}]
 }

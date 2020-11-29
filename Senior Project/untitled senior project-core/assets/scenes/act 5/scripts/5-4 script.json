@@ -1,67 +1,139 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 4",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Malcolm", "text": "\u2022 Cousins, I hope the days are near at hand"}]
 		},
 	 	{
 	 		"lineID": 2,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That chambers will be safe."},
+					 {"actor": "Menteith", "text": "We doubt it nothing."}]
 	 	},
 	 	{
 	 		"lineID": 3,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Siward", "text": "\u2022 What wood is this before us?"},
+					 {"actor": "Menteith", "text": "The wood of Birnam."}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Let every soldier hew him down a bough"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And bear't before him: thereby shall we shadow"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 The numbers of our host and make discovery"}]
 	 	},
 	 	{
 	 		"lineID": 7,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Err in report of us."},
+					 {"actor": "Soldier", "text": "It shall be done."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Siward", "text": "\u2022 We learn no other but the confident tyrant"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Siward", "text": "\u2022 Keeps still in Dunsinane, and will endure"}]
 	 	},
 	 	{
 	 		"lineID": 10,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Siward", "text": "\u2022 Our setting down before 't."},
+					 {"actor": "Malcolm", "text": "'Tis his main hope:"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 For where there is advantage to be given,"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Both more and less have given him the revolt,"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And none serve with him but constrained things"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Whose hearts are absent too."},
+					 {"actor": "Macduff", "text": "Let our just censures"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Attend the true event, and put we on"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Industrious soldiership."},
+					 {"actor": "Siward", "text": "The time approaches"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 That will with due decision make us know"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 What we shall say we have and what we owe."}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 Thoughts speculative their unsure hopes relate,"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 But certain issue strokes must arbitrate:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 Towards which advance the war."}]
+		}
+	]
 }

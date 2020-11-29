@@ -6,154 +6,182 @@ filter: Linear,Linear
 repeat: none
 ALL
   rotate: false
-  xy: 1029, 1013
+  xy: 679, 711
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 ANGUS
   rotate: false
-  xy: 1111, 1177
+  xy: 1111, 1225
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 BANQUO
   rotate: false
-  xy: 1543, 1609
+  xy: 1543, 1657
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 DONALBAIN
   rotate: false
-  xy: 1625, 1691
+  xy: 1625, 1739
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 DUNCAN
   rotate: false
-  xy: 1029, 1095
+  xy: 1029, 1143
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 FIRST_WITCH
   rotate: false
-  xy: 1, 1
+  xy: 1, 49
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+FLEANCE
+  rotate: false
+  xy: 1029, 1061
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 LADY_MACBETH
   rotate: false
-  xy: 515, 663
+  xy: 515, 711
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 LENNOX
   rotate: false
-  xy: 1029, 1177
+  xy: 1029, 1225
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+LORDS
+  rotate: false
+  xy: 1625, 1657
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 MACBETH
   rotate: false
-  xy: 1543, 1691
+  xy: 1543, 1739
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 MACDUFF
   rotate: false
-  xy: 1, 83
+  xy: 1, 131
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 MALCOLM
   rotate: false
-  xy: 515, 581
+  xy: 515, 629
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+OLD_MAN
+  rotate: false
+  xy: 1111, 1143
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+PORTER
+  rotate: false
+  xy: 1193, 1225
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 ROSS
   rotate: false
-  xy: 597, 663
+  xy: 597, 711
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 SECOND_WITCH
   rotate: false
-  xy: 83, 83
+  xy: 83, 131
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 SERGEANT
   rotate: false
-  xy: 515, 499
+  xy: 1543, 1575
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 THIRD_WITCH
   rotate: false
-  xy: 597, 581
+  xy: 515, 547
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 arial-12pt
   rotate: false
-  xy: 1, 1259
+  xy: 1, 1307
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-14pt
   rotate: false
-  xy: 1, 745
+  xy: 1, 793
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-16pt
   rotate: false
-  xy: 515, 1259
+  xy: 515, 1307
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-18pt
   rotate: false
-  xy: 1, 231
+  xy: 1, 279
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-20pt
   rotate: false
-  xy: 515, 745
+  xy: 515, 793
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 arial-24pt
   rotate: false
-  xy: 1029, 1259
+  xy: 1029, 1307
   size: 512, 512
   orig: 512, 512
   offset: 0, 0
   index: -1
 blue-name-label
   rotate: false
-  xy: 259, 213
+  xy: 259, 261
   size: 48, 16
   split: 5, 5, 5, 5
   pad: 4, 4, 4, 4
@@ -162,7 +190,7 @@ blue-name-label
   index: -1
 green-scrollbar
   rotate: false
-  xy: 1111, 1153
+  xy: 1707, 1797
   size: 9, 22
   split: 0, 0, 4, 4
   pad: 0, 0, 0, 0
@@ -171,14 +199,14 @@ green-scrollbar
   index: -1
 portrait-bg-gray
   rotate: false
-  xy: 679, 663
+  xy: 597, 629
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 scroll-line
   rotate: false
-  xy: 1193, 1211
+  xy: 1, 1
   size: 4, 46
   split: 0, 0, 8, 8
   pad: 0, 0, 0, 0
@@ -187,7 +215,7 @@ scroll-line
   index: -1
 text-scrollpane-white
   rotate: false
-  xy: 1, 165
+  xy: 1, 213
   size: 256, 64
   split: 16, 16, 16, 16
   pad: 12, 20, 12, 16

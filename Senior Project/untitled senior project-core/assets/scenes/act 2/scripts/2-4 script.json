@@ -1,212 +1,255 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 2 Scene 4",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 Threescore and ten I can remember well."}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Old Man", "text": "\u2022 Within the volume of which time I have seen"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Old Man", "text": "\u2022 Hours dreadful and things strange, but this sore night"}]
 	 	},
 	 	{
 	 		"lineID": 4,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Old Man", "text": "\u2022 Hath trifled former knowings."},
+	 				 {"actor": "Ross", "text": "Ah, good father,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Thou seest the heavens, as troubled with man's act,"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Threaten his bloody stage. By the clock 'tis day,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 And yet dark night strangles the travelling lamp."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 Is 't night's predominance, or the day's shame,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"line": [{"actor": "Ross", "text": "\u2022 That darkness does the face of earth entomb,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "\u2022 "}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 When living light should kiss it?"},
+	 				 {"actor": "Old Man", "text": "'Tis unnatural,"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
 	 	{
 			"lineID": 11,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 Even like the deed that's done. On Tuesday last,"}]
 		},
 		{
 			"lineID": 12,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 A falcon, towering in her pride of place,"}]
 		},
 		{
 			"lineID": 13,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 Was by a mousing owl hawked at and killed."}]
 		},
 		{
 			"lineID": 14,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 And Duncan's horses\u2014a thing most strange and certain\u2014"}]
 		},
 		{
 			"lineID": 15,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Beauteous and swift, the minions of their race,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
 		{
 			"lineID": 16,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Turned wild in nature, broke their stalls, flung out,"}]
 		},
 		{
 			"lineID": 17,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Contending 'gainst obedience, as they would make"}]
 		},
 		{
 			"lineID": 18,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Ross", "text": "\u2022 War with mankind."},
+					 {"actor": "Old Man", "text": "'Tis said they eat each other."}]
 		},
 		{
 			"lineID": 19,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 They did so, to the amazement of mine eyes,"}]
 		},
 		{
 			"lineID": 20,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 That looked upon 't. Here comes the good Macduff."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
 		{
 			"lineID": 21,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Ross", "text": "\u2022 How goes the world, sir, now?"},
+					 {"actor": "Macduff", "text": "Why, see you not?"}]
 		},
 		{
 			"lineID": 22,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Is 't known who did this more than bloody deed?"}]
 		},
 		{
 			"lineID": 23,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Those that Macbeth hath slain."},
+					 {"actor": "Ross", "text": "Alas, the day!"}]
 		},
 		{
 			"lineID": 24,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Ross", "text": "\u2022 What good could they pretend?"},
+					 {"actor": "Macduff", "text": "They were suborned."}]
 		},
 		{
 			"lineID": 25,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Malcolm and Donalbain, the King's two sons,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
 		{
 			"lineID": 26,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Are stol'n away and fled, which puts upon them"}]
 		},
 		{
 			"lineID": 27,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 Suspicion of the deed."},
+					 {"actor": "Ross", "text": "'Gainst nature still!"}]
 		},
 		{
 			"lineID": 28,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Thriftless ambition, that wilt ravin up"}]
 		},
 		{
 			"lineID": 29,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Thine own life's means! Then 'tis most like"}]
 		},
 		{
 			"lineID": 30,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 The sovereignty will fall upon Macbeth."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
 		{
 			"lineID": 31,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 He is already named, and gone to Scone"}]
 		},
 		{
 			"lineID": 32,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 To be invested."},
+					 {"actor": "Ross", "text": "Where is Duncan's body?"}]
 		},
 		{
 			"lineID": 33,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Carried to Colmekill,"}]
 		},
 		{
 			"lineID": 34,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 The sacred storehouse of his predecessors"}]
 		},
 		{
 			"lineID": 35,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 And guardian of their bones."},
+					 {"actor": "Ross", "text": "Will you to Scone?"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
 		{
 			"lineID": 36,
-			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"sharedLine": true,
+			"line": [{"actor": "Macduff", "text": "\u2022 No, cousin, I'll to Fife."},
+					 {"actor": "Ross", "text": "Well, I will thither."}]
 		},
 		{
 			"lineID": 37,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Well, may you see things well done there. Adieu!"}]
 		},
 		{
 			"lineID": 38,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Macduff", "text": "\u2022 Lest our old robes sit easier than our new!"}]
 		},
 		{
 			"lineID": 39,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Ross", "text": "\u2022 Farewell, father."}]
 		},
 		{
 			"lineID": 40,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 God's benison go with you, and with those"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 41
+	//------------------------------------------------------------
 		{
 			"lineID": 41,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "\u2022 "}]
+			"line": [{"actor": "Old Man", "text": "\u2022 That would make good of bad, and friends of foes!"}]
 		}
 	 ]
 }

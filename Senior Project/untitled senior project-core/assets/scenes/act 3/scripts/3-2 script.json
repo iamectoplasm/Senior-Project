@@ -1,67 +1,333 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 3 Scene 2",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Is Banquo gone from court?"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Servant", "text": "\u2022 Ay, madam, but returns again tonight."}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Say to the King I would attend his leisure"}]
 	 	},
 	 	{
 	 		"lineID": 4,
-	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 For a few words."},
+	 				 {"actor": "Servant", "text": "Madam, I will."},
+	 				 {"actor": "Lady Macbeth", "text": "Naught's had, all's spent,"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Where our desire is got without content."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 'Tis safer to be that which we destroy"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Than by destruction dwell in doubtful joy."}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 How now, my lord! Why do you keep alone,"}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Of sorriest fancies your companions making,"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Lady Macbeth", "text": "\u2022 Using those thoughts which should indeed have died"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 With them they think on? Things without all remedy"}]
+		},
+		{
+			"lineID": 12,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Should be without regard. What's done is done."}]
+		},
+		{
+			"lineID": 13,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 We have scotched the snake, not killed it."}]
+		},
+		{
+			"lineID": 14,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 She'll close and be herself, whilst our poor malice"}]
+		},
+		{
+			"lineID": 15,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Remains in danger of her former tooth."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 But let the frame of things disjoint, both the worlds suffer,"}]
+		},
+		{
+			"lineID": 17,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Ere we will eat our meal in fear and sleep"}]
+		},
+		{
+			"lineID": 18,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 In the affliction of these terrible dreams"}]
+		},
+		{
+			"lineID": 19,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 That shake us nightly. Better be with the dead,"}]
+		},
+		{
+			"lineID": 20,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Whom we, to gain our peace, have sent to peace,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Than on the torture of the mind to lie"}]
+		},
+		{
+			"lineID": 22,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 In restless ecstasy. Duncan is in his grave,"}]
+		},
+		{
+			"lineID": 23,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 After life's fitful fever he sleeps well."}]
+		},
+		{
+			"lineID": 24,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Treason has done his worst. Nor steel, nor poison,"}]
+		},
+		{
+			"lineID": 25,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Malice domestic, foreign levy, nothing,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Can touch him further."},
+					 {"actor": "Lady Macbeth", "text": "Come on,"}]
+		},
+		{
+			"lineID": 27,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Gentle my lord, sleek o'er your rugged looks,"}]
+		},
+		{
+			"lineID": 28,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Be bright and jovial among your guests tonight."}]
+		},
+		{
+			"lineID": 29,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 So shall I, love; and so, I pray, be you."}]
+		},
+		{
+			"lineID": 30,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Let your remembrance apply to Banquo,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Present him eminence, both with eye and tongue,"}]
+		},
+		{
+			"lineID": 32,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Unsafe the while, that we"}]
+		},
+		{
+			"lineID": 33,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Must lave our honors in these flattering streams,"}]
+		},
+		{
+			"lineID": 34,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And make our faces vizards to our hearts,"}]
+		},
+		{
+			"lineID": 35,
+			"sharedLine": true,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Disguising what they are."},
+					 {"actor": "Lady Macbeth", "text": "You must leave this."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 O, full of scorpions is my mind, dear wife!"}]
+		},
+		{
+			"lineID": 37,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou know'st that Banquo, and his Fleance, lives."}]
+		},
+		{
+			"lineID": 38,
+			"sharedLine": false,
+			"line": [{"actor": "Lady Macbeth", "text": "\u2022 But in them Nature's copy's not eterne."}]
+		},
+		{
+			"lineID": 39,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 There's comfort yet, they are assailable."}]
+		},
+		{
+			"lineID": 40,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Then be thou jocund. Ere the bat hath flown"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 His cloistered flight, ere to black Hecate's summons"}]
+		},
+		{
+			"lineID": 42,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 The shard-borne beetle with his drowsy hums"}]
+		},
+		{
+			"lineID": 43,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hath rung night's yawning peal, there shall be done"}]
+		},
+		{
+			"lineID": 44,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 A deed of dreadful note."},
+					 {"actor": "Lady Macbeth", "text": "What's to be done?"}]
+		},
+		{
+			"lineID": 45,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Be innocent of the knowledge, dearest chuck,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Till thou applaud the deed. Come, seeling night,"}]
+		},
+		{
+			"lineID": 47,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Scarf up the tender eye of pitiful day,"}]
+		},
+		{
+			"lineID": 48,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 And with thy bloody and invisible hand"}]
+		},
+		{
+			"lineID": 49,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Cancel and tear to pieces that great bond"}]
+		},
+		{
+			"lineID": 50,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Which keeps me pale! Light thickens, and the crow"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Makes wing to the rooky wood."}]
+		},
+		{
+			"lineID": 52,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Good things of day begin to droop and drowse"}]
+		},
+		{
+			"lineID": 53,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 While night's black agents to their preys do rouse."}]
+		},
+		{
+			"lineID": 54,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Thou marvel'st at my words. But hold thee still,"}]
+		},
+		{
+			"lineID": 55,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 Things bad begun make strong themselves by ill."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
+		{
+			"lineID": 56,
+			"sharedLine": false,
+			"line": [{"actor": "Macbeth", "text": "\u2022 So, prithee, go with me."}]
+		}]
 }

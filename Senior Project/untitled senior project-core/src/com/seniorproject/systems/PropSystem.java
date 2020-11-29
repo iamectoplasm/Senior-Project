@@ -3,10 +3,10 @@ package com.seniorproject.systems;
 import com.artemis.Aspect;
 import com.artemis.systems.IntervalIteratingSystem;
 import com.seniorproject.components.Active;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Position;
 import com.seniorproject.components.PropComponent;
-import com.seniorproject.components.StageDirections;
+import com.seniorproject.components.ActionsQueue;
 
 public class PropSystem extends IntervalIteratingSystem
 {

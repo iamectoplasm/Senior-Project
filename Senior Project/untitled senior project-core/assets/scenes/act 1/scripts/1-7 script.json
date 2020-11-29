@@ -9,6 +9,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//			LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -34,6 +37,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Might be the be-all and the end-all here,"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 6 - 10
+	//------------------------------------------------------------
 		{
 			"lineID": 6,
 			"sharedLine": false,
@@ -59,6 +65,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 To plague the inventor. This even-handed justice"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 11 - 15
+	//------------------------------------------------------------
 		{
 			"lineID": 11,
 			"sharedLine": false,
@@ -84,6 +93,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Who would against his murderer shut the door,"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 16 - 20
+	//------------------------------------------------------------
 		{
 			"lineID": 16,
 			"sharedLine": false,
@@ -109,6 +121,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 The deep damnation of his taking off."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 21 - 25
+	//------------------------------------------------------------
 		{
 			"lineID": 21,
 			"sharedLine": false,
@@ -134,6 +149,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 That tears shall drown the wind. I have no spur"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 26 - 30
+	//------------------------------------------------------------
 		{
 			"lineID": 26,
 			"sharedLine": false,
@@ -160,6 +178,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 Hath he asked for me?"},
 					 {"actor": "Lady Macbeth", "text": "Know you not he has?"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 31 - 35
+	//------------------------------------------------------------
 		{
 			"lineID": 31,
 			"sharedLine": false,
@@ -186,6 +207,9 @@
 			"line": [{"actor": "Macbeth", "text": "\u2022 Not cast aside so soon."},
 					 {"actor": "Lady Macbeth", "text": "Was the hope drunk"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 36 - 40
+	//------------------------------------------------------------
 		{
 			"lineID": 36,
 			"sharedLine": false,
@@ -211,6 +235,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 To be the same in thine own act and valor"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 41 - 45
+	//------------------------------------------------------------
 		{
 			"lineID": 41,
 			"sharedLine": false,
@@ -237,6 +264,9 @@
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 Like the poor cat i' the adage?"},
 					 {"actor": "Macbeth", "text": "\u2022 Prithee, peace."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 46 - 50
+	//------------------------------------------------------------
 		{
 			"lineID": 46,
 			"sharedLine": false,
@@ -263,6 +293,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 And to be more than what you were, you would"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 51 - 55
+	//------------------------------------------------------------
 		{
 			"lineID": 51,
 			"sharedLine": false,
@@ -288,6 +321,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 How tender 'tis to love the babe that milks me."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 56 - 60
+	//------------------------------------------------------------
 		{
 			"lineID": 56,
 			"sharedLine": false,
@@ -315,6 +351,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 But screw your courage to the sticking-place"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 61 - 65
+	//------------------------------------------------------------
 		{
 			"lineID": 61,
 			"sharedLine": false,
@@ -340,6 +379,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 That memory, the warder of the brain,"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 66 - 70
+	//------------------------------------------------------------
 		{
 			"lineID": 66,
 			"sharedLine": false,
@@ -365,6 +407,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Lady Macbeth", "text": "\u2022 The unguarded Duncan? What not put upon"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 71 - 75
+	//------------------------------------------------------------
 		{
 			"lineID": 71,
 			"sharedLine": false,
@@ -391,6 +436,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 When we have marked with blood those sleepy two"}]
 		},
+	//------------------------------------------------------------
+	//			LINES 76 - 80
+	//------------------------------------------------------------
 		{
 			"lineID": 76,
 			"sharedLine": false,
@@ -418,6 +466,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Each corporal agent to this terrible feat."}]
 		},
+	//------------------------------------------------------------
+	//			LINES 81 - 82
+	//------------------------------------------------------------
 		{
 			"lineID": 81,
 			"sharedLine": false,

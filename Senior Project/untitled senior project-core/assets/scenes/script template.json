@@ -6,7 +6,9 @@
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "", "text": "-"},
+					 {"actor": "", "text": ""}
+					 ]
 		},
 	 	{
 	 		"lineID": 2,

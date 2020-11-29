@@ -1,0 +1,251 @@
+{
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 9",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
+
+"script":
+	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
+		{
+			"lineID": 1,
+			"sharedLine": false,
+			"line": [{"actor": "Malcolm", "text": "\u2022 I would the friends we miss were safe arrived."}]
+		},
+	 	{
+	 		"lineID": 2,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 Some must go off: and yet, by these I see,"}]
+	 	},
+	 	{
+	 		"lineID": 3,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 So great a day as this is cheaply bought."}]
+	 	},
+	 	{
+	 		"lineID": 4,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Macduff is missing, and your noble son."}]
+	 	},
+	 	{
+	 		"lineID": 5,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Your son, my lord, has paid a soldier's debt:"}]
+	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
+	 	{
+	 		"lineID": 6,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 He only lived but till he was a man;"}]
+	 	},
+	 	{
+	 		"lineID": 7,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 The which no sooner had his prowess confirm'd"}]
+	 	},
+	 	{
+	 		"lineID": 8,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 In the unshrinking station where he fought,"}]
+	 	},
+	 	{
+	 		"lineID": 9,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 But like a man he died."},
+					 {"actor": "Siward", "text": "Then he is dead?"}]
+	 	},
+	 	{
+	 		"lineID": 10,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Ay, and brought off the field: your cause of sorrow"}]
+	 	},
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Must not be measured by his worth, for then"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 It hath no end."},
+					 {"actor": "Siward", "text": "Had he his hurts before?"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Ross", "text": "\u2022 Ay, on the front."},
+					 {"actor": "Siward", "text": "Why then, God's soldier be he!"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 Had I as many sons as I have hairs,"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 I would not wish them to a fairer death:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Siward", "text": "\u2022 And so, his knell is knolled."},
+					 {"actor": "Malcolm", "text": "He's worth more sorrow,"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And that I'll spend for him."},
+					 {"actor": "Siward", "text": "He's worth no more"}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 They say he parted well, and paid his score:"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Siward", "text": "\u2022 And so, God be with him! Here comes newer comfort."}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Hail, king! for so thou art: behold, where stands"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 The usurper's cursed head: the time is free:"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 I see thee compass'd with thy kingdom's pearl,"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 That speak my salutation in their minds;"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Whose voices I desire aloud with mine:"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Macduff", "text": "\u2022 Hail, King of Scotland!"},
+					 {"actor": "All", "text": "Hail, King of Scotland!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 We shall not spend a large expense of time"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Before we reckon with your several loves,"}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 And make us even with you. My thanes and kinsmen,"}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Henceforth be earls, the first that ever Scotland"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 In such an honour named. What's more to do,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Which would be planted newly with the time,"}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 As calling home our exiled friends abroad"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That fled the snares of watchful tyranny;"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Producing forth the cruel ministers"}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Of this dead butcher and his fiend-like queen,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Who, as 'tis thought, by self and violent hands"}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Took off her life; this, and what needful else"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 That calls upon us, by the grace of Grace,"}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 We will perform in measure, time and place:"}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 So, thanks to all at once and to each one,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Malcolm", "text": "\u2022 Whom we invite to see us crown'd at Scone."}]
+		}
+	]
+}

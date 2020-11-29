@@ -1,22 +1,32 @@
 {
 "sceneSetup":
-[
-	{"actor": "DUNCAN", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "MALCOLM", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "DONALBAIN", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "MACBETH", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "BANQUO", "startPosition": {"x": 17, "y": 15}, "stageLayer": "MAIN_STAGE"}
-],
+{
+	"actorSetup":
+	[
+		{"actor": "DUNCAN", "startPosition": {"x": 6, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "MALCOLM", "startPosition": {"x": 8, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "DONALBAIN", "startPosition": {"x": 10, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		
+		{"actor": "LENNOX", "startPosition": {"x": 13, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "MACBETH", "startPosition": {"x": 15, "y": 15}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "BANQUO", "startPosition": {"x": 17, "y": 15}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//			LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "DUNCAN",
+		"actor": "DUNCAN",	// "Is the execution done on Cawdor? Are not"
+		"emote": "SPEECH",
 		"actions":
 		[
 			{"action": "REFACE", "direction": "DOWN"}
@@ -58,184 +68,565 @@
 		]
 	}]
 },
-//------------------------------------------------------------
 {
-	"lineID": 2//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 2,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "Those in commission yet returned?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",		// "My liege,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 3,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "They are not yet come back. But I have spoke"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 4,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "With one that saw him die, who did report"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 5,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "That very frankly he confessed his treasons,"
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
-{
-	"lineID": 3//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
-},
+//			LINES 6 - 10
 //------------------------------------------------------------
 {
-	"lineID": 4//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 6,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "Implored your Highness' pardon, and set forth"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 7,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "A deep repentance. Nothing in his life"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 8,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "Became him like his leaving it. He died"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 9,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "As one that had been studied in his death"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 10,
+	"actorActions":
+	[{
+		"actor": "MALCOLM",	// "To throw away the dearest thing he owed"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 11 - 15
 //------------------------------------------------------------
 {
-	"lineID": 5//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 11,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MALCOLM",		// "As 'twere a careless trifle."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "There's no art"
+			"emote": "SPEECH"
+		}]
+	}]
 },
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "To find the mind's construction in the face."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "He was a gentleman on whom I built"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "An absolute trust. O worthiest Cousin!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "The sin of my ingratitude even now"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 16 - 20
 //------------------------------------------------------------
 {
-	"lineID": 6//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Was heavy on me. Thou art so far before"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "That swiftest wing of recompense is slow"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "To overtake thee. Would thou hadst less deserved,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "That the proportion both of thanks and payment"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Might have been mine! Only I have left to say,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 21 - 25
 //------------------------------------------------------------
 {
-	"lineID": 7//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 21,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "More is thy due than more than all can pay."
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The service and the loyalty I owe,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "In doing it, pays itself. Your Highness' part"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 24,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Is to receive our duties. And our duties"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Are to your throne and state children and servants,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 26 - 30
 //------------------------------------------------------------
 {
-	"lineID": 8//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Which do but what they should, by doing everything"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 27,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",		// "Safe toward your love and honor."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "Welcome hither."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "I have begun to plant thee, and will labor"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "To make thee full of growing. Noble Banquo,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "That hast not less deserved, nor must be known"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 31 - 35
 //------------------------------------------------------------
 {
-	"lineID": 9//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "No less to have done so, let me infold thee"
+		"emote": "SPEECH"
+	}]
 },
+{
+	"lineID": 32,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "And hold thee to my heart."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "BANQUO",		// "There if I grow,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 33,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "BANQUO",		// "The harvest is your own."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "My plenteous joys,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 34,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Wanton in fullness, seek to hide themselves"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 35,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "In drops of sorrow. Sons, kinsmen, thanes,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 36 - 40
 //------------------------------------------------------------
 {
-	"lineID": 10//,
-	//"actorActions":
-	//[{
-	//	"actor": "",
-	//	"actions":
-	//	[
-	//		// starts at (0, 0)
-	//		{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-	//		{"action": "", "direction": ""}
-	//	]
-	//}]
+	"lineID": 36,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "And you whose places are the nearest, know,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 37,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "We will establish our estate upon"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 38,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Our eldest, Malcolm, whom we name hereafter"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "The Prince of Cumberland. Which honor must"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Not unaccompanied invest him only,"
+		"emote": "SPEECH"
+	}]
 },
 //------------------------------------------------------------
-{"lineID": 11},
-{"lineID": 12},
-{"lineID": 13},
-{"lineID": 14},
-{"lineID": 15},
-{"lineID": 16},
-{"lineID": 17},
-{"lineID": 18},
-{"lineID": 19},
-{"lineID": 20},
-
-{"lineID": 21},
-{"lineID": 22},
-{"lineID": 23},
-{"lineID": 24},
-{"lineID": 25},
-{"lineID": 26},
-{"lineID": 27},
-{"lineID": 28},
-{"lineID": 29},
-{"lineID": 30},
-
-{"lineID": 31},
-{"lineID": 32},
-{"lineID": 33},
-{"lineID": 34},
-{"lineID": 35},
-{"lineID": 36},
-{"lineID": 37},
-{"lineID": 38},
-{"lineID": 39},
-{"lineID": 40},
-
-{"lineID": 41},
-{"lineID": 42},
-{"lineID": 43},
-{"lineID": 44},
-{"lineID": 45},
-{"lineID": 46},
-{"lineID": 47},
-{"lineID": 48},
-{"lineID": 49},
-{"lineID": 50},
-
-{"lineID": 51},
-{"lineID": 52},
-{"lineID": 53},
-{"lineID": 54},
-{"lineID": 55},
-{"lineID": 56},
-{"lineID": 57},
-{"lineID": 58}
-]
+//			LINES 41 - 45
+//------------------------------------------------------------
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "But signs of nobleness, like stars, shall shine"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 42,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "On all observers. From hence to Inverness,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 43,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "And bind us further to you."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 44,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The rest is labor, which is not used for you."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 45,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "I'll be myself the harbinger, and make joyful"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 46 - 50
+//------------------------------------------------------------
+{
+	"lineID": 46,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The hearing of my wife with your approach,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 47,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACBETH",		// "So humbly take my leave."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "DUNCAN",		// "My worthy Cawdor!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 48,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The Prince of Cumberland! That is a step"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 49,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "On which I must fall down or else o'erleap,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 50,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "For in my way it lies. Stars, hide your fires,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 51 - 55
+//------------------------------------------------------------
+{
+	"lineID": 51,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Let not light see my black and deep desires."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 52,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "The eye wink at the hand, yet let that be"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 53,
+	"actorActions":
+	[{
+		"actor": "MACBETH",	// "Which the eye fears, when it is done, to see."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 54,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "True, worthy Banquo, he is full so valiant,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 55,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "And in his commendations I am fed,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//			LINES 56 - 58
+//------------------------------------------------------------
+{
+	"lineID": 56,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "It is a banquet to me. Let's after him,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 57,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "Whose care is gone before to bid us welcome."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 58,
+	"actorActions":
+	[{
+		"actor": "DUNCAN",	// "It is a peerless kinsman."
+		"emote": "SPEECH"
+	}]
+}]
 }

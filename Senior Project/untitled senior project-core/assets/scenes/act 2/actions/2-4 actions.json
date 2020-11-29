@@ -1,139 +1,492 @@
 {
 "sceneSetup":
-[
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"},
-	{"actor": "", "startPosition": {"x": 0, "y": 0}, "stageLayer": "MAIN_STAGE"}
-],
+{
+	"actorSetup":
+	[
+		{"actor": "OLD_MAN", "startPosition": {"x": 9, "y": 14}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "ROSS", "startPosition": {"x": 12, "y": 14}, "stageLayer": "MAIN_STAGE"},
+		{"actor": "MACDUFF", "startPosition": {"x": 15, "y": 14}, "stageLayer": "MAIN_STAGE"}
+	],
+	
+	"propSetup":
+	[]
+},
 
 "lineActions":
 [
+//------------------------------------------------------------
+//					LINES 1 - 5
 //------------------------------------------------------------
 {
 	"lineID": 1,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "OLD_MAN",		// "Threescore and ten I can remember well."
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 2,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "OLD_MAN",		// "Within the volume of which time I have seen"
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 3,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "OLD_MAN",		// "Hours dreadful and things strange, but this sore night"
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
+{
+	"lineID": 4,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "OLD_MAN",		// "Hath trifled former knowings."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "Ah, good father,"
+			"emote": "SPEECH"
+		}]
+	}]
+},
 {
 	"lineID": 5,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "ROSS",		// "Thou seest the heavens, as troubled with man's act,"
+		"emote": "SPEECH"
 	}]
 },
+//------------------------------------------------------------
+//					LINES 6 - 10
 //------------------------------------------------------------
 {
 	"lineID": 6,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "ROSS",		// "Threaten his bloody stage. By the clock 'tis day,"
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 7,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "ROSS",		// "And yet dark night strangles the travelling lamp."
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 8,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "ROSS",		// "Is 't night's predominance, or the day's shame,"
+		"emote": "SPEECH"
 	}]
 },
-//------------------------------------------------------------
 {
 	"lineID": 9,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "ROSS",		// "That darkness does the face of earth entomb,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 10,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "When living light should kiss it?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "OLD_MAN",		// "'Tis unnatural,"
+			"emote": "SPEECH"
+		}]
 	}]
 },
 //------------------------------------------------------------
+//					LINES 11 - 15
+//------------------------------------------------------------
 {
-	"lineID": 10,
+	"lineID": 11,
 	"actorActions":
 	[{
-		"actor": "",
-		"actions":
-		[
-			// starts at (0, 0)
-			{"action": "", "direction": "", "destination": {"x": 0, "y": 0}},
-			{"action": "", "direction": ""}
-		]
+		"actor": "OLD_MAN",		// "Even like the deed that's done. On Tuesday last,"
+		"emote": "SPEECH"
 	}]
-}
+},
+{
+	"lineID": 12,
+	"actorActions":
+	[{
+		"actor": "OLD_MAN",		// "A falcon, towering in her pride of place,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 13,
+	"actorActions":
+	[{
+		"actor": "OLD_MAN",		// "Was by a mousing owl hawked at and killed."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 14,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "And Duncan's horses-- thing most strange and certain--"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 15,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Beauteous and swift, the minions of their race,"
+		"emote": "SPEECH"
+	}]
+},
 //------------------------------------------------------------
-]
+//					LINES 16 - 20
+//------------------------------------------------------------
+{
+	"lineID": 16,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Turned wild in nature, broke their stalls, flung out,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 17,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Contending 'gainst obedience, as they would make"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 18,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "War with mankind."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "OLD_MAN",		// "'Tis said they eat each other."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 19,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "They did so, to the amazement of mine eyes,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 20,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "That looked upon 't. Here comes the good Macduff."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 21 - 25
+//------------------------------------------------------------
+{
+	"lineID": 21,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "How goes the world, sir, now?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "Why, see you not?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 22,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Is 't known who did this more than bloody deed?"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 23,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "Those that Macbeth hath slain."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "Alas, the day!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 24,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "What good could they pretend?"
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "They were suborned."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 25,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "Malcolm and Donalbain, the King's two sons,"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 26 - 30
+//------------------------------------------------------------
+{
+	"lineID": 26,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "Are stol'n away and fled, which puts upon them"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 27,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "Suspicion of the deed."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "'Gainst nature still!"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 28,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Thriftless ambition, that wilt ravin up"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 29,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Thine own life's means! Then 'tis most like"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 30,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "The sovereignty will fall upon Macbeth."
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 31 - 35
+//------------------------------------------------------------
+{
+	"lineID": 31,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "He is already named, and gone to Scone"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 32,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "To be invested."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "Where is Duncan's body?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 33,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "Carried to Colmekill,"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 34,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "The sacred storehouse of his predecessors"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 35,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "And guardian of their bones."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "Will you to Scone?"
+			"emote": "SPEECH"
+		}]
+	}]
+},
+//------------------------------------------------------------
+//					LINES 36 - 40
+//------------------------------------------------------------
+{
+	"lineID": 36,
+	"sharedLineActions":
+	[{
+		"sharedIndex": 0,
+		"actorActions":
+		[{
+			"actor": "MACDUFF",		// "No, cousin, I'll to Fife."
+			"emote": "SPEECH"
+		}]
+	},
+	{
+		"sharedIndex": 1,
+		"actorActions":
+		[{
+			"actor": "ROSS",		// "Well, I will thither."
+			"emote": "SPEECH"
+		}]
+	}]
+},
+{
+	"lineID": 37,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "Well, may you see things well done there. Adieu!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 38,
+	"actorActions":
+	[{
+		"actor": "MACDUFF",		// "Lest our old robes sit easier than our new!"
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 39,
+	"actorActions":
+	[{
+		"actor": "ROSS",		// "Farewell, father."
+		"emote": "SPEECH"
+	}]
+},
+{
+	"lineID": 40,
+	"actorActions":
+	[{
+		"actor": "OLD_MAN",		// "God's benison go with you, and with those"
+		"emote": "SPEECH"
+	}]
+},
+//------------------------------------------------------------
+//					LINES 41
+//------------------------------------------------------------
+{
+	"lineID": 41,
+	"actorActions":
+	[{
+		"actor": "OLD_MAN",		// "That would make good of bad, and friends of foes!"
+		"emote": "SPEECH"
+	}]
+}]
 }

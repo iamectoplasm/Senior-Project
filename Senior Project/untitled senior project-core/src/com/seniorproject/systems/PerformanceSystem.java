@@ -6,48 +6,44 @@ import com.artemis.systems.IntervalIteratingSystem;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.components.MovementDirection;
-import com.seniorproject.components.StageDirections;
+import com.seniorproject.assetmanagement.EmoticonAtlas;
+import com.seniorproject.components.ActionsQueue;
 import com.seniorproject.components.Active;
 import com.seniorproject.components.DrawableSprite;
 import com.seniorproject.components.PerformerEmote;
 import com.seniorproject.components.MovementState;
 import com.seniorproject.components.Name;
-import com.seniorproject.components.MapPosition;
+import com.seniorproject.components.Position;
 import com.seniorproject.components.Velocity;
 import com.seniorproject.configs.PerformConfig.ActionToPerform;
 import com.seniorproject.enums.State;
-import com.seniorproject.game.EmoticonAtlas;
 import com.seniorproject.maps.StageMap;
 
 public class PerformanceSystem extends IntervalIteratingSystem
 {
-	private final static String TAG = PerformanceSystem.class.getSimpleName();
-	
-	//private StageMap map;
+	//private final static String TAG = PerformanceSystem.class.getSimpleName();
 	
 	ComponentMapper<MovementDirection> mDirection;
-	ComponentMapper<MapPosition> mPosition;
+	ComponentMapper<Position> mPosition;
 	ComponentMapper<Velocity> mVelocity;
 	ComponentMapper<MovementState> mMovementState;
-	ComponentMapper<StageDirections> mStageDirections;
+	ComponentMapper<ActionsQueue> mStageDirections;
 	ComponentMapper<PerformerEmote> mEmotion;
 	
 	ComponentMapper<DrawableSprite> mSprite;
 	
 	ComponentMapper<Name> mName;
 
-	public PerformanceSystem(StageMap map)
+	public PerformanceSystem()
 	{
 		super(Aspect.all(Active.class,
 				MovementDirection.class,
-				MapPosition.class,
+				Position.class,
 				Velocity.class,
 				MovementState.class,
-				StageDirections.class,
+				ActionsQueue.class,
 				PerformerEmote.class),
 				(1/60f));
-		
-		//this.map = map;
 	}
 	
 	public void updateCharacterEmotes(int entityId, EmoticonAtlas.Emoticon emote)
@@ -56,7 +52,14 @@ public class PerformanceSystem extends IntervalIteratingSystem
 		
 		performerEmote.hasEmote = true;
 		performerEmote.emote = emote;
-		performerEmote.emoticon = EmoticonAtlas.getInstance().getEmoticon(emote);
+		//if(emote.isAnimated())
+		//{
+		//	performerEmote.animatedEmoticon = EmoticonAtlas.getInstance().getAnimatedEmoticon(emote);
+		//}
+		//else
+		//{
+			performerEmote.emoticon = EmoticonAtlas.getInstance().getEmoticon(emote);
+		//}
 	}
 	
 	public void resetCharacterEmotes(int entityId)
@@ -70,7 +73,7 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	
 	public void updateCharacterActions(int entityId, Array<ActionToPerform> stageDirections)
 	{
-		StageDirections directions = mStageDirections.get(entityId);
+		ActionsQueue directions = mStageDirections.get(entityId);
 		
 		for(int i = 0; i < stageDirections.size; i++)
 		{
@@ -82,11 +85,11 @@ public class PerformanceSystem extends IntervalIteratingSystem
 	protected void process(int entityId)
 	{
 		MovementDirection direction = mDirection.get(entityId);
-		MapPosition position = mPosition.get(entityId);
+		Position position = mPosition.get(entityId);
 		MovementState movementState = mMovementState.get(entityId);
-		StageDirections stageDirections = mStageDirections.get(entityId);
+		ActionsQueue stageDirections = mStageDirections.get(entityId);
 		
-		DrawableSprite sprite = mSprite.get(entityId);
+		//DrawableSprite sprite = mSprite.get(entityId);
 		
 		//Name name = mName.get(entityId);
 		

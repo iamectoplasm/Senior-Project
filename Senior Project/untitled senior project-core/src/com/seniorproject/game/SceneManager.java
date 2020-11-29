@@ -2,15 +2,11 @@ package com.seniorproject.game;
 
 import com.artemis.World;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.scenes.scene2d.Action;
-import com.badlogic.gdx.scenes.scene2d.actions.Actions;
-import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.utils.Array;
 import com.seniorproject.enums.SceneFiles;
 import com.seniorproject.game.SeniorProject.GameMode;
 import com.seniorproject.game.SeniorProject.ScreenType;
 import com.seniorproject.screens.PerformanceScreen;
-import com.seniorproject.screens.SceneIntroScreen;
 import com.seniorproject.systems.PerformanceSystem;
 import com.seniorproject.configs.PerformConfig.ActionsForPerformer;
 import com.seniorproject.configs.PerformConfig.ActionToPerform;
@@ -44,7 +40,7 @@ public class SceneManager
 	
 	private boolean actorHasChanged;
 	
-	private ActionsForLine currentLineAction;
+	private ActionsForLine currentActionsForLine;
 	private World world;
 	
 	public SceneManager(World world)
@@ -55,41 +51,57 @@ public class SceneManager
 		this.scenes = new Array<SceneFiles>();
 	}
 	
-	public void setMode(GameMode mode)
+	public void setMode(GameMode mode, SceneFiles requestedScene)
 	{
 		this.mode = mode;
+		
+		scenes.clear();
 		
 		switch(mode)
 		{
 		case STORY_MODE:
-			scenes.addAll(SceneFiles.ACT1SCENE1,
+			scenes.addAll(
+					SceneFiles.ACT1SCENE1,
 					SceneFiles.ACT1SCENE2,
 					SceneFiles.ACT1SCENE3,
 					SceneFiles.ACT1SCENE4,
 					SceneFiles.ACT1SCENE5,
 					SceneFiles.ACT1SCENE6,
-					SceneFiles.ACT1SCENE7);
+					SceneFiles.ACT1SCENE7,
+					SceneFiles.ACT2SCENE1,
+					SceneFiles.ACT2SCENE2,
+					SceneFiles.ACT2SCENE3,
+					SceneFiles.ACT2SCENE4);
+			
+			this.currentSceneIndex = 0;
+			//this.currentSceneIndex = 1;
+			//this.currentSceneIndex = 5;
+			//this.currentSceneIndex = 2;
+			//this.currentSceneIndex = 7;
+			
+			initScene(new Scene(scenes.get(currentSceneIndex)));
+			
 			break;
 		case STUDY_MODE:
-			scenes.add(SceneFiles.ACT1SCENE6);
+			initScene(new Scene(requestedScene));
 			break;
 		case DEMO_MODE:
-			//scenes.addAll(SceneFiles.ACT1SCENE1_DEMO,
-					//SceneFiles.ACT1SCENE3_DEMO,
-			//		SceneFiles.ACT1SCENE6);
-			
 			scenes.addAll(SceneFiles.ACT1SCENE3_DEMO,
-					SceneFiles.ACT1SCENE6);
+					SceneFiles.ACT2SCENE2_DEMO,
+					SceneFiles.ACT3SCENE4_DEMO);
+					//SceneFiles.ACT1SCENE6);
 					//SceneFiles.ACT2SCENE1_DEMO);
+			
+			//this.currentSceneIndex = 0;
+			//this.currentSceneIndex = 1;
+			this.currentSceneIndex = 2;
+			initScene(new Scene(scenes.get(currentSceneIndex)));
+			
 			break;
 		}
-		this.currentSceneIndex = 0;
-		//this.currentSceneIndex = 1;
-		//this.currentSceneIndex = 2;
-		setupNewScene(new Scene(scenes.get(currentSceneIndex)));
 	}
 	
-	public void setupNewScene(Scene scene)
+	public void initScene(Scene scene)
 	{
 		currentScene = scene;
 		currentLineID = 1;
@@ -107,67 +119,61 @@ public class SceneManager
 		currentTextDisplay = new Array<String>();
 		currentTextDisplay.add(currentLineText.getText());
 		
-		currentLineAction = currentScene.getLineActions().get(0);
-		updatePerformerActions();
+		currentActionsForLine = currentScene.getLineActions().get(0);
+		//updatePerformerActions();
+		updatePerformerActions(currentActionsForLine.getActionsForPerformer());
 	}
 	
 	public void stepForward()
 	{
-		if(currentLineID == currentScene.getLines().size)
-		{	
+		if(hasReachedEndOfScene(currentScene))
+		{
 			currentScene.deactivateEntities();
+			
+			if(mode == GameMode.STUDY_MODE)
+			{
+				currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_SELECT_SCREEN));
+				return;
+			}
+			else
+			{
+				currentSceneIndex += 1;
+				
+				if(currentSceneIndex == scenes.size)
+				{
+					currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				}
+				else
+				{
+					continueToNextScene();
+				}
+			}
+			/*
 			currentSceneIndex += 1;
 			
 			if(currentSceneIndex == scenes.size)
 			{
-				currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+				returnToMainMenu();
 				return;
 			}
 			
-			setupNewScene(new Scene(scenes.get(currentSceneIndex)));
+			//SeniorProject.performanceScreen.fadeToNewScreen(ScreenType.SCENE_INTRO_SCREEN);
+			currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+			
+			initScene(new Scene(scenes.get(currentSceneIndex)));
 			
 			SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
 			PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
-			
-			currentGame.getScreen().hide();
-			currentGame.setScreen(SeniorProject.sceneIntroScreen);
-			
-			/*
-			SequenceAction performanceFadeOut = new SequenceAction();
-			Action fadeIn = Actions.fadeIn(0.5f);
-			fadeIn.setActor(SeniorProject.performanceScreen.getFadeOverlay());
-			
-			performanceFadeOut.addAction(fadeIn);
-			performanceFadeOut.addAction(Actions.run(new Runnable()
-			{
-				@Override
-				public void run()
-				{
-					currentScene.deactivateEntities();
-					currentSceneIndex += 1;
-					
-					setupNewScene(new Scene(scenes.get(currentSceneIndex)));
-					
-					SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
-					PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
-					
-					currentGame.setScreen(SeniorProject.sceneIntroScreen);
-					
-					SeniorProject.performanceScreen.getFadeOverlay().clear();
-				}
-			}));
-			
-			SeniorProject.performanceScreen.getStage().getRoot().addAction(performanceFadeOut);
 			*/
 			
 		}
 		else
 		{
-			incrementCurrentLine();
+			increment();
 		}
 	}
 	
-	public void incrementCurrentLine()
+	public void increment()
 	{
 		if(lineIsShared && sharedLineIndex < currentLine.getLineText().size - 1)
 		{
@@ -182,18 +188,13 @@ public class SceneManager
 		currentLine = currentScene.getLineByID(currentLineID);
 		
 		//Gdx.app.debug(TAG, "currentLine: " + currentLine.getLineText().get(sharedLineIndex).getText());
-		String newActor = currentLine.getLineText().get(sharedLineIndex).getActor();
+		String newSpeakerName = currentLine.getLineText().get(sharedLineIndex).getActor();
 		
 		lineIsShared = currentLine.isSharedLine();
 		
-		updateTextDisplay(currentLineID, newActor);
+		updateTextDisplay(currentLineID, newSpeakerName);
 		
-		if(sharedLineIndex == 0)
-		{
-			//We're only updating the actions if we're at index 0 of a shared line-- otherwise, they repeat
-			resetPerformerEmotes();
-			updatePerformance(currentLineID);
-		}
+		updatePerformance(currentLineID, lineIsShared);
 	}
 	
 	public void updateTextDisplay(int lineID, String actor)
@@ -238,21 +239,71 @@ public class SceneManager
 		}
 	}
 	
+	public void endScene(Scene scene)
+	{
+		currentScene.deactivateEntities();
+		currentLineID = 0;
+	}
+	
+	public void continueToNextScene()
+	{
+		currentGame.setScreen(currentGame.getScreenType(ScreenType.SCENE_INTRO_SCREEN));
+		
+		initScene(new Scene(scenes.get(currentSceneIndex)));
+		
+		SeniorProject.sceneIntroScreen.updateToNextScene(currentScene.getScriptConfigFile());
+		PerformanceScreen.getPerformanceHUD().updateStudyUIToNewScene(currentScene);
+	}
+	
+	public void updatePerformance(int lineID, boolean lineIsShared)
+	{
+		resetPerformerEmotes();
+		//if(lineIsShared)
+		if(currentScene.getLineActionsByID(lineID).getSharedLineActions() != null)
+		{
+			Array<ActionsForPerformer> actions = currentScene.getLineActionsByID(lineID).getSharedLineActions().get(sharedLineIndex).getActions();
+			updatePerformerActions(actions);
+		}
+		else
+		{
+			//currentActionsForLine = currentScene.getLineActionsByID(lineID);
+			Array<ActionsForPerformer> actions = currentScene.getLineActionsByID(lineID).getActionsForPerformer();
+			updatePerformerActions(actions);
+		}
+		
+		//updatePerformerActions();
+	}
+	
+	public boolean hasReachedEndOfScene(Scene scene)
+	{
+		if(currentLineID == scene.getLines().size)
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public void returnToMainMenu()
+	{
+		currentScene.deactivateEntities();
+		currentGame.setScreen(currentGame.getScreenType(ScreenType.MAIN_MENU_SCREEN));
+		initScene(currentScene);
+	}
+	
 	public boolean lineIsShared()
 	{
 		return lineIsShared;
 	}
 	
+	public int getSharedLineIndex()
+	{
+		return sharedLineIndex;
+	}
+	
 	public boolean actorHasChanged()
 	{
 		return actorHasChanged;
-	}
-	
-	public void updatePerformance(int lineID)
-	{
-		currentLineAction = currentScene.getLineActionsByID(lineID);
-		
-		updatePerformerActions();
 	}
 	
 	public Scene getCurrentScene()
@@ -300,9 +351,9 @@ public class SceneManager
 		}
 	}
 	
-	private void updatePerformerActions()
+	private void updatePerformerActions(Array<ActionsForPerformer> actionsList)
 	{
-		Array<ActionsForPerformer> actionsList = currentLineAction.getActionsForPerformer();
+		//Array<ActionsForPerformer> actionsList = currentActionsForLine.getActionsForPerformer();
 		
 		for(int i = 0; i < actionsList.size; i++)
 		{

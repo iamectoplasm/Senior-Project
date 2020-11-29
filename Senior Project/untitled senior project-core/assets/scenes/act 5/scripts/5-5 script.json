@@ -1,67 +1,305 @@
 {
-"cast": ["", "", ""],
+"sceneIntro":
+	{
+		"title": "Act 5 Scene 5",
+		"backgroundImage": "heath-exterior",
+		"setting": "Under construction",
+		"description": ["Under construction"]
+	},
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
-			"line": [{"actor": "", "text": "-"}]
+			"line": [{"actor": "Macbeth", "text": "\u2022 Hang out our banners on the outward walls;"}]
 		},
 	 	{
 	 		"lineID": 2,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The cry is still 'They come:' our castle's strength"}]
 	 	},
 	 	{
 	 		"lineID": 3,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Will laugh a siege to scorn: here let them lie"}]
 	 	},
 	 	{
 	 		"lineID": 4,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Till famine and the ague eat them up:"}]
 	 	},
 	 	{
 	 		"lineID": 5,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Were they not forced with those that should be ours,"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 We might have met them dareful, beard to beard,"}]
 	 	},
 	 	{
 	 		"lineID": 7,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And beat them backward home. What is that noise?"}]
 	 	},
 	 	{
 	 		"lineID": 8,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Seyton", "text": "\u2022 It is the cry of women, my good lord."}]
 	 	},
 	 	{
 	 		"lineID": 9,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I have almost forgot the taste of fears;"}]
 	 	},
 	 	{
 	 		"lineID": 10,
 	 		"sharedLine": false,
-	 		"line": [{"actor": "", "text": "-"}]
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The time has been, my senses would have cool'd"}]
 	 	},
-	 	
-	{"lineID": 0},
-	{"lineID": 1},
-	{"lineID": 2},
-	{"lineID": 3},
-	{"lineID": 4},
-	{"lineID": 5},
-	{"lineID": 6},
-	{"lineID": 7},
-	{"lineID": 8},
-	{"lineID": 9}]
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
+		{
+			"lineID": 11,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To hear a night-shriek; and my fell of hair"}]
+		},
+		{
+			"lineID": 12,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Would at a dismal treatise rouse and stir"}]
+		},
+		{
+			"lineID": 13,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 As life were in't: I have supp'd full with horrors;"}]
+		},
+		{
+			"lineID": 14,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Direness, familiar to my slaughterous thoughts"}]
+		},
+		{
+			"lineID": 15,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Cannot once start me. Wherefore was that cry?"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
+		{
+			"lineID": 16,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Seyton", "text": "\u2022 The queen, my lord, is dead."},
+					 {"actor": "Macbeth", "text": "She should have died hereafter;"}]
+		},
+		{
+			"lineID": 17,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 There would have been a time for such a word."}]
+		},
+		{
+			"lineID": 18,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To-morrow, and to-morrow, and to-morrow,"}]
+		},
+		{
+			"lineID": 19,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Creeps in this petty pace from day to day"}]
+		},
+		{
+			"lineID": 20,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To the last syllable of recorded time,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
+		{
+			"lineID": 21,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And all our yesterdays have lighted fools"}]
+		},
+		{
+			"lineID": 22,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 The way to dusty death. Out, out, brief candle!"}]
+		},
+		{
+			"lineID": 23,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Life's but a walking shadow, a poor player"}]
+		},
+		{
+			"lineID": 24,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That struts and frets his hour upon the stage"}]
+		},
+		{
+			"lineID": 25,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And then is heard no more: it is a tale"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
+		{
+			"lineID": 26,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Told by an idiot, full of sound and fury,"}]
+		},
+		{
+			"lineID": 27,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Signifying nothing."}]
+		},
+		{
+			"lineID": 28,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Thou comest to use thy tongue; thy story quickly."}]
+		},
+		{
+			"lineID": 29,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Gracious my lord,"}]
+		},
+		{
+			"lineID": 30,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 I should report that which I say I saw,"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
+		{
+			"lineID": 31,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 But know not how to do it."},
+					 {"actor": "Macbeth", "text": "Well, say, sir."}]
+		},
+		{
+			"lineID": 32,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 As I did stand my watch upon the hill,"}]
+		},
+		{
+			"lineID": 33,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 I look'd toward Birnam, and anon, methought,"}]
+		},
+		{
+			"lineID": 34,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 The wood began to move."},
+					 {"actor": "Macbeth", "text": "Liar and slave!"}]
+		},
+		{
+			"lineID": 35,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Let me endure your wrath, if't be not so:"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
+		{
+			"lineID": 36,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 Within this three mile may you see it coming;"}]
+		},
+		{
+			"lineID": 37,
+	 		"sharedLine": true,
+	 		"line": [{"actor": "Messenger", "text": "\u2022 I say, a moving grove."},
+					 {"actor": "Macbeth", "text": "If thou speak'st false,"}]
+		},
+		{
+			"lineID": 38,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Upon the next tree shalt thou hang alive,"}]
+		},
+		{
+			"lineID": 39,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Till famine cling thee: if thy speech be sooth,"}]
+		},
+		{
+			"lineID": 40,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I care not if thou dost for me as much."}]
+		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
+		{
+			"lineID": 41,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I pull in resolution, and begin"}]
+		},
+		{
+			"lineID": 42,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 To doubt the equivocation of the fiend"}]
+		},
+		{
+			"lineID": 43,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 That lies like truth: 'Fear not, till Birnam wood"}]
+		},
+		{
+			"lineID": 44,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Do come to Dunsinane:' and now a wood"}]
+		},
+		{
+			"lineID": 45,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Comes toward Dunsinane. Arm, arm, and out!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
+		{
+			"lineID": 46,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 If this which he avouches does appear,"}]
+		},
+		{
+			"lineID": 47,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 There is nor flying hence nor tarrying here."}]
+		},
+		{
+			"lineID": 48,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 I gin to be aweary of the sun,"}]
+		},
+		{
+			"lineID": 49,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 And wish the estate o' the world were now undone."}]
+		},
+		{
+			"lineID": 50,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 Ring the alarum-bell! Blow, wind! come, wrack!"}]
+		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
+		{
+			"lineID": 51,
+	 		"sharedLine": false,
+	 		"line": [{"actor": "Macbeth", "text": "\u2022 At least we'll die with harness on our back."}]
+		}
+	]
 }

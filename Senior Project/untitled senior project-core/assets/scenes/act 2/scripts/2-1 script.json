@@ -9,6 +9,9 @@
 
 "script":
 	[
+	//------------------------------------------------------------
+	//				LINES 1 - 5
+	//------------------------------------------------------------
 		{
 			"lineID": 1,
 			"sharedLine": false,
@@ -35,6 +38,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Their candles are all out. Take thee that too."}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 6 - 10
+	//------------------------------------------------------------
 	 	{
 	 		"lineID": 6,
 	 		"sharedLine": false,
@@ -60,6 +66,9 @@
 	 		"sharedLine": false,
 	 		"line": [{"actor": "Banquo", "text": "\u2022 Who's there?"}]
 	 	},
+	//------------------------------------------------------------
+	//				LINES 11 - 15
+	//------------------------------------------------------------
 		{
 			"lineID": 11,
 			"sharedLine": false,
@@ -85,6 +94,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Banquo", "text": "\u2022 This diamond he greets your wife withal,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 16 - 20
+	//------------------------------------------------------------
 		{
 			"lineID": 16,
 			"sharedLine": false,
@@ -112,6 +124,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Banquo", "text": "\u2022 I dreamed last night of the three weird sisters."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 21 - 25
+	//------------------------------------------------------------
 		{
 			"lineID": 21,
 			"sharedLine": true,
@@ -139,6 +154,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 If you shall cleave to my consent, when 'tis,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 26 - 30
+	//------------------------------------------------------------
 		{
 			"lineID": 26,
 			"sharedLine": true,
@@ -166,6 +184,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Banquo", "text": "\u2022 Thanks, sir. The like to you!"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 31 - 35
+	//------------------------------------------------------------
 		{
 			"lineID": 31,
 			"sharedLine": false,
@@ -191,6 +212,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 I have thee not, and yet I see thee still."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 36 - 40
+	//------------------------------------------------------------
 		{
 			"lineID": 36,
 			"sharedLine": false,
@@ -216,6 +240,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 I see thee yet, in form as palpable"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 41 - 45
+	//------------------------------------------------------------
 		{
 			"lineID": 41,
 			"sharedLine": false,
@@ -241,6 +268,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Or else worth all the rest. I see thee still,"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 46 - 50
+	//------------------------------------------------------------
 		{
 			"lineID": 46,
 			"sharedLine": false,
@@ -266,6 +296,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Nature seems dead, and wicked dreams abuse"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 51 - 55
+	//------------------------------------------------------------
 		{
 			"lineID": 51,
 			"sharedLine": false,
@@ -291,6 +324,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 With Tarquin's ravishing strides, toward his design"}]
 		},
+	//------------------------------------------------------------
+	//				LINES 56 - 60
+	//------------------------------------------------------------
 		{
 			"lineID": 56,
 			"sharedLine": false,
@@ -316,6 +352,9 @@
 			"sharedLine": false,
 			"line": [{"actor": "Macbeth", "text": "\u2022 Which now suits with it. Whiles I threat, he lives."}]
 		},
+	//------------------------------------------------------------
+	//				LINES 61 - 64
+	//------------------------------------------------------------
 		{
 			"lineID": 61,
 			"sharedLine": false,

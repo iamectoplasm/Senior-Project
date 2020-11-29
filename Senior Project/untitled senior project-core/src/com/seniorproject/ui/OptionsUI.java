@@ -1,21 +1,13 @@
 package com.seniorproject.ui;
 
-import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.actions.Actions;
-import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
-import com.seniorproject.game.AssetLoader;
-import com.seniorproject.game.FadeOverlay;
+import com.seniorproject.assetmanagement.AssetLoader;
 import com.seniorproject.game.SeniorProject;
-import com.seniorproject.game.SeniorProject.ScreenType;
-import com.seniorproject.screens.PerformanceScreen;
 
 public class OptionsUI extends Window
 {
@@ -71,26 +63,8 @@ public class OptionsUI extends Window
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button)
 			{
-				SequenceAction changeScreen = new SequenceAction();
-				Action fadeIn = Actions.fadeIn(0.5f);
-				fadeIn.setActor(FadeOverlay.getInstance().getOverlay());
-				
-				changeScreen.addAction(fadeIn);
-				changeScreen.addAction(Actions.run(new Runnable()
-				{
-					@Override
-					public void run()
-					{
-						PerformanceScreen screen = SeniorProject.performanceScreen;
-						screen.fadeOutOfScreen();
-						
-						SeniorProject game = (SeniorProject) Gdx.app.getApplicationListener();
-						game.setScreen(game.getScreenType(ScreenType.MAIN_MENU_SCREEN));
-					}
-				}));
-				
-				returnToScene.getStage().getRoot().addAction(changeScreen);
-				returnToScene.getParent().setVisible(false);
+				SeniorProject.performanceScreen.getSceneManager().returnToMainMenu();
+				//SeniorProject.performanceScreen.fadeToNewScreen(ScreenType.MAIN_MENU_SCREEN);
 			}
 		});
 	}

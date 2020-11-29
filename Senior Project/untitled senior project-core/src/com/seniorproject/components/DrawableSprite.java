@@ -7,8 +7,11 @@ public class DrawableSprite extends Component
 {
 	public TextureRegion currentFrame = new TextureRegion();
 	
-	//public int drawWidth = 2;
-	//public int drawHeight = 2;
+	public int drawWidth;
+	public int drawHeight;
+	
+	public float xOffset = 0;
+	public float yOffset = 0;
 
 	public DrawableSprite()
 	{
